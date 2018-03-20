@@ -1,0 +1,92 @@
+site_name: 微信第三方文档
+site_description: 微信第三方文档
+site_author: Nosy
+copyright: '版权 &copy; 2018 wxdocs.github.io'
+
+repo_name: wxdocs/open-docs
+repo_url: https://github.com/wxdocs/open-docs
+edit_uri: ""
+
+theme:
+  name: material
+
+  include_search_page: false
+  search_index_only: true
+
+  language: zh
+  feature:
+    tabs: true
+  palette:
+    primary: indigo
+    accent: indigo
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/images/favicon.png
+  logo:
+    icon: "\uE80C"
+  extra_css: [assets/stylesheets/extra.css]
+extra:
+  search:
+    language: 'jp'
+  social:
+    - type: globe
+      link: http://wohugb.github.io
+    - type: github-alt
+      link: https://github.com/wohugb
+    - type: twitter
+      link: https://twitter.com/wohugb
+    - type: linkedin
+      link: https://linkedin.com/in/wohugb
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      linenums: false
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.details
+
+pages:
+  - 首页: index.md
+  - 移动应用: 
+    - 概述: mobile/index.md
+    - 移动应用: mobile/index.md
+    - 资源中心首页: mobile/index.md
+    - 接入指南: mobile/index.md
+    - 分享与收藏功能: mobile/index.md
+    - 微信支付功能: mobile/index.md
+    - 微信登录功能: mobile/index.md
+    - 微信智能接口: mobile/index.md
+    - 移动应用一次性订阅消息开发指南: mobile/index.md
+    - 常见问题: mobile/index.md
+  - 网站应用: 
+    - 概述: site/index.md
+    - 网站应用: site/index.md
+    - 微信登录功能: site/index.md
+    - 微信智能接口: site/index.md
+    - 开发者反馈: site/index.md
+  - 公众帐号: 
+    - 概述: pubno/index.md
+    - 新手接入: pubno/index.md
+    - 交流互助: pubno/index.md
+    - 开发者文档: pubno/index.md
+  - 第三方平台: 
+    - 概述: open/index.md
+    - 第三方平台概述: open/overview.md
+    - 授权流程技术说明: open/index.md
+    - 开发前必读: open/index.md
+    - 代公众号实现业务: open/index.md
+    - 代小程序实现业务: open/index.md
+    - 消息加解密说明: open/index.md
+    - 全网发布申请说明: open/index.md
+  - 返回码说明: code/index.md
+  - 资源下载: 
+    - 概述: download/index.md
+    - iOS资源下载: download/ios.md
+    - Android资源下载: download/android.md
+    - WP8资源下载: download/wp8.md
+    - 设计资源下: download/assets.md
