@@ -79,7 +79,14 @@ pages:
     - 平台概述: open/overview.md
     - 授权流程: 
       - 概述: open/auth/auth.md
-      - 8. 授权选项: open/auth/8.api_get_authorizer_option.md
+      - 1. 推送消息: open/auth/1.component_verify_ticket.md
+      - 2. 获取令牌: open/auth/2.component_access_token.md
+      - 3. 预授权码: open/auth/3.api_create_preauthcode.md
+      - 4. 获取凭据: open/auth/4.api_query_auth.md
+      - 5. 获取令牌: open/auth/5.api_authorizer_token.md
+      - 6. 账号信息: open/auth/6.api_get_authorizer_info.md
+      - 7. 授权信息: open/auth/7.api_get_authorizer_option.md
+      - 8. 授权选项: open/auth/8.api_set_authorizer_option.md
       - 9. 推送数据: open/auth/9.callback.md
     - 开发前必读: open/index.md
     - 代公众号实现业务: open/index.md
@@ -93,8 +100,7 @@ pages:
     - Android资源下载: download/android.md
     - WP8资源下载: download/wp8.md
     - 设计资源下: download/assets.md
-  - 概述: index.md
-  - 第三方/小程序:
+  - 小程序:
     - 开发简介: open/mini/index.md
     - 域名设置: open/mini/domain.md
     - 测试人员: open/mini/tester.md
