@@ -75,14 +75,16 @@ pages:
     - 交流互助: pubno/index.md
     - 开发者文档: pubno/index.md
   - 第三方平台: 
-    - 概述: open/index.md
-    - 第三方平台概述: open/overview.md
-    - 授权流程技术说明: open/index.md
+    - 平台概述: open/overview.md
+    - 授权流程: 
+      - 概述: open/auth/auth.md
+      - 8. 授权选项: open/auth/8.api_get_authorizer_option.md
+      - 9. 推送数据: open/auth/9.callback.md
     - 开发前必读: open/index.md
     - 代公众号实现业务: open/index.md
     - 代小程序实现业务: open/index.md
-    - 消息加解密说明: open/index.md
-    - 全网发布申请说明: open/index.md
+    - 消息加解密: open/index.md
+    - 全网发布: open/index.md
   - 返回码说明: code/index.md
   - 资源下载: 
     - 概述: download/index.md
