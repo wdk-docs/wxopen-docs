@@ -1,10 +1,17 @@
 site_name: 微信第三方文档
 site_description: 微信第三方文档
 site_author: Nosy
+<<<<<<< HEAD
 copyright: '版权 &copy; 2018 wxdocs.github.io'
 
 repo_name: wxdocs/open-docs
 repo_url: https://github.com/wxdocs/open-docs
+=======
+copyright: '@2018 wxdocs.github.io'
+
+repo_name: wxdocs
+repo_url: https://github.com/wxdocs
+>>>>>>> cbf25cce9b674e75e14ef9c691b871d1d2f02135
 edit_uri: ""
 
 theme:
@@ -51,6 +58,7 @@ markdown_extensions:
   - pymdownx.details
 
 pages:
+<<<<<<< HEAD
   - 首页: index.md
   - 移动应用: 
     - 概述: mobile/index.md
@@ -92,3 +100,18 @@ pages:
     - Android资源下载: download/android.md
     - WP8资源下载: download/wp8.md
     - 设计资源下: download/assets.md
+=======
+  - 概述: index.md
+  - 第三方/小程序:
+    - 开发简介: open/mini/index.md
+    - 域名设置: open/mini/domain.md
+    - 测试人员: open/mini/tester.md
+    - 代码管理: open/mini/code.md
+    - 扫码打开: open/mini/qrcode.md
+    - 模版库: open/mini/temp-lib.md
+    - 微信登录: open/mini/session.md
+    - 模板消息: open/mini/temp.md
+    - 开放平台: open/mini/open.md
+    - 隐私设置: open/mini/status.md
+
+>>>>>>> cbf25cce9b674e75e14ef9c691b871d1d2f02135
