@@ -1,0 +1,2972 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="微信第三方文档">
+      
+      
+      
+        <meta name="author" content="Nosy">
+      
+      
+        <meta name="lang:clipboard.copy" content="复制">
+      
+        <meta name="lang:clipboard.copied" content="已复制">
+      
+        <meta name="lang:search.language" content="jp">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="没有找到符合条件的结果">
+      
+        <meta name="lang:search.result.one" content="找到 1 个符合条件的结果">
+      
+        <meta name="lang:search.result.other" content="# 个符合条件的结果">
+      
+        <meta name="lang:search.tokenizer" content="[\uff0c\u3002]+">
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.7.0">
+    
+    
+      
+        <title>代码管理 - 微信第三方文档</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.78aab2dc.css">
+      
+        <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.6079476c.css">
+      
+    
+    
+      <script src="../../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#_1" tabindex="1" class="md-skip">
+        跳转至
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../../.." title="微信第三方文档" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                微信第三方文档
+              </span>
+              <span class="md-header-nav__topic">
+                代码管理
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            键入以开始搜索
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/wxdocs" title="前往 Github 仓库" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      wxdocs
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../../.." title="概述" class="md-tabs__link">
+        概述
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../" title="第三方/小程序" class="md-tabs__link md-tabs__link--active">
+          第三方/小程序
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </span>
+    微信第三方文档
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/wxdocs" title="前往 Github 仓库" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      wxdocs
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="概述" class="md-nav__link">
+      概述
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      第三方/小程序
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        第三方/小程序
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../" title="开发简介" class="md-nav__link">
+      开发简介
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../domain/" title="域名设置" class="md-nav__link">
+      域名设置
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tester/" title="测试人员" class="md-nav__link">
+      测试人员
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        代码管理
+      </label>
+    
+    <a href="./" title="代码管理" class="md-nav__link md-nav__link--active">
+      代码管理
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">目录</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" title="1. 上传代码" class="md-nav__link">
+    1. 上传代码
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" title="请求方式" class="md-nav__link">
+    请求方式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" title="请求数据" class="md-nav__link">
+    请求数据
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" title="返回结果" class="md-nav__link">
+    返回结果
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" title="错误码" class="md-nav__link">
+    错误码
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" title="2.体验二维码" class="md-nav__link">
+    2.体验二维码
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" title="请求方式" class="md-nav__link">
+    请求方式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" title="返回结果" class="md-nav__link">
+    返回结果
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" title="错误码" class="md-nav__link">
+    错误码
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" title="3. 可选类目" class="md-nav__link">
+    3. 可选类目
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" title="请求方式" class="md-nav__link">
+    请求方式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" title="返回结果" class="md-nav__link">
+    返回结果
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" title="错误码" class="md-nav__link">
+    错误码
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" title="4.页面配置" class="md-nav__link">
+    4.页面配置
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_12" title="请求方式" class="md-nav__link">
+    请求方式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" title="返回结果" class="md-nav__link">
+    返回结果
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" title="错误码" class="md-nav__link">
+    错误码
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" title="5. 提交审核" class="md-nav__link">
+    5. 提交审核
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" title="请求方式" class="md-nav__link">
+    请求方式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" title="请求数据" class="md-nav__link">
+    请求数据
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" title="返回结果" class="md-nav__link">
+    返回结果
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" title="错误码" class="md-nav__link">
+    错误码
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" title="6. 获取审核结果" class="md-nav__link">
+    6. 获取审核结果
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" title="7. 审核状态" class="md-nav__link">
+    7. 审核状态
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_19" title="请求方式" class="md-nav__link">
+    请求方式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" title="请求数据" class="md-nav__link">
+    请求数据
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" title="返回结果" class="md-nav__link">
+    返回结果
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" title="错误码" class="md-nav__link">
+    错误码
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" title="8. 最新审核" class="md-nav__link">
+    8. 最新审核
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_23" title="请求方式" class="md-nav__link">
+    请求方式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" title="返回结果" class="md-nav__link">
+    返回结果
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" title="错误码" class="md-nav__link">
+    错误码
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" title="9. 发布" class="md-nav__link">
+    9. 发布
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_26" title="请求方式" class="md-nav__link">
+    请求方式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_27" title="请求数据" class="md-nav__link">
+    请求数据
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" title="返回结果" class="md-nav__link">
+    返回结果
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_29" title="错误码" class="md-nav__link">
+    错误码
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" title="10. 代码可见" class="md-nav__link">
+    10. 代码可见
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_30" title="请求方式" class="md-nav__link">
+    请求方式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_31" title="请求数据" class="md-nav__link">
+    请求数据
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_32" title="返回结果" class="md-nav__link">
+    返回结果
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_33" title="错误码" class="md-nav__link">
+    错误码
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12" title="12. 版本信息查询" class="md-nav__link">
+    12. 版本信息查询
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_34" title="请求方式" class="md-nav__link">
+    请求方式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_35" title="请求数据" class="md-nav__link">
+    请求数据
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_36" title="返回结果" class="md-nav__link">
+    返回结果
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13" title="13. 最低版本" class="md-nav__link">
+    13. 最低版本
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_37" title="请求方式" class="md-nav__link">
+    请求方式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_38" title="请求示例" class="md-nav__link">
+    请求示例
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_39" title="返回结果" class="md-nav__link">
+    返回结果
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_40" title="错误码" class="md-nav__link">
+    错误码
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15" title="15. 版本回退" class="md-nav__link">
+    15. 版本回退
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_41" title="请求方式" class="md-nav__link">
+    请求方式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_42" title="返回结果" class="md-nav__link">
+    返回结果
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_43" title="错误码" class="md-nav__link">
+    错误码
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16" title="16. 审核撤回" class="md-nav__link">
+    16. 审核撤回
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_44" title="请求方式" class="md-nav__link">
+    请求方式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_45" title="返回结果" class="md-nav__link">
+    返回结果
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_46" title="错误码" class="md-nav__link">
+    错误码
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#171" title="17.1. 分阶段发布接口" class="md-nav__link">
+    17.1. 分阶段发布接口
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_47" title="请求方式" class="md-nav__link">
+    请求方式
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#172" title="17.2. 取消分阶段发布" class="md-nav__link">
+    17.2. 取消分阶段发布
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_48" title="请求方式" class="md-nav__link">
+    请求方式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_49" title="返回结果" class="md-nav__link">
+    返回结果
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_50" title="错误码" class="md-nav__link">
+    错误码
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#173" title="17.3. 查询当前分阶段发布详情" class="md-nav__link">
+    17.3. 查询当前分阶段发布详情
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_51" title="请求方式" class="md-nav__link">
+    请求方式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_52" title="返回结果" class="md-nav__link">
+    返回结果
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_53" title="错误码" class="md-nav__link">
+    错误码
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../qrcode/" title="扫码打开" class="md-nav__link">
+      扫码打开
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../temp-lib/" title="模版库" class="md-nav__link">
+      模版库
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../session/" title="微信登录" class="md-nav__link">
+      微信登录
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../temp/" title="模板消息" class="md-nav__link">
+      模板消息
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../open/" title="开放平台" class="md-nav__link">
+      开放平台
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../status/" title="隐私设置" class="md-nav__link">
+      隐私设置
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">目录</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" title="1. 上传代码" class="md-nav__link">
+    1. 上传代码
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" title="请求方式" class="md-nav__link">
+    请求方式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" title="请求数据" class="md-nav__link">
+    请求数据
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" title="返回结果" class="md-nav__link">
+    返回结果
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" title="错误码" class="md-nav__link">
+    错误码
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" title="2.体验二维码" class="md-nav__link">
+    2.体验二维码
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" title="请求方式" class="md-nav__link">
+    请求方式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" title="返回结果" class="md-nav__link">
+    返回结果
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" title="错误码" class="md-nav__link">
+    错误码
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" title="3. 可选类目" class="md-nav__link">
+    3. 可选类目
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" title="请求方式" class="md-nav__link">
+    请求方式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" title="返回结果" class="md-nav__link">
+    返回结果
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" title="错误码" class="md-nav__link">
+    错误码
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" title="4.页面配置" class="md-nav__link">
+    4.页面配置
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_12" title="请求方式" class="md-nav__link">
+    请求方式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" title="返回结果" class="md-nav__link">
+    返回结果
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" title="错误码" class="md-nav__link">
+    错误码
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" title="5. 提交审核" class="md-nav__link">
+    5. 提交审核
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" title="请求方式" class="md-nav__link">
+    请求方式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" title="请求数据" class="md-nav__link">
+    请求数据
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" title="返回结果" class="md-nav__link">
+    返回结果
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" title="错误码" class="md-nav__link">
+    错误码
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" title="6. 获取审核结果" class="md-nav__link">
+    6. 获取审核结果
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" title="7. 审核状态" class="md-nav__link">
+    7. 审核状态
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_19" title="请求方式" class="md-nav__link">
+    请求方式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" title="请求数据" class="md-nav__link">
+    请求数据
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" title="返回结果" class="md-nav__link">
+    返回结果
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" title="错误码" class="md-nav__link">
+    错误码
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" title="8. 最新审核" class="md-nav__link">
+    8. 最新审核
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_23" title="请求方式" class="md-nav__link">
+    请求方式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" title="返回结果" class="md-nav__link">
+    返回结果
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" title="错误码" class="md-nav__link">
+    错误码
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" title="9. 发布" class="md-nav__link">
+    9. 发布
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_26" title="请求方式" class="md-nav__link">
+    请求方式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_27" title="请求数据" class="md-nav__link">
+    请求数据
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" title="返回结果" class="md-nav__link">
+    返回结果
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_29" title="错误码" class="md-nav__link">
+    错误码
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" title="10. 代码可见" class="md-nav__link">
+    10. 代码可见
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_30" title="请求方式" class="md-nav__link">
+    请求方式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_31" title="请求数据" class="md-nav__link">
+    请求数据
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_32" title="返回结果" class="md-nav__link">
+    返回结果
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_33" title="错误码" class="md-nav__link">
+    错误码
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12" title="12. 版本信息查询" class="md-nav__link">
+    12. 版本信息查询
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_34" title="请求方式" class="md-nav__link">
+    请求方式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_35" title="请求数据" class="md-nav__link">
+    请求数据
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_36" title="返回结果" class="md-nav__link">
+    返回结果
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13" title="13. 最低版本" class="md-nav__link">
+    13. 最低版本
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_37" title="请求方式" class="md-nav__link">
+    请求方式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_38" title="请求示例" class="md-nav__link">
+    请求示例
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_39" title="返回结果" class="md-nav__link">
+    返回结果
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_40" title="错误码" class="md-nav__link">
+    错误码
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15" title="15. 版本回退" class="md-nav__link">
+    15. 版本回退
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_41" title="请求方式" class="md-nav__link">
+    请求方式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_42" title="返回结果" class="md-nav__link">
+    返回结果
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_43" title="错误码" class="md-nav__link">
+    错误码
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16" title="16. 审核撤回" class="md-nav__link">
+    16. 审核撤回
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_44" title="请求方式" class="md-nav__link">
+    请求方式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_45" title="返回结果" class="md-nav__link">
+    返回结果
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_46" title="错误码" class="md-nav__link">
+    错误码
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#171" title="17.1. 分阶段发布接口" class="md-nav__link">
+    17.1. 分阶段发布接口
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_47" title="请求方式" class="md-nav__link">
+    请求方式
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#172" title="17.2. 取消分阶段发布" class="md-nav__link">
+    17.2. 取消分阶段发布
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_48" title="请求方式" class="md-nav__link">
+    请求方式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_49" title="返回结果" class="md-nav__link">
+    返回结果
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_50" title="错误码" class="md-nav__link">
+    错误码
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#173" title="17.3. 查询当前分阶段发布详情" class="md-nav__link">
+    17.3. 查询当前分阶段发布详情
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_51" title="请求方式" class="md-nav__link">
+    请求方式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_52" title="返回结果" class="md-nav__link">
+    返回结果
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_53" title="错误码" class="md-nav__link">
+    错误码
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="_1">代码管理<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p>第三方平台在开发者工具上开发完成后，可点击上传，代码将上传到开放平台草稿箱中，第三方平台可选择将代码添加到代码中，获得代码模版ID后，可调用以下接口进行代码管理。</p>
+<h2 id="1">1. 上传代码<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<p>为授权的小程序帐号上传小程序代码</p>
+<h3 id="_2">请求方式<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p><code>POST</code> <strong>https</strong>://api.weixin.qq.com/wxa/commit?access_token=TOKEN</p>
+<h3 id="_3">请求数据<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;template_id&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span>
+    <span class="nt">&quot;ext_json&quot;</span><span class="p">:</span><span class="s2">&quot;JSON_STRING&quot;</span><span class="p">,</span> <span class="err">//*ext_json需为string类型，请参考下面的格式*</span>
+    <span class="nt">&quot;user_version&quot;</span><span class="p">:</span><span class="s2">&quot;V1.0&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;user_desc&quot;</span><span class="p">:</span><span class="s2">&quot;test&quot;</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>参数说明:</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>access_token</td>
+<td>请使用第三方平台获取到的该小程序授权的authorizer_access_token</td>
+</tr>
+<tr>
+<td>template_id</td>
+<td>代码库中的代码模版ID</td>
+</tr>
+<tr>
+<td>ext_json</td>
+<td>第三方自定义的配置</td>
+</tr>
+<tr>
+<td>user_version</td>
+<td>代码版本号，开发者可自定义</td>
+</tr>
+<tr>
+<td>user_desc</td>
+<td>代码描述，开发者可自定义</td>
+</tr>
+<tr>
+<td>ext_json</td>
+<td>需为string类型，格式示例如下 :</td>
+</tr>
+</tbody>
+</table>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="err">extAppid:</span><span class="nt">&quot;&quot;</span><span class="p">,</span>
+    <span class="err">ext:{</span>
+        <span class="nt">&quot;attr1&quot;</span><span class="p">:</span><span class="s2">&quot;value1&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;attr2&quot;</span><span class="p">:</span><span class="s2">&quot;value2&quot;</span><span class="p">,</span>
+    <span class="p">}</span><span class="err">,</span>
+    <span class="err">extPages:</span><span class="p">{</span>
+        <span class="nt">&quot;index&quot;</span><span class="p">:{</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;search/index&quot;</span><span class="p">:{</span>
+        <span class="p">},</span>
+    <span class="p">}</span><span class="err">,</span>
+    <span class="err">pages:</span><span class="p">[</span><span class="s2">&quot;index&quot;</span><span class="err">:</span><span class="s2">&quot;search/index&quot;</span><span class="p">]</span><span class="err">,</span>
+    <span class="s2">&quot;window&quot;</span><span class="err">:</span><span class="p">{</span>
+    <span class="p">}</span><span class="err">,</span>
+    <span class="s2">&quot;networkTimeout&quot;</span><span class="err">:</span><span class="p">{</span>
+    <span class="p">}</span><span class="err">,</span>
+    <span class="s2">&quot;tabBar&quot;</span><span class="err">:</span><span class="p">{</span>
+    <span class="p">}</span><span class="err">,</span>
+<span class="err">}</span>
+</pre></div>
+
+<ol>
+<li>为了便于第三方平台使用同一个小程序模版为不同的小程序提供服务，第三方可以将自定义信息放置在ext_json中，在模版小程序中，可以使用接口获取自定义信息，从而区分不同的小程序。详见:小程序模版开发</li>
+<li>ext_json中的参数可选，参数详见https://mp.weixin.qq.com/debug/wxadoc/dev/framework/config.html</li>
+<li>如果代码中已经有配置，则配置的合并规则为:除了pages和tabBar.list直接覆盖原配置，其他都为插入或同级覆盖。</li>
+</ol>
+<p>特殊字段说明:</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ext</td>
+<td>自定义字段仅允许在这里定义，可在小程序中调用</td>
+</tr>
+<tr>
+<td>extPages</td>
+<td>页面配置</td>
+</tr>
+<tr>
+<td>extAppid</td>
+<td>授权方Appid，可填入商户AppID，以区分不同商户</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_4">返回结果<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;errcode&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span>
+    <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span><span class="s2">&quot;ok&quot;</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+
+<h3 id="_5">错误码<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>返回码</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-1</td>
+<td>系统繁忙</td>
+</tr>
+<tr>
+<td>85013</td>
+<td>无效的自定义配置</td>
+</tr>
+<tr>
+<td>85014</td>
+<td>无效的模版编号</td>
+</tr>
+<tr>
+<td>85043</td>
+<td>模版错误</td>
+</tr>
+<tr>
+<td>85044</td>
+<td>代码包超过大小限制</td>
+</tr>
+<tr>
+<td>85045</td>
+<td>ext_json有不存在的路径</td>
+</tr>
+<tr>
+<td>85046</td>
+<td>tabBar中缺少path</td>
+</tr>
+<tr>
+<td>85047</td>
+<td>pages字段为空</td>
+</tr>
+<tr>
+<td>85048</td>
+<td>ext_json解析失败</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2">2.体验二维码<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<p>获取体验小程序的体验二维码</p>
+<h3 id="_6">请求方式<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p><code>GET</code> <strong>https</strong>://api.weixin.qq.com/wxa/ get_qrcode?access_token=TOKEN&amp;path=page%2Findex%3Faction%3D1</p>
+<p>参数说明</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>path</td>
+<td>指定体验版二维码跳转到某个具体页面（如果不需要的话，则不需要填path参数，可在路径后以"?参数"方式传入参数）具体的路径加参数需要urlencode，比如page/index?action=1编码后得到page%2Findex%3Faction%3D1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_7">返回结果<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<p>正确情况下的返回HTTP头如下:</p>
+<div class="codehilite"><pre><span></span><span class="kr">HTTP</span><span class="o">/</span><span class="m">1.1</span> <span class="m">200</span> <span class="ne">OK</span>
+
+Connection: close
+
+Content-Type: image/jpeg
+
+Content-disposition: attachment; filename=&quot;QRCode.jpg&quot;
+
+Date: Sun, 06 Jan 2013 10:20:18 GMT
+
+Cache-Control: no-cache, must-revalidate
+
+Content-Length: 339721
+</pre></div>
+
+<h3 id="_8">错误码<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;errcode&quot;</span><span class="p">:</span><span class="mi">-1</span><span class="p">,</span>
+    <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span><span class="s2">&quot;system error&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+<h2 id="3">3. 可选类目<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
+<p>获取授权小程序帐号的可选类目</p>
+<h3 id="_9">请求方式<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<p><code>GET</code> <strong>https</strong>://api.weixin.qq.com/wxa/get_category?access_token=TOKEN</p>
+<p>参数说明</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>access_token</td>
+<td>请使用第三方平台获取到的该小程序授权的authorizer_access_token</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_10">返回结果<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;errcode&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span>
+    <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span> <span class="s2">&quot;ok&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;category_list&quot;</span> <span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;first_class&quot;</span><span class="p">:</span><span class="s2">&quot;工具&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;second_class&quot;</span><span class="p">:</span><span class="s2">&quot;备忘录&quot;</span><span class="err">，</span>
+            <span class="s2">&quot;first_id&quot;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span>
+            <span class="nt">&quot;second_id&quot;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;first_class&quot;</span><span class="p">:</span><span class="s2">&quot;教育&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;second_class&quot;</span><span class="p">:</span><span class="s2">&quot;学历教育&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;third_class&quot;</span><span class="p">:</span><span class="s2">&quot;高等&quot;</span>
+            <span class="s2">&quot;first_id&quot;</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span>
+            <span class="nt">&quot;second_id&quot;</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span>
+            <span class="nt">&quot;third_id&quot;</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>参数说明</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>category_list</td>
+<td>可填选的类目列表</td>
+</tr>
+<tr>
+<td>first_class</td>
+<td>一级类目名称</td>
+</tr>
+<tr>
+<td>second_class</td>
+<td>二级类目名称</td>
+</tr>
+<tr>
+<td>third_class</td>
+<td>三级类目名称</td>
+</tr>
+<tr>
+<td>first_id</td>
+<td>一级类目的ID编号</td>
+</tr>
+<tr>
+<td>second_id</td>
+<td>二级类目的ID编号</td>
+</tr>
+<tr>
+<td>third_id</td>
+<td>三级类目的ID编号</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_11">错误码<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>返回码</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-1</td>
+<td>系统繁忙</td>
+</tr>
+</tbody>
+</table>
+<h2 id="4">4.页面配置<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<p>获取小程序的第三方提交代码的页面配置（仅供第三方开发者代小程序调用）</p>
+<h3 id="_12">请求方式<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<p><code>GET</code> <strong>https</strong>://api.weixin.qq.com/wxa/get_page?access_token=TOKEN</p>
+<p>参数说明</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>access_token</td>
+<td>请使用第三方平台获取到的该小程序授权的authorizer_access_token</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_13">返回结果<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;errcode&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span>
+    <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span><span class="s2">&quot;ok&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;page_list&quot;</span><span class="p">:[</span>
+        <span class="s2">&quot;index&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;page\/list&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;page\/detail&quot;</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>参数说明</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>page_list</td>
+<td>page_list 页面配置列表</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_14">错误码<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>返回码</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-1</td>
+<td>系统繁忙</td>
+</tr>
+<tr>
+<td>86000</td>
+<td>不是由第三方代小程序进行调用</td>
+</tr>
+<tr>
+<td>86001</td>
+<td>不存在第三方的已经提交的代码</td>
+</tr>
+</tbody>
+</table>
+<h2 id="5">5. 提交审核<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
+<p>将第三方提交的代码包提交审核（仅供第三方开发者代小程序调用）</p>
+<h3 id="_15">请求方式<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<p><code>POST</code> <strong>https</strong>://api.weixin.qq.com/wxa/submit_audit?access_token=TOKEN</p>
+<h3 id="_16">请求数据<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;item_list&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;address&quot;</span><span class="p">:</span><span class="s2">&quot;index&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;tag&quot;</span><span class="p">:</span><span class="s2">&quot;学习 生活&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;first_class&quot;</span><span class="p">:</span> <span class="s2">&quot;文娱&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;second_class&quot;</span><span class="p">:</span> <span class="s2">&quot;资讯&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;first_id&quot;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span>
+        <span class="nt">&quot;second_id&quot;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span>
+        <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;首页&quot;</span>
+    <span class="p">}</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;address&quot;</span><span class="p">:</span><span class="s2">&quot;page/logs/logs&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;tag&quot;</span><span class="p">:</span><span class="s2">&quot;学习 工作&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;first_class&quot;</span><span class="p">:</span> <span class="s2">&quot;教育&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;second_class&quot;</span><span class="p">:</span> <span class="s2">&quot;学历教育&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;third_class&quot;</span><span class="p">:</span> <span class="s2">&quot;高等&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;first_id&quot;</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span>
+        <span class="nt">&quot;second_id&quot;</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span>
+        <span class="nt">&quot;third_id&quot;</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span>
+        <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;日志&quot;</span>
+    <span class="p">}</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>参数说明</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>access_token</td>
+<td>请使用第三方平台获取到的该小程序授权的authorizer_access_token</td>
+</tr>
+<tr>
+<td>item_list</td>
+<td>提交审核项的一个列表（至少填写1项，至多填写5项）</td>
+</tr>
+<tr>
+<td>address</td>
+<td>小程序的页面，可通过"获取小程序的第三方提交代码的页面配置"接口获得</td>
+</tr>
+<tr>
+<td>tag</td>
+<td>小程序的标签，多个标签用空格分隔，标签不能多于10个，标签长度不超过20</td>
+</tr>
+<tr>
+<td>first_class</td>
+<td>一级类目名称，可通过"获取授权小程序帐号的可选类目"接口获得</td>
+</tr>
+<tr>
+<td>second_class</td>
+<td>二级类目(同上)</td>
+</tr>
+<tr>
+<td>third_class</td>
+<td>三级类目(同上)</td>
+</tr>
+<tr>
+<td>first_id</td>
+<td>一级类目的ID，可通过"获取授权小程序帐号的可选类目"接口获得</td>
+</tr>
+<tr>
+<td>second_id</td>
+<td>二级类目的ID(同上)</td>
+</tr>
+<tr>
+<td>third_id</td>
+<td>三级类目的ID(同上)</td>
+</tr>
+<tr>
+<td>title</td>
+<td>小程序页面的标题,标题长度不超过32</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_17">返回结果<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;errcode&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span>
+    <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span><span class="s2">&quot;ok&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;auditid&quot;</span><span class="p">:</span><span class="mi">1234567</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>参数说明</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>auditid</td>
+<td>审核编号</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_18">错误码<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>返回码</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-1</td>
+<td>系统繁忙</td>
+</tr>
+<tr>
+<td>86000</td>
+<td>不是由第三方代小程序进行调用</td>
+</tr>
+<tr>
+<td>86001</td>
+<td>不存在第三方的已经提交的代码</td>
+</tr>
+<tr>
+<td>85006</td>
+<td>标签格式错误</td>
+</tr>
+<tr>
+<td>85007</td>
+<td>页面路径错误</td>
+</tr>
+<tr>
+<td>85008</td>
+<td>类目填写错误</td>
+</tr>
+<tr>
+<td>85009</td>
+<td>已经有正在审核的版本</td>
+</tr>
+<tr>
+<td>85010</td>
+<td>item_list有项目为空</td>
+</tr>
+<tr>
+<td>85011</td>
+<td>标题填写错误</td>
+</tr>
+<tr>
+<td>85023</td>
+<td>审核列表填写的项目数不在1-5以内</td>
+</tr>
+<tr>
+<td>85077</td>
+<td>小程序类目信息失效（类目中含有官方下架的类目，请重新选择类目）</td>
+</tr>
+<tr>
+<td>86002</td>
+<td>小程序还未设置昵称、头像、简介。请先设置完后再重新提交。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="6">6. 获取审核结果<a class="headerlink" href="#6" title="Permanent link">&para;</a></h2>
+<p>当小程序有审核结果后，第三方平台将可以通过开放平台上填写的回调地址，获得审核结果通知。</p>
+<p>审核通过时，接收到的推送XML数据包示例如下:</p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;xml&gt;</span>
+    <span class="nt">&lt;ToUserName&gt;</span><span class="cp">&lt;![CDATA[gh_fb9688c2a4b2]]&gt;</span><span class="nt">&lt;/ToUserName&gt;</span>
+    <span class="nt">&lt;FromUserName&gt;</span><span class="cp">&lt;![CDATA[od1P50M-fNQI5Gcq-trm4a7apsU8]]&gt;</span><span class="nt">&lt;/FromUserName&gt;</span>
+    <span class="nt">&lt;CreateTime&gt;</span>1488856741<span class="nt">&lt;/CreateTime&gt;</span>
+    <span class="nt">&lt;MsgType&gt;</span><span class="cp">&lt;![CDATA[event]]&gt;</span><span class="nt">&lt;/MsgType&gt;</span>
+    <span class="nt">&lt;Event&gt;</span><span class="cp">&lt;![CDATA[weapp_audit_success]]&gt;</span><span class="nt">&lt;/Event&gt;</span>
+    <span class="nt">&lt;SuccTime&gt;</span>1488856741<span class="nt">&lt;/SuccTime&gt;</span>
+<span class="nt">&lt;/xml&gt;</span>
+</pre></div>
+
+<p>参数说明:</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ToUserName</td>
+<td>小程序的原始ID</td>
+</tr>
+<tr>
+<td>FromUserName</td>
+<td>发送方帐号（一个OpenID，此时发送方是系统帐号）</td>
+</tr>
+<tr>
+<td>CreateTime</td>
+<td>消息创建时间 （整型），时间戳</td>
+</tr>
+<tr>
+<td>MsgType</td>
+<td>消息类型，event</td>
+</tr>
+<tr>
+<td>Event</td>
+<td>事件类型 weapp_audit_success</td>
+</tr>
+<tr>
+<td>SuccTime</td>
+<td>审核成功时的时间（整形），时间戳</td>
+</tr>
+</tbody>
+</table>
+<p>审核不通过时，接收到的推送XML数据包示例如下:</p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;xml&gt;</span>
+    <span class="nt">&lt;ToUserName&gt;</span><span class="cp">&lt;![CDATA[gh_fb9688c2a4b2]]&gt;</span><span class="nt">&lt;/ToUserName&gt;</span>
+    <span class="nt">&lt;FromUserName&gt;</span><span class="cp">&lt;![CDATA[od1P50M-fNQI5Gcq-trm4a7apsU8]]&gt;</span><span class="nt">&lt;/FromUserName&gt;</span>
+    <span class="nt">&lt;CreateTime&gt;</span>1488856591<span class="nt">&lt;/CreateTime&gt;</span>
+    <span class="nt">&lt;MsgType&gt;</span><span class="cp">&lt;![CDATA[event]]&gt;</span><span class="nt">&lt;/MsgType&gt;</span>
+    <span class="nt">&lt;Event&gt;</span><span class="cp">&lt;![CDATA[weapp_audit_fail]]&gt;</span><span class="nt">&lt;/Event&gt;</span>
+    <span class="nt">&lt;Reason&gt;</span><span class="cp">&lt;![CDATA[1:账号信息不符合规范:&lt;br&gt;(1):包含色情因素&lt;br&gt;2:服务类目&quot;金融业-保险_&quot;与你提交代码审核时设置的功能页面内容不一致:&lt;br&gt;(1):功能页面设置的部分标签不属于所选的服务类目范围。&lt;br&gt;(2):功能页面设置的部分标签与该页面内容不相关。&lt;br&gt;]]&gt;</span><span class="nt">&lt;/Reason&gt;</span>
+    <span class="nt">&lt;FailTime&gt;</span>1488856591<span class="nt">&lt;/FailTime&gt;</span>
+<span class="nt">&lt;/xml&gt;</span>
+</pre></div>
+
+<p>参数说明:</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ToUserName</td>
+<td>小程序的原始ID</td>
+</tr>
+<tr>
+<td>FromUserName</td>
+<td>发送方帐号（一个OpenID，此时发送方是系统帐号）</td>
+</tr>
+<tr>
+<td>CreateTime</td>
+<td>消息创建时间 （整型），时间戳</td>
+</tr>
+<tr>
+<td>MsgType</td>
+<td>消息类型，event</td>
+</tr>
+<tr>
+<td>Event</td>
+<td>事件类型 weapp_audit_success</td>
+</tr>
+<tr>
+<td>Reason</td>
+<td>审核失败的原因</td>
+</tr>
+<tr>
+<td>FailTime</td>
+<td>审核失败时的时间（整型），时间戳</td>
+</tr>
+</tbody>
+</table>
+<p>除了消息通知之外，第三方平台也可通过接口查询审核状态。</p>
+<h2 id="7">7. 审核状态<a class="headerlink" href="#7" title="Permanent link">&para;</a></h2>
+<p>查询某个指定版本的审核状态（仅供第三方代小程序调用）</p>
+<h3 id="_19">请求方式<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h3>
+<p><code>POST</code> <strong>https</strong>://api.weixin.qq.com/wxa/get_auditstatus?access_token=TOKEN</p>
+<h3 id="_20">请求数据<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;auditid&quot;</span><span class="p">:</span><span class="mi">1234567</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>参数说明:</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>access_token</td>
+<td>请使用第三方平台获取到的该小程序授权的authorizer_access_token</td>
+</tr>
+<tr>
+<td>auditid</td>
+<td>提交审核时获得的审核id</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_21">返回结果<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;errcode&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span>
+    <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span><span class="s2">&quot;ok&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span>
+    <span class="nt">&quot;reason&quot;</span><span class="p">:</span><span class="s2">&quot;帐号信息不合规范&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>参数说明</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>status</td>
+<td>审核状态，其中0为审核成功，1为审核失败，2为审核中</td>
+</tr>
+<tr>
+<td>reason</td>
+<td>当status=1，审核被拒绝时，返回的拒绝原因</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_22">错误码<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>返回码</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-1</td>
+<td>系统繁忙</td>
+</tr>
+<tr>
+<td>86000</td>
+<td>不是由第三方代小程序进行调用</td>
+</tr>
+<tr>
+<td>86001</td>
+<td>不存在第三方的已经提交的代码</td>
+</tr>
+<tr>
+<td>85012</td>
+<td>无效的审核id</td>
+</tr>
+</tbody>
+</table>
+<h2 id="8">8. 最新审核<a class="headerlink" href="#8" title="Permanent link">&para;</a></h2>
+<p>查询最新一次提交的审核状态（仅供第三方代小程序调用）</p>
+<h3 id="_23">请求方式<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h3>
+<p><code>GET</code> <strong>https</strong>://api.weixin.qq.com/wxa/get_latest_auditstatus?access_token=TOKEN</p>
+<p>参数说明:</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>access_token</td>
+<td>请使用第三方平台获取到的该小程序授权的authorizer_access_token</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_24">返回结果<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;errcode&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span>
+    <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span><span class="s2">&quot;ok&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;auditid&quot;</span><span class="p">:</span><span class="s2">&quot;1234567&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span>
+    <span class="nt">&quot;reason&quot;</span><span class="p">:</span><span class="s2">&quot;帐号信息不合规范&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>参数说明</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>auditid</td>
+<td>最新的审核ID</td>
+</tr>
+<tr>
+<td>status</td>
+<td>审核状态，其中0为审核成功，1为审核失败，2为审核中</td>
+</tr>
+<tr>
+<td>reason</td>
+<td>当status=1，审核被拒绝时，返回的拒绝原因</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_25">错误码<a class="headerlink" href="#_25" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>返回码</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-1</td>
+<td>系统繁忙</td>
+</tr>
+<tr>
+<td>86000</td>
+<td>不是由第三方代小程序进行调用</td>
+</tr>
+<tr>
+<td>86001</td>
+<td>不存在第三方的已经提交的代码</td>
+</tr>
+<tr>
+<td>85012</td>
+<td>无效的审核id</td>
+</tr>
+</tbody>
+</table>
+<h2 id="9">9. 发布<a class="headerlink" href="#9" title="Permanent link">&para;</a></h2>
+<p>发布已通过审核的小程序（仅供第三方代小程序调用）</p>
+<h3 id="_26">请求方式<a class="headerlink" href="#_26" title="Permanent link">&para;</a></h3>
+<p><code>POST</code> <strong>https</strong>://api.weixin.qq.com/wxa/release?access_token=TOKEN</p>
+<h3 id="_27">请求数据<a class="headerlink" href="#_27" title="Permanent link">&para;</a></h3>
+<p>{ }</p>
+<p>参数说明:</p>
+<p>请填写空的数据包，POST的json数据包为空即可。</p>
+<h3 id="_28">返回结果<a class="headerlink" href="#_28" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;errcode&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span>
+    <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span><span class="s2">&quot;ok&quot;</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+
+<h3 id="_29">错误码<a class="headerlink" href="#_29" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>返回码</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-1</td>
+<td>系统繁忙</td>
+</tr>
+<tr>
+<td>85019</td>
+<td>没有审核版本</td>
+</tr>
+<tr>
+<td>85020</td>
+<td>审核状态未满足发布</td>
+</tr>
+</tbody>
+</table>
+<h2 id="10">10. 代码可见<a class="headerlink" href="#10" title="Permanent link">&para;</a></h2>
+<p>修改小程序线上代码的可见状态（仅供第三方代小程序调用）</p>
+<h3 id="_30">请求方式<a class="headerlink" href="#_30" title="Permanent link">&para;</a></h3>
+<p><code>POST</code> <strong>https</strong>://api.weixin.qq.com/wxa/change_visitstatus?access_token=TOKEN</p>
+<h3 id="_31">请求数据<a class="headerlink" href="#_31" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;action&quot;</span><span class="err">=</span><span class="s2">&quot;close&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>参数说明:</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>access_token</td>
+<td>请使用第三方平台获取到的该小程序授权的authorizer_access_token</td>
+</tr>
+<tr>
+<td>action</td>
+<td>设置可访问状态，发布后默认可访问，close为不可见，open为可见</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_32">返回结果<a class="headerlink" href="#_32" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;errcode&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span>
+    <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span><span class="s2">&quot;ok&quot;</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+
+<h3 id="_33">错误码<a class="headerlink" href="#_33" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>返回码</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-1</td>
+<td>系统繁忙</td>
+</tr>
+<tr>
+<td>85021</td>
+<td>状态不可变</td>
+</tr>
+<tr>
+<td>85022</td>
+<td>action非法</td>
+</tr>
+</tbody>
+</table>
+<h2 id="12">12. 版本信息查询<a class="headerlink" href="#12" title="Permanent link">&para;</a></h2>
+<p>查询当前设置的最低基础库版本及各版本用户占比 （仅供第三方代小程序调用）</p>
+<h3 id="_34">请求方式<a class="headerlink" href="#_34" title="Permanent link">&para;</a></h3>
+<p><code>POST</code> <strong>https</strong>://api.weixin.qq.com/cgi-bin/wxopen/getweappsupportversion?access_token=TOKEN</p>
+<h3 id="_35">请求数据<a class="headerlink" href="#_35" title="Permanent link">&para;</a></h3>
+<p>无需携带的参数</p>
+<h3 id="_36">返回结果<a class="headerlink" href="#_36" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;errcode&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span>
+    <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span><span class="s2">&quot;ok&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;now_version&quot;</span><span class="p">:</span><span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;uv_info&quot;</span> <span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;items&quot;</span> <span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="nt">&quot;percentage&quot;</span> <span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+                <span class="nt">&quot;version&quot;</span> <span class="p">:</span> <span class="s2">&quot;1.0.0&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="nt">&quot;percentage&quot;</span> <span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+                <span class="nt">&quot;version&quot;</span> <span class="p">:</span> <span class="s2">&quot;1.0.1&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="nt">&quot;percentage&quot;</span> <span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+                <span class="nt">&quot;version&quot;</span> <span class="p">:</span> <span class="s2">&quot;1.1.0&quot;</span>
+            <span class="p">}</span>
+            <span class="err">.....</span>
+        <span class="p">]</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>参数说明</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>errcode</td>
+<td>错误码</td>
+</tr>
+<tr>
+<td>errmsg</td>
+<td>错误信息</td>
+</tr>
+<tr>
+<td>now_version</td>
+<td>当前版本</td>
+</tr>
+<tr>
+<td>uv_info</td>
+<td>受影响用户占比，item参数里面为一系列数组，每个数组带有参数percentage（受影响比例）以及version（版本号）</td>
+</tr>
+</tbody>
+</table>
+<h2 id="13">13. 最低版本<a class="headerlink" href="#13" title="Permanent link">&para;</a></h2>
+<p>设置最低基础库版本（仅供第三方代小程序调用）</p>
+<h3 id="_37">请求方式<a class="headerlink" href="#_37" title="Permanent link">&para;</a></h3>
+<p><code>POST</code> <strong>https</strong>://api.weixin.qq.com/cgi-bin/wxopen/setweappsupportversion?access_token=TOKEN</p>
+<h3 id="_38">请求示例<a class="headerlink" href="#_38" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>参数说明</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>version</td>
+<td>版本</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_39">返回结果<a class="headerlink" href="#_39" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;errcode&quot;</span> <span class="p">:</span> <span class="mi">0</span><span class="p">,</span><span class="nt">&quot;errmsg&quot;</span> <span class="p">:</span> <span class="s2">&quot;ok&quot;</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>参数说明</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>errcode</td>
+<td>错误码</td>
+</tr>
+<tr>
+<td>errmsg</td>
+<td>错误信息</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_40">错误码<a class="headerlink" href="#_40" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>错误码</th>
+<th>错误说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>85015</td>
+<td>版本输入错误</td>
+</tr>
+</tbody>
+</table>
+<h2 id="15">15. 版本回退<a class="headerlink" href="#15" title="Permanent link">&para;</a></h2>
+<h3 id="_41">请求方式<a class="headerlink" href="#_41" title="Permanent link">&para;</a></h3>
+<p><code>GET</code> <strong>https</strong>://api.weixin.qq.com/wxa/revertcoderelease?access_token=TOKEN</p>
+<h3 id="_42">返回结果<a class="headerlink" href="#_42" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;errcode&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span>
+    <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span><span class="s2">&quot;ok&quot;</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+
+<h3 id="_43">错误码<a class="headerlink" href="#_43" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>错误码</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>成功</td>
+</tr>
+<tr>
+<td>-1</td>
+<td>系统错误</td>
+</tr>
+<tr>
+<td>87011</td>
+<td>现网已经在灰度发布，不能进行版本回退</td>
+</tr>
+<tr>
+<td>87012</td>
+<td>该版本不能回退，可能的原因:1:无上一个线上版用于回退 2:此版本为已回退版本，不能回退 3:此版本为回退功能上线之前的版本，不能回退</td>
+</tr>
+</tbody>
+</table>
+<h2 id="16">16. 审核撤回<a class="headerlink" href="#16" title="Permanent link">&para;</a></h2>
+<p>单个帐号每天审核撤回次数最多不超过1次，一个月不超过10次。</p>
+<h3 id="_44">请求方式<a class="headerlink" href="#_44" title="Permanent link">&para;</a></h3>
+<p><code>GET</code> <strong>https</strong>://api.weixin.qq.com/wxa/undocodeaudit?access_token=TOKEN</p>
+<h3 id="_45">返回结果<a class="headerlink" href="#_45" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;errcode&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span>
+    <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span><span class="s2">&quot;ok&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+<h3 id="_46">错误码<a class="headerlink" href="#_46" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>错误码</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>成功</td>
+</tr>
+<tr>
+<td>-1</td>
+<td>系统错误</td>
+</tr>
+<tr>
+<td>87013</td>
+<td>撤回次数达到上限（每天一次，每个月10次）</td>
+</tr>
+</tbody>
+</table>
+<p>小程序分阶段发布</p>
+<h2 id="171">17.1. 分阶段发布接口<a class="headerlink" href="#171" title="Permanent link">&para;</a></h2>
+<h3 id="_47">请求方式<a class="headerlink" href="#_47" title="Permanent link">&para;</a></h3>
+<p><code>POST</code> <strong>https</strong>://api.weixin.qq.com/wxa/grayrelease?access_token=TOKEN</p>
+<p>POST数据示例</p>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;gray_percentage&quot;</span><span class="p">:</span> <span class="mi">1</span> <span class="err">//灰度的百分比，</span><span class="mi">1</span><span class="err">到</span><span class="mi">100</span><span class="err">的整数</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>返回说明</p>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;errcode&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span>
+    <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span><span class="s2">&quot;ok&quot;</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>错误码说明</p>
+<table>
+<thead>
+<tr>
+<th>错误码</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>成功</td>
+</tr>
+<tr>
+<td>-1</td>
+<td>系统错误</td>
+</tr>
+<tr>
+<td>86002</td>
+<td>小程序未初始化完成</td>
+</tr>
+<tr>
+<td>85079</td>
+<td>小程序没有线上版本，不能进行灰度</td>
+</tr>
+<tr>
+<td>85080</td>
+<td>小程序提交的审核未审核通过</td>
+</tr>
+<tr>
+<td>85081</td>
+<td>无效的发布比例</td>
+</tr>
+<tr>
+<td>85082</td>
+<td>当前的发布比例需要比之前设置的高</td>
+</tr>
+</tbody>
+</table>
+<h2 id="172">17.2. 取消分阶段发布<a class="headerlink" href="#172" title="Permanent link">&para;</a></h2>
+<h3 id="_48">请求方式<a class="headerlink" href="#_48" title="Permanent link">&para;</a></h3>
+<p><code>GET</code> <strong>https</strong>://api.weixin.qq.com/wxa/revertgrayrelease?access_token=TOKEN</p>
+<h3 id="_49">返回结果<a class="headerlink" href="#_49" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;errcode&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span>
+    <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span><span class="s2">&quot;ok&quot;</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+
+<h3 id="_50">错误码<a class="headerlink" href="#_50" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>错误码</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>成功</td>
+</tr>
+<tr>
+<td>-1</td>
+<td>系统错误</td>
+</tr>
+</tbody>
+</table>
+<h2 id="173">17.3. 查询当前分阶段发布详情<a class="headerlink" href="#173" title="Permanent link">&para;</a></h2>
+<h3 id="_51">请求方式<a class="headerlink" href="#_51" title="Permanent link">&para;</a></h3>
+<p><code>GET</code> <strong>https</strong>://api.weixin.qq.com/wxa/getgrayreleaseplan?access_token=TOKEN</p>
+<h3 id="_52">返回结果<a class="headerlink" href="#_52" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;errcode&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span>
+    <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span><span class="s2">&quot;ok&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;gray_release_plan&quot;</span> <span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;status&quot;</span> <span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="err">//0:初始状态</span> <span class="err">1:执行中</span> <span class="err">2:暂停中</span> <span class="err">3:执行完毕</span> <span class="err">4:被删除</span>
+            <span class="nt">&quot;create_timestamp&quot;</span> <span class="p">:</span> <span class="mi">1517553721</span><span class="p">,</span> <span class="err">//创建时间</span>
+            <span class="nt">&quot;gray_percentage&quot;</span> <span class="p">:</span> <span class="mi">8</span>
+    <span class="p">},</span>
+<span class="p">}</span>
+</pre></div>
+
+<h3 id="_53">错误码<a class="headerlink" href="#_53" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>错误码</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>成功</td>
+</tr>
+<tr>
+<td>-1</td>
+<td>系统错误</td>
+</tr>
+</tbody>
+</table>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../tester/" title="测试人员" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  后退
+                </span>
+                测试人员
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../qrcode/" title="扫码打开" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  前进
+                </span>
+                扫码打开
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            @2018 wxdocs.github.io
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="http://wohugb.github.io" class="md-footer-social__link fa fa-globe"></a>
+    
+      <a href="https://github.com/wohugb" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://twitter.com/wohugb" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://linkedin.com/in/wohugb" class="md-footer-social__link fa fa-linkedin"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/application.8eb9be28.js"></script>
+      
+        
+        
+          
+          <script src="../../../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+                <script src="../../../assets/javascripts/lunr/tinyseg.js"></script>
+              
+              
+                <script src="../../../assets/javascripts/lunr/lunr.jp.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"0.17.3",url:{base:"../../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>
