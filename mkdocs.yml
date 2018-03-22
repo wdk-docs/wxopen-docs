@@ -1,0 +1,66 @@
+site_name: 微信第三方文档
+site_description: 微信第三方文档
+site_author: Nosy
+copyright: '@2018 wxdocs.github.io'
+
+repo_name: wxdocs
+repo_url: https://github.com/wxdocs
+edit_uri: ""
+
+theme:
+  name: material
+
+  include_search_page: false
+  search_index_only: true
+
+  language: zh
+  feature:
+    tabs: true
+  palette:
+    primary: indigo
+    accent: indigo
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/images/favicon.png
+  logo:
+    icon: "\uE80C"
+  extra_css: [assets/stylesheets/extra.css]
+extra:
+  search:
+    language: 'jp'
+  social:
+    - type: globe
+      link: http://wohugb.github.io
+    - type: github-alt
+      link: https://github.com/wohugb
+    - type: twitter
+      link: https://twitter.com/wohugb
+    - type: linkedin
+      link: https://linkedin.com/in/wohugb
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      linenums: false
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.details
+
+pages:
+  - 概述: index.md
+  - 第三方/小程序:
+    - 开发简介: open/mini/index.md
+    - 域名设置: open/mini/domain.md
+    - 测试人员: open/mini/tester.md
+    - 代码管理: open/mini/code.md
+    - 扫码打开: open/mini/qrcode.md
+    - 模版库: open/mini/temp-lib.md
+    - 微信登录: open/mini/session.md
+    - 模板消息: open/mini/temp.md
+    - 开放平台: open/mini/open.md
+    - 隐私设置: open/mini/status.md
+

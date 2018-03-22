@@ -1,0 +1,75 @@
+# 成员管理
+
+第三方平台在帮助旗下授权的小程序提交代码审核之前，可先让小程序运营者体验，体验之前需要将运营者的个人微信号添加到该小程序的体验者名单中。
+
+注意：如果运营者同时也是该小程序的管理员，则无需绑定，管理员默认有体验权限。
+
+## 1.绑定体验者
+
+`POST` **https**://api.weixin.qq.com/wxa/bind_tester?access_token=TOKEN
+
+### 请求数据
+
+```json
+{
+  "wechatid":"testid"
+}
+```
+
+参数说明：
+
+|参数	          |说明
+|-|-|
+|access_token	  |请使用第三方平台获取到的该小程序授权的authorizer_access_token
+|wechatid	      |微信号
+
+### 返回结果
+
+{
+  "errcode":0,
+  "errmsg":"ok",
+}
+
+### 错误码
+
+|返回码	|说明
+|-|-|
+|-1	    |系统繁忙
+|85001	|微信号不存在或微信号设置为不可搜索
+|85002	|小程序绑定的体验者数量达到上限
+|85003	|微信号绑定的小程序体验者达到上限
+|85004	|微信号已经绑定
+
+## 2.解绑体验者
+
+`POST` **https**://api.weixin.qq.com/wxa/unbind_tester?access_token=TOKEN
+
+### 请求数据
+
+```json
+{
+  "wechatid":"testid"
+}
+```
+
+参数说明：
+
+|参数	          |说明
+|-|-|
+|access_token	  |请使用第三方平台获取到的该小程序授权的authorizer_access_token
+|wechatid	      |微信号
+
+### 返回结果
+
+```json
+{
+"errcode":0,
+"errmsg":"ok",
+}
+```
+
+### 错误码
+
+|返回码	|说明
+|-|-|
+|-1	|系统繁忙
