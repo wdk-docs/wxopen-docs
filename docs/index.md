@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# 微信·开放平台
-=======
 # 微信开放平台开发者文档
 
 ## 关于文档
@@ -8,7 +5,6 @@
 文档整理自[微信开放平台](https://open.weixin.qq.com/cgi-bin/showdocument?action=dir_list&t=resource/res_list&verify=1&lang=zh_CN)，由于那里的文档，太混乱，每次找东西都得找好久，整理一下，按章节目录树，方便查找
 
 ## 概述
->>>>>>> cbf25cce9b674e75e14ef9c691b871d1d2f02135
 
 资源中心是微信开放平台开发者所需所有相关资源的汇集地，包括：
 
