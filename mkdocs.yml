@@ -65,16 +65,21 @@ pages:
     - 移动应用一次性订阅消息开发指南: mobile/index.md
     - 常见问题: mobile/index.md
   - 网站应用: 
-    - 概述: site/index.md
-    - 网站应用: site/index.md
-    - 微信登录功能: site/index.md
-    - 微信智能接口: site/index.md
-    - 开发者反馈: site/index.md
-  - 公众帐号: 
-    - 概述: pubno/index.md
-    - 新手接入: pubno/index.md
-    - 交流互助: pubno/index.md
-    - 开发者文档: pubno/index.md
+    - 网站应用:
+      - 微信登录: site/login/qrconnect.md
+      - 接口调用: site/login/UnionID.md
+    - 智能接口: site/upi/index.md
+    - 开发者反馈: site/issues/index.md
+  - 公众帐号:
+    - 新手接入:
+      - 接入指南: pubno/index.md
+      - 典型案例介绍: pubno/index.md
+      - 开发者规范: pubno/index.md
+    - 交流互助:
+      - 开发者问答系统: pubno/index.md
+      - 在线接口调试工具: pubno/index.md
+      - 接口测试帐号申请: pubno/index.md
+    - 开发者文档: pubno/docs.md
   - 第三方平台: 
     - 平台概述: open/overview.md
     - 授权流程: 
@@ -94,12 +99,7 @@ pages:
     - 消息加解密: open/index.md
     - 全网发布: open/index.md
   - 返回码说明: code/index.md
-  - 资源下载: 
-    - 概述: download/index.md
-    - iOS资源下载: download/ios.md
-    - Android资源下载: download/android.md
-    - WP8资源下载: download/wp8.md
-    - 设计资源下: download/assets.md
+  - 资源下载: download/index.md
   - 小程序:
     - 开发简介: open/mini/index.md
     - 域名设置: open/mini/domain.md
