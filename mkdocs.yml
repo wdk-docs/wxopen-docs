@@ -2,7 +2,7 @@ site_name: 微信第三方文档
 site_description: 微信第三方文档
 site_author: Nosy
 
-copyright: '@2018 wxdocs.github.io'
+copyright: "@2018 wxdocs.github.io"
 
 repo_name: wxdocs
 repo_url: https://github.com/wxdocs
@@ -29,7 +29,7 @@ theme:
   extra_css: [assets/stylesheets/extra.css]
 extra:
   search:
-    language: 'jp'
+    language: "jp"
   social:
     - type: globe
       link: http://wohugb.github.io
@@ -51,63 +51,76 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.details
 
-pages:
+nav:
   - 首页: index.md
-  - 移动应用: 
-    - 概述: mobile/index.md
-    - 移动应用: mobile/index.md
-    - 资源中心首页: mobile/index.md
-    - 接入指南: mobile/index.md
-    - 分享与收藏功能: mobile/index.md
-    - 微信支付功能: mobile/index.md
-    - 微信登录功能: mobile/index.md
-    - 微信智能接口: mobile/index.md
-    - 移动应用一次性订阅消息开发指南: mobile/index.md
-    - 常见问题: mobile/index.md
-  - 网站应用: 
-    - 网站应用:
-      - 微信登录: site/login/qrconnect.md
-      - 接口调用: site/login/UnionID.md
-    - 智能接口: site/upi/index.md
-    - 开发者反馈: site/issues/index.md
+  - 移动应用:
+      - 概述: mobile/index.md
+      - 移动应用: mobile/index.md
+      - 资源中心首页: mobile/index.md
+      - 接入指南: mobile/index.md
+      - 分享与收藏功能: mobile/index.md
+      - 微信支付功能: mobile/index.md
+      - 微信登录功能: mobile/index.md
+      - 微信智能接口: mobile/index.md
+      - 移动应用一次性订阅消息开发指南: mobile/index.md
+      - 常见问题: mobile/index.md
+  - 网站应用:
+      - 网站应用:
+          - 微信登录: site/login/qrconnect.md
+          - 接口调用: site/login/UnionID.md
+      - 智能接口: site/upi/index.md
+      - 开发者反馈: site/issues/index.md
   - 公众帐号:
-    - 新手接入:
-      - 接入指南: pubno/index.md
-      - 典型案例介绍: pubno/index.md
-      - 开发者规范: pubno/index.md
-    - 交流互助:
-      - 开发者问答系统: pubno/index.md
-      - 在线接口调试工具: pubno/index.md
-      - 接口测试帐号申请: pubno/index.md
-    - 开发者文档: pubno/docs.md
-  - 第三方平台: 
-    - 平台概述: open/overview.md
-    - 授权流程: 
-      - 概述: open/auth/auth.md
-      - 1. 推送消息: open/auth/1.component_verify_ticket.md
-      - 2. 获取令牌: open/auth/2.component_access_token.md
-      - 3. 预授权码: open/auth/3.api_create_preauthcode.md
-      - 4. 获取凭据: open/auth/4.api_query_auth.md
-      - 5. 获取令牌: open/auth/5.api_authorizer_token.md
-      - 6. 账号信息: open/auth/6.api_get_authorizer_info.md
-      - 7. 授权信息: open/auth/7.api_get_authorizer_option.md
-      - 8. 授权选项: open/auth/8.api_set_authorizer_option.md
-      - 9. 推送数据: open/auth/9.callback.md
-    - 开发前必读: open/index.md
-    - 代公众号实现业务: open/index.md
-    - 代小程序实现业务: open/index.md
-    - 消息加解密: open/index.md
-    - 全网发布: open/index.md
+      - 新手接入:
+          - 接入指南: pubno/index.md
+          - 典型案例介绍: pubno/index.md
+          - 开发者规范: pubno/index.md
+      - 交流互助:
+          - 开发者问答系统: pubno/index.md
+          - 在线接口调试工具: pubno/index.md
+          - 接口测试帐号申请: pubno/index.md
+      - 开发者文档: pubno/docs.md
+  - 第三方平台:
+      - 平台概述: open/overview.md
+      - 授权流程:
+          - 概述: open/auth/auth.md
+          - 1. 推送消息: open/auth/1.component_verify_ticket.md
+          - 2. 获取令牌: open/auth/2.component_access_token.md
+          - 3. 预授权码: open/auth/3.api_create_preauthcode.md
+          - 4. 获取凭据: open/auth/4.api_query_auth.md
+          - 5. 获取令牌: open/auth/5.api_authorizer_token.md
+          - 6. 账号信息: open/auth/6.api_get_authorizer_info.md
+          - 7. 授权信息: open/auth/7.api_get_authorizer_option.md
+          - 8. 授权选项: open/auth/8.api_set_authorizer_option.md
+          - 9. 推送数据: open/auth/9.callback.md
+      - 开发前必读:
+          - 权限说明: open/pre/jurisdiction.md
+          - 申请资料说明: open/pre/material.md
+          - 产品设计指引: open/pre/design.md
+          - 安全管理说明: open/pre/secure.md
+      - 代公众号实现业务:
+          - 代公众号调用接口: open/mp/call.md
+          - 代公众号处理消息和事件: open/mp/msg.md
+          - 代公众号发起网页授权: open/mp/auth.md
+          - 代公众号使用JS SDK说明: open/mp/sdk.md
+          - 卡券强授权: open/mp/card.md
+          - 微信广告接口: open/mp/ad.md
+          - 微信开放平台帐号管理: open/mp/open_account.md
+          - 小程序管理权限集: open/mp/weapp.md
+          - 复用公众号主体快速注册小程序: open/mp/regapp.md
+      - 代小程序实现业务: open/index.md
+      - 消息加解密: open/index.md
+      - 全网发布: open/index.md
   - 返回码说明: code/index.md
   - 资源下载: download/index.md
   - 小程序:
-    - 开发简介: open/mini/index.md
-    - 域名设置: open/mini/domain.md
-    - 测试人员: open/mini/tester.md
-    - 代码管理: open/mini/code.md
-    - 扫码打开: open/mini/qrcode.md
-    - 模版库: open/mini/temp-lib.md
-    - 微信登录: open/mini/session.md
-    - 模板消息: open/mini/temp.md
-    - 开放平台: open/mini/open.md
-    - 隐私设置: open/mini/status.md
+      - 开发简介: open/mini/index.md
+      - 域名设置: open/mini/domain.md
+      - 测试人员: open/mini/tester.md
+      - 代码管理: open/mini/code.md
+      - 扫码打开: open/mini/qrcode.md
+      - 模版库: open/mini/temp-lib.md
+      - 微信登录: open/mini/session.md
+      - 模板消息: open/mini/temp.md
+      - 开放平台: open/mini/open.md
+      - 隐私设置: open/mini/status.md
