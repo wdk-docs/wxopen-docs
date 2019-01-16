@@ -1,0 +1,2191 @@
+
+
+
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="微信第三方文档">
+      
+      
+      
+        <meta name="author" content="Nosy">
+      
+      
+        <meta name="lang:clipboard.copy" content="复制">
+      
+        <meta name="lang:clipboard.copied" content="已复制">
+      
+        <meta name="lang:search.language" content="jp">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="没有找到符合条件的结果">
+      
+        <meta name="lang:search.result.one" content="找到 1 个符合条件的结果">
+      
+        <meta name="lang:search.result.other" content="# 个符合条件的结果">
+      
+        <meta name="lang:search.tokenizer" content="[\uff0c\u3002]+">
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.2.0">
+    
+    
+      
+        <title>权限说明 - 微信第三方文档</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.572ca0f0.css">
+      
+        <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="../../../assets/javascripts/modernizr.8c900955.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
+    
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#_1" tabindex="1" class="md-skip">
+        跳转至
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../../.." title="微信第三方文档" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                微信第三方文档
+              </span>
+              <span class="md-header-nav__topic">
+                权限说明
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            键入以开始搜索
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/wxdocs" title="前往 Github 仓库" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      wxdocs
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../../.." title="首页" class="md-tabs__link">
+        首页
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../mobile/" title="移动应用" class="md-tabs__link">
+          移动应用
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../site/login/qrconnect.md" title="网站应用" class="md-tabs__link">
+          网站应用
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../pubno/" title="公众帐号" class="md-tabs__link">
+          公众帐号
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../overview/" title="第三方平台" class="md-tabs__link md-tabs__link--active">
+          第三方平台
+        </a>
+      
+    </li>
+  
+
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../../../code/" title="返回码说明" class="md-tabs__link">
+        返回码说明
+      </a>
+    
+  </li>
+
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../../../download/" title="资源下载" class="md-tabs__link">
+        资源下载
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../mini/" title="小程序" class="md-tabs__link">
+          小程序
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../../.." title="微信第三方文档" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    微信第三方文档
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/wxdocs" title="前往 Github 仓库" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      wxdocs
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="首页" class="md-nav__link">
+      首页
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      移动应用
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        移动应用
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../mobile/" title="概述" class="md-nav__link">
+      概述
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../mobile/" title="移动应用" class="md-nav__link">
+      移动应用
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../mobile/" title="资源中心首页" class="md-nav__link">
+      资源中心首页
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../mobile/" title="接入指南" class="md-nav__link">
+      接入指南
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../mobile/" title="分享与收藏功能" class="md-nav__link">
+      分享与收藏功能
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../mobile/" title="微信支付功能" class="md-nav__link">
+      微信支付功能
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../mobile/" title="微信登录功能" class="md-nav__link">
+      微信登录功能
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../mobile/" title="微信智能接口" class="md-nav__link">
+      微信智能接口
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../mobile/" title="移动应用一次性订阅消息开发指南" class="md-nav__link">
+      移动应用一次性订阅消息开发指南
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../mobile/" title="常见问题" class="md-nav__link">
+      常见问题
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      网站应用
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        网站应用
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
+    
+    <label class="md-nav__link" for="nav-3-1">
+      网站应用
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-1">
+        网站应用
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../site/login/qrconnect.md" title="微信登录" class="md-nav__link">
+      微信登录
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../site/login/UnionID.md" title="接口调用" class="md-nav__link">
+      接口调用
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../site/upi/index.md" title="智能接口" class="md-nav__link">
+      智能接口
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../site/issues/index.md" title="开发者反馈" class="md-nav__link">
+      开发者反馈
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      公众帐号
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        公众帐号
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-1" type="checkbox" id="nav-4-1">
+    
+    <label class="md-nav__link" for="nav-4-1">
+      新手接入
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-1">
+        新手接入
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../pubno/" title="接入指南" class="md-nav__link">
+      接入指南
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../pubno/" title="典型案例介绍" class="md-nav__link">
+      典型案例介绍
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../pubno/" title="开发者规范" class="md-nav__link">
+      开发者规范
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2">
+    
+    <label class="md-nav__link" for="nav-4-2">
+      交流互助
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-2">
+        交流互助
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../pubno/" title="开发者问答系统" class="md-nav__link">
+      开发者问答系统
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../pubno/" title="在线接口调试工具" class="md-nav__link">
+      在线接口调试工具
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../pubno/" title="接口测试帐号申请" class="md-nav__link">
+      接口测试帐号申请
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../pubno/docs/" title="开发者文档" class="md-nav__link">
+      开发者文档
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+    
+    <label class="md-nav__link" for="nav-5">
+      第三方平台
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        第三方平台
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../overview/" title="平台概述" class="md-nav__link">
+      平台概述
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2">
+    
+    <label class="md-nav__link" for="nav-5-2">
+      授权流程
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-2">
+        授权流程
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../auth/auth/" title="概述" class="md-nav__link">
+      概述
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../auth/1.component_verify_ticket/" title="1. 推送消息" class="md-nav__link">
+      1. 推送消息
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../auth/2.component_access_token/" title="2. 获取令牌" class="md-nav__link">
+      2. 获取令牌
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../auth/3.api_create_preauthcode/" title="3. 预授权码" class="md-nav__link">
+      3. 预授权码
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../auth/4.api_query_auth/" title="4. 获取凭据" class="md-nav__link">
+      4. 获取凭据
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../auth/5.api_authorizer_token/" title="5. 获取令牌" class="md-nav__link">
+      5. 获取令牌
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../auth/6.api_get_authorizer_info/" title="6. 账号信息" class="md-nav__link">
+      6. 账号信息
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../auth/7.api_get_authorizer_option/" title="7. 授权信息" class="md-nav__link">
+      7. 授权信息
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../auth/8.api_set_authorizer_option/" title="8. 授权选项" class="md-nav__link">
+      8. 授权选项
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../auth/9.callback/" title="9. 推送数据" class="md-nav__link">
+      9. 推送数据
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3" checked>
+    
+    <label class="md-nav__link" for="nav-5-3">
+      开发前必读
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-3">
+        开发前必读
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        权限说明
+      </label>
+    
+    <a href="./" title="权限说明" class="md-nav__link md-nav__link--active">
+      权限说明
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">目录</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="授权账号列表" class="md-nav__link">
+    授权账号列表
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="公众号权限集" class="md-nav__link">
+    公众号权限集
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#id1" title="消息管理权限(权限集 id:1)" class="md-nav__link">
+    消息管理权限(权限集 id:1)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id15" title="自定义菜单权限(权限集 id:15)" class="md-nav__link">
+    自定义菜单权限(权限集 id:15)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id2" title="用户管理权限(权限集 id:2)" class="md-nav__link">
+    用户管理权限(权限集 id:2)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id3" title="帐号服务权限(权限集 id:3)" class="md-nav__link">
+    帐号服务权限(权限集 id:3)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id4" title="网页服务权限(权限集 id:4)" class="md-nav__link">
+    网页服务权限(权限集 id:4)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id5" title="微信小店权限(权限集 id:5)" class="md-nav__link">
+    微信小店权限(权限集 id:5)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id6" title="微信多客服权限(权限集 id:6)" class="md-nav__link">
+    微信多客服权限(权限集 id:6)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id7" title="群发与通知权限(权限集 id:7)" class="md-nav__link">
+    群发与通知权限(权限集 id:7)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id8" title="微信卡券权限(权限集 id:8)" class="md-nav__link">
+    微信卡券权限(权限集 id:8)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id9" title="微信扫一扫权限(权限集 id:9)" class="md-nav__link">
+    微信扫一扫权限(权限集 id:9)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wi-fi-id10" title="微信连 WI-FI 权限(权限集 id:10)" class="md-nav__link">
+    微信连 WI-FI 权限(权限集 id:10)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id11" title="素材管理权限(权限集 id:11)" class="md-nav__link">
+    素材管理权限(权限集 id:11)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id12" title="微信摇周边权限(权限集 id:12)" class="md-nav__link">
+    微信摇周边权限(权限集 id:12)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id13" title="微信门店权限(权限集 id:13)" class="md-nav__link">
+    微信门店权限(权限集 id:13)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id22" title="城市服务接口权限(权限集 id:22)" class="md-nav__link">
+    城市服务接口权限(权限集 id:22)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id26" title="微信电子发票权限(权限集 id:26)" class="md-nav__link">
+    微信电子发票权限(权限集 id:26)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id24" title="微信开放平台帐号绑定权限(权限集 id:24)" class="md-nav__link">
+    微信开放平台帐号绑定权限(权限集 id:24)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id17" title="帐号管理权限(权限集 id:17)" class="md-nav__link">
+    帐号管理权限(权限集 id:17)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id18" title="开发管理与数据分析权限(权限集 id:18)" class="md-nav__link">
+    开发管理与数据分析权限(权限集 id:18)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id19" title="客服消息管理权限(权限集 id:19)" class="md-nav__link">
+    客服消息管理权限(权限集 id:19)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" title="微信开放平台帐号绑定权限" class="md-nav__link">
+    微信开放平台帐号绑定权限
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id40" title="小程序插件管理权限集(权限集 id:40)" class="md-nav__link">
+    小程序插件管理权限集(权限集 id:40)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id37" title="小程序附近地点权限集(权限集 id:37)" class="md-nav__link">
+    小程序附近地点权限集(权限集 id:37)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id30" title="小程序基本信息设置权限(权限集 id:30)" class="md-nav__link">
+    小程序基本信息设置权限(权限集 id:30)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../material/" title="申请资料说明" class="md-nav__link">
+      申请资料说明
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../design/" title="产品设计指引" class="md-nav__link">
+      产品设计指引
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../secure/" title="安全管理说明" class="md-nav__link">
+      安全管理说明
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-4" type="checkbox" id="nav-5-4">
+    
+    <label class="md-nav__link" for="nav-5-4">
+      代公众号实现业务
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-4">
+        代公众号实现业务
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../mp/call/" title="代公众号调用接口" class="md-nav__link">
+      代公众号调用接口
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../mp/msg/" title="代公众号处理消息和事件" class="md-nav__link">
+      代公众号处理消息和事件
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../mp/auth/" title="代公众号发起网页授权" class="md-nav__link">
+      代公众号发起网页授权
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../mp/sdk/" title="代公众号使用JS SDK说明" class="md-nav__link">
+      代公众号使用JS SDK说明
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../mp/card/" title="卡券强授权" class="md-nav__link">
+      卡券强授权
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../mp/ad/" title="微信广告接口" class="md-nav__link">
+      微信广告接口
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../mp/open_account/" title="微信开放平台帐号管理" class="md-nav__link">
+      微信开放平台帐号管理
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../mp/weapp/" title="小程序管理权限集" class="md-nav__link">
+      小程序管理权限集
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../mp/regapp/" title="复用公众号主体快速注册小程序" class="md-nav__link">
+      复用公众号主体快速注册小程序
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../" title="代小程序实现业务" class="md-nav__link">
+      代小程序实现业务
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../" title="消息加解密" class="md-nav__link">
+      消息加解密
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../" title="全网发布" class="md-nav__link">
+      全网发布
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../code/" title="返回码说明" class="md-nav__link">
+      返回码说明
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../download/" title="资源下载" class="md-nav__link">
+      资源下载
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      小程序
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        小程序
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../mini/" title="开发简介" class="md-nav__link">
+      开发简介
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../mini/domain/" title="域名设置" class="md-nav__link">
+      域名设置
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../mini/tester/" title="测试人员" class="md-nav__link">
+      测试人员
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../mini/code/" title="代码管理" class="md-nav__link">
+      代码管理
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../mini/qrcode/" title="扫码打开" class="md-nav__link">
+      扫码打开
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../mini/temp-lib/" title="模版库" class="md-nav__link">
+      模版库
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../mini/session/" title="微信登录" class="md-nav__link">
+      微信登录
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../mini/temp/" title="模板消息" class="md-nav__link">
+      模板消息
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../mini/open/" title="开放平台" class="md-nav__link">
+      开放平台
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../mini/status/" title="隐私设置" class="md-nav__link">
+      隐私设置
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">目录</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="授权账号列表" class="md-nav__link">
+    授权账号列表
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="公众号权限集" class="md-nav__link">
+    公众号权限集
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#id1" title="消息管理权限(权限集 id:1)" class="md-nav__link">
+    消息管理权限(权限集 id:1)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id15" title="自定义菜单权限(权限集 id:15)" class="md-nav__link">
+    自定义菜单权限(权限集 id:15)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id2" title="用户管理权限(权限集 id:2)" class="md-nav__link">
+    用户管理权限(权限集 id:2)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id3" title="帐号服务权限(权限集 id:3)" class="md-nav__link">
+    帐号服务权限(权限集 id:3)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id4" title="网页服务权限(权限集 id:4)" class="md-nav__link">
+    网页服务权限(权限集 id:4)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id5" title="微信小店权限(权限集 id:5)" class="md-nav__link">
+    微信小店权限(权限集 id:5)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id6" title="微信多客服权限(权限集 id:6)" class="md-nav__link">
+    微信多客服权限(权限集 id:6)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id7" title="群发与通知权限(权限集 id:7)" class="md-nav__link">
+    群发与通知权限(权限集 id:7)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id8" title="微信卡券权限(权限集 id:8)" class="md-nav__link">
+    微信卡券权限(权限集 id:8)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id9" title="微信扫一扫权限(权限集 id:9)" class="md-nav__link">
+    微信扫一扫权限(权限集 id:9)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wi-fi-id10" title="微信连 WI-FI 权限(权限集 id:10)" class="md-nav__link">
+    微信连 WI-FI 权限(权限集 id:10)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id11" title="素材管理权限(权限集 id:11)" class="md-nav__link">
+    素材管理权限(权限集 id:11)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id12" title="微信摇周边权限(权限集 id:12)" class="md-nav__link">
+    微信摇周边权限(权限集 id:12)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id13" title="微信门店权限(权限集 id:13)" class="md-nav__link">
+    微信门店权限(权限集 id:13)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id22" title="城市服务接口权限(权限集 id:22)" class="md-nav__link">
+    城市服务接口权限(权限集 id:22)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id26" title="微信电子发票权限(权限集 id:26)" class="md-nav__link">
+    微信电子发票权限(权限集 id:26)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id24" title="微信开放平台帐号绑定权限(权限集 id:24)" class="md-nav__link">
+    微信开放平台帐号绑定权限(权限集 id:24)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id17" title="帐号管理权限(权限集 id:17)" class="md-nav__link">
+    帐号管理权限(权限集 id:17)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id18" title="开发管理与数据分析权限(权限集 id:18)" class="md-nav__link">
+    开发管理与数据分析权限(权限集 id:18)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id19" title="客服消息管理权限(权限集 id:19)" class="md-nav__link">
+    客服消息管理权限(权限集 id:19)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" title="微信开放平台帐号绑定权限" class="md-nav__link">
+    微信开放平台帐号绑定权限
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id40" title="小程序插件管理权限集(权限集 id:40)" class="md-nav__link">
+    小程序插件管理权限集(权限集 id:40)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id37" title="小程序附近地点权限集(权限集 id:37)" class="md-nav__link">
+    小程序附近地点权限集(权限集 id:37)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id30" title="小程序基本信息设置权限(权限集 id:30)" class="md-nav__link">
+    小程序基本信息设置权限(权限集 id:30)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="_1">第三方平台的权限说明<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="_2">授权账号列表<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>第三方平台可以使用接口拉取当前所有已授权的帐号基本信息。</p>
+<p>HTTP 请求:POST</p>
+<p>HTTP 调用: https://api.weixin.qq.com/cgi-bin/component/api_get_authorizer_list?component_access_token=COMPONENT_ACCESS_TOKEN</p>
+<p>调用示例:</p>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;component_appid&quot;</span><span class="p">:</span> <span class="s2">&quot;appid_value&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;offset&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;count&quot;</span><span class="p">:</span> <span class="mi">100</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>参数说明:</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>是否必须</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>component_appid</td>
+<td>是</td>
+<td>第三方平台 APPID</td>
+</tr>
+<tr>
+<td>offset</td>
+<td>是</td>
+<td>偏移位置/起始位置</td>
+</tr>
+<tr>
+<td>count</td>
+<td>是</td>
+<td>拉取数量,最大为 500</td>
+</tr>
+</tbody>
+</table>
+<p>正常情况下,会返回:</p>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;total_count&quot;</span><span class="p">:</span> <span class="mi">33</span><span class="p">,</span>
+  <span class="nt">&quot;list&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;authorizer_appid&quot;</span><span class="p">:</span> <span class="s2">&quot;authorizer_appid_1&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;refresh_token&quot;</span><span class="p">:</span> <span class="s2">&quot;refresh_token_1&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;auth_time&quot;</span><span class="p">:</span> <span class="err">auth_time_</span><span class="mi">1</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;authorizer_appid&quot;</span><span class="p">:</span> <span class="s2">&quot;authorizer_appid_2&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;refresh_token&quot;</span><span class="p">:</span> <span class="s2">&quot;refresh_token_2&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;auth_time&quot;</span><span class="p">:</span> <span class="err">auth_time_</span><span class="mi">2</span>
+    <span class="p">}</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+
+<h2 id="_3">公众号权限集<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>为了便于管理,也为了帮助公众号和小程序运营者快速理解和授权自己的接口和功能权限,将公众号和小程序的接口权限组织分类如下:</p>
+<p>公众号权限集:</p>
+<ul>
+<li>消息管理权限</li>
+<li>自定义菜单权限</li>
+<li>用户管理权限</li>
+<li>帐号服务权限</li>
+<li>网页服务权限</li>
+<li>微信小店权限</li>
+<li>微信多客服权限</li>
+<li>群发与通知权限</li>
+<li>微信卡券权限</li>
+<li>素材管理权限</li>
+<li>微信扫一扫权限</li>
+<li>微信连 WIFI 权限</li>
+<li>微信摇周边权限</li>
+<li>微信门店权限</li>
+<li>城市服务接口权限</li>
+<li>微信电子发票权限</li>
+<li>微信开放平台帐号管理权限</li>
+<li>小程序权限集</li>
+<li>帐号管理权限</li>
+<li>开发管理与数据分析权限</li>
+<li>客服消息管理权限</li>
+<li>微信开放平台帐号管理权限</li>
+<li>小程序插件管理权限集</li>
+<li>小程序附近地点权限集</li>
+</ul>
+<p>请注意:</p>
+<ol>
+<li>当开发者对已全网发布的第三方平台做了权限修改时,如果还没有覆盖现网全网发布的状态,则测试公众号时,在授权页看到的权限仍将保持为现网的权限选项。</li>
+<li>各类型和是否认证的公众号具体拥有哪些 API 权限(每个授权的公众号,都可以通过下文将提到的接口获知公众号类型),请详见:<a href="http://mp.weixin.qq.com/wiki/7/2d301d4b757dedc333b9a9854b457b47.html">http://mp.weixin.qq.com/wiki/7/2d301d4b757dedc333b9a9854b457b47.html</a>, 小程序接口请详见:<a href="https://mp.weixin.qq.com/debug/wxadoc/dev/api/">https://mp.weixin.qq.com/debug/wxadoc/dev/api/</a></li>
+<li>公众号即使暂时没有某项接口权限(如微信卡券接口权限),也可以将其微信卡券权限授权给第三方平台。而后来该公众号获得该接口后,第三方平台可以马上代替该公众号调用这个接口。</li>
+</ol>
+<p>第三方平台如需在已有能力中增加需要新权限的新功能,则需注意:</p>
+<ol>
+<li>只要第一次全网发布(包括后续的修改后全网发布),当前在使用的用户永远不受影响,可以正常使用。</li>
+<li>第三方平台有需要时可以增加新的权限,以满足新的业务需求,第三方平台可以在微信开放平台中修改平台权限申明,修改后审核通过并全网发布后,新授权的公众号授权时会增加新权限的申请,已授权的老用户,旧有权限不影响(换句话其业务也不影响),但新权限集需要其升级授权后才可获得(原因是需要尊重用户选择,比如微信增加了一个新业务如微信卡券,不能想当然地认为用户愿意把这个新业务授权给原来的第三方来做)。</li>
+<li>在第三方平台的设计上,以素材管理举例,建议开发者如下设计:增加素材管理功能后,新用户当然还是正常授权(这时他会授权所有申明的权限给第三方)。而对于老用户,在他进入素材管理功能内时,提示需要升级授权才可使用新功能,引导用户进入授权页升级即可。</li>
+</ol>
+<p>下面对各权限进行详细介绍(以下所有权限都可以同时授权给多家第三方平台):</p>
+<p>公众号权限如下:</p>
+<h3 id="id1">消息管理权限(权限集 id:1)<a class="headerlink" href="#id1" title="Permanent link">&para;</a></h3>
+<p>指公众号第三方平台方在获得该权限后,可以获得被授权公众号进行消息管理和回复。具体包括:</p>
+<ol>
+<li>接收用户发来的消息(从而也可以做关键词自动回复等能力),请注意,用户触发的各个业务的事件,是放在各个业务权限里面去推送给相关获得了该权限授权的第三方</li>
+<li>通过客服接口向用户发送消息</li>
+<li>获取和设置语音识别开关状态</li>
+<li>获取和设置地理位置上报的开关状态</li>
+<li>上传下载多媒体文件接口</li>
+<li>关注/取消关注事件推送(包括带参数二维码带来的关注事件),及关注后的自动回复</li>
+</ol>
+<p>需要特别注意的是,第三方平台只需获得某个业务模块的授权(而不需要获得客服与菜单权限的授权),然后在收到该业务模块事件推送后,如果该事件是允许进行 5 秒内被动回复消息给粉丝的,那么第三方就可以被动回复(业务模块的哪些事件推送允许被动回复用户,哪些不允许,需咨询具体业务模块),点击查看被动回复接口文档</p>
+<p>另请注意,如果第三方希望实现实时获知公众号有新粉丝关注,只需要收到关注事件后回复 success 即可,不必另行回复,免得公众号出现多个第三方同时进行粉丝关注后的自动回复。</p>
+<h3 id="id15">自定义菜单权限(权限集 id:15)<a class="headerlink" href="#id15" title="Permanent link">&para;</a></h3>
+<p>指公众号第三方平台方在获得该权限后,可以获得被授权公众号进行自定义菜单的设置和响应。具体包括:</p>
+<ol>
+<li>自定义菜单的创建/查询和删除,包括个性化菜单</li>
+<li>自定义菜单点击事件接收,和根据该事件进行的 5 秒内被动回复</li>
+</ol>
+<h3 id="id2">用户管理权限(权限集 id:2)<a class="headerlink" href="#id2" title="Permanent link">&para;</a></h3>
+<p>指公众号第三方平台方在获得该权限后,可以获得被授权公众号的用户管理权限。具体包括:</p>
+<ol>
+<li>获取用户基本信息接口</li>
+<li>获取用户列表接口</li>
+<li>用户分组管理接口</li>
+<li>用户备注名设置接口</li>
+<li>设置用户地理位置的开关及上报方式</li>
+<li>获取用户地理位置上报的事件推送</li>
+<li>关注/取消关注公众号事件推送</li>
+</ol>
+<h3 id="id3">帐号服务权限(权限集 id:3)<a class="headerlink" href="#id3" title="Permanent link">&para;</a></h3>
+<p>该权限主要进行公众帐号的帐号管理,包括获取和设置公众帐号信息,由于可供多方获取和设置,故授权不互斥。具体包括:</p>
+<ol>
+<li>生成带参数二维码接口</li>
+<li>扫描带参数二维码时(而不是关注后)的事件接收(请注意,带参数二维码扫码后关注的事件推送,是会推送给具备消息与菜单管理权限集的第三方)</li>
+<li>获取公众帐号基础信息(头像昵称/帐号类型等,此接口暂为服务方独有)</li>
+<li>上传下载多媒体文件接口</li>
+</ol>
+<h3 id="id4">网页服务权限(权限集 id:4)<a class="headerlink" href="#id4" title="Permanent link">&para;</a></h3>
+<p>该权限主要指公众号第三方平台可以代替公众帐号发起微信网页授权,并在授权后可以合法获得相关的授权信息,还包括可以代替公众号使用 JS SDK。具体包括:</p>
+<ol>
+<li>发起微信内网页授权的权限</li>
+<li>授权后获取授权用户的基本信息(权限根据应用授权作用域 scope 的不同而不同:scope 为 snsapi_base 时不弹出授权页面但只能获取用户 openid)；scope 为 snsapi_userinfo 时弹出授权页面但可通过 openid 拿到用户昵称、性别、所在地)</li>
+<li>代替公众号使用 JS SDK</li>
+</ol>
+<h3 id="id5">微信小店权限(权限集 id:5)<a class="headerlink" href="#id5" title="Permanent link">&para;</a></h3>
+<p>该权限主要是指管理微信公众平台小店的功能。具体包括:</p>
+<ol>
+<li>微信小店所有接口权限</li>
+<li>微信小店所有事件推送(事件将推送到创建服务时填写的公众号消息与事件接收 URL)</li>
+</ol>
+<h3 id="id6">微信多客服权限(权限集 id:6)<a class="headerlink" href="#id6" title="Permanent link">&para;</a></h3>
+<p>该权限主要指能否设置和获取公众账号的多客服功能开关的状态。一旦打开开关之后,客服消息将不再推送给第三方平台方,而是推送给微信多客服功能后台。此时,公众号运营者需要在 mp.weixin.qq.com 的多客服模块中下载多客服 PC 客户端来使用,与发客服消息的粉丝进行 CRM 沟通互动。具体包括:</p>
+<ol>
+<li>微信多客服所有接口权限</li>
+</ol>
+<h3 id="id7">群发与通知权限(权限集 id:7)<a class="headerlink" href="#id7" title="Permanent link">&para;</a></h3>
+<p>该权限主要指公众号用于通知用户的接口能力。由于允许多个第三方开发者就各自业务去通知用户,因此该权限可以授权给多个第三方平台方,即授权不互斥,具体包括:</p>
+<ol>
+<li>模板消息接口</li>
+<li>高级群发接口</li>
+</ol>
+<h3 id="id8">微信卡券权限(权限集 id:8)<a class="headerlink" href="#id8" title="Permanent link">&para;</a></h3>
+<p>该权限主要指微信卡券相关的所有接口权限和事件推送。具体包括:</p>
+<ol>
+<li>微信卡券所有接口权限</li>
+<li>微信卡券所有事件推送(事件将推送到创建服务时填写的公众号消息与事件接收 URL)</li>
+<li>上传下载多媒体文件接口</li>
+</ol>
+<h3 id="id9">微信扫一扫权限(权限集 id:9)<a class="headerlink" href="#id9" title="Permanent link">&para;</a></h3>
+<p>该权限主要指微信扫一扫的所有接口权限和事件推送。具体包括:</p>
+<ol>
+<li>微信扫一扫的所有接口权限和事件推送</li>
+</ol>
+<h3 id="wi-fi-id10">微信连 WI-FI 权限(权限集 id:10)<a class="headerlink" href="#wi-fi-id10" title="Permanent link">&para;</a></h3>
+<p>该权限主要指微信连 WI-FI 的所有接口权限和事件推送。具体包括:</p>
+<ol>
+<li>微信连 WIFI 所有接口权限</li>
+</ol>
+<h3 id="id11">素材管理权限(权限集 id:11)<a class="headerlink" href="#id11" title="Permanent link">&para;</a></h3>
+<p>该权限主要指用于第三方开发者帮助公众号管理图文消息、图片、语音、视频、缩略图等素材,具体包括:</p>
+<ol>
+<li>新增和获取临时素材(原上传下载多媒体文件接口)</li>
+<li>新增、获取、删除永久素材</li>
+<li>修改永久图文消息素材</li>
+<li>获取各类型素材总数和列表</li>
+</ol>
+<h3 id="id12">微信摇周边权限(权限集 id:12)<a class="headerlink" href="#id12" title="Permanent link">&para;</a></h3>
+<p>该权限主要指摇一摇周边的所有接口权限和事件推送。具体包括:</p>
+<ol>
+<li>摇一摇周边所有接口权限</li>
+</ol>
+<h3 id="id13">微信门店权限(权限集 id:13)<a class="headerlink" href="#id13" title="Permanent link">&para;</a></h3>
+<p>该权限主要指线下门店的所有接口权限和事件推送。具体包括:</p>
+<ol>
+<li>线下门店所有接口权限</li>
+</ol>
+<h3 id="id22">城市服务接口权限(权限集 id:22)<a class="headerlink" href="#id22" title="Permanent link">&para;</a></h3>
+<p>该权限主要指城市服务内向用户发送消息,沉淀办事记录和事件推送。具体包括:</p>
+<ol>
+<li>城市服务所有接口权限</li>
+</ol>
+<h3 id="id26">微信电子发票权限(权限集 id:26)<a class="headerlink" href="#id26" title="Permanent link">&para;</a></h3>
+<p>该权限主要指公众号使用微信电子发票的权限。具体包括:</p>
+<ol>
+<li>唤起“插入微信发票”的授权页的接口</li>
+<li>将电子发票插入微信卡包的接口</li>
+<li>微信电子发票的报销的接口</li>
+</ol>
+<h3 id="id24">微信开放平台帐号绑定权限(权限集 id:24)<a class="headerlink" href="#id24" title="Permanent link">&para;</a></h3>
+<p>第三方平台在获得此权限后,可以代替已授权的公众号创建开放平台帐号或进行绑定/解绑操作。绑定在同一个开放平台帐号下的公众号及小程序,同一用户 unionid 一致。此权限集只可以授权给一个第三方平台,即授权互斥。权限集内接口具体包括:</p>
+<ol>
+<li>创建开放平台帐号并绑定公众号</li>
+<li>将公众号绑定到已有开放平台帐号下</li>
+<li>将公众号从开放平台帐号下解绑</li>
+<li>获取公众号所绑定的开放平台帐号</li>
+</ol>
+<p>API 文档详见:open.weixin.qq.com-资源中心-第三方平台-代公众号实现业务-微信开放平台帐号管理</p>
+<p>小程序权限如下:</p>
+<h3 id="id17">帐号管理权限(权限集 id:17)<a class="headerlink" href="#id17" title="Permanent link">&para;</a></h3>
+<p>该权限主要进行小程序的帐号管理,包括获取和设置小程序帐号信息,由于可供多方获取和设置,故授权不互斥。具体包括:</p>
+<ol>
+<li>生成带参数二维码接口</li>
+<li>用户访问状态修改与查询</li>
+<li>获取公众帐号基础信息(头像昵称/帐号类型等,此接口暂为服务方独有)</li>
+</ol>
+<h3 id="id18">开发管理与数据分析权限(权限集 id:18)<a class="headerlink" href="#id18" title="Permanent link">&para;</a></h3>
+<p>该权限主要进行小程序的代码开发管理,绑定体验者,模版消息,配置服务器信息,获取小程序数据等。为防止代码相互覆盖,此授权只能一个第三方平台。具体包括:</p>
+<ol>
+<li>代码审核相关的事件推送</li>
+<li>提交代码体验</li>
+<li>获取体验二维码</li>
+<li>绑定体验者</li>
+<li>提交代码审核</li>
+<li>代码审核状态查询</li>
+<li>发布代码</li>
+<li>服务器地址设置</li>
+<li>模版消息</li>
+<li>微信登录</li>
+<li>数据分析</li>
+</ol>
+<h3 id="id19">客服消息管理权限(权限集 id:19)<a class="headerlink" href="#id19" title="Permanent link">&para;</a></h3>
+<p>该权限主要进行小程序的客服消息的管理和开发,可授权给多家第三方平台。具体包括:</p>
+<ol>
+<li>发送客服消息</li>
+<li>上传素材接口</li>
+</ol>
+<h3 id="_4">微信开放平台帐号绑定权限<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>第三方平台在获得此权限后,可以代替已授权的小程序创建开放平台帐号或进行绑定/解绑操作。绑定在同一个开放平台帐号下的公众号及小程序,用户 unionid 一致。此权限集只可以授权给一个第三方平台,即授权互斥。权限集内接口具体包括:</p>
+<ol>
+<li>创建开放平台帐号并绑定小程序</li>
+<li>将小程序绑定到已有开放平台帐号下</li>
+<li>将小程序从开放平台帐号下解绑</li>
+<li>获取小程序所绑定的开放平台帐号</li>
+</ol>
+<p>API 文档详见:open.weixin.qq.com-资源中心-第三方平台-代小程序实现业务-微信开放平台帐号管理</p>
+<h3 id="id40">小程序插件管理权限集(权限集 id:40)<a class="headerlink" href="#id40" title="Permanent link">&para;</a></h3>
+<p>第三方平台获得此权限后,可以代替小程序管理插件。此权限集可以授权给多个第三方平台,权限集内接口具体如下:</p>
+<ol>
+<li>申请添加插件</li>
+<li>查询已添加的插件</li>
+<li>删除已添加的插件</li>
+</ol>
+<h3 id="id37">小程序附近地点权限集(权限集 id:37)<a class="headerlink" href="#id37" title="Permanent link">&para;</a></h3>
+<p>第三方平台获得该权限后,可帮助小程序创建、管理附近地点,可设置小程序展示在“附近小程序”入口中。</p>
+<p>权限集内具体接口如下:</p>
+<p><a href="https://developers.weixin.qq.com/miniprogram/dev/api/nearby.html">附近地点接口</a></p>
+<h3 id="id30">小程序基本信息设置权限(权限集 id:30)<a class="headerlink" href="#id30" title="Permanent link">&para;</a></h3>
+<p>第三方平台获得该权限后,可帮助通过接口创建的小程序设置名称、头像、简介、类目等基本信息。</p>
+<p>权限集内具体接口如下:</p>
+<p><a href="https://open.weixin.qq.com/cgi-bin/showdocument?action=dir_list&amp;t=resource/res_list&amp;verify=1&amp;id=21528465979XX32V&amp;token=&amp;lang=zh_CN">小程序基本信息接口</a></p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../../auth/9.callback/" title="9. 推送数据" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  后退
+                </span>
+                9. 推送数据
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../material/" title="申请资料说明" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  前进
+                </span>
+                申请资料说明
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            @2018 wxdocs.github.io
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../../assets/fonts/font-awesome.css">
+    
+      <a href="http://wohugb.github.io" class="md-footer-social__link fa fa-globe"></a>
+    
+      <a href="https://github.com/wohugb" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://twitter.com/wohugb" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://linkedin.com/in/wohugb" class="md-footer-social__link fa fa-linkedin"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/application.b41f3d20.js"></script>
+      
+        
+        
+          
+          <script src="../../../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+                <script src="../../../assets/javascripts/lunr/tinyseg.js"></script>
+              
+              
+                <script src="../../../assets/javascripts/lunr/lunr.jp.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

@@ -1,0 +1,3339 @@
+
+
+
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="微信第三方文档">
+      
+      
+      
+        <meta name="author" content="Nosy">
+      
+      
+        <meta name="lang:clipboard.copy" content="复制">
+      
+        <meta name="lang:clipboard.copied" content="已复制">
+      
+        <meta name="lang:search.language" content="jp">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="没有找到符合条件的结果">
+      
+        <meta name="lang:search.result.one" content="找到 1 个符合条件的结果">
+      
+        <meta name="lang:search.result.other" content="# 个符合条件的结果">
+      
+        <meta name="lang:search.tokenizer" content="[\uff0c\u3002]+">
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.2.0">
+    
+    
+      
+        <title>复用公众号主体快速注册小程序 - 微信第三方文档</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.572ca0f0.css">
+      
+        <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="../../../assets/javascripts/modernizr.8c900955.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
+    
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#_1" tabindex="1" class="md-skip">
+        跳转至
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../../.." title="微信第三方文档" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                微信第三方文档
+              </span>
+              <span class="md-header-nav__topic">
+                复用公众号主体快速注册小程序
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            键入以开始搜索
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/wxdocs" title="前往 Github 仓库" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      wxdocs
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../../.." title="首页" class="md-tabs__link">
+        首页
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../mobile/" title="移动应用" class="md-tabs__link">
+          移动应用
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../site/login/qrconnect.md" title="网站应用" class="md-tabs__link">
+          网站应用
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../pubno/" title="公众帐号" class="md-tabs__link">
+          公众帐号
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../overview/" title="第三方平台" class="md-tabs__link md-tabs__link--active">
+          第三方平台
+        </a>
+      
+    </li>
+  
+
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../../../code/" title="返回码说明" class="md-tabs__link">
+        返回码说明
+      </a>
+    
+  </li>
+
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../../../download/" title="资源下载" class="md-tabs__link">
+        资源下载
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../mini/" title="小程序" class="md-tabs__link">
+          小程序
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../../.." title="微信第三方文档" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    微信第三方文档
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/wxdocs" title="前往 Github 仓库" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      wxdocs
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="首页" class="md-nav__link">
+      首页
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      移动应用
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        移动应用
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../mobile/" title="概述" class="md-nav__link">
+      概述
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../mobile/" title="移动应用" class="md-nav__link">
+      移动应用
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../mobile/" title="资源中心首页" class="md-nav__link">
+      资源中心首页
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../mobile/" title="接入指南" class="md-nav__link">
+      接入指南
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../mobile/" title="分享与收藏功能" class="md-nav__link">
+      分享与收藏功能
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../mobile/" title="微信支付功能" class="md-nav__link">
+      微信支付功能
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../mobile/" title="微信登录功能" class="md-nav__link">
+      微信登录功能
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../mobile/" title="微信智能接口" class="md-nav__link">
+      微信智能接口
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../mobile/" title="移动应用一次性订阅消息开发指南" class="md-nav__link">
+      移动应用一次性订阅消息开发指南
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../mobile/" title="常见问题" class="md-nav__link">
+      常见问题
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      网站应用
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        网站应用
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
+    
+    <label class="md-nav__link" for="nav-3-1">
+      网站应用
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-1">
+        网站应用
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../site/login/qrconnect.md" title="微信登录" class="md-nav__link">
+      微信登录
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../site/login/UnionID.md" title="接口调用" class="md-nav__link">
+      接口调用
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../site/upi/index.md" title="智能接口" class="md-nav__link">
+      智能接口
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../site/issues/index.md" title="开发者反馈" class="md-nav__link">
+      开发者反馈
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      公众帐号
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        公众帐号
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-1" type="checkbox" id="nav-4-1">
+    
+    <label class="md-nav__link" for="nav-4-1">
+      新手接入
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-1">
+        新手接入
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../pubno/" title="接入指南" class="md-nav__link">
+      接入指南
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../pubno/" title="典型案例介绍" class="md-nav__link">
+      典型案例介绍
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../pubno/" title="开发者规范" class="md-nav__link">
+      开发者规范
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2">
+    
+    <label class="md-nav__link" for="nav-4-2">
+      交流互助
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-2">
+        交流互助
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../pubno/" title="开发者问答系统" class="md-nav__link">
+      开发者问答系统
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../pubno/" title="在线接口调试工具" class="md-nav__link">
+      在线接口调试工具
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../pubno/" title="接口测试帐号申请" class="md-nav__link">
+      接口测试帐号申请
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../pubno/docs/" title="开发者文档" class="md-nav__link">
+      开发者文档
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+    
+    <label class="md-nav__link" for="nav-5">
+      第三方平台
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        第三方平台
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../overview/" title="平台概述" class="md-nav__link">
+      平台概述
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2">
+    
+    <label class="md-nav__link" for="nav-5-2">
+      授权流程
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-2">
+        授权流程
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../auth/auth/" title="概述" class="md-nav__link">
+      概述
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../auth/1.component_verify_ticket/" title="1. 推送消息" class="md-nav__link">
+      1. 推送消息
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../auth/2.component_access_token/" title="2. 获取令牌" class="md-nav__link">
+      2. 获取令牌
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../auth/3.api_create_preauthcode/" title="3. 预授权码" class="md-nav__link">
+      3. 预授权码
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../auth/4.api_query_auth/" title="4. 获取凭据" class="md-nav__link">
+      4. 获取凭据
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../auth/5.api_authorizer_token/" title="5. 获取令牌" class="md-nav__link">
+      5. 获取令牌
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../auth/6.api_get_authorizer_info/" title="6. 账号信息" class="md-nav__link">
+      6. 账号信息
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../auth/7.api_get_authorizer_option/" title="7. 授权信息" class="md-nav__link">
+      7. 授权信息
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../auth/8.api_set_authorizer_option/" title="8. 授权选项" class="md-nav__link">
+      8. 授权选项
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../auth/9.callback/" title="9. 推送数据" class="md-nav__link">
+      9. 推送数据
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3">
+    
+    <label class="md-nav__link" for="nav-5-3">
+      开发前必读
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-3">
+        开发前必读
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../pre/jurisdiction/" title="权限说明" class="md-nav__link">
+      权限说明
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../pre/material/" title="申请资料说明" class="md-nav__link">
+      申请资料说明
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../pre/design/" title="产品设计指引" class="md-nav__link">
+      产品设计指引
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../pre/secure/" title="安全管理说明" class="md-nav__link">
+      安全管理说明
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-4" type="checkbox" id="nav-5-4" checked>
+    
+    <label class="md-nav__link" for="nav-5-4">
+      代公众号实现业务
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-4">
+        代公众号实现业务
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../call/" title="代公众号调用接口" class="md-nav__link">
+      代公众号调用接口
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../msg/" title="代公众号处理消息和事件" class="md-nav__link">
+      代公众号处理消息和事件
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../auth/" title="代公众号发起网页授权" class="md-nav__link">
+      代公众号发起网页授权
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sdk/" title="代公众号使用JS SDK说明" class="md-nav__link">
+      代公众号使用JS SDK说明
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../card/" title="卡券强授权" class="md-nav__link">
+      卡券强授权
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ad/" title="微信广告接口" class="md-nav__link">
+      微信广告接口
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../open_account/" title="微信开放平台帐号管理" class="md-nav__link">
+      微信开放平台帐号管理
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../weapp/" title="小程序管理权限集" class="md-nav__link">
+      小程序管理权限集
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        复用公众号主体快速注册小程序
+      </label>
+    
+    <a href="./" title="复用公众号主体快速注册小程序" class="md-nav__link md-nav__link--active">
+      复用公众号主体快速注册小程序
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">目录</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="能力介绍" class="md-nav__link">
+    能力介绍
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="开放范围" class="md-nav__link">
+    开放范围
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" title="相关规则" class="md-nav__link">
+    相关规则
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" title="快速注册流程" class="md-nav__link">
+    快速注册流程
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1" title="1. 注册流程及接口说明" class="md-nav__link">
+    1. 注册流程及接口说明
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" title="1.1. 从第三方平台跳转至微信公众平台授权注册页面" class="md-nav__link">
+    1.1. 从第三方平台跳转至微信公众平台授权注册页面
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12" title="1.2. 公众号管理员扫码确认授权注册，并跳转回第三方平台" class="md-nav__link">
+    1.2. 公众号管理员扫码确认授权注册，并跳转回第三方平台
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-api" title="1.3. 跳转至第三方平台，第三方平台调用快速注册 API 完成注册" class="md-nav__link">
+    1.3. 跳转至第三方平台，第三方平台调用快速注册 API 完成注册
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" title="2. 获取帐号基本信息" class="md-nav__link">
+    2. 获取帐号基本信息
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" title="3. 设置名称" class="md-nav__link">
+    3. 设置名称
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" title="3.1. 微信认证名称检测" class="md-nav__link">
+    3.1. 微信认证名称检测
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" title="3.2. 名称设置及改名" class="md-nav__link">
+    3.2. 名称设置及改名
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33" title="3.3. 改名审核状态查询" class="md-nav__link">
+    3.3. 改名审核状态查询
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" title="4. 修改头像" class="md-nav__link">
+    4. 修改头像
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" title="5. 修改功能介绍" class="md-nav__link">
+    5. 修改功能介绍
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" title="6. 设置类目" class="md-nav__link">
+    6. 设置类目
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61" title="6.1. 获取账号可以设置的所有类目" class="md-nav__link">
+    6.1. 获取账号可以设置的所有类目
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62" title="6.2. 添加类目" class="md-nav__link">
+    6.2. 添加类目
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63" title="6.3. 删除类目" class="md-nav__link">
+    6.3. 删除类目
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64" title="6.4. 获取账号已经设置的所有类目" class="md-nav__link">
+    6.4. 获取账号已经设置的所有类目
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#65" title="6.5. 修改类目" class="md-nav__link">
+    6.5. 修改类目
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" title="7. 换绑管理员" class="md-nav__link">
+    7. 换绑管理员
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71" title="7.1. 从第三方平台跳转至微信公众平台授权注册页面" class="md-nav__link">
+    7.1. 从第三方平台跳转至微信公众平台授权注册页面
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72" title="7.2. 小程序新旧管理员填写信息，扫码确认提交后跳转回第三方平台" class="md-nav__link">
+    7.2. 小程序新旧管理员填写信息，扫码确认提交后跳转回第三方平台
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-api" title="7.3. 跳转至第三方平台，第三方平台调用快速注册 API 完成管理员换绑。" class="md-nav__link">
+    7.3. 跳转至第三方平台，第三方平台调用快速注册 API 完成管理员换绑。
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../" title="代小程序实现业务" class="md-nav__link">
+      代小程序实现业务
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../" title="消息加解密" class="md-nav__link">
+      消息加解密
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../" title="全网发布" class="md-nav__link">
+      全网发布
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../code/" title="返回码说明" class="md-nav__link">
+      返回码说明
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../download/" title="资源下载" class="md-nav__link">
+      资源下载
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      小程序
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        小程序
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../mini/" title="开发简介" class="md-nav__link">
+      开发简介
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../mini/domain/" title="域名设置" class="md-nav__link">
+      域名设置
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../mini/tester/" title="测试人员" class="md-nav__link">
+      测试人员
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../mini/code/" title="代码管理" class="md-nav__link">
+      代码管理
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../mini/qrcode/" title="扫码打开" class="md-nav__link">
+      扫码打开
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../mini/temp-lib/" title="模版库" class="md-nav__link">
+      模版库
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../mini/session/" title="微信登录" class="md-nav__link">
+      微信登录
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../mini/temp/" title="模板消息" class="md-nav__link">
+      模板消息
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../mini/open/" title="开放平台" class="md-nav__link">
+      开放平台
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../mini/status/" title="隐私设置" class="md-nav__link">
+      隐私设置
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">目录</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="能力介绍" class="md-nav__link">
+    能力介绍
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="开放范围" class="md-nav__link">
+    开放范围
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" title="相关规则" class="md-nav__link">
+    相关规则
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" title="快速注册流程" class="md-nav__link">
+    快速注册流程
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1" title="1. 注册流程及接口说明" class="md-nav__link">
+    1. 注册流程及接口说明
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" title="1.1. 从第三方平台跳转至微信公众平台授权注册页面" class="md-nav__link">
+    1.1. 从第三方平台跳转至微信公众平台授权注册页面
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12" title="1.2. 公众号管理员扫码确认授权注册，并跳转回第三方平台" class="md-nav__link">
+    1.2. 公众号管理员扫码确认授权注册，并跳转回第三方平台
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-api" title="1.3. 跳转至第三方平台，第三方平台调用快速注册 API 完成注册" class="md-nav__link">
+    1.3. 跳转至第三方平台，第三方平台调用快速注册 API 完成注册
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" title="2. 获取帐号基本信息" class="md-nav__link">
+    2. 获取帐号基本信息
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" title="3. 设置名称" class="md-nav__link">
+    3. 设置名称
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" title="3.1. 微信认证名称检测" class="md-nav__link">
+    3.1. 微信认证名称检测
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" title="3.2. 名称设置及改名" class="md-nav__link">
+    3.2. 名称设置及改名
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33" title="3.3. 改名审核状态查询" class="md-nav__link">
+    3.3. 改名审核状态查询
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" title="4. 修改头像" class="md-nav__link">
+    4. 修改头像
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" title="5. 修改功能介绍" class="md-nav__link">
+    5. 修改功能介绍
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" title="6. 设置类目" class="md-nav__link">
+    6. 设置类目
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61" title="6.1. 获取账号可以设置的所有类目" class="md-nav__link">
+    6.1. 获取账号可以设置的所有类目
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62" title="6.2. 添加类目" class="md-nav__link">
+    6.2. 添加类目
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63" title="6.3. 删除类目" class="md-nav__link">
+    6.3. 删除类目
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64" title="6.4. 获取账号已经设置的所有类目" class="md-nav__link">
+    6.4. 获取账号已经设置的所有类目
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#65" title="6.5. 修改类目" class="md-nav__link">
+    6.5. 修改类目
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" title="7. 换绑管理员" class="md-nav__link">
+    7. 换绑管理员
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71" title="7.1. 从第三方平台跳转至微信公众平台授权注册页面" class="md-nav__link">
+    7.1. 从第三方平台跳转至微信公众平台授权注册页面
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72" title="7.2. 小程序新旧管理员填写信息，扫码确认提交后跳转回第三方平台" class="md-nav__link">
+    7.2. 小程序新旧管理员填写信息，扫码确认提交后跳转回第三方平台
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-api" title="7.3. 跳转至第三方平台，第三方平台调用快速注册 API 完成管理员换绑。" class="md-nav__link">
+    7.3. 跳转至第三方平台，第三方平台调用快速注册 API 完成管理员换绑。
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="_1">复用公众号主体快速注册小程序<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="_2">能力介绍<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>为帮助已有公众号用户快速接入小程序服务，公众平台新增"快速注册小程序"权限集。公众号可授权第三方平台快速注册并认证小程序。
+一个公众号只可以将该权限集授权给一个第三方平台，即授权互斥。
+完成注册后的小程序默认授权给该第三方平台管理，没有独立的帐号密码，不可登录小程序后台。</p>
+<h2 id="_3">开放范围<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>已认证的企业/媒体/政府/其他组织类型公众号。一个公众号一个月可以复用资质注册 5 个小程序。</p>
+<h2 id="_4">相关规则<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<ol>
+<li>复用资质创建的小程序默认与该公众号关联；不占一个月新增关联 13 个小程序的限制;</li>
+<li>复用资质创建的小程序关联公众号，不下发模板消息，不默认出现在公众号资料页;</li>
+<li>一个公众号若存在"待完成注册"的小程序，不可发起复用资质创建小程序;</li>
+<li>一个公众号一个月内可复用资质注册小程序不多于 5 个。(创建成功才占用);</li>
+<li>使用复用公众号资质注册小程序，将以本公众号的主体作为该小程序的开发者；</li>
+<li>若选择了复用认证资质，则小程序完成注册后即是"已认证"状态。认证到期时间与公众号一致。</li>
+</ol>
+<h2 id="_5">快速注册流程<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p>步骤一：权限准备</p>
+<p>第三方平台使用该接口前需具备以下 5 个权限集：</p>
+<ol>
+<li>账号服务权限</li>
+<li>小程序账号管理权限</li>
+<li>小程序开发管理与数据分析权限</li>
+<li>小程序认证权限</li>
+<li>小程序基本信息设置权限</li>
+</ol>
+<p>准备好权限集，全网发布视为生效。</p>
+<p>详细流程可参考：《授权流程技术说明》</p>
+<p>步骤二：使用注册接口创建小程序</p>
+<p>步骤三：使用小程序账号信息设置接口，补充新建小程序信息</p>
+<h2 id="1">1. 注册流程及接口说明<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<p>快速注册接口使用流程说明：</p>
+<p>步骤一：从第三方平台页面发起，并跳转至微信公众平台指定授权注册页面。</p>
+<p>步骤二：公众号管理员扫码确认复用公众号资质快速注册小程序。</p>
+<p>步骤三：管理员扫码验证通过后跳转至第三方平台页面，微信将注册结果返回给第三方平台。</p>
+<h3 id="11">1.1. 从第三方平台跳转至微信公众平台授权注册页面<a class="headerlink" href="#11" title="Permanent link">&para;</a></h3>
+<p>从第三方平台跳转到微信公众平台授权页，需携带的参数如下</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>参数说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>component_appid</td>
+<td>第三方平台的 appid</td>
+</tr>
+<tr>
+<td>appid</td>
+<td>公众号的 appid</td>
+</tr>
+<tr>
+<td>copy_wx_verify</td>
+<td>是否复用公众号的资质进行微信认证(1:申请复用资质进行微信 认证 0:不申请)</td>
+</tr>
+<tr>
+<td>redirect_uri</td>
+<td>用户扫码授权后，MP 扫码页面将跳转到该地址(注:1.链接需 urlencode 2.Host 需和第三方平台在微信开放平台上面填写的登 录授权的发起页域名一致)</td>
+</tr>
+</tbody>
+</table>
+<p>跳转到微信公众平台授权页面链接举例:</p>
+<p>https://mp.weixin.qq.com/cgi-bin/fastregisterauth?appid=wx28f759479ea1e090&amp;component_appid=wx666666666666123&amp;copy_wx_verify=1&amp;redirect_uri=https%3a%2f%2fwww.qq.com%2fauth%2fcallback%3ffrom%3dmp</p>
+<p>示例示意图：</p>
+<p><img alt="授权页示意图" src="https://mmbiz.qpic.cn/mmbiz_png/j9ZjBPiaKs5O7FmGFVpZVUicyFzGvJe4SvKMaDaRhapqeqWwrhdRW0Pd6NE72kgwZCMbYCwM1SHwbT5GsicmQ2jSQ/0?wx_fmt=png" /></p>
+<h3 id="12">1.2. 公众号管理员扫码确认授权注册，并跳转回第三方平台<a class="headerlink" href="#12" title="Permanent link">&para;</a></h3>
+<p>公众号管理员扫码后在手机端完成授权确认。</p>
+<p>跳转回第三方平台，会在上述 redirect_uri 后拼接 ticket=*</p>
+<p>跳转回第三方平台举例:</p>
+<p>https://www.qq.com/auth/callback?from=mp&amp;ticket=b25519093b1e97239eff9d2bfc07e08e</p>
+<h3 id="13-api">1.3. 跳转至第三方平台，第三方平台调用快速注册 API 完成注册<a class="headerlink" href="#13-api" title="Permanent link">&para;</a></h3>
+<p>请求方式:</p>
+<p>POST(请使用 https 协议)</p>
+<p>https://api.weixin.qq.com/cgi-bin/account/fastregister?access_token=TOKEN</p>
+<p>注：使用公众号 appid 换取 authorizer_access_token</p>
+<p>请求示例:</p>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;ticket&quot;</span><span class="p">:</span> <span class="s2">&quot;b25519093b1e97239eff9d2bfc07e08e&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>参数说明:</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ticket</td>
+<td>公众号扫码授权的凭证(公众平台扫码页面回跳到第三方平台时携带)</td>
+</tr>
+</tbody>
+</table>
+<p>返回说明:</p>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;errcode&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;appid&quot;</span><span class="p">:</span> <span class="s2">&quot;wxe5f52902cf4de896&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;authorization_code&quot;</span><span class="p">:</span> <span class="s2">&quot;****&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;is_wx_verify_succ&quot;</span><span class="p">:</span> <span class="s2">&quot;true&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;is_link_succ&quot;</span><span class="p">:</span> <span class="s2">&quot;true&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>注：使用 <code>appid</code> 及 <code>authorization_code</code> 换取 <code>authorizer_refresh_token</code> 后需及时保存。</p>
+<p>如未保存可参考公众号第三方平台的权限说明 重新获取。</p>
+<p>参数说明:</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>errcode</td>
+<td>错误码</td>
+</tr>
+<tr>
+<td>errmsg</td>
+<td>错误信息</td>
+</tr>
+<tr>
+<td>appid</td>
+<td>新创建小程序的 appid</td>
+</tr>
+<tr>
+<td>authorization_code</td>
+<td>新创建小程序的授权码</td>
+</tr>
+<tr>
+<td>is_wx_verify_succ</td>
+<td>复用公众号微信认证小程序是否成功</td>
+</tr>
+<tr>
+<td>is_link_succ</td>
+<td>小程序是否和公众号关联成功</td>
+</tr>
+</tbody>
+</table>
+<p>错误码说明:</p>
+<table>
+<thead>
+<tr>
+<th>错误码</th>
+<th>错误说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>61051</td>
+<td>公众号主体类型不允许快速创建</td>
+</tr>
+<tr>
+<td>61052</td>
+<td>公众号未认证</td>
+</tr>
+<tr>
+<td>61053</td>
+<td>超过主体可注册数量上限</td>
+</tr>
+<tr>
+<td>61054</td>
+<td>主体黑名单</td>
+</tr>
+<tr>
+<td>61055</td>
+<td>超出公众号每月可快速创建限额</td>
+</tr>
+<tr>
+<td>61056</td>
+<td>政府. 媒体. 其他组织必须复选微信认证</td>
+</tr>
+<tr>
+<td>61057</td>
+<td>公众号仍有快速创建的账号在流程中</td>
+</tr>
+<tr>
+<td>61058</td>
+<td>用户扫码凭证校验不通过</td>
+</tr>
+<tr>
+<td>61028</td>
+<td>第三方平台未发布</td>
+</tr>
+<tr>
+<td>61029</td>
+<td>第三方平台缺少必备权限集(帐号服务权限. 程序帐号管理权限. 小程序开发管理与数据分析权限)</td>
+</tr>
+<tr>
+<td>61060</td>
+<td>转 uri 不合法</td>
+</tr>
+<tr>
+<td>61061</td>
+<td>海外帐号不允许快速创建</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">注:小程序信息设置相关接口</p>
+<p>该章节接口需要使用 1.3 环节获取到的新创建小程序 <code>appid</code> 及 <code>authorization_code</code> 换取 <code>authorizer_refresh_token</code> 进而得到 <code>authorizer_access_token。</code></p>
+</div>
+<h3 id="2">2. 获取帐号基本信息<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
+<p>请求方式：</p>
+<p>GET: https://api.weixin.qq.com/cgi-bin/account/getaccountbasicinfo?access_token=TOKEN</p>
+<p>返回数据：</p>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;errcode&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span> <span class="s2">&quot;ok&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;appid&quot;</span><span class="p">:</span> <span class="s2">&quot;wxdc685123d955453&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;account_type&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+  <span class="nt">&quot;principal_type&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+  <span class="nt">&quot;principal_name&quot;</span><span class="p">:</span> <span class="s2">&quot;深圳市腾讯计算机系统有限公司&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;realname_status&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+  <span class="nt">&quot;wx_verify_info&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;qualification_verify&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="nt">&quot;naming_verify&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="nt">&quot;annual_review&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="nt">&quot;annual_review_begin_time&quot;</span><span class="p">:</span> <span class="mi">1550490981</span><span class="p">,</span>
+    <span class="nt">&quot;annual_review_end_time&quot;</span><span class="p">:</span> <span class="mi">1558266981</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;signature_info&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;signature&quot;</span><span class="p">:</span> <span class="s2">&quot;功能介绍&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;modify_used_count&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="nt">&quot;modify_quota&quot;</span><span class="p">:</span> <span class="mi">5</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;head_image_info&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;head_image_url&quot;</span><span class="p">:</span> <span class="s2">&quot;http://mmbiz.qpic.cn/mmbiz/a5icZrUmbV8p5jb6RZ8aYfjfS2AVle8URwBt8QIu6XbGewB9wiaWYWkPwq4R7pfdsFibuLkic16UcxDSNYtB8HnC1Q/0&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;modify_used_count&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+    <span class="nt">&quot;modify_quota&quot;</span><span class="p">:</span> <span class="mi">5</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>参数说明：</p>
+<table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>子参数</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>appid</td>
+<td></td>
+<td>帐号 appid</td>
+</tr>
+<tr>
+<td>account_type</td>
+<td></td>
+<td>帐号类型（1：订阅号，2：服务号，3：小程序）</td>
+</tr>
+<tr>
+<td>principal_type</td>
+<td></td>
+<td>主体类型（1：企业）</td>
+</tr>
+<tr>
+<td>principal_name</td>
+<td></td>
+<td>主体名称</td>
+</tr>
+<tr>
+<td>realname_status</td>
+<td></td>
+<td>实名验证状态（1：实名验证成功，2：实名验证中，3：实名验证失败）调用接口 1.1 创建帐号时，realname_status 会初始化为 2 对于注册方式为微信认证的帐号，资质认证成功时，realname_status 会更新为 1 注意！！！当 realname_status 不为 1 时，帐号只允许调用本文档内的以下 API：（即无权限调用其他 API） 微信认证相关接口（参考 2.x） 帐号设置相关接口（参考 3.x）</td>
+</tr>
+<tr>
+<td>wx_verify_info</td>
+<td>微信认证信息</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>qualification_verify</td>
+<td>是否资质认证（true：是，false：否）若是，拥有微信认证相关的权限。</td>
+</tr>
+<tr>
+<td></td>
+<td>naming_verify</td>
+<td>是否名称认证（true：是，false：否）对于公众号（订阅号. 服务号），是名称认证，微信客户端才会有微信认证打勾的标识。</td>
+</tr>
+<tr>
+<td></td>
+<td>annual_review</td>
+<td>是否需要年审（true：是，false：否）（qualification_verify = true 时才有该字段）</td>
+</tr>
+<tr>
+<td></td>
+<td>annual_review_begin_time</td>
+<td>年审开始时间，时间戳（qualification_verify = true 时才有该字段）</td>
+</tr>
+<tr>
+<td></td>
+<td>annual_review_end_time</td>
+<td>年审截止时间，时间戳（qualification_verify = true 时才有该字段）</td>
+</tr>
+<tr>
+<td>signature_info</td>
+<td>功能介绍信息</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>signature</td>
+<td>功能介绍</td>
+</tr>
+<tr>
+<td></td>
+<td>modify_used_count</td>
+<td>功能介绍已使用修改次数（本月）</td>
+</tr>
+<tr>
+<td></td>
+<td>modify_quota</td>
+<td>功能介绍修改次数总额度（本月）</td>
+</tr>
+<tr>
+<td>head_image_info</td>
+<td>头像信息</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>head_image_url</td>
+<td>头像 url</td>
+</tr>
+<tr>
+<td></td>
+<td>modify_used_count</td>
+<td>头像已使用修改次数（本月）</td>
+</tr>
+<tr>
+<td></td>
+<td>modify_quota</td>
+<td>头像修改次数总额度（本月）</td>
+</tr>
+</tbody>
+</table>
+<p>返回码说明：</p>
+<table>
+<thead>
+<tr>
+<th>errcode 取值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>非 0</td>
+<td>异常</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3">3. 设置名称<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
+<h3 id="31">3.1. 微信认证名称检测<a class="headerlink" href="#31" title="Permanent link">&para;</a></h3>
+<p>请求方式：</p>
+<p>POST(请使用 https 协议)</p>
+<p>URL：https://api.weixin.qq.com/cgi-bin/wxverify/checkwxverifynickname?access_token=TOKEN</p>
+<p>POST 数据：</p>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;nick_name&quot;</span><span class="p">:</span> <span class="s2">&quot;杨幂的测试用例&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>参数说明：</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>必填/选填</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>nick_name</td>
+<td>必填</td>
+<td>string</td>
+<td>名称（昵称）</td>
+</tr>
+</tbody>
+</table>
+<p>返回数据：</p>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;errcode&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span> <span class="s2">&quot;ok&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;hit_condition&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="nt">&quot;wording&quot;</span><span class="p">:</span> <span class="s2">&quot;你申请的名称可能涉及特定主体姓名或名称，请提供可确认主体材料与名称对应的材料，或提供《商标注册证》等其他材料，以证明你有权合理且善意使用该名称，否则可能审核不通过&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>参数说明：</p>
+<table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>hit_condition</td>
+<td>bool</td>
+<td>是否命中关键字策略。若命中，可以选填关键字材料</td>
+</tr>
+<tr>
+<td>wording</td>
+<td>string</td>
+<td>命中关键字的说明描述（给用户看的）</td>
+</tr>
+</tbody>
+</table>
+<p>返回码说明：</p>
+<table>
+<thead>
+<tr>
+<th>errcode 取值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>53010</td>
+<td>名称格式不合法</td>
+</tr>
+<tr>
+<td>53011</td>
+<td>名称检测命中频率限制</td>
+</tr>
+<tr>
+<td>53012</td>
+<td>禁止使用该名称</td>
+</tr>
+<tr>
+<td>53013</td>
+<td>公众号：名称与已有公众号名称重复;小程序：该名称与已有小程序名称重复</td>
+</tr>
+<tr>
+<td>53014</td>
+<td>公众号：公众号已有{名称 A+}时，需与该帐号相同主体才可申请{名称 A};小程序：小程序已有{名称 A+}时，需与该帐号相同主体才可申请{名称 A}</td>
+</tr>
+<tr>
+<td>53015</td>
+<td>公众号：该名称与已有小程序名称重复，需与该小程序帐号相同主体才可申请;小程序：该名称与已有公众号名称重复，需与该公众号帐号相同主体才可申请</td>
+</tr>
+<tr>
+<td>53016</td>
+<td>公众号：该名称与已有多个小程序名称重复，暂不支持申请;小程序：该名称与已有多个公众号名称重复，暂不支持申请</td>
+</tr>
+<tr>
+<td>53017</td>
+<td>公众号：小程序已有{名称 A+}时，需与该帐号相同主体才可申请{名称 A};小程序：公众号已有{名称 A+}时，需与该帐号相同主体才可申请{名称 A}</td>
+</tr>
+<tr>
+<td>53018</td>
+<td>名称命中微信号</td>
+</tr>
+<tr>
+<td>53019</td>
+<td>名称在保护期内</td>
+</tr>
+</tbody>
+</table>
+<h3 id="32">3.2. 名称设置及改名<a class="headerlink" href="#32" title="Permanent link">&para;</a></h3>
+<p>请求方式:</p>
+<p>POST(请使用 https 协议)</p>
+<p>https://api.weixin.qq.com/wxa/setnickname?access_token=TOKEN</p>
+<p>POST 数据示例:</p>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;nick_name&quot;</span><span class="p">:</span> <span class="s2">&quot;XXX 公司&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;id_card&quot;</span><span class="p">:</span> <span class="s2">&quot;12345678-0&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;license&quot;</span><span class="p">:</span> <span class="s2">&quot;广州市新港中路 397 号 TIT 创意园&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;naming_other_stuff_1&quot;</span><span class="p">:</span> <span class="s2">&quot;3LaLzqiTrQcD20DlX_o-OV1-nlYMu7sdVAL7SV2PrxVyjZFZZmB3O6LPGaYXlZWq&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;naming_other_stuff_2&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;naming_other_stuff_3&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;naming_other_stuff_4&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;naming_other_stuff_5&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>请求参数:</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>nick_name</td>
+<td>昵称</td>
+<td>必填</td>
+</tr>
+<tr>
+<td>id_card</td>
+<td>身份证照片–临时素材 mediaid</td>
+<td>个人号必填</td>
+</tr>
+<tr>
+<td>license</td>
+<td>组织机构代码证或营业执照–临时素材 mediaid</td>
+<td>组织号必填</td>
+</tr>
+<tr>
+<td>naming_other_stuff_1</td>
+<td>其他证明材料---临时素材 mediaid</td>
+<td>选填</td>
+</tr>
+<tr>
+<td>naming_other_stuff_2</td>
+<td>其他证明材料---临时素材 mediaid</td>
+<td>选填</td>
+</tr>
+<tr>
+<td>naming_other_stuff_3</td>
+<td>其他证明材料---临时素材 mediaid</td>
+<td>选填</td>
+</tr>
+<tr>
+<td>naming_other_stuff_4</td>
+<td>其他证明材料---临时素材 mediaid</td>
+<td>选填</td>
+</tr>
+<tr>
+<td>naming_other_stuff_5</td>
+<td>其他证明材料---临时素材 mediaid</td>
+<td>选填</td>
+</tr>
+</tbody>
+</table>
+<p>注: 临时素材 mediaid 通过调用"临时素材管理接口"获取.</p>
+<p>新增临时素材: https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1444738726</p>
+<p>获取临时素材: https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1444738727</p>
+<p>第三方代小程序调用上述接口:</p>
+<p>https://open.weixin.qq.com/cgi-bin/showdocument?action=dir_list&amp;t=resourceres_list&amp;verify=1&amp;id=open1453779503&amp;token=&amp;lang=zh_CN</p>
+<p>返回 json 示例(门店小程序类目分一级和二级类目):</p>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;errcode&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span> <span class="s2">&quot;ok&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;wording&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;audit_id&quot;</span><span class="p">:</span> <span class="mi">12345</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>返回参数说明:</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>wording</td>
+<td>材料说明</td>
+</tr>
+<tr>
+<td>audit_id</td>
+<td>审核单 id</td>
+</tr>
+</tbody>
+</table>
+<p>错误码说明:</p>
+<table>
+<thead>
+<tr>
+<th>返回码</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>91001</td>
+<td>不是公众号快速创建的小程序</td>
+</tr>
+<tr>
+<td>91002</td>
+<td>小程序发布后不可改名</td>
+</tr>
+<tr>
+<td>91003</td>
+<td>改名状态不合法</td>
+</tr>
+<tr>
+<td>91004</td>
+<td>昵称不合法</td>
+</tr>
+<tr>
+<td>91005</td>
+<td>昵称命中主体保护</td>
+</tr>
+<tr>
+<td>91006</td>
+<td>昵称命中微信号</td>
+</tr>
+<tr>
+<td>91007</td>
+<td>昵称已被占用</td>
+</tr>
+<tr>
+<td>91008</td>
+<td>昵称命中 7 天侵权保护期</td>
+</tr>
+<tr>
+<td>91009</td>
+<td>需要提交材料</td>
+</tr>
+<tr>
+<td>91010</td>
+<td>其他错误</td>
+</tr>
+<tr>
+<td>91015</td>
+<td>创建的小程序名称与对应公众号主体不一致</td>
+</tr>
+</tbody>
+</table>
+<h3 id="33">3.3. 改名审核状态查询<a class="headerlink" href="#33" title="Permanent link">&para;</a></h3>
+<p>请求方式：</p>
+<p>POST（请使用 https 协议）</p>
+<p>https://api.weixin.qq.com/wxa/api_wxa_querynickname?access_token=TOKEN</p>
+<p>POST 数据示例：</p>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;audit_id&quot;</span><span class="p">:</span> <span class="mi">12345</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>请求参数：</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>audit_id</td>
+<td>审核单 id</td>
+<td>必填</td>
+</tr>
+</tbody>
+</table>
+<p>返回 json 示例：</p>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;errcode&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span> <span class="s2">&quot;ok&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;nickname&quot;</span><span class="p">:</span> <span class="s2">&quot;xxx&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;audit_stat&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+  <span class="nt">&quot;fail_reason&quot;</span><span class="p">:</span> <span class="s2">&quot;xxx&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;create_time&quot;</span><span class="p">:</span> <span class="mi">1519724071</span><span class="p">,</span>
+  <span class="nt">&quot;audit_time&quot;</span><span class="p">:</span> <span class="mi">1519724950</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>返回参数说明：</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>nickname</td>
+<td>审核昵称</td>
+</tr>
+<tr>
+<td>audit_stat</td>
+<td>审核状态，1：审核中，2：审核失败，3：审核成功</td>
+</tr>
+<tr>
+<td>fail_reason</td>
+<td>失败原因</td>
+</tr>
+<tr>
+<td>create_time</td>
+<td>审核提交时间</td>
+</tr>
+<tr>
+<td>audit_time</td>
+<td>审核完成时间</td>
+</tr>
+</tbody>
+</table>
+<p>错误码说明：</p>
+<table>
+<thead>
+<tr>
+<th>返回码</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>91011</td>
+<td>查不到昵称修改审核单信息</td>
+</tr>
+<tr>
+<td>91012</td>
+<td>其它错误</td>
+</tr>
+</tbody>
+</table>
+<h2 id="4">4. 修改头像<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<p>请求方式：</p>
+<p>POST(请使用 https 协议)</p>
+<p>URL：https://api.weixin.qq.com/cgi-bin/account/modifyheadimage?access_token=TOKEN</p>
+<p>POST 数据：</p>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;head_img_media_id&quot;</span><span class="p">:</span> <span class="s2">&quot;mI-4E_sFh_2X3g-qmTIWD83RT78ytI1_6VfgFp_A3-Y2U5T_nLl3nm1xYTafFJ8p&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;x1&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;y1&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;x2&quot;</span><span class="p">:</span> <span class="mf">0.7596899224806202</span><span class="p">,</span>
+  <span class="nt">&quot;y2&quot;</span><span class="p">:</span> <span class="mf">0.49</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>参数说明：</p>
+<table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>必填/选填</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>head_img_media_id</td>
+<td>必填</td>
+<td>media_id</td>
+<td>头像素材 media_id</td>
+</tr>
+<tr>
+<td>x1</td>
+<td>必填</td>
+<td>float</td>
+<td>裁剪框左上角 x 坐标（取值范围：[0, 1]）</td>
+</tr>
+<tr>
+<td>y1</td>
+<td>必填</td>
+<td>float</td>
+<td>裁剪框左上角 y 坐标（取值范围：[0, 1]）</td>
+</tr>
+<tr>
+<td>x2</td>
+<td>必填</td>
+<td>float</td>
+<td>裁剪框右下角 x 坐标（取值范围：[0, 1]）</td>
+</tr>
+<tr>
+<td>y2</td>
+<td>必填</td>
+<td>float</td>
+<td>裁剪框右下角 y 坐标（取值范围：[0, 1]）</td>
+</tr>
+</tbody>
+</table>
+<p>返回数据：</p>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;errcode&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span> <span class="s2">&quot;ok&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>图片格式只支持：BMP. JPEG. JPG. GIF. PNG，大小不超过 2M</p>
+<p>注：实际头像始终为正方形</p>
+<p>示例示意图：</p>
+<p>头像示意图</p>
+<p>返回码说明：</p>
+<table>
+<thead>
+<tr>
+<th>errcode 取值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>40097</td>
+<td>参数错误</td>
+</tr>
+<tr>
+<td>41006</td>
+<td>media_id 不能为空</td>
+</tr>
+<tr>
+<td>40007</td>
+<td>非法的 media_id</td>
+</tr>
+<tr>
+<td>46001</td>
+<td>media_id 不存在</td>
+</tr>
+<tr>
+<td>40009</td>
+<td>图片尺寸太大</td>
+</tr>
+<tr>
+<td>53202</td>
+<td>本月头像修改次数已用完</td>
+</tr>
+</tbody>
+</table>
+<h2 id="5">5. 修改功能介绍<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
+<p>请求方式：</p>
+<p>POST(请使用 https 协议)</p>
+<p>URL：https://api.weixin.qq.com/cgi-bin/account/modifysignature?access_token=TOKEN</p>
+<p>POST 数据：</p>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;signature&quot;</span><span class="p">:</span> <span class="s2">&quot;提供好玩的服务。&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>参数说明：</p>
+<table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>必填/选填</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>signature</td>
+<td>必填</td>
+<td>string</td>
+<td>功能介绍（简介）</td>
+</tr>
+</tbody>
+</table>
+<p>返回数据：</p>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;errcode&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span> <span class="s2">&quot;ok&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>返回码说明：</p>
+<table>
+<thead>
+<tr>
+<th>errcode 取值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>40097</td>
+<td>参数错误</td>
+</tr>
+<tr>
+<td>53200</td>
+<td>本月功能介绍修改次数已用完</td>
+</tr>
+<tr>
+<td>53201</td>
+<td>功能介绍内容命中黑名单关键字</td>
+</tr>
+</tbody>
+</table>
+<h2 id="6">6. 设置类目<a class="headerlink" href="#6" title="Permanent link">&para;</a></h2>
+<p>注：该章节接口需要使用 1.3 环节获取到的新创建小程序 appid 及 authorization_code 换取 authorizer_refresh_token 进而得到 authorizer_access_token。</p>
+<h3 id="61">6.1. 获取账号可以设置的所有类目<a class="headerlink" href="#61" title="Permanent link">&para;</a></h3>
+<p>请求方式：</p>
+<p>GET 数据</p>
+<p>URL：https://api.weixin.qq.com/cgi-bin/wxopen/getallcategories?access_token=TOKEN</p>
+<p>返回参数（JSON 格式）：</p>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;errcode&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span> <span class="s2">&quot;ok&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;category_list&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;categories&quot;</span><span class="p">:</span> <span class="p">[</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;children&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">874</span><span class="p">],</span>
+        <span class="nt">&quot;father&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">868</span><span class="p">,</span>
+        <span class="nt">&quot;level&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;时政信息&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;qualify&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="nt">&quot;exter_list&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+              <span class="nt">&quot;inner_list&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                  <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;有资质证件：《互联网新闻信息服务许可证》&quot;</span><span class="p">,</span>
+                  <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>
+                <span class="p">}</span>
+              <span class="p">]</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+              <span class="nt">&quot;inner_list&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                  <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;无资质：ICP 备案和《组织机构代码证》&quot;</span><span class="p">,</span>
+                  <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>
+                <span class="p">}</span>
+              <span class="p">]</span>
+            <span class="p">}</span>
+          <span class="p">]</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;sensitive_type&quot;</span><span class="p">:</span> <span class="mi">1</span>
+      <span class="p">}</span>
+    <span class="p">]</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>参数说明：</p>
+<table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>类目 ID</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>类目名称</td>
+</tr>
+<tr>
+<td>Level</td>
+<td>类目层级</td>
+</tr>
+<tr>
+<td>Father</td>
+<td>类目父级 ID</td>
+</tr>
+<tr>
+<td>Children</td>
+<td>子级类目 ID</td>
+</tr>
+<tr>
+<td>Sensitive_type</td>
+<td>是否为敏感类目（1 为敏感类目，需要提供相应资质审核；0 为非敏感类目，无需审核）</td>
+</tr>
+<tr>
+<td>Qualify.exter_list.inner_list.name Sensitive_type</td>
+<td>为 1 的类目需要提供的资质文件名称</td>
+</tr>
+<tr>
+<td>Qualify.exter_list.inner_list.url</td>
+<td>资质文件示例</td>
+</tr>
+</tbody>
+</table>
+<h3 id="62">6.2. 添加类目<a class="headerlink" href="#62" title="Permanent link">&para;</a></h3>
+<p>请求方式：</p>
+<p>POST(请使用 https 协议)</p>
+<p>URL：https://api.weixin.qq.com/cgi-bin/wxopen/addcategory?access_token=TOKEN</p>
+<p>返回参数：</p>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;categories&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;first&quot;</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span>
+      <span class="nt">&quot;second&quot;</span><span class="p">:</span> <span class="mi">39</span><span class="p">,</span>
+      <span class="nt">&quot;certicates&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;key&quot;</span><span class="p">:</span> <span class="s2">&quot;《因私出入境中介机构经营许可证》&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;value&quot;</span><span class="p">:</span> <span class="s2">&quot;xxx&quot;</span>
+        <span class="p">}</span>
+      <span class="p">]</span>
+    <span class="p">}</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>参数说明：</p>
+<table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>必填/选填</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>first</td>
+<td>必填</td>
+<td>Unsigned int</td>
+<td>一级类目 ID</td>
+</tr>
+<tr>
+<td>Second</td>
+<td>必填</td>
+<td>Unsigned int</td>
+<td>二级类目 ID</td>
+</tr>
+<tr>
+<td>Key</td>
+<td>必填</td>
+<td>String</td>
+<td>资质名称</td>
+</tr>
+<tr>
+<td>Value</td>
+<td>必填</td>
+<td>media_id</td>
+<td>资质图片</td>
+</tr>
+</tbody>
+</table>
+<p>返回参数（JSON 格式）：</p>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;errcode&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span> <span class="s2">&quot;ok&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+<h3 id="63">6.3. 删除类目<a class="headerlink" href="#63" title="Permanent link">&para;</a></h3>
+<p>请求方式：</p>
+<p>POST(请使用 https 协议)</p>
+<p>URL：https://api.weixin.qq.com/cgi-bin/wxopen/deletecategory?access_token=TOKEN</p>
+<p>参数说明：</p>
+<table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>必填/选填</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>first</td>
+<td>必填</td>
+<td>Unsigned int</td>
+<td>一级类目 ID</td>
+</tr>
+<tr>
+<td>Second</td>
+<td>必填</td>
+<td>Unsigned int</td>
+<td>二级类目 ID</td>
+</tr>
+</tbody>
+</table>
+<p>返回（JSON 格式）：</p>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;errcode&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span> <span class="s2">&quot;ok&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+<h3 id="64">6.4. 获取账号已经设置的所有类目<a class="headerlink" href="#64" title="Permanent link">&para;</a></h3>
+<p>请求方式：</p>
+<p>GET URL：https://api.weixin.qq.com/cgi-bin/wxopen/getcategory?access_token=TOKEN</p>
+<p>参数说明：</p>
+<p>返回（JSON 格式）：</p>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;errcode&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span> <span class="s2">&quot;ok&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;categories&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;first&quot;</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span>
+      <span class="nt">&quot;first_name&quot;</span><span class="p">:</span> <span class="s2">&quot;教育&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;second&quot;</span><span class="p">:</span> <span class="mi">39</span><span class="p">,</span>
+      <span class="nt">&quot;second_name&quot;</span><span class="p">:</span> <span class="s2">&quot;出国移民&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;audit_status&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+      <span class="nt">&quot;audit_reason&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>
+    <span class="p">}</span>
+  <span class="p">],</span>
+  <span class="nt">&quot;limit&quot;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
+  <span class="nt">&quot;quota&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+  <span class="nt">&quot;category_limit&quot;</span><span class="p">:</span> <span class="mi">20</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>参数说明：</p>
+<table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>必填/选填</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>first</td>
+<td>必填</td>
+<td>Unsigned int</td>
+<td>一级类目 ID</td>
+</tr>
+<tr>
+<td>First_name</td>
+<td>必填</td>
+<td>string</td>
+<td>一级类目名称</td>
+</tr>
+<tr>
+<td>Second</td>
+<td>必填</td>
+<td>Unsigned int</td>
+<td>二级类目 ID</td>
+</tr>
+<tr>
+<td>Second_name</td>
+<td>必填</td>
+<td>string</td>
+<td>二级类目名称</td>
+</tr>
+<tr>
+<td>Audit_status</td>
+<td>必填</td>
+<td>Unsigned int</td>
+<td>审核状态（1 审核中 2 审核不通过 3 审核通过）</td>
+</tr>
+<tr>
+<td>audit_reason</td>
+<td>必填</td>
+<td>String</td>
+<td>审核不通过原因</td>
+</tr>
+<tr>
+<td>Limit</td>
+<td>必填</td>
+<td>Unsigned int</td>
+<td>一个更改周期内可以设置类目的次数</td>
+</tr>
+<tr>
+<td>Quota</td>
+<td>必填</td>
+<td>Unsigned int</td>
+<td>本更改周期内还可以设置类目的次数</td>
+</tr>
+<tr>
+<td>Category_limit</td>
+<td>必填</td>
+<td>Unsigned int</td>
+<td>最多可以设置的类目数量</td>
+</tr>
+</tbody>
+</table>
+<h3 id="65">6.5. 修改类目<a class="headerlink" href="#65" title="Permanent link">&para;</a></h3>
+<p>请求方式：</p>
+<p>POST(请使用 https 协议)</p>
+<p>URL：https://api.weixin.qq.com/cgi-bin/wxopen/modifycategory?access_token=TOKEN</p>
+<p>POST 数据：</p>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;first&quot;</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span>
+  <span class="nt">&quot;second&quot;</span><span class="p">:</span> <span class="mi">39</span><span class="p">,</span>
+  <span class="nt">&quot;certicates&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;key&quot;</span><span class="p">:</span> <span class="s2">&quot;《因私出入境中介机构经营许可证》&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;value&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>
+    <span class="p">}</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>参数说明：</p>
+<table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>必填/选填</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>first</td>
+<td>必填</td>
+<td>Unsigned int</td>
+<td>一级类目 ID</td>
+</tr>
+<tr>
+<td>Second</td>
+<td>必填</td>
+<td>Unsigned int</td>
+<td>二级类目 ID</td>
+</tr>
+<tr>
+<td>Key</td>
+<td>必填</td>
+<td>String</td>
+<td>资质名称</td>
+</tr>
+<tr>
+<td>Value</td>
+<td>必填</td>
+<td>String</td>
+<td>资质图片</td>
+</tr>
+</tbody>
+</table>
+<p>返回（JSON 格式）：</p>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;errcode&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span> <span class="s2">&quot;ok&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>返回码说明：</p>
+<table>
+<thead>
+<tr>
+<th>errcode 取值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>53300</td>
+<td>超出每月次数限制</td>
+</tr>
+<tr>
+<td>53301</td>
+<td>超出可配置类目总数限制</td>
+</tr>
+<tr>
+<td>53302</td>
+<td>当前账号主体类型不允许设置此种类目</td>
+</tr>
+<tr>
+<td>53303</td>
+<td>提交的参数不合法</td>
+</tr>
+<tr>
+<td>53304</td>
+<td>与已有类目重复</td>
+</tr>
+<tr>
+<td>53305</td>
+<td>包含未通过 IPC 校验的类目</td>
+</tr>
+<tr>
+<td>53306</td>
+<td>修改类目只允许修改类目资质，不允许修改类目 ID</td>
+</tr>
+<tr>
+<td>53307</td>
+<td>只有审核失败的类目允许修改</td>
+</tr>
+<tr>
+<td>53308</td>
+<td>审核中的类目不允许删除</td>
+</tr>
+</tbody>
+</table>
+<h2 id="7">7. 换绑管理员<a class="headerlink" href="#7" title="Permanent link">&para;</a></h2>
+<p>流程</p>
+<ul>
+<li>步骤一：从第三方平台页面发起，并跳转至微信公众平台指定换绑页面。</li>
+<li>步骤二：小程序原管理员扫码，并填写原管理员身份证信息确认。</li>
+<li>步骤三：填写新管理员信息(姓名. 身份证. 手机号)，使用新管理员的微信确认。</li>
+<li>步骤四：点击提交后跳转至第三方平台页面，第三方平台回调对应 api 完成换绑流程。</li>
+</ul>
+<p>流程及接口说明</p>
+<h3 id="71">7.1. 从第三方平台跳转至微信公众平台授权注册页面<a class="headerlink" href="#71" title="Permanent link">&para;</a></h3>
+<p>从第三方平台跳转到微信公众平台授权页，需携带的参数如下：</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>参数说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>component_appid</td>
+<td>第三方平台的 appid</td>
+</tr>
+<tr>
+<td>appid</td>
+<td>公众号的 appid</td>
+</tr>
+<tr>
+<td>redirect_uri</td>
+<td>新管理员信息填写完成点击提交后，将跳转到该地址(注：1.链接需 urlencode 2.Host 需和第三方平台在微信开放平台上面填写的登录授权的发起页域名一致)</td>
+</tr>
+</tbody>
+</table>
+<p>跳转到微信公众平台授权页面链接举例:</p>
+<p>https://mp.weixin.qq.com/wxopen/componentrebindadmin?appid=wx28f759479ea1e090&amp;component_appid=wx666666666666123&amp;redirect_uri=https%3a%2f%2f www.qq.com%2fauth%2fcallback%3ffrom%3dmp</p>
+<h3 id="72">7.2. 小程序新旧管理员填写信息，扫码确认提交后跳转回第三方平台<a class="headerlink" href="#72" title="Permanent link">&para;</a></h3>
+<p>点击页面提交按钮。</p>
+<p>跳转回第三方平台，会在上述 redirect_uri 后拼接 taskid=*</p>
+<p>跳转回第三方平台举例：</p>
+<p>https://www.qq.com/auth/callback?taskid=b25519093b1e97239eff9d2bfc07e08e</p>
+<h3 id="73-api">7.3. 跳转至第三方平台，第三方平台调用快速注册 API 完成管理员换绑。<a class="headerlink" href="#73-api" title="Permanent link">&para;</a></h3>
+<p>请求方式：</p>
+<p>请求方式: POST(请使用 https 协议)</p>
+<p>https://api.weixin.qq.com/cgi-bin/account/componentrebindadmin?access_token=TOKEN</p>
+<p>请求示例:</p>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;taskid&quot;</span><span class="p">:</span> <span class="s2">&quot;b25519093b1e97239eff9d2bfc07e08e&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>参数说明:</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>taskid</td>
+<td>换绑管理员任务序列号(公众平台最终点击提交回跳到第三方平台时携带)</td>
+</tr>
+</tbody>
+</table>
+<p>返回说明:</p>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;errcode&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>参数说明</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>errcode</td>
+<td>错误码</td>
+</tr>
+<tr>
+<td>errmsg</td>
+<td>错误信息</td>
+</tr>
+</tbody>
+</table>
+<p>错误码说明</p>
+<table>
+<thead>
+<tr>
+<th>错误码</th>
+<th>错误码说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>85060</td>
+<td>无效的 taskid</td>
+</tr>
+<tr>
+<td>85027</td>
+<td>身份证绑定管理员名额达到上限</td>
+</tr>
+<tr>
+<td>85061</td>
+<td>手机号绑定管理员名额达到上限</td>
+</tr>
+<tr>
+<td>85026</td>
+<td>微信号绑定管理员名额达到上限</td>
+</tr>
+<tr>
+<td>85063</td>
+<td>身份证黑名单</td>
+</tr>
+<tr>
+<td>85062</td>
+<td>手机号黑名单</td>
+</tr>
+</tbody>
+</table>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../weapp/" title="小程序管理权限集" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  后退
+                </span>
+                小程序管理权限集
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../" title="代小程序实现业务" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  前进
+                </span>
+                代小程序实现业务
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            @2018 wxdocs.github.io
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../../assets/fonts/font-awesome.css">
+    
+      <a href="http://wohugb.github.io" class="md-footer-social__link fa fa-globe"></a>
+    
+      <a href="https://github.com/wohugb" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://twitter.com/wohugb" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://linkedin.com/in/wohugb" class="md-footer-social__link fa fa-linkedin"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/application.b41f3d20.js"></script>
+      
+        
+        
+          
+          <script src="../../../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+                <script src="../../../assets/javascripts/lunr/tinyseg.js"></script>
+              
+              
+                <script src="../../../assets/javascripts/lunr/lunr.jp.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>
