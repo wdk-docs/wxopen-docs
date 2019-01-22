@@ -4,8 +4,8 @@ site_author: Nosy
 
 copyright: "@2018 wxdocs.github.io"
 
-repo_name: wxdocs
-repo_url: https://github.com/wxdocs
+repo_name: open-docs
+repo_url: https://github.com/wxdocs/open-docs
 edit_uri: ""
 
 theme:
@@ -108,19 +108,32 @@ nav:
           - 微信开放平台帐号管理: open/mp/open_account.md
           - 小程序管理权限集: open/mp/weapp.md
           - 复用公众号主体快速注册小程序: open/mp/regapp.md
-      - 代小程序实现业务: open/index.md
-      - 消息加解密: open/index.md
-      - 全网发布: open/index.md
-  - 返回码说明: code/index.md
-  - 资源下载: download/index.md
+      - 消息加解密:
+          - 消息加解密接入指引: open/index.md
+          - 加密解密技术方案: open/index.md
+      - 全网发布: open/wire.md
   - 小程序:
       - 开发简介: open/mini/index.md
+      - 公号快速创建: open/mp/regapp.md
+      - 用户快速创建: open/mini/fast-regeister.md
       - 域名设置: open/mini/domain.md
+      - 信息设置: open/mini/info.md
       - 测试人员: open/mini/tester.md
+      - 内容安全: open/mini/sec-check.md
       - 代码管理: open/mini/code.md
       - 扫码打开: open/mini/qrcode.md
       - 模版库: open/mini/temp-lib.md
       - 微信登录: open/mini/session.md
       - 模板消息: open/mini/temp.md
+      - Unionid接口: open/mini/unionid.md
       - 开放平台: open/mini/open.md
+      - 插件管理: open/mini/plugin.md
       - 隐私设置: open/mini/status.md
+      - 搜索widget: open/mini/widget.md
+  - 返回码说明: code/index.md
+  - 资源下载:
+      - 概述: download/index.md
+      - iOS资源下载: download/ios.md
+      - Android资源下载: download/android.md
+      - WP8资源下载: download/wp8.md
+      - 设计资源下载: download/assets.md
