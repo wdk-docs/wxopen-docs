@@ -106,7 +106,7 @@ nav:
           - 卡券强授权: open/mp/card.md
           - 微信广告接口: open/mp/ad.md
           - 微信开放平台帐号管理: open/mp/open_account.md
-          - 小程序管理权限集: open/mp/weapp.md
+          - 小程序管理权限集: open/mini/link.md
           - 复用公众号主体快速注册小程序: open/mp/regapp.md
       - 消息加解密:
           - 消息加解密接入指引: open/index.md
@@ -130,6 +130,7 @@ nav:
       - 插件管理: open/mini/plugin.md
       - 隐私设置: open/mini/status.md
       - 搜索widget: open/mini/widget.md
+      - 关联小程序: open/mini/link.md
   - 返回码说明: code/index.md
   - 资源下载:
       - 概述: download/index.md
