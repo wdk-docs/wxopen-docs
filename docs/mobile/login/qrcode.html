@@ -1,0 +1,322 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>移动应用扫码登录 &mdash; wxopen-docs 1.0.0 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="微信智能接口" href="../ai/index.html" />
+    <link rel="prev" title="授权后接口调用（UnionID）" href="UnionID.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../contents.html" class="icon icon-home"> wxopen-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">概述</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">移动应用</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../guide/index.html">接入指南</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../share/index.html">分享与收藏功能</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pay/index.html">微信支付功能</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">微信登录功能</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="guide.html">移动应用微信登录开发指南</a></li>
+<li class="toctree-l3"><a class="reference internal" href="UnionID.html">授权后接口调用（UnionID）</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">移动应用扫码登录</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ai/index.html">微信智能接口</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../message/index.html">移动应用一次性订阅消息开发指南</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wxa/index.html">移动应用拉起小程序功能</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq/index.html">常见问题</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../website/index.html">网站应用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pubno/index.html">公众号</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../open/index.html">第三方平台</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../code/index.html">错误码</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../download/index.html">资源下载</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary.html">术语</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../contents.html">wxopen-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../contents.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">移动应用</a> &raquo;</li>
+        
+          <li><a href="index.html">微信登录功能</a> &raquo;</li>
+        
+      <li>移动应用扫码登录</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/mobile/login/qrcode.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>移动应用扫码登录<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<p>功能概述</p>
+<p>扫码登录能力，指的是开发者可在移动应用内使用此能力，拉取二维码，用户使用微信客户端扫描二维码后可以登录此移动应用。此能力可被应用在多设备登录、智能硬件、电视盒子等场景。</p>
+<p>iOS扫码授权获得Code流程</p>
+<p>步骤一：请求函数</p>
+<p>(BOOL)Auth:(NSString <em>)appId nonceStr:(NSString *)nonceStr timeStamp:(NSString</em>)timeStamp scope:(NSString <a href="#id2"><span class="problematic" id="id3">*</span></a>) scope signature:(NSString <a href="#id4"><span class="problematic" id="id5">*</span></a>)signature schemeData:(NSString <a href="#id6"><span class="problematic" id="id7">*</span></a>)schemeData;
+参数说明</p>
+<p>参数      是否必须    说明
+appid   是       应用唯一标识
+scope   是       应用授权作用域，拥有多个作用域用逗号（,）分隔，APP所拥有的scope
+nonceStr        是       一个随机的尽量不重复的字符串，用来使得每次的signature不同
+timeStamp       是       时间戳
+signature       是       签名
+schemeData      否       会在扫码后拼在scheme后</p>
+<p>步骤二：监听二维码回调，回调的时候显示二维码</p>
+<blockquote>
+<div><p>(void)onAuthGotQrcode:(UIImage <a href="#id8"><span class="problematic" id="id9">*</span></a>)image;  //得到二维码</p>
+</div></blockquote>
+<p>步骤三：用户确认登录之后回调authCode</p>
+<p>-(void)onAuthFinish:(int)errCode AuthCode:(NSString <a href="#id10"><span class="problematic" id="id11">*</span></a>)authCode;    //成功登录</p>
+<p>Android扫码授权流程</p>
+<p>流程</p>
+<p>首先APP通过IDiffDevOAuth.auth()接口发起授权，然后在OAuthListener.onAuthGotQrcode()回调接口中获取二维码，在APP中展示二维码，最后用户通过微信扫码，授权.</p>
+<p>接口</p>
+<p>IDiffDevOAuth</p>
+<p>boolean auth(String appId, String scope, String noncestr, String timestamp, String signature, OAuthListener listener)
+参数说明</p>
+<p>参数      是否必须    说明
+appId   是       应用唯一标识
+scope   是       应用授权作用域，拥有多个作用域用逗号（,）分隔，APP所拥有的scope
+noncestr        是       一个随机的尽量不重复的字符串，用来使得每次的signature不同
+timestamp       是       时间戳
+signature       是       签名
+listener        是       授权流程，回调接口</p>
+<p>OAuthListener</p>
+<dl>
+<dt>/**</dt><dd><ul class="simple">
+<li><p>auth之后返回的二维码接口</p></li>
+<li></li>
+<li><p>&#64;param qrcodeImgPath 废弃</p></li>
+<li><p>&#64;param imgBuf 二维码图片数据</p></li>
+</ul>
+<p><a href="#id12"><span class="problematic" id="id13">*</span></a>/</p>
+</dd>
+</dl>
+<p>void onAuthGotQrcode(String qrcodeImgPath, byte[] imgBuf);</p>
+<dl>
+<dt>/**</dt><dd><ul class="simple">
+<li><p>用户扫描二维码之后，回调改接口</p></li>
+</ul>
+<p><a href="#id14"><span class="problematic" id="id15">*</span></a>/</p>
+</dd>
+</dl>
+<p>void onQrcodeScanned();</p>
+<dl>
+<dt>/**</dt><dd><ul class="simple">
+<li><p>用户点击授权后，回调改接口</p></li>
+</ul>
+<p><a href="#id16"><span class="problematic" id="id17">*</span></a>/</p>
+</dd>
+</dl>
+<p>void onAuthFinish(OAuthErrCode errCode, String authCode);</p>
+<p>SDK扫码登录签名算法</p>
+<p>获取Ticket</p>
+<p>生成签名之前必须先获取对应的sdk_ticket。</p>
+<p>sdk_ticket是用于生成签名的临时票据。正常情况下，sdk_ticket的有效期为7200秒，通过access_token来获取。由于获取sdk_ticket的api调用次数非常有限，频繁刷新sdk_ticket会导致api调用受限，影响自身业务，开发者需在自己的服务存储与更新sdk_ticket。</p>
+<p>1.参考以下文档，使用APP的Appid和AppSecret获取access_token获取access_token,：</p>
+<p><a class="reference external" href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421140183">https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421140183</a></p>
+<p>2.用第一步拿到的access_token 采用http GET方式请求获得sdk_ticket：</p>
+<p><a class="reference external" href="https://api.weixin.qq.com/cgi-bin/ticket/getticket?access_token=ACCESS_TOKEN&amp;type=2">https://api.weixin.qq.com/cgi-bin/ticket/getticket?access_token=ACCESS_TOKEN&amp;type=2</a></p>
+<p>成功返回如下JSON：</p>
+<dl>
+<dt>{</dt><dd><p>“errcode”:0,</p>
+<p>“errmsg”:”ok”,</p>
+<p>“ticket”:”-p3A5zVP95IuafPhzA6lRR95_F9nZEBfJ_n4E9t8ZFWKJTDPOwccVQhHCwDBmvLkayF_jh-m9HOExhumOziDWA”,</p>
+<p>“expires_in”:7200</p>
+</dd>
+</dl>
+<p>}
+获得sdk_ticket之后，就可以生成扫码登录的签名了。</p>
+<p>签名生成</p>
+<p>签名生成规则如下：</p>
+<p>参与签名的字段包括第三方appid，noncestr（随机字符串）, 有效的sdk_ticket, timestamp（时间戳） 。</p>
+<p>对所有待签名参数按照字段名的ASCII 码从小到大排序（字典序）后，使用URL键值对的格式（即key1=value1&amp;key2=value2…）拼接成字符串string1。这里需要注意的是所有参数名均为小写字符。对string1作sha1加密，字段名和字段值都采用原始值，不进行URL 转义。即signature=sha1(string1)。</p>
+<p>示例：</p>
+<p>appid=appid</p>
+<p>noncestr=noncestr</p>
+<p>sdk_ticket=-p3A5zVP95IuafPhzA6lRR95_F9nZEBfJ_n4E9t8ZFWKJTDPOwccVQhHCwDBmvLkayF_jh-m9HOExhumOziDWA</p>
+<p>timestamp=1417508194</p>
+<p>1.对所有待签名参数按照字段名的ASCII 码从小到大排序（字典序）后，使用URL键值对的格式（即key1=value1&amp;key2=value2…）拼接成字符串string1：
+appid=appid&amp;noncestr=noncestr&amp;sdk_ticket=-p3A5zVP95IuafPhzA6lRR95_F9nZEBfJ_n4E9t8ZFWKJTDPOwccVQhHCwDBmvLkayF_jh-m9HOExhumOziDWA&amp;timestamp=1417508194</p>
+<p>2.对string1进行sha1签名，得到signature：
+429eaaa13fd71efbc3fd344d0a9a9126835e7303</p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../ai/index.html" class="btn btn-neutral float-right" title="微信智能接口" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="UnionID.html" class="btn btn-neutral float-left" title="授权后接口调用（UnionID）" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, nosy
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

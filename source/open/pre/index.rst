@@ -1,7 +1,7 @@
 开发前必读
 =========
 
-. toctree::
+.. toctree::
    :maxdepth: 2
    :glob:
 

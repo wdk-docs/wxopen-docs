@@ -1,0 +1,361 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>授权后接口调用（UnionID） &mdash; wxopen-docs 1.0.0 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="移动应用扫码登录" href="qrcode.html" />
+    <link rel="prev" title="移动应用微信登录开发指南" href="guide.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../contents.html" class="icon icon-home"> wxopen-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">概述</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">移动应用</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../guide/index.html">接入指南</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../share/index.html">分享与收藏功能</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pay/index.html">微信支付功能</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">微信登录功能</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="guide.html">移动应用微信登录开发指南</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">授权后接口调用（UnionID）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="qrcode.html">移动应用扫码登录</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ai/index.html">微信智能接口</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../message/index.html">移动应用一次性订阅消息开发指南</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wxa/index.html">移动应用拉起小程序功能</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq/index.html">常见问题</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../website/index.html">网站应用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pubno/index.html">公众号</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../open/index.html">第三方平台</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../code/index.html">错误码</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../download/index.html">资源下载</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary.html">术语</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../contents.html">wxopen-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../contents.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">移动应用</a> &raquo;</li>
+        
+          <li><a href="index.html">微信登录功能</a> &raquo;</li>
+        
+      <li>授权后接口调用（UnionID）</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/mobile/login/UnionID.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="unionid">
+<h1>授权后接口调用（UnionID）<a class="headerlink" href="#unionid" title="永久链接至标题">¶</a></h1>
+<p>通过code获取access_token</p>
+<p>接口说明</p>
+<p>通过code获取access_token的接口。</p>
+<p>请求说明</p>
+<p>http请求方式: GET
+<a class="reference external" href="https://api.weixin.qq.com/sns/oauth2/access_token?appid=APPID&amp;secret=SECRET&amp;code=CODE&amp;grant_type=authorization_code">https://api.weixin.qq.com/sns/oauth2/access_token?appid=APPID&amp;secret=SECRET&amp;code=CODE&amp;grant_type=authorization_code</a>
+参数说明</p>
+<p>参数      是否必须    说明
+appid   是       应用唯一标识，在微信开放平台提交应用审核通过后获得
+secret  是       应用密钥AppSecret，在微信开放平台提交应用审核通过后获得
+code    是       填写第一步获取的code参数
+grant_type      是       填authorization_code
+返回说明</p>
+<p>正确的返回：</p>
+<p>{
+“access_token”:”ACCESS_TOKEN”,
+“expires_in”:7200,
+“refresh_token”:”REFRESH_TOKEN”,
+“openid”:”OPENID”,
+“scope”:”SCOPE”
+}
+参数      说明
+access_token    接口调用凭证
+expires_in      access_token接口调用凭证超时时间，单位（秒）
+refresh_token   用户刷新access_token
+openid  授权用户唯一标识
+scope   用户授权的作用域，使用逗号（,）分隔
+错误返回样例：</p>
+<p>{
+“errcode”:40029,”errmsg”:”invalid code”
+}
+刷新或续期access_token使用</p>
+<p>接口说明</p>
+<p>access_token是调用授权关系接口的调用凭证，由于access_token有效期（目前为2个小时）较短，当access_token超时后，可以使用refresh_token进行刷新，access_token刷新结果有两种：</p>
+<p>1.若access_token已超时，那么进行refresh_token会获取一个新的access_token，新的超时时间；</p>
+<p>2.若access_token未超时，那么进行refresh_token不会改变access_token，但超时时间会刷新，相当于续期access_token。</p>
+<p>refresh_token拥有较长的有效期（30天）且无法续期，当refresh_token失效的后，需要用户重新授权后才可以继续获取用户头像昵称。</p>
+<p>请求方法</p>
+<p>使用/sns/oauth2/access_token接口获取到的refresh_token进行以下接口调用：</p>
+<p>http请求方式: GET
+<a class="reference external" href="https://api.weixin.qq.com/sns/oauth2/refresh_token?appid=APPID&amp;grant_type=refresh_token&amp;refresh_token=REFRESH_TOKEN">https://api.weixin.qq.com/sns/oauth2/refresh_token?appid=APPID&amp;grant_type=refresh_token&amp;refresh_token=REFRESH_TOKEN</a>
+参数说明</p>
+<p>参数      是否必须    说明
+appid   是       应用唯一标识
+grant_type      是       填refresh_token
+refresh_token   是       填写通过access_token获取到的refresh_token参数
+返回说明</p>
+<p>正确的返回：</p>
+<p>{
+“access_token”:”ACCESS_TOKEN”,
+“expires_in”:7200,
+“refresh_token”:”REFRESH_TOKEN”,
+“openid”:”OPENID”,
+“scope”:”SCOPE”
+}
+参数      说明
+access_token    接口调用凭证
+expires_in      access_token接口调用凭证超时时间，单位（秒）
+refresh_token   用户刷新access_token
+openid  授权用户唯一标识
+scope   用户授权的作用域，使用逗号（,）分隔
+错误返回样例：</p>
+<p>{
+“errcode”:40030,”errmsg”:”invalid refresh_token”
+}
+接口说明</p>
+<p>检验授权凭证（access_token）是否有效</p>
+<p>请求说明</p>
+<p>http请求方式: GET
+<a class="reference external" href="https://api.weixin.qq.com/sns/auth?access_token=ACCESS_TOKEN&amp;openid=OPENID">https://api.weixin.qq.com/sns/auth?access_token=ACCESS_TOKEN&amp;openid=OPENID</a>
+参数说明</p>
+<p>参数      是否必须    说明
+access_token    是       调用接口凭证
+openid  是       普通用户标识，对该公众帐号唯一
+返回说明</p>
+<p>正确的Json返回结果：</p>
+<p>{
+“errcode”:0,”errmsg”:”ok”
+}
+错误的Json返回示例:</p>
+<p>{
+“errcode”:40003,”errmsg”:”invalid openid”
+}
+获取用户个人信息（UnionID机制）</p>
+<p>接口说明</p>
+<p>此接口用于获取用户个人信息。开发者可通过OpenID来获取用户基本信息。特别需要注意的是，如果开发者拥有多个移动应用、网站应用和公众帐号，可通过获取用户基本信息中的unionid来区分用户的唯一性，因为只要是同一个微信开放平台帐号下的移动应用、网站应用和公众帐号，用户的unionid是唯一的。换句话说，同一用户，对同一个微信开放平台下的不同应用，unionid是相同的。请注意，在用户修改微信头像后，旧的微信头像URL将会失效，因此开发者应该自己在获取用户信息后，将头像图片保存下来，避免微信头像URL失效后的异常情况。</p>
+<p>请求说明</p>
+<p>http请求方式: GET
+<a class="reference external" href="https://api.weixin.qq.com/sns/userinfo?access_token=ACCESS_TOKEN&amp;openid=OPENID">https://api.weixin.qq.com/sns/userinfo?access_token=ACCESS_TOKEN&amp;openid=OPENID</a>
+参数说明</p>
+<p>参数      是否必须    说明
+access_token    是       调用凭证
+openid  是       普通用户的标识，对当前开发者帐号唯一
+lang    否       国家地区语言版本，zh_CN 简体，zh_TW 繁体，en 英语，默认为zh-CN
+返回说明</p>
+<p>正确的Json返回结果：</p>
+<p>{
+“openid”:”OPENID”,
+“nickname”:”NICKNAME”,
+“sex”:1,
+“province”:”PROVINCE”,
+“city”:”CITY”,
+“country”:”COUNTRY”,
+“headimgurl”: “<a class="reference external" href="http://wx.qlogo.cn/mmopen/g3MonUZtNHkdmzicIlibx6iaFqAc56vxLSUfpb6n5WKSYVY0ChQKkiaJSgQ1dZuTOgvLLrhJbERQQ4eMsv84eavHiaiceqxibJxCfHe/0">http://wx.qlogo.cn/mmopen/g3MonUZtNHkdmzicIlibx6iaFqAc56vxLSUfpb6n5WKSYVY0ChQKkiaJSgQ1dZuTOgvLLrhJbERQQ4eMsv84eavHiaiceqxibJxCfHe/0</a>”,
+“privilege”:[
+“PRIVILEGE1”,
+“PRIVILEGE2”
+],
+“unionid”: ” o6_bmasdasdsad6_2sgVt7hMZOPfL”
+}
+参数      说明
+openid  普通用户的标识，对当前开发者帐号唯一
+nickname        普通用户昵称
+sex     普通用户性别，1为男性，2为女性
+province        普通用户个人资料填写的省份
+city    普通用户个人资料填写的城市
+country 国家，如中国为CN
+headimgurl      用户头像，最后一个数值代表正方形头像大小（有0、46、64、96、132数值可选，0代表640*640正方形头像），用户没有头像时该项为空
+privilege       用户特权信息，json数组，如微信沃卡用户为（chinaunicom）
+unionid 用户统一标识。针对一个微信开放平台帐号下的应用，同一用户的unionid是唯一的。
+建议：</p>
+<p>开发者最好保存unionID信息，以便以后在不同应用之间进行用户信息互通。</p>
+<p>错误的Json返回示例:</p>
+<p>{
+“errcode”:40003,”errmsg”:”invalid openid”
+}
+调用频率限制</p>
+<p>接口名     频率限制
+通过code换取access_token    5万/分钟
+获取用户基本信息        5万/分钟
+刷新access_token  10万/分钟</p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="qrcode.html" class="btn btn-neutral float-right" title="移动应用扫码登录" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="guide.html" class="btn btn-neutral float-left" title="移动应用微信登录开发指南" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, nosy
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

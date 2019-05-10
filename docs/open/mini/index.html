@@ -37,8 +37,8 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
-    <link rel="next" title="代公众号实现业务" href="../mp/index.html" />
-    <link rel="prev" title="授权流程技术说明" href="../auth/index.html" /> 
+    <link rel="next" title="代码管理" href="code.html" />
+    <link rel="prev" title="9、推送授权相关通知" href="../auth/callback.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -89,18 +89,35 @@
 <li class="toctree-l1"><a class="reference internal" href="../../pubno/index.html">公众号</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">第三方平台</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../overview.html">第三方平台概述</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../wire.html">消息加解密说明</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../auth/index.html">授权流程技术说明</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">代小程序实现业务-开发简介</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#id2">一. 绑定开发小程序</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id3">二. 小程序模版的开发和上传</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id">三. 添加到小程序模版库，获得模版ID</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id4">四. 调用接口，为旗下授权的小程序部署代码</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">四. 调用接口，为旗下授权的小程序部署代码</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="code.html">代码管理</a></li>
+<li class="toctree-l4"><a class="reference internal" href="domain.html">修改服务器地址</a></li>
+<li class="toctree-l4"><a class="reference internal" href="info.html">小程序信息设置</a></li>
+<li class="toctree-l4"><a class="reference internal" href="link.html">小程序管理权限集</a></li>
+<li class="toctree-l4"><a class="reference internal" href="open.html">开放平台绑定</a></li>
+<li class="toctree-l4"><a class="reference internal" href="plugin.html">小程序插件管理权限集</a></li>
+<li class="toctree-l4"><a class="reference internal" href="qrcode.html">设置小程序“扫普通链接二维码打开小程序”能力</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sec-check.html">内容安全接口</a></li>
+<li class="toctree-l4"><a class="reference internal" href="session.html">微信登录</a></li>
+<li class="toctree-l4"><a class="reference internal" href="status.html">基础信息设置</a></li>
+<li class="toctree-l4"><a class="reference internal" href="temp-lib.html">小程序代码模版库管理</a></li>
+<li class="toctree-l4"><a class="reference internal" href="temp.html">小程序模板消息设置</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tester.html">成员管理</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tester.html#id13">成员管理</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unionid.html">支付后获取用户 Unionid 接口</a></li>
+<li class="toctree-l4"><a class="reference internal" href="widget.html">搜索 widget 接入指南</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#mp">mp</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../mp/index.html">代公众号实现业务</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pre/index.html">开发前必读</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wire.html">消息加解密说明</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../code/index.html">错误码</a></li>
@@ -204,36 +221,129 @@
 <div class="highlight-js notranslate"><div class="highlight"><pre><span></span>小程序授权托管之后，只能使用第三方平台的在微信开放平台登记的服务器地址。所以第三方平台在帮助旗下公众号发布代码之前，需先把服务器地址设置到小程序的服务器地址中，设置接口详见“修改服务器地址”文档中的接口。
 </pre></div>
 </div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="code.html">代码管理</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="code.html#id2">1. 上传代码</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code.html#id3">2. 获取体验码</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code.html#id4">3. 获取已设置类目</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code.html#id5">4. 获取代码页面配置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code.html#id6">5. 提交审核</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code.html#id7">6. 获取审核结果</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code.html#id8">7. 查询指定版本审核状态</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code.html#id9">8. 查询最新一次提交的审核状态</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code.html#id10">9. 发布已通过审核的小程序</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code.html#id11">10. 修改线上代码的可见状态</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code.html#id12">11. 版本回退</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code.html#id13">12. 查询当前设置的最低基础库版本及各版本用户占比</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code.html#id14">13. 设置最低基础库版本</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code.html#id15">14. 设置小程序“扫普通链接二维码打开小程序”能力</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code.html#id21">15. 小程序审核撤回</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code.html#id22">16.小程序分阶段发布</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="domain.html">修改服务器地址</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="domain.html#id2">1. 设置服务器域名</a></li>
+<li class="toctree-l2"><a class="reference internal" href="domain.html#id7">2、设置业务域名</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="info.html">小程序信息设置</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="info.html#id2">1 获取帐号基本信息</a></li>
+<li class="toctree-l2"><a class="reference internal" href="info.html#id3">2 小程序名称设置及改名</a></li>
+<li class="toctree-l2"><a class="reference internal" href="info.html#id4">3 小程序改名审核状态查询</a></li>
+<li class="toctree-l2"><a class="reference internal" href="info.html#id5">4 微信认证名称检测</a></li>
+<li class="toctree-l2"><a class="reference internal" href="info.html#id6">5 修改头像</a></li>
+<li class="toctree-l2"><a class="reference internal" href="info.html#id7">6 修改功能介绍</a></li>
+<li class="toctree-l2"><a class="reference internal" href="info.html#id8">7 换绑小程序管理员接口</a></li>
+<li class="toctree-l2"><a class="reference internal" href="info.html#id11">8 类目相关接口</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="link.html">小程序管理权限集</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="link.html#id2">1.获取公众号关联的小程序</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link.html#id3">2. 关联小程序</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link.html#id4">3.解除已关联的小程序</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="open.html">开放平台绑定</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="open.html#id2">1. 创建并绑定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="open.html#id7">2. 绑定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="open.html#id17">3.解绑</a></li>
+<li class="toctree-l2"><a class="reference internal" href="open.html#id28">4. 获取绑定平台</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="plugin.html">小程序插件管理权限集</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="plugin.html#id2">1.申请使用插件接口</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plugin.html#id3">2. 查询已添加的插件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plugin.html#id4">3. 删除已添加的插件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plugin.html#id5">4. 快速更新插件版本</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="qrcode.html">设置小程序“扫普通链接二维码打开小程序”能力</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="qrcode.html#id2">1. 增加或修改二维码规则</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qrcode.html#id5">2. 获取已设置的二维码规则</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qrcode.html#id9">3. 获取校验文件名称及内容</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qrcode.html#id14">4. 删除已设置的二维码规则</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qrcode.html#id21">5. 发布已设置的二维码规则</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="sec-check.html">内容安全接口</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="sec-check.html#id2">内容安全接口提供的能力如下：</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sec-check.html#id6">接入指引：</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="session.html">微信登录</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="session.html#code-session-key">code 换取 session_key</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="status.html">基础信息设置</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="status.html#id2">1. 设置小程序隐私设置（是否可被搜索）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="status.html#id3">2. 查询小程序当前隐私设置（是否可被搜索）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="status.html#id4">3 小程序扫码公众号关注组件</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="temp-lib.html">小程序代码模版库管理</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="temp-lib.html#id2">1. 获取草稿</a></li>
+<li class="toctree-l2"><a class="reference internal" href="temp-lib.html#id7">2. 获取模板</a></li>
+<li class="toctree-l2"><a class="reference internal" href="temp-lib.html#id16">3. 草稿选为模板</a></li>
+<li class="toctree-l2"><a class="reference internal" href="temp-lib.html#id26">4. 删除模板</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="temp.html">小程序模板消息设置</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="temp.html#id2">1.系统模板列表</a></li>
+<li class="toctree-l2"><a class="reference internal" href="temp.html#id6">2.模板关键词</a></li>
+<li class="toctree-l2"><a class="reference internal" href="temp.html#id13">3.添加模板</a></li>
+<li class="toctree-l2"><a class="reference internal" href="temp.html#id20">4.我的模板</a></li>
+<li class="toctree-l2"><a class="reference internal" href="temp.html#id27">5.删除模板</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tester.html">成员管理</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tester.html#id2">1.绑定体验者</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tester.html#id6">2.解绑体验者</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tester.html#id13">成员管理</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tester.html#id15">1、绑定微信用户为小程序体验者</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tester.html#id16">2、解除绑定小程序的体验者</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tester.html#id17">3. 获取体验者列表</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="unionid.html">支付后获取用户 Unionid 接口</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="unionid.html#id1">请求地址</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unionid.html#id2">请求参数</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unionid.html#id3">返回值</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="widget.html">搜索 widget 接入指南</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="widget.html#id1">概述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="widget.html#id2">模板分为标准模板和自定义模板：</a></li>
+<li class="toctree-l2"><a class="reference internal" href="widget.html#id3">购物单商品</a></li>
+<li class="toctree-l2"><a class="reference internal" href="widget.html#id4">功能直达</a></li>
+<li class="toctree-l2"><a class="reference internal" href="widget.html#id5">自定义模板</a></li>
+</ul>
+</li>
+</ul>
 </div>
 </div>
-<div class="section" id="mp">
-<h1>mp<a class="headerlink" href="#mp" title="永久链接至标题">¶</a></h1>
-<dl>
-<dt>. toctree::</dt><dd><dl class="field-list simple">
-<dt class="field-odd">maxdepth</dt>
-<dd class="field-odd"><p>2</p>
-</dd>
-<dt class="field-even">glob</dt>
-<dd class="field-even"><p></p></dd>
-</dl>
-<p>code
-domain
-fast-register
-info
-link
-open
-plugin
-qrcode
-sec-check
-session
-status
-temp-lib
-temp
-tester
-unionid
-widget</p>
-</dd>
-</dl>
 </div>
 
 
@@ -244,10 +354,10 @@ widget</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../mp/index.html" class="btn btn-neutral float-right" title="代公众号实现业务" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="code.html" class="btn btn-neutral float-right" title="代码管理" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../auth/index.html" class="btn btn-neutral float-left" title="授权流程技术说明" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../auth/callback.html" class="btn btn-neutral float-left" title="9、推送授权相关通知" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

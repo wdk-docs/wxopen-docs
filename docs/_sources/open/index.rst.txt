@@ -6,9 +6,10 @@
    :glob:
 
    overview.rst
-   wire
    auth/index
    mini/index
    mp/index
    pre/index
+   wire
    open/index
+

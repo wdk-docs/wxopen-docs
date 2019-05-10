@@ -1,0 +1,376 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>移动应用微信登录开发指南 &mdash; wxopen-docs 1.0.0 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="授权后接口调用（UnionID）" href="UnionID.html" />
+    <link rel="prev" title="微信登录功能" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../contents.html" class="icon icon-home"> wxopen-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">概述</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">移动应用</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../guide/index.html">接入指南</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../share/index.html">分享与收藏功能</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pay/index.html">微信支付功能</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">微信登录功能</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">移动应用微信登录开发指南</a></li>
+<li class="toctree-l3"><a class="reference internal" href="UnionID.html">授权后接口调用（UnionID）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="qrcode.html">移动应用扫码登录</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ai/index.html">微信智能接口</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../message/index.html">移动应用一次性订阅消息开发指南</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wxa/index.html">移动应用拉起小程序功能</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq/index.html">常见问题</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../website/index.html">网站应用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pubno/index.html">公众号</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../open/index.html">第三方平台</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../code/index.html">错误码</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../download/index.html">资源下载</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary.html">术语</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../contents.html">wxopen-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../contents.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">移动应用</a> &raquo;</li>
+        
+          <li><a href="index.html">微信登录功能</a> &raquo;</li>
+        
+      <li>移动应用微信登录开发指南</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/mobile/login/guide.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>移动应用微信登录开发指南<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<p>准备工作</p>
+<p>移动应用微信登录是基于OAuth2.0协议标准 构建的微信OAuth2.0授权登录系统。</p>
+<p>在进行微信OAuth2.0授权登录接入之前，在微信开放平台注册开发者帐号，并拥有一个已审核通过的移动应用，并获得相应的AppID和AppSecret，申请微信登录且通过审核后，可开始接入流程。</p>
+<p>1、目前移动应用上微信登录只提供原生的登录方式，需要用户安装微信客户端才能配合使用。</p>
+<p>2、对于Android应用，建议总是显示微信登录按钮，当用户手机没有安装微信客户端时，请引导用户下载安装微信客户端。</p>
+<p>3、对于iOS应用，考虑到iOS应用商店审核指南中的相关规定，建议开发者接入微信登录时，先检测用户手机是否已安装微信客户端（使用sdk中isWXAppInstalled函数 ），对未安装的用户隐藏微信登录按钮，只提供其他登录方式（比如手机号注册登录、游客登录等）。
+授权流程说明</p>
+<p>微信OAuth2.0授权登录让微信用户使用微信身份安全登录第三方应用或网站，在微信用户授权登录已接入微信OAuth2.0的第三方应用后，第三方可以获取到用户的接口调用凭证（access_token），通过access_token可以进行微信开放平台授权关系接口调用，从而可实现获取微信用户基本开放信息和帮助用户实现基础开放功能等。</p>
+<p>微信OAuth2.0授权登录目前支持authorization_code模式，适用于拥有server端的应用授权。该模式整体流程为：</p>
+<ol class="arabic simple">
+<li><p>第三方发起微信授权登录请求，微信用户允许授权第三方应用后，微信会拉起应用或重定向到第三方网站，并且带上授权临时票据code参数；</p></li>
+<li><p>通过code参数加上AppID和AppSecret等，通过API换取access_token；</p></li>
+</ol>
+<p>3. 通过access_token进行接口调用，获取用户基本数据资源或帮助用户实现基本操作。
+获取access_token时序图：</p>
+<p>第一步：请求CODE</p>
+<p>移动应用微信授权登录</p>
+<p>开发者需要配合使用微信开放平台提供的SDK进行授权登录请求接入。正确接入SDK后并拥有相关授权域（scope，什么是授权域？）权限后，开发者移动应用会在终端本地拉起微信应用进行授权登录，微信用户确认后微信将拉起开发者移动应用，并带上授权临时票据（code）。</p>
+<p>iOS平台应用授权登录接入代码示例（请参考iOS接入指南）：</p>
+<p>-(void)sendAuthRequest
+{</p>
+<blockquote>
+<div><p>//构造SendAuthReq结构体
+SendAuthReq* req =[[[SendAuthReq alloc]init]autorelease];
+req.scope = &#64;”snsapi_userinfo”;
+req.state = &#64;”123”;
+//第三方向微信终端发送一个SendAuthReq消息结构
+[WXApi sendReq:req];</p>
+</div></blockquote>
+<p>}
+Android平台应用授权登录接入代码示例（请参考Android接入指南）：</p>
+<dl class="simple">
+<dt>{</dt><dd><p>// send oauth request
+Final SendAuth.Req req = new SendAuth.Req();
+req.scope = “snsapi_userinfo”;
+req.state = “wechat_sdk_demo_test”;
+api.sendReq(req);</p>
+</dd>
+</dl>
+<p>}
+参数说明</p>
+<p>参数      是否必须    说明
+appid   是       应用唯一标识，在微信开放平台提交应用审核通过后获得
+scope   是       应用授权作用域，如获取用户个人信息则填写snsapi_userinfo（ 什么是授权域？ ）
+state   否       用于保持请求和回调的状态，授权请求后原样带回给第三方。该参数可用于防止csrf攻击（跨站请求伪造攻击），建议第三方带上该参数，可设置为简单的随机数加session进行校验
+返回示例：</p>
+<p>appid: wxd477edab60670232
+scope: snsapi_userinfo
+state: wechat_sdk_demo
+可拉起微信打开授权登录页：</p>
+<p>返回说明</p>
+<p>用户点击授权后，微信客户端会被拉起，跳转至授权界面，用户在该界面点击允许或取消，SDK通过SendAuth的Resp返回数据给调用方。</p>
+<p>返回值     说明
+ErrCode ERR_OK = 0(用户同意) ERR_AUTH_DENIED = -4（用户拒绝授权） ERR_USER_CANCEL = -2（用户取消）
+code    用户换取access_token的code，仅在ErrCode为0时有效
+state   第三方程序发送时用来标识其请求的唯一性的标志，由第三方程序调用sendReq时传入，由微信终端回传，state字符串长度不能超过1K
+lang    微信客户端当前语言
+country 微信用户当前国家信息
+第二步：通过code获取access_token</p>
+<p>获取第一步的code后，请求以下链接获取access_token：</p>
+<p><a class="reference external" href="https://api.weixin.qq.com/sns/oauth2/access_token?appid=APPID&amp;secret=SECRET&amp;code=CODE&amp;grant_type=authorization_code">https://api.weixin.qq.com/sns/oauth2/access_token?appid=APPID&amp;secret=SECRET&amp;code=CODE&amp;grant_type=authorization_code</a>
+参数说明</p>
+<p>参数      是否必须    说明
+appid   是       应用唯一标识，在微信开放平台提交应用审核通过后获得
+secret  是       应用密钥AppSecret，在微信开放平台提交应用审核通过后获得
+code    是       填写第一步获取的code参数
+grant_type      是       填authorization_code
+返回说明</p>
+<p>正确的返回：</p>
+<p>{
+“access_token”:”ACCESS_TOKEN”,
+“expires_in”:7200,
+“refresh_token”:”REFRESH_TOKEN”,
+“openid”:”OPENID”,
+“scope”:”SCOPE”,
+“unionid”:”o6_bmasdasdsad6_2sgVt7hMZOPfL”
+}
+参数      说明
+access_token    接口调用凭证
+expires_in      access_token接口调用凭证超时时间，单位（秒）
+refresh_token   用户刷新access_token
+openid  授权用户唯一标识
+scope   用户授权的作用域，使用逗号（,）分隔
+unionid 当且仅当该移动应用已获得该用户的userinfo授权时，才会出现该字段
+错误返回样例：</p>
+<p>{“errcode”:40029,”errmsg”:”invalid code”}
+刷新access_token有效期</p>
+<p>access_token是调用授权关系接口的调用凭证，由于access_token有效期（目前为2个小时）较短，当access_token超时后，可以使用refresh_token进行刷新，access_token刷新结果有两种：</p>
+<ol class="arabic simple">
+<li><p>若access_token已超时，那么进行refresh_token会获取一个新的access_token，新的超时时间；</p></li>
+</ol>
+<p>2. 若access_token未超时，那么进行refresh_token不会改变access_token，但超时时间会刷新，相当于续期access_token。
+refresh_token拥有较长的有效期（30天），当refresh_token失效的后，需要用户重新授权。</p>
+<p>请求方法</p>
+<p>获取第一步的code后，请求以下链接进行refresh_token：</p>
+<p><a class="reference external" href="https://api.weixin.qq.com/sns/oauth2/refresh_token?appid=APPID&amp;grant_type=refresh_token&amp;refresh_token=REFRESH_TOKEN">https://api.weixin.qq.com/sns/oauth2/refresh_token?appid=APPID&amp;grant_type=refresh_token&amp;refresh_token=REFRESH_TOKEN</a>
+参数说明</p>
+<p>参数      是否必须    说明
+appid   是       应用唯一标识
+grant_type      是       填refresh_token
+refresh_token   是       填写通过access_token获取到的refresh_token参数
+返回说明</p>
+<p>正确的返回：</p>
+<p>{
+“access_token”:”ACCESS_TOKEN”,
+“expires_in”:7200,
+“refresh_token”:”REFRESH_TOKEN”,
+“openid”:”OPENID”,
+“scope”:”SCOPE”
+}
+参数      说明
+access_token    接口调用凭证
+expires_in      access_token接口调用凭证超时时间，单位（秒）
+refresh_token   用户刷新access_token
+openid  授权用户唯一标识
+scope   用户授权的作用域，使用逗号（,）分隔
+错误返回样例：</p>
+<p>{“errcode”:40030,”errmsg”:”invalid refresh_token”}
+注意：</p>
+<p>1、Appsecret 是应用接口使用密钥，泄漏后将可能导致应用数据泄漏、应用的用户数据泄漏等高风险后果；存储在客户端，极有可能被恶意窃取（如反编译获取Appsecret）；
+2、access_token 为用户授权第三方应用发起接口调用的凭证（相当于用户登录态），存储在客户端，可能出现恶意获取access_token 后导致的用户数据泄漏、用户微信相关接口功能被恶意发起等行为；
+3、refresh_token 为用户授权第三方应用的长效凭证，仅用于刷新access_token，但泄漏后相当于access_token 泄漏，风险同上。
+建议将Appsecret、用户数据（如access_token）放在App云端服务器，由云端中转接口调用请求。</p>
+<p>第三步：通过access_token调用接口</p>
+<p>获取access_token后，进行接口调用，有以下前提：</p>
+<p>access_token有效且未超时；
+微信用户已授权给第三方应用帐号相应接口作用域（scope）。
+对于接口作用域（scope），能调用的接口有以下：</p>
+<p>授权作用域（scope）    接口      接口说明
+snsapi_base     /sns/oauth2/access_token        通过code换取access_token、refresh_token和已授权scope
+/sns/oauth2/refresh_token       刷新或续期access_token使用
+/sns/auth       检查access_token有效性
+snsapi_userinfo /sns/userinfo   获取用户个人信息
+其中snsapi_base属于基础接口，若应用已拥有其它scope权限，则默认拥有snsapi_base的权限。使用snsapi_base可以让移动端网页授权绕过跳转授权登录页请求用户授权的动作，直接跳转第三方网页带上授权临时票据（code），但会使得用户已授权作用域（scope）仅为snsapi_base，从而导致无法获取到需要用户授权才允许获得的数据和基础功能。</p>
+<p>接口调用方法可查阅《微信授权关系接口调用指南》</p>
+<p>F.A.Q</p>
+<ol class="arabic simple">
+<li><p>什么是授权临时票据（code）？</p></li>
+</ol>
+<p>答：第三方通过code进行获取access_token的时候需要用到，code的超时时间为10分钟，一个code只能成功换取一次access_token即失效。code的临时性和一次保障了微信授权登录的安全性。第三方可通过使用https和state参数，进一步加强自身授权登录的安全性。</p>
+<ol class="arabic simple" start="2">
+<li><p>什么是授权作用域（scope）？</p></li>
+</ol>
+<p>答：授权作用域（scope）代表用户授权给第三方的接口权限，第三方应用需要向微信开放平台申请使用相应scope的权限后，使用文档所述方式让用户进行授权，经过用户授权，获取到相应access_token后方可对接口进行调用。</p>
+<p>3.开放平台移动应用微信登录目前是否收费？</p>
+<p>答：“微信登录”和第三方网站共享微信庞大的用户价值，同时为微信用户提供更便捷服务和更优质内容，实现双向共赢，目前不收取任何费用。</p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="UnionID.html" class="btn btn-neutral float-right" title="授权后接口调用（UnionID）" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="微信登录功能" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, nosy
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

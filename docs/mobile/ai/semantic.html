@@ -1,0 +1,339 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>语义理解上手指南 &mdash; wxopen-docs 1.0.0 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="移动应用一次性订阅消息开发指南" href="../message/index.html" />
+    <link rel="prev" title="语音合成接口开发指南" href="compound.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../contents.html" class="icon icon-home"> wxopen-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">概述</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">移动应用</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../guide/index.html">接入指南</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../share/index.html">分享与收藏功能</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pay/index.html">微信支付功能</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../login/index.html">微信登录功能</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">微信智能接口</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="image.html">图像识别接口开发指南</a></li>
+<li class="toctree-l3"><a class="reference internal" href="voice.html">语音识别接口</a></li>
+<li class="toctree-l3"><a class="reference internal" href="compound.html">语音合成接口开发指南</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">语义理解上手指南</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id2">第一步：创建应用</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#appidappsecretaccess-token">第二步：根据AppID和AppSecret获得access token</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#access-token">第三步：使用access token调用语义理解接口</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../message/index.html">移动应用一次性订阅消息开发指南</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wxa/index.html">移动应用拉起小程序功能</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq/index.html">常见问题</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../website/index.html">网站应用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pubno/index.html">公众号</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../open/index.html">第三方平台</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../code/index.html">错误码</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../download/index.html">资源下载</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary.html">术语</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../contents.html">wxopen-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../contents.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">移动应用</a> &raquo;</li>
+        
+          <li><a href="index.html">微信智能接口</a> &raquo;</li>
+        
+      <li>语义理解上手指南</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/mobile/ai/semantic.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>语义理解上手指南<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<p>微信开放平台语义理解接口调用（http请求）简单方便，用户无需掌握语义理解及相关技术，只需根据自己的产品特点，选择相应的服务即可搭建一套智能语义服务。</p>
+<div class="section" id="id2">
+<h2>第一步：创建应用<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<p>请到“管理中心”创建应用，点击“创建移动应用”或者“创建网站应用”，填写相关资料，然后将该应用提交审核，只有审核通过的应用才能进行开发。</p>
+<p>注册完毕，我们会在 7 个工作日内完成审核工作。审核通过之后，开放平台将分配给该移动应用全局唯一的AppID和AppSecret。</p>
+</div>
+<div class="section" id="appidappsecretaccess-token">
+<h2>第二步：根据AppID和AppSecret获得access token<a class="headerlink" href="#appidappsecretaccess-token" title="永久链接至标题">¶</a></h2>
+<p>调用接口：
+http请求方式: GET
+<a class="reference external" href="https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&amp;appid=APPID&amp;secret=APPSECRET">https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&amp;appid=APPID&amp;secret=APPSECRET</a>
+参数说明：
+参数      是否必须    说明
+grant_type      是       获取access_token填写client_credential
+appid   是       应用的appid
+secret  是       应用的appsecret
+返回说明：
+正常情况下，微信会返回下述JSON数据包。</p>
+<p>{
+“access_token”:”ACCESS_TOKEN”,
+“expires_in”:7200
+}
+参数      说明
+access_token    获取到的凭证
+expires_in      凭证有效时间，单位：秒
+错误时微信会返回错误码等信息，JSON数据包示例如下（该示例为AppID无效错误）:</p>
+<p>{
+“errcode”:40013,
+“errmsg”:”invalid appid”
+}</p>
+</div>
+<div class="section" id="access-token">
+<h2>第三步：使用access token调用语义理解接口<a class="headerlink" href="#access-token" title="永久链接至标题">¶</a></h2>
+<p>输入说明：
+http请求方式: POST（请使用https协议）
+<a class="reference external" href="https://api.weixin.qq.com/semantic/semproxy/search?access_token=YOUR_ACCESS_TOKEN">https://api.weixin.qq.com/semantic/semproxy/search?access_token=YOUR_ACCESS_TOKEN</a>
+POST数据格式：JSON
+POST数据例子：
+{
+“query”:”查一下明天从北京到上海的南航机票”,
+“city”:”北京”,
+“category”: “flight,hotel”,
+“appid”:”wxaaaaaaaaaaaaaaaa”,
+“uid”:”123456”
+}
+输入参数说明：
+参数      是否必须    参数类型    说明
+access_token    是       String  根据appid和appsecret获取到的token
+query   是       String  输入文本串
+category        是       String  需要使用的服务类型，多个用“,”隔开，不能为空
+latitude        见接口协议文档 Float   纬度坐标，与经度同时传入；与城市二选一传入
+longitude       见接口协议文档 Float   经度坐标，与纬度同时传入；与城市二选一传入
+city    见接口协议文档 String  城市名称，与经纬度二选一传入
+region  见接口协议文档 String  区域名称，在城市存在的情况下可省；与经纬度二选一传入
+appid   是       String  Appid,开发者的唯一标识
+uid     否       String  用户唯一id（非开发者id），用户区分应用下的不同用户（建议填入用户openid），如果为空，则无法使用上下文理解功能。appid和uid同时存在的情况下，才可以使用上下文理解功能。
+返回说明：
+正常情况下，微信会返回下述JSON数据包。</p>
+<dl>
+<dt>{</dt><dd><p>“errcode”:0,
+“query”:”查一下明天从北京到上海的南航机票”,
+“type”:”flight”,
+“semantic”:{</p>
+<blockquote>
+<div><dl class="simple">
+<dt>“details”:{</dt><dd><p>“start_loc”:{
+“type”:”LOC_CITY”,
+“city”:”北京市”,
+“city_simple”:”北京”,
+“loc_ori”:”北京”
+},
+“end_loc”: {
+“type”:”LOC_CITY”,
+“city”:”上海市”,
+“city_simple”:”上海”,
+“loc_ori”:”上海”
+},
+“start_date”: {
+“type”:”DT_ORI”,
+“date”:”2014-03-05”,
+“date_ori”:”明天”
+},
+“airline”:”中国南方航空公司”</p>
+</dd>
+</dl>
+<p>},
+“intent”:”SEARCH”</p>
+</div></blockquote>
+<p>}</p>
+</dd>
+</dl>
+<p>}
+返回参数说明：
+参数      是否必须    参数类型    说明
+errcode 是       Int     表示请求后的状态
+query   是       String  用户的输入字符串
+type    是       String  服务的全局类型id，详见协议文档中垂直服务协议定义
+semantic        是       Object  语义理解后的结构化标识，各服务不同
+result  否       Array   部分类别的结果
+answer  否       String  部分类别的结果html5展示，目前不支持
+text    否       String  特殊回复说明
+更多详细内容与协议说明，请查看：语义理解接口协议文档</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../message/index.html" class="btn btn-neutral float-right" title="移动应用一次性订阅消息开发指南" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="compound.html" class="btn btn-neutral float-left" title="语音合成接口开发指南" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, nosy
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

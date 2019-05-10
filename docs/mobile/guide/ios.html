@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>ios &mdash; wxopen-docs 1.0.0 文档</title>
+  <title>iOS接入指南 &mdash; wxopen-docs 1.0.0 文档</title>
   
 
   
@@ -37,7 +37,7 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
-    <link rel="next" title="android" href="android.html" />
+    <link rel="next" title="Android接入指南" href="android.html" />
     <link rel="prev" title="接入指南" href="index.html" /> 
 </head>
 
@@ -86,15 +86,23 @@
 <li class="toctree-l1"><a class="reference internal" href="../../index.html">概述</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">移动应用</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">接入指南</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">ios</a></li>
-<li class="toctree-l3"><a class="reference internal" href="android.html">android</a></li>
-<li class="toctree-l3"><a class="reference internal" href="wp8.html">wp8</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">iOS接入指南</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id">1.向微信注册你的应用程序id</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdk">2.下载微信终端SDK文件</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id1">3.搭建开发环境</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id3">4.在代码中使用开发工具包</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="android.html">Android接入指南</a></li>
+<li class="toctree-l3"><a class="reference internal" href="wp8.html">WP8接入指南</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../share/index.html">分享与收藏功能</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pay/index.html">微信支付功能</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../login/index.html">微信登录功能</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ai/index.html">微信智能接口</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../message/index.html">移动应用一次性订阅消息开发指南</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wxa/index.html">移动应用拉起小程序功能</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../faq/index.html">常见问题</a></li>
 </ul>
 </li>
@@ -153,7 +161,7 @@
         
           <li><a href="index.html">接入指南</a> &raquo;</li>
         
-      <li>ios</li>
+      <li>iOS接入指南</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -173,7 +181,113 @@
            <div itemprop="articleBody">
             
   <div class="section" id="ios">
-<h1>ios<a class="headerlink" href="#ios" title="永久链接至标题">¶</a></h1>
+<h1><a class="reference external" href="https://open.weixin.qq.com/cgi-bin/showdocument?action=dir_list&amp;t=resource/res_list&amp;verify=1&amp;id=1417694084&amp;token=&amp;lang=zh_CN">iOS接入指南</a><a class="headerlink" href="#ios" title="永久链接至标题">¶</a></h1>
+<p>注：本文为微信iOS终端SDK新手使用教程，只涉及教授SDK的使用方法，默认读者已经熟悉XCode开发工具的基本使用方法，以及具有一定的编程知识基础等。</p>
+<div class="section" id="id">
+<h2>1.向微信注册你的应用程序id<a class="headerlink" href="#id" title="永久链接至标题">¶</a></h2>
+<p>请到 开发者应用登记页面 进行登记，登记并选择移动应用进行设置后，将获得AppID，可立即用于开发。但应用登记完成后还需要提交审核，只有审核通过的应用才能正式发布使用。</p>
+</div>
+<div class="section" id="sdk">
+<h2>2.下载微信终端SDK文件<a class="headerlink" href="#sdk" title="永久链接至标题">¶</a></h2>
+<p>SDK文件包括 libWeChatSDK.a，WXApi.h，WXApiObject.h 三个。
+如选用手动集成，请前往“资源下载页”下载最新SDK包</p>
+</div>
+<div class="section" id="id1">
+<h2>3.搭建开发环境<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<div class="section" id="cocoapods">
+<h3>3.1 通过CocoaPods集成<a class="headerlink" href="#cocoapods" title="永久链接至标题">¶</a></h3>
+<p>[1] 在XCode中建立你的工程。</p>
+<p>[2] 在工程的Podfile里面添加以下代码：</p>
+<p>pod ‘WechatOpenSDK’
+保存并执行pod install,然后用后缀为.xcworkspace的文件打开工程。</p>
+<p>注意:</p>
+<p>命令行下执行pod search WechatOpenSDK,如显示的WechatOpenSDK版本不是最新的，则先执行pod repo update操作更新本地repo的内容</p>
+<p>关于CocoaPods的更多信息请查看 CocoaPods官方网站 。</p>
+<p>[3] 在Xcode中，选择你的工程设置项，选中“TARGETS”一栏，在“info”标签栏的“URL type“添加“URL scheme”为你所注册的应用程序id（如下图所示）。</p>
+<p>Xcode设置URL scheme</p>
+<p>[4] 在你需要使 用微信终端API的文件中import WXApi.h 头文件，并增加 WXApiDelegate 协议。</p>
+<div class="highlight-Objective-C notranslate"><div class="highlight"><pre><span></span><span class="cp">#import &lt;UIKit/UIKit.h&gt;</span>
+<span class="cp">#import &quot;WXApi.h&quot;</span>
+
+<span class="k">@interface</span> <span class="nc">AppDelegate</span> : <span class="bp">UIResponder</span><span class="o">&lt;</span><span class="bp">UIApplicationDelegate</span><span class="p">,</span> <span class="n">WXApiDelegate</span><span class="o">&gt;</span>
+
+<span class="k">@property</span> <span class="p">(</span><span class="k">strong</span><span class="p">,</span> <span class="k">nonatomic</span><span class="p">)</span> <span class="bp">UIWindow</span> <span class="o">*</span><span class="n">window</span><span class="p">;</span>
+
+<span class="k">@end</span>
+</pre></div>
+</div>
+<p>常见问题：</p>
+<p>对于之前SDK放在主工程目录下，切换成CocoaPods的形式，执行pod install 之后，出现</p>
+<ul class="simple">
+<li><p>Use the $(inherited) flag, or</p></li>
+<li><p>Remove the build settings from the target.</p></li>
+</ul>
+<p>解决方法是 把工程target中的build Setting里面PODS_ROOT的值替换成$(inherited)</p>
+<p>Other Linker Flags中 -all_load 替换成$(inherited)</p>
+</div>
+<div class="section" id="id2">
+<h3>3.2 手动集成<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h3>
+<p>[1] 在XCode中建立你的工程。</p>
+<p>[2] 将SDK文件中包含的 libWeChatSDK.a，WXApi.h，WXApiObject.h 三个文件添加到你所建的工程中（如下图所示，建立了一个名为Test 的工程，并把以上三个文件添加到Test文件夹下）。</p>
+<p>(注：请使用xCode4.5及以上版本)</p>
+<p>[3]微信开放平台新增了微信模块用户统计功能，便于开发者统计微信功能模块的用户使用和活跃情况。开发者需要在工程中链接上:SystemConfiguration.framework, libz.dylib, libsqlite3.0.dylib, libc++.dylib, Security.framework, CoreTelephony.framework, CFNetwork.framework，CoreGraphics.framework。</p>
+<p>[4] 在你的工程文件中选择Build Setting，在”Other Linker Flags”中加入”-Objc -all_load”，在Search Paths中添加 libWeChatSDK.a ，WXApi.h，WXApiObject.h，文件所在位置（如下图所示）。</p>
+<p>(注：请使用xCode4.5及以上版本)</p>
+<p>[5] 在Xcode中，选择你的工程设置项，选中“TARGETS”一栏，在“info”标签栏的“URL type“添加“URL scheme”为你所注册的应用程序id（如下图所示）。</p>
+<p>Xcode设置URL scheme</p>
+<p>[6] 在Xcode中，选择你的工程设置项，选中“TARGETS”一栏，在“info”标签栏的“LSApplicationQueriesSchemes“添加weixin（如下图所示）。</p>
+<p>[7] 在你需要使 用微信终端API的文件中import WXApi.h 头文件，并增加 WXApiDelegate 协议。</p>
+<div class="highlight-Objective-C notranslate"><div class="highlight"><pre><span></span><span class="cp">#import &lt;UIKit/UIKit.h&gt;</span>
+<span class="cp">#import &quot;WXApi.h&quot;</span>
+
+<span class="k">@interface</span> <span class="nc">AppDelegate</span> : <span class="bp">UIResponder</span><span class="o">&lt;</span><span class="bp">UIApplicationDelegate</span><span class="p">,</span> <span class="n">WXApiDelegate</span><span class="o">&gt;</span>
+
+<span class="k">@property</span> <span class="p">(</span><span class="k">strong</span><span class="p">,</span> <span class="k">nonatomic</span><span class="p">)</span> <span class="bp">UIWindow</span> <span class="o">*</span><span class="n">window</span><span class="p">;</span>
+
+<span class="k">@end</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id3">
+<h2>4.在代码中使用开发工具包<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<p>[1] 要使你的程序启动后微信终端能响应你的程序，必须在代码中向微信终端注册你的id。（如下图所示，在 AppDelegate 的 didFinishLaunchingWithOptions 函数中向微信注册id）。</p>
+<div class="highlight-Objective-C notranslate"><div class="highlight"><pre><span></span><span class="p">-</span> <span class="p">(</span><span class="kt">BOOL</span><span class="p">)</span><span class="nf">application:</span><span class="p">(</span><span class="bp">UIApplication</span> <span class="o">*</span><span class="p">)</span><span class="nv">application</span> <span class="nf">didFinishLaunchingWithOptions:</span><span class="p">(</span><span class="bp">NSDictionary</span> <span class="o">*</span><span class="p">)</span><span class="nv">launchOptions</span> <span class="p">{</span>
+    <span class="c1">//向微信注册</span>
+    <span class="p">[</span><span class="n">WXApi</span> <span class="nl">registerApp</span><span class="p">:</span><span class="s">@&quot;wxd930ea5d5a258f4f&quot;</span><span class="p">];</span>
+    <span class="k">return</span> <span class="nb">YES</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>[2] 重写AppDelegate的handleOpenURL和openURL方法：</p>
+<div class="highlight-Objective-C notranslate"><div class="highlight"><pre><span></span><span class="p">-</span> <span class="p">(</span><span class="kt">BOOL</span><span class="p">)</span><span class="nf">application:</span><span class="p">(</span><span class="bp">UIApplication</span> <span class="o">*</span><span class="p">)</span><span class="nv">application</span> <span class="nf">handleOpenURL:</span><span class="p">(</span><span class="bp">NSURL</span> <span class="o">*</span><span class="p">)</span><span class="nv">url</span> <span class="p">{</span>
+    <span class="k">return</span>  <span class="p">[</span><span class="n">WXApi</span> <span class="nl">handleOpenURL</span><span class="p">:</span><span class="n">url</span> <span class="nl">delegate</span><span class="p">:</span><span class="nb">self</span><span class="p">];</span>
+<span class="p">}</span>
+
+<span class="p">-</span> <span class="p">(</span><span class="kt">BOOL</span><span class="p">)</span><span class="nf">application:</span><span class="p">(</span><span class="bp">UIApplication</span> <span class="o">*</span><span class="p">)</span><span class="nv">application</span> <span class="nf">openURL:</span><span class="p">(</span><span class="bp">NSURL</span> <span class="o">*</span><span class="p">)</span><span class="nv">url</span> <span class="nf">sourceApplication:</span><span class="p">(</span><span class="bp">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">sourceApplication</span> <span class="nf">annotation:</span><span class="p">(</span><span class="kt">id</span><span class="p">)</span><span class="nv">annotation</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">WXApi</span> <span class="nl">handleOpenURL</span><span class="p">:</span><span class="n">url</span> <span class="nl">delegate</span><span class="p">:</span><span class="nb">self</span><span class="p">];</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>[3] 现在，你的程序要实现和微信终端交互的具体请求与回应，因此需要实现WXApiDelegate协议的两个方法：</p>
+<div class="highlight-Objective-C notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="nl">onReq</span><span class="p">:(</span><span class="n">BaseReq</span><span class="o">*</span><span class="p">)</span><span class="n">reqonReq</span>
+</pre></div>
+</div>
+<p>是微信终端向第三方程序发起请求，要求第三方程序响应。第三方程序响应完后必须调用sendRsp返回。在调用sendRsp返回时，会切回到微信终端程序界面。</p>
+<div class="highlight-Objective-C notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="nl">onResp</span><span class="p">:(</span><span class="n">BaseResp</span><span class="o">*</span><span class="p">)</span><span class="n">resp</span>
+</pre></div>
+</div>
+<p>如果第三方程序向微信发送了sendReq的请求，那么onResp会被回调。sendReq请求调用后，会切到微信终端程序界面。</p>
+<p>具体在此两方法中所要完成的内容由你定义，具体可参考微信开发工具包中的SDK Sample Demo源码。</p>
+<p>[4] 如果你的程序要发消息给微信，那么需要调用WXApi的sendReq函数：</p>
+<div class="highlight-Objective-C notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;-</span><span class="p">(</span><span class="kt">BOOL</span><span class="p">)</span> <span class="nl">sendReq</span><span class="p">:(</span><span class="n">BaseReq</span><span class="o">*</span><span class="p">)</span><span class="n">req</span>
+</pre></div>
+</div>
+<p>其中req参数为SendMessageToWXReq类型。</p>
+<p>需要注意的是，SendMessageToWXReq的scene成员，如果scene填WXSceneSession，那么消息会发送至微信的会话内。如果scene填WXSceneTimeline，那么消息会发送至朋友圈。如果scene填WXSceneFavorite,那么消息会发送到“我的收藏”中。scene默认值为WXSceneSession。</p>
+<p>至此，你已经能使用微信终端SDK的API内容了。如果想更详细了解每个API函数的用法，请查阅 官网API文档 或自行下载阅读微信SDK Sample Demo源码。</p>
+<p>微信 <code class="xref download docutils literal notranslate"><span class="pre">SDK</span> <span class="pre">Sample</span> <span class="pre">Demo</span></code> 源码</p>
+</div>
 </div>
 
 
@@ -184,7 +298,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="android.html" class="btn btn-neutral float-right" title="android" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="android.html" class="btn btn-neutral float-right" title="Android接入指南" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="index.html" class="btn btn-neutral float-left" title="接入指南" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

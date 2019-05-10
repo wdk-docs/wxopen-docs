@@ -1,7 +1,7 @@
 代公众号实现业务
 ======================
 
-. toctree::
+.. toctree::
    :maxdepth: 2
    :glob:
 

@@ -1,0 +1,389 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>OS开发手册 &mdash; wxopen-docs 1.0.0 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="Android开发手册" href="android.html" />
+    <link rel="prev" title="分享与收藏功能" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../contents.html" class="icon icon-home"> wxopen-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">概述</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">移动应用</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../guide/index.html">接入指南</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">分享与收藏功能</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">OS开发手册</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id1">一、文字类型分享示例</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id4">二、图片类型分享示例</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id15">三、音乐类型分享示例</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id22">四、视频类型分享示例</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id29">五、网页类型分享示例</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id36">六、小程序类型分享示例</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="android.html">Android开发手册</a></li>
+<li class="toctree-l3"><a class="reference internal" href="wp8.html">WP8开发手册</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../pay/index.html">微信支付功能</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../login/index.html">微信登录功能</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ai/index.html">微信智能接口</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../message/index.html">移动应用一次性订阅消息开发指南</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wxa/index.html">移动应用拉起小程序功能</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq/index.html">常见问题</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../website/index.html">网站应用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pubno/index.html">公众号</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../open/index.html">第三方平台</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../code/index.html">错误码</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../download/index.html">资源下载</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary.html">术语</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../contents.html">wxopen-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../contents.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">移动应用</a> &raquo;</li>
+        
+          <li><a href="index.html">分享与收藏功能</a> &raquo;</li>
+        
+      <li>OS开发手册</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/mobile/share/ios.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="os">
+<h1>OS开发手册<a class="headerlink" href="#os" title="永久链接至标题">¶</a></h1>
+<p>微信分享及收藏是指第三方App通过接入该功能，让用户可以从App分享文字、图片、音乐、视频、网页、小程序至微信好友会话、朋友圈或添加到微信收藏。</p>
+<p>微信分享及收藏功能已向全体开发者开放，开发者在微信开放平台帐号下申请App并通过审核后，即可获得微信分享及收藏权限。</p>
+<p>微信分享及收藏目前支持文字、图片、音乐、视频、网页、小程序共六种类型（海外应用支持网页、小程序类型分享）。开发者在App中在集成微信SDK后，可调用接口实现，以下依次是文字、图片、音乐、视频、网页、小程序类型分享的示例。</p>
+<p>WXMediaMessage （微信媒体消息内容）说明</p>
+<p>字段      类型      含义      备注
+title   NSString        消息标题    限制长度不超过512Bytes
+description     NSString        描述内容    限制长度不超过1KB
+thumbData       NSData  缩略图的二进制数据       限制内容大小不超过32KB
+mediaObject     NSObject        多媒体数据对象 可以为WXImageObject、WXMusicObject、WXVideoObject、WXWebpageObject等</p>
+<p>SendMessageToWXReq（SendMessageToWX请求类）</p>
+<p>分享或收藏的目标场景，通过修改SendMessageToWXReq的 scene 字段实现。</p>
+<p>字段      类型      含义      备注
+text    NSString        发送消息的文本内容
+bText   BOOL    是否文本消息  发送消息的类型，包括文本消息和多媒体消息两种，两者只能选择其一，不能同时发送文本和多媒体消息
+message WXMediaMessage  发送消息的多媒体内容scene   int     发送的目标场景 分享到对话:
+WXSceneSession
+分享到朋友圈:
+WXSceneTimeline
+分享到收藏:
+WXSceneFavorite</p>
+<div class="section" id="id1">
+<h2>一、文字类型分享示例<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<p>SendMessageToWXReq <a href="#id2"><span class="problematic" id="id3">*</span></a>req = [[SendMessageToWXReq alloc] init];
+req.bText = YES;
+req.text = &#64;”分享的内容”;
+req.scene = WXSceneSession;
+[WXApi sendReq:req];</p>
+</div>
+<div class="section" id="id4">
+<h2>二、图片类型分享示例<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
+<p>WXImageObject 多媒体消息中包含的图片数据对象</p>
+<p>字段      类型      含义      备注
+imageData       NSData  图片的二进制数据        内容大小不超过10MB</p>
+<p>UIImage <a href="#id5"><span class="problematic" id="id6">*</span></a>image = [UIImage imageNamed:&#64;”res2.png”];
+imageData = UIImageJPEGRepresentation(image, 0.7);</p>
+<p>WXImageObject <a href="#id7"><span class="problematic" id="id8">*</span></a>imageObject = [WXImageObject object];
+imageObject.imageData = imageData;</p>
+<p>WXMediaMessage <a href="#id9"><span class="problematic" id="id10">*</span></a>message = [WXMediaMessage message];
+NSString <a href="#id11"><span class="problematic" id="id12">*</span></a>filePath = [[NSBundle mainBundle] pathForResource:&#64;”res5”</p>
+<blockquote>
+<div><p>ofType:&#64;”jpg”];</p>
+</div></blockquote>
+<p>message.thumbData = [NSData dataWithContentsOfFile:filePath];
+message.mediaObject = imageObject;</p>
+<p>SendMessageToWXReq <a href="#id13"><span class="problematic" id="id14">*</span></a>req = [[SendMessageToWXReq alloc] init];
+req.bText = NO;
+req.message = message;
+req.scene = WXSceneTimeline;
+[WXApi sendReq:req];</p>
+</div>
+<div class="section" id="id15">
+<h2>三、音乐类型分享示例<a class="headerlink" href="#id15" title="永久链接至标题">¶</a></h2>
+<p>WXMusicObject 多媒体消息中包含的音乐数据对象</p>
+<p>字段      类型      含义      备注
+musicUrl        NSString        音频网页的URL地址      限制长度不超过10KB
+musicLowBandUrl NSString        供低带宽环境下使用的音频网页URL地址     限制长度不超过10KB
+musicDataUrl    NSString        音频数据的URL地址      限制长度不超过10KB
+musicLowBandDataUrl     NSString        供低带宽环境下使用的音频数据URL地址     限制长度不超过10KB</p>
+<p>WXMusicObject <a href="#id16"><span class="problematic" id="id17">*</span></a>musicObject = [WXMusicObject object];
+musicObject.musicUrl = &#64;”音乐url”;
+musicObject.musicLowBandUrl = musicObject.musicUrl;
+musicObject.musicDataUrl = &#64;”音乐数据url”;
+musicObject.musicLowBandDataUrl = musicObject.musicDataUrl;</p>
+<p>WXMediaMessage <a href="#id18"><span class="problematic" id="id19">*</span></a>message = [WXMediaMessage message];
+message.title = &#64;”音乐标题”;
+message.description = &#64;”音乐描述”;
+[message setThumbImage:[UIImage imageNamed:&#64;”缩略图.jpg”]];
+message.mediaObject = musicObject;</p>
+<p>SendMessageToWXReq <a href="#id20"><span class="problematic" id="id21">*</span></a>req = [[SendMessageToWXReq alloc] init];
+req.bText = NO;
+req.message = message;
+req.scene = WXSceneSession;
+[WXApi sendReq:req];
+注意：分享至微信的音乐，直接点击好友会话或朋友圈下的分享内容会跳转至第三方 APP，点击会话列表顶部的音乐分享内容将跳转至微信原生音乐播放器播放。</p>
+</div>
+<div class="section" id="id22">
+<h2>四、视频类型分享示例<a class="headerlink" href="#id22" title="永久链接至标题">¶</a></h2>
+<p>WXVideoObject 多媒体消息中包含的视频数据对象</p>
+<p>字段      类型      含义      备注
+videoUrl        NSString        视频链接    限制长度不超过10KB
+videoLowBandUrl NSString        供低带宽的环境下使用的视频链接 限制长度不超过10KB
+注意：videoUrl和videoLowBandUrl不能同时为空</p>
+<p>WXVideoObject <a href="#id23"><span class="problematic" id="id24">*</span></a>videoObject = [WXVideoObject object];
+videoObject.videoUrl = &#64;”视频url”;
+videoObject.videoLowBandUrl = &#64;”低分辨率视频url”;</p>
+<p>WXMediaMessage <a href="#id25"><span class="problematic" id="id26">*</span></a>message = [WXMediaMessage message];
+message.title = &#64;”标题”;
+message.description = &#64;”描述”;
+[message setThumbImage:[UIImage imageNamed:&#64;”缩略图.jpg”]];
+message.mediaObject = videoObject;</p>
+<p>SendMessageToWXReq <a href="#id27"><span class="problematic" id="id28">*</span></a>req = [[SendMessageToWXReq alloc] init];
+req.bText = NO;
+req.message = message;
+req.scene = WXSceneSession;
+[WXApi sendReq:req];</p>
+</div>
+<div class="section" id="id29">
+<h2>五、网页类型分享示例<a class="headerlink" href="#id29" title="永久链接至标题">¶</a></h2>
+<p>WXWebpageObject 多媒体消息中包含的网页数据对象</p>
+<p>字段      类型      含义      备注
+webpageUrl      NSString        html链接  限制长度不超过10KB</p>
+<p>WXWebpageObject <a href="#id30"><span class="problematic" id="id31">*</span></a>webpageObject = [WXWebpageObject object];
+webpageObject.webpageUrl = &#64;”<a class="reference external" href="https://open.weixin.qq.com">https://open.weixin.qq.com</a>”;</p>
+<p>WXMediaMessage <a href="#id32"><span class="problematic" id="id33">*</span></a>message = [WXMediaMessage message];
+message.title = &#64;”标题”;
+message.description = &#64;”描述”;
+[message setThumbImage:[UIImage imageNamed:&#64;”缩略图.jpg”]];
+message.mediaObject = webpageObject;</p>
+<p>SendMessageToWXReq <a href="#id34"><span class="problematic" id="id35">*</span></a>req = [[SendMessageToWXReq alloc] init];
+req.bText = NO;
+req.message = message;
+req.scene = WXSceneSession;
+[WXApi sendReq:req];</p>
+</div>
+<div class="section" id="id36">
+<h2>六、小程序类型分享示例<a class="headerlink" href="#id36" title="永久链接至标题">¶</a></h2>
+<p>WXMiniProgramObject 多媒体消息中包含的小程序数据对象</p>
+<p>字段      类型      含义      备注
+webpageUrl      NSString        兼容低版本的网页链接      限制长度不超过10KB
+userName        NSString        小程序的userName    小程序原始ID获取方法：登录小程序管理后台-设置-基本设置-帐号信息
+path    NSString        小程序的页面路径
+hdImageData     NSData  小程序新版本的预览图二进制数据，6.5.9及以上版本微信客户端支持       限制大小不超过128KB，自定义图片建议长宽比是 5:4。
+withShareTicket BOOL    是否使用带shareTicket的分享     通常开发者希望分享出去的小程序被二次打开时可以获取到更多信息，例如群的标识。可以设置withShareTicket为true，当分享卡片在群聊中被其他用户打开时，可以获取到shareTicket，用于获取更多分享信息。详见小程序获取更多分享信息 ，最低客户端版本要求：6.5.13
+miniprogramType WXMiniProgramType       小程序的类型，默认正式版，1.8.1及以上版本开发者工具包支持分享开发版和体验版小程序     正式版: WXMiniProgramTypeRelease;
+测试版: WXMiniProgramTypeTest;
+体验版: WXMiniProgramTypePreview;</p>
+<p>WXMiniProgramObject <a href="#id37"><span class="problematic" id="id38">*</span></a>object = [WXMiniProgramObject object];
+object.webpageUrl = webpageUrl;
+object.userName = userName;
+object.path = path;
+object.hdImageData = hdImageData;
+object.withShareTicket = withShareTicket;
+object.miniProgramType = programType;</p>
+<p>WXMediaMessage <a href="#id39"><span class="problematic" id="id40">*</span></a>message = [WXMediaMessage message];
+message.title = &#64;”小程序标题”;
+message.description = &#64;”小程序描述”;
+message.thumbData = nil;  //兼容旧版本节点的图片，小于32KB，新版本优先</p>
+<blockquote>
+<div><p>//使用WXMiniProgramObject的hdImageData属性</p>
+</div></blockquote>
+<p>message.mediaObject = object;</p>
+<p>SendMessageToWXReq <a href="#id41"><span class="problematic" id="id42">*</span></a>req = [[SendMessageToWXReq alloc] init];
+req.bText = NO;
+req.message = message;
+req.scene = WXSceneSession;  //目前只支持会话
+[WXApi sendReq:req];
+注意：</p>
+<p>发起分享的App与小程序属于同一微信开放平台帐号。
+支持分享小程序类型消息至会话，暂不支持分享至朋友圈。
+若客户端版本低于6.5.6或在iPad客户端接收，小程序类型分享将自动转成网页类型分享。开发者必须填写网页链接字段，确保低版本客户端能正常打开网页链接。</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="android.html" class="btn btn-neutral float-right" title="Android开发手册" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="分享与收藏功能" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, nosy
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

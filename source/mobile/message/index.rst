@@ -1,3 +1,144 @@
 移动应用一次性订阅消息开发指南
 ====================================
 
+移动应用一次性订阅消息开发指南
+开发者可以通过一次性订阅消息授权让微信用户授权第三方移动应用或公众号（接入说明），获得发送一次订阅消息给到授权微信用户的机会。授权微信用户可以不需要关注公众号。微信用户每授权一次，开发者可获得一次下发消息的权限，消息将下发至服务通知。
+
+使用说明：
+
+1.第三方发起微信一次性订阅授权请求，微信用户允许授权第三方移动应用后，微信会拉起应用，并且带上授权用户openid等信息
+2.通过API给授权用户推送一条订阅消息
+注：在进行一次性订阅消息授权接入之前，需要在微信开放平台注册开发者帐号，并拥有一个已审核通过的移动应用，获得相应的下发消息模板ID后，可开始接入流程。
+
+授权流程：
+
+第一步：微信用户同意授权，获取一次给用户推送一条订阅消息的机会
+
+开发者需要配合使用微信开放平台提供的SDK进行一次性订阅消息授权请求接入。正确接入SDK后，开发者移动应用会在终端本地拉起微信应用进行订阅消息授权，微信用户确认后微信将拉起开发者移动应用，并带上授权用户openid等信息。
+
+iOS平台应用一次性订阅消息授权接入代码示例（请参考iOS接入指南）：
+
+WXSubscribeMsgReq \*req = [[WXSubscribeMsgReq alloc] init];
+req.scene = scene;
+req.templateId = templateId;
+req.reserved = reserved;
+[WXApi sendReq:req];
+Android平台应用一次性订阅消息授权接入代码示例（请参考Android接入指南）：
+
+SubscribeMessage.Req req = new SubscribeMessage.Req();
+req.scene = scene;
+req.templateID = templateID;
+req.reserved = reserved;
+参数说明
+
+参数	是否必须	说明
+appid	是	应用唯一标识，在微信开放平台提交应用审核通过后获得
+scene	是	重定向后会带上scene参数，开发者可以填0-10000 的整形值，用来标识订阅场值
+template_id	是	订阅消息模板ID，在微信开放平台提交应用审核通过后获得
+reserved	否	用于保持请求和回调的状态，授权请后原样带回给第三方。该参数可用于防止csrf攻击（跨站请求伪造攻击），建议第三方带上该参数，可设置为简单的随机数加session进行校验，开发者可以填写a-zA-Z0-9的参数值，最多128字节，要求做urlencode
+可拉起微信打开一次性消息订阅授权页：
+
+
+
+返回说明：
+
+用户点击授权后，微信客户端会被拉起，跳转至授权界面，用户在该界面点击确认接收或取消，SDK通过SendAuth的Resp返回数据给调用方。
+
+返回示例：
+
+openid:oyAaTjt-xXvP87pubE4eUOF-ttD4
+template_id:7YuTL__ilzyZB9DXcDt2mHx-CAS_E7KtsQkhIGVhhRM
+action:confirm
+reserved:hello
+scene:1000
+参数说明
+
+参数	说明
+openid	用户唯一标识，仅在用户确认授权时才有
+template_id	订阅消息模板ID
+action	用户点击动作，”confirm”代表用户确认授权，”cancel”代表用户取消授权
+scene	订阅场景值
+reserved	请求带入原样返回
+第二步：通过API推送订阅模板消息给到授权微信用户
+
+接口请求说明
+
+http请求方式: post
+https://api.weixin.qq.com/cgi-bin/message/template/subscribe?access_token=ACCESS_TOKEN
+post数据示例
+
+{
+“touser”:”OPENID”,
+“template_id”:”TEMPLATE_ID”,
+“url”:”URL”,
+“scene”:”SCENE”,
+“title”:”TITLE”,
+“data”:{
+“content”:{
+“value”:”VALUE”,
+“color”:”COLOR”
+}
+}
+}
+参数说明
+
+参数	是否必须	说明
+access_token	是	接口调用凭证，获取方式见后面附录说明
+touser	是	填接收消息的用户openid
+template_id	是	订阅消息模板ID
+url	否	点击消息跳转的链接，需要有ICP备案
+scene	是	订阅场景值
+title	是	消息标题，15字以内
+data	是	消息正文，value为消息内容文本（200字以内），没有固定格式，可用\n换行，color为整段消息内容的字体颜色（目前仅支持整段消息为一种颜色）
+返回说明
+
+在调用接口后，会返回JSON数据包。正常时的返回JSON数据包示例：
+
+{
+“errcode”:0,
+“errmsg”:”ok”
+}
+附获取access_token说明：
+
+access_token 是全局唯一接口调用凭据，开发者调用各接口时都需使用 access_token，请妥善保存。access_token 的存储至少要保留512个字符空间。access_token 的有效期目前为2个小时，需定时刷新，重复获取将导致上次获取的 access_token 失效。
+
+API 调用所需的 access_token 的使用及生成方式说明：
+
+1.为了保密 appsecrect，第三方需要一个 access_token 获取和刷新的中控服务器。而其他业务逻辑服务器所使用的 access_token 均来自于该中控服务器，不应该各自去刷新，否则会造成 access_token 覆盖而影响业务；
+
+2.目前 access_token 的有效期通过返回的 expires_in 来传达，目前是7200秒之内的值。中控服务器需要根据这个有效时间提前去刷新新 access_token。在刷新过程中，中控服务器对外输出的依然是老 access_token，此时公众平台后台会保证在刷新短时间内，新老 access_token 都可用，这保证了第三方业务的平滑过渡；
+
+3.access_token 的有效时间可能会在未来有调整，所以中控服务器不仅需要内部定时主动刷新，还需要提供被动刷新 access_token 的接口，这样便于业务服务器在 API 调用获知 access_token 已超时的情况下，可以触发 access_token 的刷新流程。
+
+开发者可以使用 AppID 和 AppSecret 调用本接口来获取 access_token。移动应用的AppID 和 AppSecret 可登录微信开放平台-管理中心-应用详情页中查看（需要审核通过的应用才能看到）。AppSecret 生成后请自行保存，因为在公众平台每次生成查看都会导致 AppSecret 被重置。注意调用所有微信接口时均需使用 https 协议。如果第三方不使用中控服务器，而是选择各个业务逻辑点各自去刷新 access_token，那么就可能会产生冲突，导致服务不稳定。
+
+接口请求说明
+
+https请求方式: GET
+https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=APPID&secret=APPSECRET
+参数说明
+
+参数	是否必须	说明
+grant_type	是	获取access_token填写client_credential
+appid	是	第三方用户唯一凭证
+secret	是	第三方用户唯一凭证密钥，即appsecret
+返回说明
+
+正常情况下，微信会返回下述JSON数据包给开发者：
+
+{"access_token":"ACCESS_TOKEN","expires_in":7200}
+参数说明
+
+参数	说明
+access_token	获取到的凭证
+expires_in	凭证有效时间，单位：秒
+错误时微信会返回错误码等信息，JSON数据包示例如下（该示例为AppID无效错误）:
+
+{"errcode":40013,"errmsg":"invalid appid"}
+返回码说明
+
+返回码	说明
+-1	系统繁忙，此时请开发者稍候再试
+0	请求成功
+40001	AppSecret错误或者AppSecret不属于这个appid，请开发者确认AppSecret的正确性
+40002	请确保grant_type字段值为client_credential
