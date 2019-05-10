@@ -1,0 +1,35 @@
+3、获取预授权码 pre_auth_code
+=============================
+
+该 API
+用于获取预授权码。预授权码用于公众号或小程序授权时的第三方平台方安全验证。
+
+请求格式
+--------
+
+``POST``
+**https**://api.weixin.qq.com/cgi-bin/component/api_create_preauthcode?component_access_token=xxx
+
+请求数据
+--------
+
+.. code:: json
+
+   {
+     "component_appid": "appid_value"
+   }
+
+请求参数说明 参数 说明 component_appid 第三方平台方 appid
+
+返回结果
+--------
+
+.. code:: json
+
+   {
+     "pre_auth_code": "Cx_Dk6qiBE0Dmx4EmlT3oRfArPvwSQ-oa3NL_fwHM7VI08r52wazoZX2Rhpz1dEw",
+     "expires_in": 600
+   }
+
+结果参数说明 参数 说明 pre_auth_code 预授权码 expires_in 有效期，为 10
+分钟

@@ -1,0 +1,219 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>第三方平台安全管理说明 &mdash; wxopen-docs 1.0.0 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../contents.html" class="icon icon-home"> wxopen-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">概述</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mobile/index.html">移动应用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../website/index.html">网站应用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pubno/index.html">公众号</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">第三方平台</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../code/index.html">错误码</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../download/index.html">资源下载</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary.html">术语</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../contents.html">wxopen-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../contents.html">Docs</a> &raquo;</li>
+        
+      <li>第三方平台安全管理说明</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/open/pre/secure.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>第三方平台安全管理说明<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<p>如<a class="reference external" href="/open/overview">《公众号第三方平台总体说明》</a>所述，为公众号提供第三方功能或解决方案的第三方平台，必须通过公众号登录授权机制，接入成为微信开放平台认可的平台。</p>
+<p>未根据公众号登录授权机制接入的第三方平台，都是通过明文存储公众号的关键开发凭据（AppID
+和 AppSecret）来为公众号服务的，而 AppID 和 AppSecret
+的安全风险远大于公众号登录帐号和登录密码。因此，将根据旗下服务的公众号数量，来评估安全风险的大小，对其进行督促。</p>
+<p>**
+安全风险严重且限期未接入的第三方平台，微信将对其逐步进行公众号接入、提醒已接入该平台的公众号更换第三方、朋友圈分享限制等控制措施。<a href="#id2"><span class="problematic" id="id3">*</span></a>*</p>
+<div class="section" id="id4">
+<h2>具体如下：<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id5">
+<h3>1. 对存在风险的第三方进行安全警告<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h3>
+<p>针对存在风险的未接入第三方平台，微信公众平台将在公众号设置该平台域名为自己的服务器地址时进行安全警告（警告同时暂仍可设置），提醒公众号注意安全风险。</p>
+</div>
+<div class="section" id="id6">
+<h3>2. 对存在高风险的第三方进行限期接入<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h3>
+<p>对于存在更大安全隐患的未接入第三方平台，除了警告外，微信公众平台将对其进行限期接入（第一次弹出高风险警告后
+2
+个月内），如到期未接入，该域名将被禁止被填写到服务器地址（已填公众号暂不受影响）。</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, nosy
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

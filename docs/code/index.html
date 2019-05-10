@@ -1,0 +1,506 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>错误码 &mdash; wxopen-docs 1.0.0 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="资源下载" href="../download/index.html" />
+    <link rel="prev" title="开发前必读" href="../open/pre/index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../contents.html" class="icon icon-home"> wxopen-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">概述</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mobile/index.html">移动应用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../website/index.html">网站应用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pubno/index.html">公众号</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../open/index.html">第三方平台</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">错误码</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../download/index.html">资源下载</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">术语</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../contents.html">wxopen-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../contents.html">Docs</a> &raquo;</li>
+        
+      <li>错误码</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/code/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>错误码<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 50%" />
+<col style="width: 42%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>返回码</p></th>
+<th class="head"><p>错误码描述</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>40001</p></td>
+<td><p>invalid credential</p></td>
+<td><p>不合法的调用凭证</p></td>
+</tr>
+<tr class="row-odd"><td><p>40002</p></td>
+<td><p>invalid grant_type</p></td>
+<td><p>不合法的grant_type</p></td>
+</tr>
+<tr class="row-even"><td><p>40003</p></td>
+<td><p>invalid openid</p></td>
+<td><p>不合法的OpenID</p></td>
+</tr>
+<tr class="row-odd"><td><p>40004</p></td>
+<td><p>invalid media type</p></td>
+<td><p>不合法的媒体文件类型</p></td>
+</tr>
+<tr class="row-even"><td><p>40007</p></td>
+<td><p>invalid media_id</p></td>
+<td><p>不合法的media_id</p></td>
+</tr>
+<tr class="row-odd"><td><p>40008</p></td>
+<td><p>invalid message type</p></td>
+<td><p>不合法的message_type</p></td>
+</tr>
+<tr class="row-even"><td><p>40009</p></td>
+<td><p>invalid image size</p></td>
+<td><p>不合法的图片大小</p></td>
+</tr>
+<tr class="row-odd"><td><p>40010</p></td>
+<td><p>invalid voice size</p></td>
+<td><p>不合法的语音大小</p></td>
+</tr>
+<tr class="row-even"><td><p>40011</p></td>
+<td><p>invalid video size</p></td>
+<td><p>不合法的视频大小</p></td>
+</tr>
+<tr class="row-odd"><td><p>40012</p></td>
+<td><p>invalid thumb size</p></td>
+<td><p>不合法的缩略图大小</p></td>
+</tr>
+<tr class="row-even"><td><p>40013</p></td>
+<td><p>invalid appid</p></td>
+<td><p>不合法的AppID</p></td>
+</tr>
+<tr class="row-odd"><td><p>40014</p></td>
+<td><p>invalid access_token</p></td>
+<td><p>不合法的access_token</p></td>
+</tr>
+<tr class="row-even"><td><p>40015</p></td>
+<td><p>invalid menu type</p></td>
+<td><p>不合法的菜单类型</p></td>
+</tr>
+<tr class="row-odd"><td><p>40016</p></td>
+<td><p>invalid button size</p></td>
+<td><p>不合法的菜单按钮个数</p></td>
+</tr>
+<tr class="row-even"><td><p>40017</p></td>
+<td><p>invalid button type</p></td>
+<td><p>不合法的按钮类型</p></td>
+</tr>
+<tr class="row-odd"><td><p>40018</p></td>
+<td><p>invalid button name size</p></td>
+<td><p>不合法的按钮名称长度</p></td>
+</tr>
+<tr class="row-even"><td><p>40019</p></td>
+<td><p>invalid button key size</p></td>
+<td><p>不合法的按钮KEY长度</p></td>
+</tr>
+<tr class="row-odd"><td><p>40020</p></td>
+<td><p>invalid button url size</p></td>
+<td><p>不合法的url长度</p></td>
+</tr>
+<tr class="row-even"><td><p>40023</p></td>
+<td><p>invalid sub button size</p></td>
+<td><p>不合法的子菜单按钮个数</p></td>
+</tr>
+<tr class="row-odd"><td><p>40024</p></td>
+<td><p>invalid sub button type</p></td>
+<td><p>不合法的子菜单类型</p></td>
+</tr>
+<tr class="row-even"><td><p>40025</p></td>
+<td><p>invalid sub button name size</p></td>
+<td><p>不合法的子菜单按钮名称长度</p></td>
+</tr>
+<tr class="row-odd"><td><p>40026</p></td>
+<td><p>invalid sub button key size</p></td>
+<td><p>不合法的子菜单按钮KEY长度</p></td>
+</tr>
+<tr class="row-even"><td><p>40027</p></td>
+<td><p>invalid sub button url size</p></td>
+<td><p>不合法的子菜单按钮url长度</p></td>
+</tr>
+<tr class="row-odd"><td><p>40029</p></td>
+<td><p>invalid code</p></td>
+<td><p>不合法或已过期的code</p></td>
+</tr>
+<tr class="row-even"><td><p>40030</p></td>
+<td><p>invalid refresh_token</p></td>
+<td><p>不合法的refresh_token</p></td>
+</tr>
+<tr class="row-odd"><td><p>40036</p></td>
+<td><p>invalid template_id size</p></td>
+<td><p>不合法的template_id长度</p></td>
+</tr>
+<tr class="row-even"><td><p>40037</p></td>
+<td><p>invalid template_id</p></td>
+<td><p>不合法的template_id</p></td>
+</tr>
+<tr class="row-odd"><td><p>40039</p></td>
+<td><p>invalid url size</p></td>
+<td><p>不合法的url长度</p></td>
+</tr>
+<tr class="row-even"><td><p>40048</p></td>
+<td><p>invalid url domain</p></td>
+<td><p>不合法的url域名</p></td>
+</tr>
+<tr class="row-odd"><td><p>40054</p></td>
+<td><p>invalid sub button url domain</p></td>
+<td><p>不合法的子菜单按钮url域名</p></td>
+</tr>
+<tr class="row-even"><td><p>40055</p></td>
+<td><p>invalid button url domain</p></td>
+<td><p>不合法的菜单按钮url域名</p></td>
+</tr>
+<tr class="row-odd"><td><p>40066</p></td>
+<td><p>invalid url</p></td>
+<td><p>不合法的url</p></td>
+</tr>
+<tr class="row-even"><td><p>41001</p></td>
+<td><p>access_token missing</p></td>
+<td><p>缺失access_token参数</p></td>
+</tr>
+<tr class="row-odd"><td><p>41002</p></td>
+<td><p>appid missing</p></td>
+<td><p>缺失appid参数</p></td>
+</tr>
+<tr class="row-even"><td><p>41003</p></td>
+<td><p>refresh_token missing</p></td>
+<td><p>缺失refresh_token参数</p></td>
+</tr>
+<tr class="row-odd"><td><p>41004</p></td>
+<td><p>appsecret missing</p></td>
+<td><p>缺失secret参数</p></td>
+</tr>
+<tr class="row-even"><td><p>41005</p></td>
+<td><p>media data missing</p></td>
+<td><p>缺失二进制媒体文件</p></td>
+</tr>
+<tr class="row-odd"><td><p>41006</p></td>
+<td><p>media_id missing</p></td>
+<td><p>缺失media_id参数</p></td>
+</tr>
+<tr class="row-even"><td><p>41007</p></td>
+<td><p>sub_menu data missing</p></td>
+<td><p>缺失子菜单数据</p></td>
+</tr>
+<tr class="row-odd"><td><p>41008</p></td>
+<td><p>missing code</p></td>
+<td><p>缺失code参数</p></td>
+</tr>
+<tr class="row-even"><td><p>41009</p></td>
+<td><p>missing openid</p></td>
+<td><p>缺失openid参数</p></td>
+</tr>
+<tr class="row-odd"><td><p>41010</p></td>
+<td><p>missing url</p></td>
+<td><p>缺失url参数</p></td>
+</tr>
+<tr class="row-even"><td><p>42001</p></td>
+<td><p>access_token expired</p></td>
+<td><p>access_token超时</p></td>
+</tr>
+<tr class="row-odd"><td><p>42002</p></td>
+<td><p>refresh_token expired</p></td>
+<td><p>refresh_token超时</p></td>
+</tr>
+<tr class="row-even"><td><p>42003</p></td>
+<td><p>code expired</p></td>
+<td><p>code超时</p></td>
+</tr>
+<tr class="row-odd"><td><p>43001</p></td>
+<td><p>require GET method</p></td>
+<td><p>需要使用GET方法请求</p></td>
+</tr>
+<tr class="row-even"><td><p>43002</p></td>
+<td><p>require POST method</p></td>
+<td><p>需要使用POST方法请求</p></td>
+</tr>
+<tr class="row-odd"><td><p>43003</p></td>
+<td><p>require https</p></td>
+<td><p>需要使用HTTPS</p></td>
+</tr>
+<tr class="row-even"><td><p>43004</p></td>
+<td><p>require subscribe</p></td>
+<td><p>需要订阅关系</p></td>
+</tr>
+<tr class="row-odd"><td><p>44001</p></td>
+<td><p>empty media data</p></td>
+<td><p>空白的二进制数据</p></td>
+</tr>
+<tr class="row-even"><td><p>44002</p></td>
+<td><p>empty post data</p></td>
+<td><p>空白的POST数据</p></td>
+</tr>
+<tr class="row-odd"><td><p>44003</p></td>
+<td><p>empty news data</p></td>
+<td><p>空白的news数据</p></td>
+</tr>
+<tr class="row-even"><td><p>44004</p></td>
+<td><p>empty content</p></td>
+<td><p>空白的内容</p></td>
+</tr>
+<tr class="row-odd"><td><p>44005</p></td>
+<td><p>empty list size</p></td>
+<td><p>空白的列表</p></td>
+</tr>
+<tr class="row-even"><td><p>45001</p></td>
+<td><p>media size out of limit</p></td>
+<td><p>二进制文件超过限制</p></td>
+</tr>
+<tr class="row-odd"><td><p>45002</p></td>
+<td><p>content size out of limit</p></td>
+<td><p>content参数超过限制</p></td>
+</tr>
+<tr class="row-even"><td><p>45003</p></td>
+<td><p>title size out of limit</p></td>
+<td><p>title参数超过限制</p></td>
+</tr>
+<tr class="row-odd"><td><p>45004</p></td>
+<td><p>description size out of limit</p></td>
+<td><p>description参数超过限制</p></td>
+</tr>
+<tr class="row-even"><td><p>45005</p></td>
+<td><p>url size out of limit</p></td>
+<td><p>url参数长度超过限制</p></td>
+</tr>
+<tr class="row-odd"><td><p>45006</p></td>
+<td><p>picurl size out of limit</p></td>
+<td><p>picurl参数超过限制</p></td>
+</tr>
+<tr class="row-even"><td><p>45007</p></td>
+<td><p>playtime out of limit</p></td>
+<td><p>播放时间超过限制（语音为60s最大）</p></td>
+</tr>
+<tr class="row-odd"><td><p>45008</p></td>
+<td><p>article size out of limit</p></td>
+<td><p>article参数超过限制</p></td>
+</tr>
+<tr class="row-even"><td><p>45009</p></td>
+<td><p>api freq out of limit</p></td>
+<td><p>接口调动频率超过限制</p></td>
+</tr>
+<tr class="row-odd"><td><p>45010</p></td>
+<td><p>create menu limit</p></td>
+<td><p>建立菜单被限制</p></td>
+</tr>
+<tr class="row-even"><td><p>45011</p></td>
+<td><p>api limit</p></td>
+<td><p>频率限制</p></td>
+</tr>
+<tr class="row-odd"><td><p>45012</p></td>
+<td><p>template size out of limit</p></td>
+<td><p>模板大小超过限制</p></td>
+</tr>
+<tr class="row-even"><td><p>45016</p></td>
+<td><p>can’t modify sys group</p></td>
+<td><p>不能修改默认组</p></td>
+</tr>
+<tr class="row-odd"><td><p>45017</p></td>
+<td><p>can’t set group name too long sys group</p></td>
+<td><p>修改组名过长</p></td>
+</tr>
+<tr class="row-even"><td><p>45018</p></td>
+<td><p>too many group now, no need to add new</p></td>
+<td><p>组数量过多</p></td>
+</tr>
+<tr class="row-odd"><td><p>50001</p></td>
+<td><p>api unauthorized</p></td>
+<td><p>接口未授权</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../download/index.html" class="btn btn-neutral float-right" title="资源下载" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../open/pre/index.html" class="btn btn-neutral float-left" title="开发前必读" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, nosy
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

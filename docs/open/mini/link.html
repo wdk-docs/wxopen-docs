@@ -1,0 +1,544 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>小程序管理权限集 &mdash; wxopen-docs 1.0.0 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../contents.html" class="icon icon-home"> wxopen-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">概述</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mobile/index.html">移动应用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../website/index.html">网站应用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pubno/index.html">公众号</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">第三方平台</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../code/index.html">错误码</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../download/index.html">资源下载</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary.html">术语</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../contents.html">wxopen-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../contents.html">Docs</a> &raquo;</li>
+        
+      <li>小程序管理权限集</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/open/mini/link.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>小程序管理权限集<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<p>为帮助公众号通过第三方关联、管理小程序，公众平台把关联小程序及相关管理功能添加到
+“小程序管理”权限集。公众号需要先把该权限集授权给第三方平台，第三方平台才可以调用此接口进行关联和管理操作。</p>
+<div class="section" id="id2">
+<h2>1.获取公众号关联的小程序<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<p>POST:
+<a class="reference external" href="https://api.weixin.qq.com/cgi-bin/wxopen/wxamplinkget?access_token=TOKEN">https://api.weixin.qq.com/cgi-bin/wxopen/wxamplinkget?access_token=TOKEN</a></p>
+<p>无需携带的参数</p>
+<p>返回说明</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;errcode&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span> <span class="s2">&quot;ok&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;wxopens&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;items&quot;</span><span class="p">:</span> <span class="p">[</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="nt">&quot;username&quot;</span><span class="p">:</span> <span class="s2">&quot;gh_xxxxxxxxx&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;source&quot;</span><span class="p">:</span> <span class="s2">&quot;SOURCE_NORMAL&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;nickname&quot;</span><span class="p">:</span> <span class="s2">&quot;aaaaaaa&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;selected&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="nt">&quot;nearby_display_status&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;released&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="nt">&quot;headimg_url&quot;</span><span class="p">:</span> <span class="s2">&quot;http://xxx.png&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;func_infos&quot;</span><span class="p">:</span> <span class="p">[</span>
+          <span class="p">{</span>
+            <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;微信认证&quot;</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+            <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+            <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;微信支付&quot;</span>
+          <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;copy_verify_status&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="nt">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxx@qq.com&quot;</span>
+      <span class="p">},</span>
+
+      <span class="p">{</span>
+        <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+        <span class="nt">&quot;username&quot;</span><span class="p">:</span> <span class="s2">&quot;gh_xxxxxxxxxx&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;source&quot;</span><span class="p">:</span> <span class="s2">&quot;SOURCE_NORMAL&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;headimg_url&quot;</span><span class="p">:</span> <span class="s2">&quot;http://yyy.png&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;func_infos&quot;</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="nt">&quot;nickname&quot;</span><span class="p">:</span> <span class="s2">&quot;bbbbbbb&quot;</span>
+      <span class="p">}</span>
+    <span class="p">]</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>参数说明</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 6%" />
+<col style="width: 27%" />
+<col style="width: 3%" />
+<col style="width: 56%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>参数</p></th>
+<th class="head"></th>
+<th class="head"></th>
+<th class="head"></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>errcode</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p>错误码</p></td>
+</tr>
+<tr class="row-odd"><td><p>errmsg</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p>错误信息</p></td>
+</tr>
+<tr class="row-even"><td><p>wxopens</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p>关联的小程序列表</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>items</p></td>
+<td></td>
+<td></td>
+<td><p>内带有参数</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td></td>
+<td><p>status</p></td>
+<td></td>
+<td><p>关联状态</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td></td>
+<td></td>
+<td><p>1</p></td>
+<td><p>已关联；</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td></td>
+<td></td>
+<td><p>2</p></td>
+<td><p>等待小程序管理员确认中</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td></td>
+<td></td>
+<td><p>3</p></td>
+<td><p>小程序管理员拒绝关联</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td></td>
+<td></td>
+<td><p>12</p></td>
+<td><p>等到公众号管理员确认中</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td></td>
+<td><p>username</p></td>
+<td></td>
+<td><p>小程序 gh_id</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td></td>
+<td><p>nickname</p></td>
+<td></td>
+<td><p>小程序名称</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td></td>
+<td><p>selected</p></td>
+<td></td>
+<td><p>是否在公众号管理页展示中</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td></td>
+<td><p>nearby_display_status</p></td>
+<td></td>
+<td><p>是否展示在附近的小程序中</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td></td>
+<td><p>released</p></td>
+<td></td>
+<td><p>是否已经发布</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td></td>
+<td><p>headimg_url</p></td>
+<td></td>
+<td><p>头像 url</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td></td>
+<td><p>func_info</p></td>
+<td></td>
+<td><p>微信认证及支付信息，0 表示未开通，1 表示开通</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td></td>
+<td><p>email</p></td>
+<td></td>
+<td><p>小程序邮箱</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id3">
+<h2>2. 关联小程序<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<p>关联流程（需要公众号和小程序管理员双方确认）：</p>
+<ol class="arabic simple">
+<li><p>第三方平台调用接口发起关联</p></li>
+<li><p>公众号管理员收到模板消息，同意关联小程序。</p></li>
+<li><p>小程序管理员收到模板消息，同意关联公众号。</p></li>
+<li><p>关联成功</p></li>
+</ol>
+<p>等待管理员同意的中间状态可使用“获取公众号关联的小程序”接口进行查询。</p>
+<p>请求方式:</p>
+<p>POST:https://api.weixin.qq.com/cgi-bin/wxopen/wxamplink?access_token=TOKEN</p>
+<p>请求示例：</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;appid&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxxx&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;notify_users&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;show_profile&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>需携带的参数如下</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 29%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>参数</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>appid</p></td>
+<td><p>小程序 appid</p></td>
+</tr>
+<tr class="row-odd"><td><p>notify_users</p></td>
+<td><p>是否发送模板消息通知公众号粉丝</p></td>
+</tr>
+<tr class="row-even"><td><p>show_profile</p></td>
+<td><p>是否展示公众号主页中</p></td>
+</tr>
+</tbody>
+</table>
+<p>返回说明</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span> <span class="nt">&quot;errcode&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span> <span class="s2">&quot;ok&quot;</span> <span class="p">}</span>
+</pre></div>
+</div>
+<p>参数说明</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 47%" />
+<col style="width: 53%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>参数</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>errcode</p></td>
+<td><p>错误码</p></td>
+</tr>
+<tr class="row-odd"><td><p>errmsg</p></td>
+<td><p>错误信息</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id4">
+<h2>3.解除已关联的小程序<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
+<p>请求方式:
+POST:https://api.weixin.qq.com/cgi-bin/wxopen/wxampunlink?access_token=TOKEN</p>
+<p>请求示例</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;appid&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxxx&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>需携带的参数如下</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 29%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>参数</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>appid</p></td>
+<td><p>小程序 appid</p></td>
+</tr>
+</tbody>
+</table>
+<p>返回说明</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;errcode&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span> <span class="s2">&quot;ok&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>参数说明</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 47%" />
+<col style="width: 53%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>参数</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>errcode</p></td>
+<td><p>错误码</p></td>
+</tr>
+<tr class="row-odd"><td><p>errmsg</p></td>
+<td><p>错误信息</p></td>
+</tr>
+</tbody>
+</table>
+<p>错误码说明</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 7%" />
+<col style="width: 93%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>错误码</p></th>
+<th class="head"><p>错误说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>89007</p></td>
+<td><p>小程序本月被关联的名额已用完</p></td>
+</tr>
+<tr class="row-odd"><td><p>89008</p></td>
+<td><p>小程序为海外帐号，不允许关联</p></td>
+</tr>
+<tr class="row-even"><td><p>89009</p></td>
+<td><p>小程序关联达到上限</p></td>
+</tr>
+<tr class="row-odd"><td><p>89010</p></td>
+<td><p>已经发送关联邀请</p></td>
+</tr>
+<tr class="row-even"><td><p>89011</p></td>
+<td><p>在附近中展示的小程序不能取消关联</p></td>
+</tr>
+<tr class="row-odd"><td><p>89012</p></td>
+<td><p>门店、小店小程序不能取消关联</p></td>
+</tr>
+<tr class="row-even"><td><p>89013</p></td>
+<td><p>小程序被封禁</p></td>
+</tr>
+<tr class="row-odd"><td><p>89015</p></td>
+<td><p>已经关联该小程序</p></td>
+</tr>
+<tr class="row-even"><td><p>89016</p></td>
+<td><p>公众号本月关联相同主体达到上限</p></td>
+</tr>
+<tr class="row-odd"><td><p>89017</p></td>
+<td><p>公众号本月关联不同主体达到上限</p></td>
+</tr>
+<tr class="row-even"><td><p>89035</p></td>
+<td><p>已经从公众平台后台发起关联申请，处于小程序管理员确认中，无法从第三方重复发起关联申请</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, nosy
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

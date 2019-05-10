@@ -1,0 +1,443 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>基础信息设置 &mdash; wxopen-docs 1.0.0 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../contents.html" class="icon icon-home"> wxopen-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">概述</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mobile/index.html">移动应用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../website/index.html">网站应用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pubno/index.html">公众号</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">第三方平台</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../code/index.html">错误码</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../download/index.html">资源下载</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary.html">术语</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../contents.html">wxopen-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../contents.html">Docs</a> &raquo;</li>
+        
+      <li>基础信息设置</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/open/mini/status.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>基础信息设置<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<div class="section" id="id2">
+<h2>1. 设置小程序隐私设置（是否可被搜索）<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<p>请求方式: POST（请使用 https 协议）</p>
+<p><a class="reference external" href="https://api.weixin.qq.com/wxa/changewxasearchstatus?access_token=TOKEN">https://api.weixin.qq.com/wxa/changewxasearchstatus?access_token=TOKEN</a></p>
+<p>POST 数据示例</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span>{
+  &quot;status&quot;: 0 //1 表示不可搜索，0 表示可搜索
+}
+</pre></div>
+</div>
+<p>返回说明</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;errcode&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span> <span class="s2">&quot;ok&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>错误码说明</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 85%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>错误码</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>成功</p></td>
+</tr>
+<tr class="row-odd"><td><p>-1</p></td>
+<td><p>系统错误</p></td>
+</tr>
+<tr class="row-even"><td><p>85083</p></td>
+<td><p>搜索标记位被封禁，无法修改</p></td>
+</tr>
+<tr class="row-odd"><td><p>85084</p></td>
+<td><p>非法的 status 值，只能填 0 或者 1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id3">
+<h2>2. 查询小程序当前隐私设置（是否可被搜索）<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<p>请求方式: GET（请使用 https 协议）</p>
+<p><a class="reference external" href="https://api.weixin.qq.com/wxa/">https://api.weixin.qq.com/wxa/</a> getwxasearchstatus?access_token=TOKEN</p>
+<p>返回说明</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span>{
+  &quot;status&quot;: 1, //1 表示不可搜索，0 表示可搜索
+  &quot;errcode&quot;: 0,
+  &quot;errmsg&quot;: &quot;ok&quot;
+}
+</pre></div>
+</div>
+<p>错误码说明</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 43%" />
+<col style="width: 57%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>错误码</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>成功</p></td>
+</tr>
+<tr class="row-odd"><td><p>-1</p></td>
+<td><p>系统错误</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id4">
+<h2>3 小程序扫码公众号关注组件<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
+<p>用户扫码使用小程序时，即可展示当前公众号，用户可直接关注公众号。</p>
+<p>客户端样式</p>
+<p>小程序后台功能设置位置</p>
+<div class="section" id="id5">
+<h3>3.1. 获取展示的公众号信息<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h3>
+<p>请求方式：GET</p>
+<p><a class="reference external" href="https://api.weixin.qq.com/wxa/getshowwxaitem?access_token=TOKEN">https://api.weixin.qq.com/wxa/getshowwxaitem?access_token=TOKEN</a></p>
+<p>返回参数（JSON 格式）：</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;errcode&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span> <span class="s2">&quot;ok&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;can_open&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+  <span class="nt">&quot;is_open&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+  <span class="nt">&quot;appid&quot;</span><span class="p">:</span> <span class="s2">&quot;展示的公众号 appid&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;nickname&quot;</span><span class="p">:</span> <span class="s2">&quot;展示的公众号 nickname&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;headimg&quot;</span><span class="p">:</span> <span class="s2">&quot;展示的公众号头像&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>参数说明：</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>参数名</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>can_open</p></td>
+<td><p>是否可以设置 1 可以，0，不可以</p></td>
+</tr>
+<tr class="row-odd"><td><p>is_open</p></td>
+<td><p>是否已经设置，1 已设置，0，未设置</p></td>
+</tr>
+<tr class="row-even"><td><p>appid</p></td>
+<td><p>展示的公众号 appid</p></td>
+</tr>
+<tr class="row-odd"><td><p>nickname</p></td>
+<td><p>展示的公众号 nickname</p></td>
+</tr>
+<tr class="row-even"><td><p>headimg</p></td>
+<td><p>展示的公众号头像</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id6">
+<h3>3.2 设置展示的公众号<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h3>
+<p>请求方式：POST</p>
+<p><a class="reference external" href="https://api.weixin.qq.com/wxa/updateshowwxaitem?access_token=TOKEN">https://api.weixin.qq.com/wxa/updateshowwxaitem?access_token=TOKEN</a></p>
+<p>请求参数</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;wxa_subscribe_biz_flag&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+  <span class="nt">&quot;appid&quot;</span><span class="p">:</span> <span class="s2">&quot;如果开启，需要传新的公众号 appid&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>参数说明：</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 41%" />
+<col style="width: 59%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>参数名</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>wxa_subscribe_biz_flag</p></td>
+<td><p>0 关闭，1 开启</p></td>
+</tr>
+<tr class="row-odd"><td><p>appid</p></td>
+<td><p>如果开启，需要传新的公众号 appid</p></td>
+</tr>
+</tbody>
+</table>
+<p>返回参数：</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;errcode&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span> <span class="s2">&quot;ok&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id7">
+<h3>3.3 获取可以用来设置的公众号列表<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h3>
+<p>请求方式：GET</p>
+<p><a class="reference external" href="https://api.weixin.qq.com/wxa/getwxamplinkforshow?page=0&amp;num=20&amp;access_token=TOKEN">https://api.weixin.qq.com/wxa/getwxamplinkforshow?page=0&amp;num=20&amp;access_token=TOKEN</a></p>
+<p>请求参数：</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span>{
+  &quot;page&quot;: 0, //第几页，从 0 开始
+  &quot;num&quot;: 10 //每页记录数，最大为 20
+}
+</pre></div>
+</div>
+<p>参数说明：</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 78%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>参数名</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>page</p></td>
+<td><p>第几页，从 0 开始</p></td>
+</tr>
+<tr class="row-odd"><td><p>num</p></td>
+<td><p>每页记录数，最大为 20</p></td>
+</tr>
+</tbody>
+</table>
+<p>返回参数：</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;errcode&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span> <span class="s2">&quot;ok&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;total_num&quot;</span><span class="p">:</span> <span class="s2">&quot;//总记录数&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;biz_info_list&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;nickname&quot;</span><span class="p">:</span> <span class="s2">&quot;公众号昵称&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;appid&quot;</span><span class="p">:</span> <span class="s2">&quot;公众号 appid&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;headimg&quot;</span><span class="p">:</span> <span class="s2">&quot;公众号头像&quot;</span>
+    <span class="p">}</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>参数说明：</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 43%" />
+<col style="width: 57%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>参数名</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>total_num</p></td>
+<td><p>总记录数</p></td>
+</tr>
+<tr class="row-odd"><td><p>nickname</p></td>
+<td><p>公众号昵称</p></td>
+</tr>
+<tr class="row-even"><td><p>appid</p></td>
+<td><p>公众号 appid</p></td>
+</tr>
+<tr class="row-odd"><td><p>headimg</p></td>
+<td><p>公众号头像</p></td>
+</tr>
+</tbody>
+</table>
+<p>小程序接口文档可见：<a class="reference external" href="https://developers.weixin.qq.com/miniprogram/dev/component/official-account.html">开放能力
+official-account</a></p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, nosy
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

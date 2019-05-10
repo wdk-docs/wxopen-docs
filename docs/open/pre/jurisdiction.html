@@ -1,0 +1,544 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>第三方平台的权限说明 &mdash; wxopen-docs 1.0.0 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../contents.html" class="icon icon-home"> wxopen-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">概述</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mobile/index.html">移动应用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../website/index.html">网站应用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pubno/index.html">公众号</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">第三方平台</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../code/index.html">错误码</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../download/index.html">资源下载</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary.html">术语</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../contents.html">wxopen-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../contents.html">Docs</a> &raquo;</li>
+        
+      <li>第三方平台的权限说明</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/open/pre/jurisdiction.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>第三方平台的权限说明<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<div class="section" id="id2">
+<h2>授权账号列表<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<p>第三方平台可以使用接口拉取当前所有已授权的帐号基本信息。</p>
+<p>HTTP 请求:POST</p>
+<p>HTTP 调用:
+<a class="reference external" href="https://api.weixin.qq.com/cgi-bin/component/api_get_authorizer_list?component_access_token=COMPONENT_ACCESS_TOKEN">https://api.weixin.qq.com/cgi-bin/component/api_get_authorizer_list?component_access_token=COMPONENT_ACCESS_TOKEN</a></p>
+<p>调用示例:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;component_appid&quot;</span><span class="p">:</span> <span class="s2">&quot;appid_value&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;offset&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;count&quot;</span><span class="p">:</span> <span class="mi">100</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>参数说明:</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 36%" />
+<col style="width: 19%" />
+<col style="width: 45%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>参数</p></th>
+<th class="head"><p>是否必须</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>component_appid</p></td>
+<td><p>是</p></td>
+<td><p>第三方平台 APPID</p></td>
+</tr>
+<tr class="row-odd"><td><p>offset</p></td>
+<td><p>是</p></td>
+<td><p>偏移位置/起始位置</p></td>
+</tr>
+<tr class="row-even"><td><p>count</p></td>
+<td><p>是</p></td>
+<td><p>拉取数量,最大为 500</p></td>
+</tr>
+</tbody>
+</table>
+<p>正常情况下,会返回:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span>{
+  &quot;total_count&quot;: 33,
+  &quot;list&quot;: [
+    {
+      &quot;authorizer_appid&quot;: &quot;authorizer_appid_1&quot;,
+      &quot;refresh_token&quot;: &quot;refresh_token_1&quot;,
+      &quot;auth_time&quot;: auth_time_1
+    },
+    {
+      &quot;authorizer_appid&quot;: &quot;authorizer_appid_2&quot;,
+      &quot;refresh_token&quot;: &quot;refresh_token_2&quot;,
+      &quot;auth_time&quot;: auth_time_2
+    }
+  ]
+}
+</pre></div>
+</div>
+</div>
+<div class="section" id="id3">
+<h2>公众号权限集<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<p>为了便于管理,也为了帮助公众号和小程序运营者快速理解和授权自己的接口和功能权限,将公众号和小程序的接口权限组织分类如下:</p>
+<p>公众号权限集:</p>
+<ul class="simple">
+<li><p>消息管理权限</p></li>
+<li><p>自定义菜单权限</p></li>
+<li><p>用户管理权限</p></li>
+<li><p>帐号服务权限</p></li>
+<li><p>网页服务权限</p></li>
+<li><p>微信小店权限</p></li>
+<li><p>微信多客服权限</p></li>
+<li><p>群发与通知权限</p></li>
+<li><p>微信卡券权限</p></li>
+<li><p>素材管理权限</p></li>
+<li><p>微信扫一扫权限</p></li>
+<li><p>微信连 WIFI 权限</p></li>
+<li><p>微信摇周边权限</p></li>
+<li><p>微信门店权限</p></li>
+<li><p>城市服务接口权限</p></li>
+<li><p>微信电子发票权限</p></li>
+<li><p>微信开放平台帐号管理权限</p></li>
+<li><p>小程序权限集</p></li>
+<li><p>帐号管理权限</p></li>
+<li><p>开发管理与数据分析权限</p></li>
+<li><p>客服消息管理权限</p></li>
+<li><p>微信开放平台帐号管理权限</p></li>
+<li><p>小程序插件管理权限集</p></li>
+<li><p>小程序附近地点权限集</p></li>
+</ul>
+<p>请注意:</p>
+<ol class="arabic simple">
+<li><p>当开发者对已全网发布的第三方平台做了权限修改时,如果还没有覆盖现网全网发布的状态,则测试公众号时,在授权页看到的权限仍将保持为现网的权限选项。</p></li>
+<li><p>各类型和是否认证的公众号具体拥有哪些 API
+权限(每个授权的公众号,都可以通过下文将提到的接口获知公众号类型),请详见:<a class="reference external" href="http://mp.weixin.qq.com/wiki/7/2d301d4b757dedc333b9a9854b457b47.html">http://mp.weixin.qq.com/wiki/7/2d301d4b757dedc333b9a9854b457b47.html</a>,
+小程序接口请详见:<a class="reference external" href="https://mp.weixin.qq.com/debug/wxadoc/dev/api/">https://mp.weixin.qq.com/debug/wxadoc/dev/api/</a></p></li>
+<li><p>公众号即使暂时没有某项接口权限(如微信卡券接口权限),也可以将其微信卡券权限授权给第三方平台。而后来该公众号获得该接口后,第三方平台可以马上代替该公众号调用这个接口。</p></li>
+</ol>
+<p>第三方平台如需在已有能力中增加需要新权限的新功能,则需注意:</p>
+<ol class="arabic simple">
+<li><p>只要第一次全网发布(包括后续的修改后全网发布),当前在使用的用户永远不受影响,可以正常使用。</p></li>
+<li><p>第三方平台有需要时可以增加新的权限,以满足新的业务需求,第三方平台可以在微信开放平台中修改平台权限申明,修改后审核通过并全网发布后,新授权的公众号授权时会增加新权限的申请,已授权的老用户,旧有权限不影响(换句话其业务也不影响),但新权限集需要其升级授权后才可获得(原因是需要尊重用户选择,比如微信增加了一个新业务如微信卡券,不能想当然地认为用户愿意把这个新业务授权给原来的第三方来做)。</p></li>
+<li><p>在第三方平台的设计上,以素材管理举例,建议开发者如下设计:增加素材管理功能后,新用户当然还是正常授权(这时他会授权所有申明的权限给第三方)。而对于老用户,在他进入素材管理功能内时,提示需要升级授权才可使用新功能,引导用户进入授权页升级即可。</p></li>
+</ol>
+<p>下面对各权限进行详细介绍(以下所有权限都可以同时授权给多家第三方平台):</p>
+<p>公众号权限如下:</p>
+<div class="section" id="id-1">
+<h3>消息管理权限(权限集 id:1)<a class="headerlink" href="#id-1" title="永久链接至标题">¶</a></h3>
+<p>指公众号第三方平台方在获得该权限后,可以获得被授权公众号进行消息管理和回复。具体包括:</p>
+<ol class="arabic simple">
+<li><p>接收用户发来的消息(从而也可以做关键词自动回复等能力),请注意,用户触发的各个业务的事件,是放在各个业务权限里面去推送给相关获得了该权限授权的第三方</p></li>
+<li><p>通过客服接口向用户发送消息</p></li>
+<li><p>获取和设置语音识别开关状态</p></li>
+<li><p>获取和设置地理位置上报的开关状态</p></li>
+<li><p>上传下载多媒体文件接口</p></li>
+<li><p>关注/取消关注事件推送(包括带参数二维码带来的关注事件),及关注后的自动回复</p></li>
+</ol>
+<p>需要特别注意的是,第三方平台只需获得某个业务模块的授权(而不需要获得客服与菜单权限的授权),然后在收到该业务模块事件推送后,如果该事件是允许进行
+5
+秒内被动回复消息给粉丝的,那么第三方就可以被动回复(业务模块的哪些事件推送允许被动回复用户,哪些不允许,需咨询具体业务模块),点击查看被动回复接口文档</p>
+<p>另请注意,如果第三方希望实现实时获知公众号有新粉丝关注,只需要收到关注事件后回复
+success
+即可,不必另行回复,免得公众号出现多个第三方同时进行粉丝关注后的自动回复。</p>
+</div>
+<div class="section" id="id-15">
+<h3>自定义菜单权限(权限集 id:15)<a class="headerlink" href="#id-15" title="永久链接至标题">¶</a></h3>
+<p>指公众号第三方平台方在获得该权限后,可以获得被授权公众号进行自定义菜单的设置和响应。具体包括:</p>
+<ol class="arabic simple">
+<li><p>自定义菜单的创建/查询和删除,包括个性化菜单</p></li>
+<li><p>自定义菜单点击事件接收,和根据该事件进行的 5 秒内被动回复</p></li>
+</ol>
+</div>
+<div class="section" id="id-2">
+<h3>用户管理权限(权限集 id:2)<a class="headerlink" href="#id-2" title="永久链接至标题">¶</a></h3>
+<p>指公众号第三方平台方在获得该权限后,可以获得被授权公众号的用户管理权限。具体包括:</p>
+<ol class="arabic simple">
+<li><p>获取用户基本信息接口</p></li>
+<li><p>获取用户列表接口</p></li>
+<li><p>用户分组管理接口</p></li>
+<li><p>用户备注名设置接口</p></li>
+<li><p>设置用户地理位置的开关及上报方式</p></li>
+<li><p>获取用户地理位置上报的事件推送</p></li>
+<li><p>关注/取消关注公众号事件推送</p></li>
+</ol>
+</div>
+<div class="section" id="id-3">
+<h3>帐号服务权限(权限集 id:3)<a class="headerlink" href="#id-3" title="永久链接至标题">¶</a></h3>
+<p>该权限主要进行公众帐号的帐号管理,包括获取和设置公众帐号信息,由于可供多方获取和设置,故授权不互斥。具体包括:</p>
+<ol class="arabic simple">
+<li><p>生成带参数二维码接口</p></li>
+<li><p>扫描带参数二维码时(而不是关注后)的事件接收(请注意,带参数二维码扫码后关注的事件推送,是会推送给具备消息与菜单管理权限集的第三方)</p></li>
+<li><p>获取公众帐号基础信息(头像昵称/帐号类型等,此接口暂为服务方独有)</p></li>
+<li><p>上传下载多媒体文件接口</p></li>
+</ol>
+</div>
+<div class="section" id="id-4">
+<h3>网页服务权限(权限集 id:4)<a class="headerlink" href="#id-4" title="永久链接至标题">¶</a></h3>
+<p>该权限主要指公众号第三方平台可以代替公众帐号发起微信网页授权,并在授权后可以合法获得相关的授权信息,还包括可以代替公众号使用
+JS SDK。具体包括:</p>
+<ol class="arabic simple">
+<li><p>发起微信内网页授权的权限</p></li>
+<li><p>授权后获取授权用户的基本信息(权限根据应用授权作用域 scope
+的不同而不同:scope 为 snsapi_base 时不弹出授权页面但只能获取用户
+openid)；scope 为 snsapi_userinfo 时弹出授权页面但可通过 openid
+拿到用户昵称、性别、所在地)</p></li>
+<li><p>代替公众号使用 JS SDK</p></li>
+</ol>
+</div>
+<div class="section" id="id-5">
+<h3>微信小店权限(权限集 id:5)<a class="headerlink" href="#id-5" title="永久链接至标题">¶</a></h3>
+<p>该权限主要是指管理微信公众平台小店的功能。具体包括:</p>
+<ol class="arabic simple">
+<li><p>微信小店所有接口权限</p></li>
+<li><p>微信小店所有事件推送(事件将推送到创建服务时填写的公众号消息与事件接收
+URL)</p></li>
+</ol>
+</div>
+<div class="section" id="id-6">
+<h3>微信多客服权限(权限集 id:6)<a class="headerlink" href="#id-6" title="永久链接至标题">¶</a></h3>
+<p>该权限主要指能否设置和获取公众账号的多客服功能开关的状态。一旦打开开关之后,客服消息将不再推送给第三方平台方,而是推送给微信多客服功能后台。此时,公众号运营者需要在
+mp.weixin.qq.com 的多客服模块中下载多客服 PC
+客户端来使用,与发客服消息的粉丝进行 CRM 沟通互动。具体包括:</p>
+<ol class="arabic simple">
+<li><p>微信多客服所有接口权限</p></li>
+</ol>
+</div>
+<div class="section" id="id-7">
+<h3>群发与通知权限(权限集 id:7)<a class="headerlink" href="#id-7" title="永久链接至标题">¶</a></h3>
+<p>该权限主要指公众号用于通知用户的接口能力。由于允许多个第三方开发者就各自业务去通知用户,因此该权限可以授权给多个第三方平台方,即授权不互斥,具体包括:</p>
+<ol class="arabic simple">
+<li><p>模板消息接口</p></li>
+<li><p>高级群发接口</p></li>
+</ol>
+</div>
+<div class="section" id="id-8">
+<h3>微信卡券权限(权限集 id:8)<a class="headerlink" href="#id-8" title="永久链接至标题">¶</a></h3>
+<p>该权限主要指微信卡券相关的所有接口权限和事件推送。具体包括:</p>
+<ol class="arabic simple">
+<li><p>微信卡券所有接口权限</p></li>
+<li><p>微信卡券所有事件推送(事件将推送到创建服务时填写的公众号消息与事件接收
+URL)</p></li>
+<li><p>上传下载多媒体文件接口</p></li>
+</ol>
+</div>
+<div class="section" id="id-9">
+<h3>微信扫一扫权限(权限集 id:9)<a class="headerlink" href="#id-9" title="永久链接至标题">¶</a></h3>
+<p>该权限主要指微信扫一扫的所有接口权限和事件推送。具体包括:</p>
+<ol class="arabic simple">
+<li><p>微信扫一扫的所有接口权限和事件推送</p></li>
+</ol>
+</div>
+<div class="section" id="wi-fi-id-10">
+<h3>微信连 WI-FI 权限(权限集 id:10)<a class="headerlink" href="#wi-fi-id-10" title="永久链接至标题">¶</a></h3>
+<p>该权限主要指微信连 WI-FI 的所有接口权限和事件推送。具体包括:</p>
+<ol class="arabic simple">
+<li><p>微信连 WIFI 所有接口权限</p></li>
+</ol>
+</div>
+<div class="section" id="id-11">
+<h3>素材管理权限(权限集 id:11)<a class="headerlink" href="#id-11" title="永久链接至标题">¶</a></h3>
+<p>该权限主要指用于第三方开发者帮助公众号管理图文消息、图片、语音、视频、缩略图等素材,具体包括:</p>
+<ol class="arabic simple">
+<li><p>新增和获取临时素材(原上传下载多媒体文件接口)</p></li>
+<li><p>新增、获取、删除永久素材</p></li>
+<li><p>修改永久图文消息素材</p></li>
+<li><p>获取各类型素材总数和列表</p></li>
+</ol>
+</div>
+<div class="section" id="id-12">
+<h3>微信摇周边权限(权限集 id:12)<a class="headerlink" href="#id-12" title="永久链接至标题">¶</a></h3>
+<p>该权限主要指摇一摇周边的所有接口权限和事件推送。具体包括:</p>
+<ol class="arabic simple">
+<li><p>摇一摇周边所有接口权限</p></li>
+</ol>
+</div>
+<div class="section" id="id-13">
+<h3>微信门店权限(权限集 id:13)<a class="headerlink" href="#id-13" title="永久链接至标题">¶</a></h3>
+<p>该权限主要指线下门店的所有接口权限和事件推送。具体包括:</p>
+<ol class="arabic simple">
+<li><p>线下门店所有接口权限</p></li>
+</ol>
+</div>
+<div class="section" id="id-22">
+<h3>城市服务接口权限(权限集 id:22)<a class="headerlink" href="#id-22" title="永久链接至标题">¶</a></h3>
+<p>该权限主要指城市服务内向用户发送消息,沉淀办事记录和事件推送。具体包括:</p>
+<ol class="arabic simple">
+<li><p>城市服务所有接口权限</p></li>
+</ol>
+</div>
+<div class="section" id="id-26">
+<h3>微信电子发票权限(权限集 id:26)<a class="headerlink" href="#id-26" title="永久链接至标题">¶</a></h3>
+<p>该权限主要指公众号使用微信电子发票的权限。具体包括:</p>
+<ol class="arabic simple">
+<li><p>唤起“插入微信发票”的授权页的接口</p></li>
+<li><p>将电子发票插入微信卡包的接口</p></li>
+<li><p>微信电子发票的报销的接口</p></li>
+</ol>
+</div>
+<div class="section" id="id-24">
+<h3>微信开放平台帐号绑定权限(权限集 id:24)<a class="headerlink" href="#id-24" title="永久链接至标题">¶</a></h3>
+<p>第三方平台在获得此权限后,可以代替已授权的公众号创建开放平台帐号或进行绑定/解绑操作。绑定在同一个开放平台帐号下的公众号及小程序,同一用户
+unionid
+一致。此权限集只可以授权给一个第三方平台,即授权互斥。权限集内接口具体包括:</p>
+<ol class="arabic simple">
+<li><p>创建开放平台帐号并绑定公众号</p></li>
+<li><p>将公众号绑定到已有开放平台帐号下</p></li>
+<li><p>将公众号从开放平台帐号下解绑</p></li>
+<li><p>获取公众号所绑定的开放平台帐号</p></li>
+</ol>
+<p>API
+文档详见:open.weixin.qq.com-资源中心-第三方平台-代公众号实现业务-微信开放平台帐号管理</p>
+<p>小程序权限如下:</p>
+</div>
+<div class="section" id="id-17">
+<h3>帐号管理权限(权限集 id:17)<a class="headerlink" href="#id-17" title="永久链接至标题">¶</a></h3>
+<p>该权限主要进行小程序的帐号管理,包括获取和设置小程序帐号信息,由于可供多方获取和设置,故授权不互斥。具体包括:</p>
+<ol class="arabic simple">
+<li><p>生成带参数二维码接口</p></li>
+<li><p>用户访问状态修改与查询</p></li>
+<li><p>获取公众帐号基础信息(头像昵称/帐号类型等,此接口暂为服务方独有)</p></li>
+</ol>
+</div>
+<div class="section" id="id-18">
+<h3>开发管理与数据分析权限(权限集 id:18)<a class="headerlink" href="#id-18" title="永久链接至标题">¶</a></h3>
+<p>该权限主要进行小程序的代码开发管理,绑定体验者,模版消息,配置服务器信息,获取小程序数据等。为防止代码相互覆盖,此授权只能一个第三方平台。具体包括:</p>
+<ol class="arabic simple">
+<li><p>代码审核相关的事件推送</p></li>
+<li><p>提交代码体验</p></li>
+<li><p>获取体验二维码</p></li>
+<li><p>绑定体验者</p></li>
+<li><p>提交代码审核</p></li>
+<li><p>代码审核状态查询</p></li>
+<li><p>发布代码</p></li>
+<li><p>服务器地址设置</p></li>
+<li><p>模版消息</p></li>
+<li><p>微信登录</p></li>
+<li><p>数据分析</p></li>
+</ol>
+</div>
+<div class="section" id="id-19">
+<h3>客服消息管理权限(权限集 id:19)<a class="headerlink" href="#id-19" title="永久链接至标题">¶</a></h3>
+<p>该权限主要进行小程序的客服消息的管理和开发,可授权给多家第三方平台。具体包括:</p>
+<ol class="arabic simple">
+<li><p>发送客服消息</p></li>
+<li><p>上传素材接口</p></li>
+</ol>
+</div>
+<div class="section" id="id4">
+<h3>微信开放平台帐号绑定权限<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h3>
+<p>第三方平台在获得此权限后,可以代替已授权的小程序创建开放平台帐号或进行绑定/解绑操作。绑定在同一个开放平台帐号下的公众号及小程序,用户
+unionid
+一致。此权限集只可以授权给一个第三方平台,即授权互斥。权限集内接口具体包括:</p>
+<ol class="arabic simple">
+<li><p>创建开放平台帐号并绑定小程序</p></li>
+<li><p>将小程序绑定到已有开放平台帐号下</p></li>
+<li><p>将小程序从开放平台帐号下解绑</p></li>
+<li><p>获取小程序所绑定的开放平台帐号</p></li>
+</ol>
+<p>API
+文档详见:open.weixin.qq.com-资源中心-第三方平台-代小程序实现业务-微信开放平台帐号管理</p>
+</div>
+<div class="section" id="id-40">
+<h3>小程序插件管理权限集(权限集 id:40)<a class="headerlink" href="#id-40" title="永久链接至标题">¶</a></h3>
+<p>第三方平台获得此权限后,可以代替小程序管理插件。此权限集可以授权给多个第三方平台,权限集内接口具体如下:</p>
+<ol class="arabic simple">
+<li><p>申请添加插件</p></li>
+<li><p>查询已添加的插件</p></li>
+<li><p>删除已添加的插件</p></li>
+</ol>
+</div>
+<div class="section" id="id-37">
+<h3>小程序附近地点权限集(权限集 id:37)<a class="headerlink" href="#id-37" title="永久链接至标题">¶</a></h3>
+<p>第三方平台获得该权限后,可帮助小程序创建、管理附近地点,可设置小程序展示在“附近小程序”入口中。</p>
+<p>权限集内具体接口如下:</p>
+<p><a class="reference external" href="https://developers.weixin.qq.com/miniprogram/dev/api/nearby.html">附近地点接口</a></p>
+</div>
+<div class="section" id="id-30">
+<h3>小程序基本信息设置权限(权限集 id:30)<a class="headerlink" href="#id-30" title="永久链接至标题">¶</a></h3>
+<p>第三方平台获得该权限后,可帮助通过接口创建的小程序设置名称、头像、简介、类目等基本信息。</p>
+<p>权限集内具体接口如下:</p>
+<p><a class="reference external" href="https://open.weixin.qq.com/cgi-bin/showdocument?action=dir_list&amp;t=resource/res_list&amp;verify=1&amp;id=21528465979XX32V&amp;token=&amp;lang=zh_CN">小程序基本信息接口</a></p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, nosy
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

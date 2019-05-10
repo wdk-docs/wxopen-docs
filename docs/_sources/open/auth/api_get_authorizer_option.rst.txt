@@ -1,0 +1,53 @@
+7、获取授权方的选项设置信息
+===========================
+
+该 API
+用于获取授权方的公众号或小程序的选项设置信息，如：地理位置上报，语音识别开关，多客服开关。注意，获取各项选项设置信息，需要有授权方的授权，详见权限集说明。
+
+请求格式
+--------
+
+``POST``
+**https**://api.weixin.qq.com/cgi-bin/component/api_get_authorizer_option?component_access_token=xxxx
+
+请求数据
+--------
+
+.. code:: json
+
+   {
+     "component_appid": "appid_value",
+     "authorizer_appid": " auth_appid_value ",
+     "option_name": "option_name_value"
+   }
+
+请求参数说明
+
+================ ==========================
+参数             说明
+================ ==========================
+component_appid  第三方平台 appid
+authorizer_appid 授权公众号或小程序的 appid
+option_name      选项名称
+================ ==========================
+
+返回结果
+--------
+
+.. code:: json
+
+   {
+     "authorizer_appid": "wx7bc5ba58cabd00f4",
+     "option_name": "voice_recognize",
+     "option_value": "1"
+   }
+
+结果参数说明
+
+================ ==========================
+参数             说明
+================ ==========================
+authorizer_appid 授权公众号或小程序的 appid
+option_name      选项名称
+option_value     选项值
+================ ==========================
