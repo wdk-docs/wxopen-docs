@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>推送 component_verify_ticket 协议 &mdash; wxopen-docs 1.0.0 文档</title>
+  <title>1. 推送 component_verify_ticket 协议 &mdash; wxopen-docs 1.0.0 文档</title>
   
 
   
@@ -37,7 +37,7 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
-    <link rel="next" title="2、获取第三方平台 component_access_token" href="component_access_token.html" />
+    <link rel="next" title="2. 获取第三方平台 component_access_token" href="component_access_token.html" />
     <link rel="prev" title="授权流程技术说明" href="auth.html" /> 
 </head>
 
@@ -83,30 +83,25 @@
             
             
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../index.html">概述</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../wxapp/index.html">小程序管理</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../mobile/index.html">移动应用</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../website/index.html">网站应用</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../pubno/index.html">公众号</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">第三方平台</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../overview.html">第三方平台概述</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="index.html">授权流程技术说明</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">授权流程</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="auth.html">授权流程技术说明</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">推送 component_verify_ticket 协议</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id1">请求数据</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id2">字段说明</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">1. 推送 component_verify_ticket 协议</a></li>
+<li class="toctree-l3"><a class="reference internal" href="component_access_token.html">2. 获取第三方平台 component_access_token</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_create_preauthcode.html">3. 获取预授权码 pre_auth_code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_query_auth.html">4. 使用授权码换取公众号或小程序的接口调用凭据和授权信息</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_authorizer_token.html">5. 获取（刷新）授权公众号或小程序的接口调用凭据（令牌）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_get_authorizer_info.html">6. 获取授权方的帐号基本信息</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_get_authorizer_option.html">7. 获取授权方的选项设置信息</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_set_authorizer_option.html">8. 设置授权方的选项信息</a></li>
+<li class="toctree-l3"><a class="reference internal" href="callback.html">9. 推送授权相关通知</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="component_access_token.html">2、获取第三方平台 component_access_token</a></li>
-<li class="toctree-l3"><a class="reference internal" href="api_create_preauthcode.html">3、获取预授权码 pre_auth_code</a></li>
-<li class="toctree-l3"><a class="reference internal" href="api_query_auth.html">4、使用授权码换取公众号或小程序的接口调用凭据和授权信息</a></li>
-<li class="toctree-l3"><a class="reference internal" href="api_authorizer_token.html">5、获取（刷新）授权公众号或小程序的接口调用凭据（令牌）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="api_get_authorizer_info.html">6、获取授权方的帐号基本信息</a></li>
-<li class="toctree-l3"><a class="reference internal" href="api_get_authorizer_option.html">7、获取授权方的选项设置信息</a></li>
-<li class="toctree-l3"><a class="reference internal" href="api_set_authorizer_option.html">8、设置授权方的选项信息</a></li>
-<li class="toctree-l3"><a class="reference internal" href="callback.html">9、推送授权相关通知</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../mini/index.html">代小程序实现业务-开发简介</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../mp/index.html">代公众号实现业务</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pre/index.html">开发前必读</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../wire.html">消息加解密说明</a></li>
@@ -162,9 +157,9 @@
         
           <li><a href="../index.html">第三方平台</a> &raquo;</li>
         
-          <li><a href="index.html">授权流程技术说明</a> &raquo;</li>
+          <li><a href="index.html">授权流程</a> &raquo;</li>
         
-      <li>推送 component_verify_ticket 协议</li>
+      <li>1. 推送 component_verify_ticket 协议</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -184,13 +179,11 @@
            <div itemprop="articleBody">
             
   <div class="section" id="component-verify-ticket">
-<h1>推送 component_verify_ticket 协议<a class="headerlink" href="#component-verify-ticket" title="永久链接至标题">¶</a></h1>
-<p>在第三方平台创建审核通过后，微信服务器会向其“授权事件接收 URL”每隔 10
-分钟定时推送 component_verify_ticket。 第三方平台方在收到 ticket
-推送后也需进行解密（详细请见【消息加解密接入指引】），接收到后必须直接返回字符串
-success。</p>
-<div class="section" id="id1">
-<h2>请求数据<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<h1>1. 推送 component_verify_ticket 协议<a class="headerlink" href="#component-verify-ticket" title="永久链接至标题">¶</a></h1>
+<p>在第三方平台创建审核通过后，微信服务器会向其“授权事件接收 URL”每隔 10分钟定时推送 component_verify_ticket。
+第三方平台方在收到 ticket 推送后也需进行解密（详细请见【 <a class="reference external" href="https://open.weixin.qq.com/cgi-bin/showdocument?action=dir_list&amp;t=resource/res_list&amp;verify=1&amp;id=open1419318479&amp;token=&amp;lang=zh_CN">消息加解密接入指引</a> 】），
+接收到后必须直接返回字符串 success。</p>
+<p>请求数据</p>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;xml&gt;</span>
     <span class="nt">&lt;AppId&gt;</span> <span class="nt">&lt;/AppId&gt;</span>
     <span class="nt">&lt;CreateTime&gt;</span>1413192605 <span class="nt">&lt;/CreateTime&gt;</span>
@@ -199,10 +192,8 @@ success。</p>
 <span class="nt">&lt;/xml&gt;</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="id2">
-<h2>字段说明<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
-<table class="docutils align-center">
+<table class="docutils align-center" id="id1">
+<caption><span class="caption-text">字段说明</span><a class="headerlink" href="#id1" title="永久链接至表格">¶</a></caption>
 <colgroup>
 <col style="width: 48%" />
 <col style="width: 52%" />
@@ -227,10 +218,12 @@ success。</p>
 </tr>
 </tbody>
 </table>
-<p>!!! note “注意”</p>
-<div class="highlight-js notranslate"><div class="highlight"><pre><span></span>component_verify_ticket的有效时间较component_access_token更长，建议保存最近可用的component_verify_ticket，在component_access_token过期之前使用该ticket进行更新，避免出现因为ticket接收失败而无法更新component_access_token的情况。
-</pre></div>
-</div>
+<div class="admonition attention">
+<p class="admonition-title">注意</p>
+<p>component_verify_ticket的有效时间较component_access_token更长，
+建议保存最近可用的component_verify_ticket，
+在component_access_token过期之前使用该ticket进行更新，
+避免出现因为ticket接收失败而无法更新component_access_token的情况。</p>
 </div>
 </div>
 
@@ -242,7 +235,7 @@ success。</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="component_access_token.html" class="btn btn-neutral float-right" title="2、获取第三方平台 component_access_token" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="component_access_token.html" class="btn btn-neutral float-right" title="2. 获取第三方平台 component_access_token" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="auth.html" class="btn btn-neutral float-left" title="授权流程技术说明" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

@@ -1,0 +1,96 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, nosy
+# This file is distributed under the same license as the wxopen-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: wxopen-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-11 22:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/open/auth/api_get_authorizer_option.rst:2
+msgid "7. 获取授权方的选项设置信息"
+msgstr ""
+
+#: ../../source/open/auth/api_get_authorizer_option.rst:4
+msgid "该 API 用于获取授权方的公众号或小程序的选项设置信息， 如：地理位置上报，语音识别开关，多客服开关。 注意，获取各项选项设置信息，需要有授权方的授权，详见权限集说明。"
+msgstr ""
+
+#: ../../source/open/auth/api_get_authorizer_option.rst:8
+msgid "请求格式"
+msgstr ""
+
+#: ../../source/open/auth/api_get_authorizer_option.rst:10
+msgid "``POST`` **https**://api.weixin.qq.com/cgi-bin/component/api_get_authorizer_option?component_access_token=xxxx"
+msgstr ""
+
+#: ../../source/open/auth/api_get_authorizer_option.rst:13
+msgid "请求数据"
+msgstr ""
+
+#: ../../source/open/auth/api_get_authorizer_option.rst:23
+msgid "请求参数说明"
+msgstr ""
+
+#: ../../source/open/auth/api_get_authorizer_option.rst:26
+#: ../../source/open/auth/api_get_authorizer_option.rst:46
+msgid "参数"
+msgstr ""
+
+#: ../../source/open/auth/api_get_authorizer_option.rst:26
+#: ../../source/open/auth/api_get_authorizer_option.rst:46
+msgid "说明"
+msgstr ""
+
+#: ../../source/open/auth/api_get_authorizer_option.rst:28
+msgid "component_appid"
+msgstr ""
+
+#: ../../source/open/auth/api_get_authorizer_option.rst:28
+msgid "第三方平台 appid"
+msgstr ""
+
+#: ../../source/open/auth/api_get_authorizer_option.rst:29
+#: ../../source/open/auth/api_get_authorizer_option.rst:48
+msgid "authorizer_appid"
+msgstr ""
+
+#: ../../source/open/auth/api_get_authorizer_option.rst:29
+#: ../../source/open/auth/api_get_authorizer_option.rst:48
+msgid "授权公众号或小程序的 appid"
+msgstr ""
+
+#: ../../source/open/auth/api_get_authorizer_option.rst:30
+#: ../../source/open/auth/api_get_authorizer_option.rst:49
+msgid "option_name"
+msgstr ""
+
+#: ../../source/open/auth/api_get_authorizer_option.rst:30
+#: ../../source/open/auth/api_get_authorizer_option.rst:49
+msgid "选项名称"
+msgstr ""
+
+#: ../../source/open/auth/api_get_authorizer_option.rst:33
+msgid "返回结果"
+msgstr ""
+
+#: ../../source/open/auth/api_get_authorizer_option.rst:43
+msgid "结果参数说明"
+msgstr ""
+
+#: ../../source/open/auth/api_get_authorizer_option.rst:50
+msgid "option_value"
+msgstr ""
+
+#: ../../source/open/auth/api_get_authorizer_option.rst:50
+msgid "选项值"
+msgstr ""
+

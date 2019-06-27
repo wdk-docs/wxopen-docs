@@ -1,0 +1,272 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, nosy
+# This file is distributed under the same license as the wxopen-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: wxopen-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-11 22:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/wxapp/status.rst:2
+msgid "基础信息设置"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:5
+msgid "1. 设置小程序隐私设置（是否可被搜索）"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:7
+msgid "请求方式: POST（请使用 https 协议）"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:9
+msgid "https://api.weixin.qq.com/wxa/changewxasearchstatus?access_token=TOKEN"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:11
+msgid "POST 数据示例"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:19 ../../source/wxapp/status.rst:46
+msgid "返回说明"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:28 ../../source/wxapp/status.rst:56
+msgid "错误码说明"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:31 ../../source/wxapp/status.rst:59
+msgid "错误码"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:31 ../../source/wxapp/status.rst:59
+#: ../../source/wxapp/status.rst:98 ../../source/wxapp/status.rst:126
+#: ../../source/wxapp/status.rst:160 ../../source/wxapp/status.rst:186
+msgid "说明"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:33 ../../source/wxapp/status.rst:61
+msgid "0"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:33 ../../source/wxapp/status.rst:61
+msgid "成功"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:34 ../../source/wxapp/status.rst:62
+msgid "-1"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:34 ../../source/wxapp/status.rst:62
+msgid "系统错误"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:35
+msgid "85083"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:35
+msgid "搜索标记位被封禁，无法修改"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:36
+msgid "85084"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:36
+msgid "非法的 status 值，只能填 0 或者 1"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:40
+msgid "2. 查询小程序当前隐私设置（是否可被搜索）"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:42
+msgid "请求方式: GET（请使用 https 协议）"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:44
+msgid "https://api.weixin.qq.com/wxa/ getwxasearchstatus?access_token=TOKEN"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:66
+msgid "3 小程序扫码公众号关注组件"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:68
+msgid "用户扫码使用小程序时，即可展示当前公众号，用户可直接关注公众号。"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:70
+msgid "客户端样式"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:72
+msgid "小程序后台功能设置位置"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:75
+msgid "3.1. 获取展示的公众号信息"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:77 ../../source/wxapp/status.rst:144
+msgid "请求方式：GET"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:79
+msgid "https://api.weixin.qq.com/wxa/getshowwxaitem?access_token=TOKEN"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:81
+msgid "返回参数（JSON 格式）："
+msgstr ""
+
+#: ../../source/wxapp/status.rst:95 ../../source/wxapp/status.rst:123
+#: ../../source/wxapp/status.rst:157 ../../source/wxapp/status.rst:183
+msgid "参数说明："
+msgstr ""
+
+#: ../../source/wxapp/status.rst:98 ../../source/wxapp/status.rst:126
+#: ../../source/wxapp/status.rst:160 ../../source/wxapp/status.rst:186
+msgid "参数名"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:100
+msgid "can_open"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:100
+msgid "是否可以设置 1 可以，0，不可以"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:101
+msgid "is_open"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:101
+msgid "是否已经设置，1 已设置，0，未设置"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:102 ../../source/wxapp/status.rst:129
+#: ../../source/wxapp/status.rst:190
+msgid "appid"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:102
+msgid "展示的公众号 appid"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:103 ../../source/wxapp/status.rst:189
+msgid "nickname"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:103
+msgid "展示的公众号 nickname"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:104 ../../source/wxapp/status.rst:191
+msgid "headimg"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:104
+msgid "展示的公众号头像"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:108
+msgid "3.2 设置展示的公众号"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:110
+msgid "请求方式：POST"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:112
+msgid "https://api.weixin.qq.com/wxa/updateshowwxaitem?access_token=TOKEN"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:114
+msgid "请求参数"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:128
+msgid "wxa_subscribe_biz_flag"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:128
+msgid "0 关闭，1 开启"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:129
+msgid "如果开启，需要传新的公众号 appid"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:132 ../../source/wxapp/status.rst:166
+msgid "返回参数："
+msgstr ""
+
+#: ../../source/wxapp/status.rst:142
+msgid "3.3 获取可以用来设置的公众号列表"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:146
+msgid "https://api.weixin.qq.com/wxa/getwxamplinkforshow?page=0&num=20&access_token=TOKEN"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:148
+msgid "请求参数："
+msgstr ""
+
+#: ../../source/wxapp/status.rst:162
+msgid "page"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:162
+msgid "第几页，从 0 开始"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:163
+msgid "num"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:163
+msgid "每页记录数，最大为 20"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:188
+msgid "total_num"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:188
+msgid "总记录数"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:189
+msgid "公众号昵称"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:190
+msgid "公众号 appid"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:191
+msgid "公众号头像"
+msgstr ""
+
+#: ../../source/wxapp/status.rst:194
+msgid ""
+"小程序接口文档可见：\\ `开放能力 official-account "
+"<https://developers.weixin.qq.com/miniprogram/dev/component/official-"
+"account.html>`__"
+msgstr ""
+

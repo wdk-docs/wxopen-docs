@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, nosy
+# This file is distributed under the same license as the wxopen-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: wxopen-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-11 22:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/index.rst:2
+msgid ":wxopen:`概述 <1>`"
+msgstr ""
+
+#: ../../source/index.rst:5
+msgid "关于文档"
+msgstr ""
+
+#: ../../source/index.rst:7
+msgid "文档整理自 :wxopen:`微信开放平台 <1>` ，由于那里的文档，太混乱，每次找东西都得找好久，整理一下，按章节目录树，方便查找"
+msgstr ""
+
+#: ../../source/index.rst:10
+msgid "概述"
+msgstr ""
+
+#: ../../source/index.rst:12
+msgid "资源中心是微信开放平台开发者所需所有相关资源的汇集地，包括："
+msgstr ""
+
+#: ../../source/index.rst:14
+msgid "移动应用开发"
+msgstr ""
+
+#: ../../source/index.rst:15
+msgid "网站应用开发"
+msgstr ""
+
+#: ../../source/index.rst:16
+msgid "公众帐号开发"
+msgstr ""
+
+#: ../../source/index.rst:17
+msgid "公众号服务开发"
+msgstr ""
+
+#: ../../source/index.rst:19
+msgid "此外，还包括了开发过程中的返回码说明和资源下载，具体资源包括："
+msgstr ""
+
+#: ../../source/index.rst:21
+msgid "开发工具包"
+msgstr ""
+
+#: ../../source/index.rst:22
+msgid "范例代码"
+msgstr ""
+
+#: ../../source/index.rst:23
+msgid "Android开发所必需的签名生成工具"
+msgstr ""
+
+#: ../../source/index.rst:24
+msgid "视觉设计资源（请开发者使用标准设计资源，保证一致的用户体验）"
+msgstr ""
+
+#: ../../source/index.rst:25
+msgid ""
+"WeDemo开源项目（微信登录、微信分享等功能示例，包括客户端（iOS）及后台源代码，开发者可参考源代码完成开发，安全、便捷地在App中实现微信登录、分享等功能。"
+" :download:`查看WeDemo开源项目 <https://github.com/Tencent/WeDemo>` ）"
+msgstr ""
+

@@ -1,0 +1,70 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, nosy
+# This file is distributed under the same license as the wxopen-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: wxopen-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-11 22:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/mobile/faq/ios.rst:2
+msgid "iOS常见问题"
+msgstr ""
+
+#: ../../source/mobile/faq/ios.rst:4
+msgid "Q：iOS7下使用了最新的微信SDK之后，应用没有出现在微信的可用应用列表中？"
+msgstr ""
+
+#: ../../source/mobile/faq/ios.rst:6
+msgid "A：遇到此情况，请确认应用名输入无误以及你对该应用的所有权，仍有疑问，请发邮件到 weixinapp@qq.com 进行申诉。"
+msgstr ""
+
+#: ../../source/mobile/faq/ios.rst:8
+msgid "Q：最新SDK废除了getWXAppSupportMaxApiVersion接口之后，第三方应用如何判断当前微信版本支持哪些功能？"
+msgstr ""
+
+#: ../../source/mobile/faq/ios.rst:10
+msgid "A：第三方应用不需要判断微信版本具体支持哪些功能，由微信侧判断并作出相应的提示。"
+msgstr ""
+
+#: ../../source/mobile/faq/ios.rst:12
+msgid "Q：为什么最新的SDK在iOS7下发送信息到会话、朋友圈或者收藏到微信都失败？"
+msgstr ""
+
+#: ../../source/mobile/faq/ios.rst:14
+msgid "A：请使用微信5.0.1及以上版本。"
+msgstr ""
+
+#: ../../source/mobile/faq/ios.rst:16
+msgid "Q：App如何知道用户的手机是否已安装微信？"
+msgstr ""
+
+#: ../../source/mobile/faq/ios.rst:18
+msgid "A：可使用接口isWXAppInstalled，在微信开放平台网站iOS手册搜索可知详情。"
+msgstr ""
+
+#: ../../source/mobile/faq/ios.rst:20
+msgid "Q：为什么使用微信iOS SDK分享信息给微信好友，发送成功后不能返回原App，并且在微信对话框中，没有显示“来自”哪个App？"
+msgstr ""
+
+#: ../../source/mobile/faq/ios.rst:22
+msgid "A：让微信跳转回原App需要在原App中将AppID设置为URL Scheme。具体操作方法见微信开放平台 iOS上手指南 。"
+msgstr ""
+
+#: ../../source/mobile/faq/ios.rst:24
+msgid "Q：为什么我的应用在微信客户端中显示的应用图标失真了？"
+msgstr ""
+
+#: ../../source/mobile/faq/ios.rst:26
+msgid "A：为了获得最佳的图标显示效果，请确保你的APP本地含有114*114像素的icon@2x.png图标。"
+msgstr ""
+

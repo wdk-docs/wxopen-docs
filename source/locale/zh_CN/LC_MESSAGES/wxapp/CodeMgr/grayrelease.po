@@ -1,0 +1,99 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, nosy
+# This file is distributed under the same license as the wxopen-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: wxopen-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-11 22:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/wxapp/CodeMgr/grayrelease.rst:2
+msgid "16. 分阶段发布"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/grayrelease.rst:4
+msgid "（1）分阶段发布接口"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/grayrelease.rst:6
+msgid "请求方式: POST（请使用https协议）"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/grayrelease.rst:8
+msgid "https://api.weixin.qq.com/wxa/grayrelease?access_token=TOKEN POST数据示例"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/grayrelease.rst:11
+msgid "{ \"gray_percentage\": 1 //灰度的百分比，1到100的整数 } 返回说明"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/grayrelease.rst:17
+#: ../../source/wxapp/CodeMgr/grayrelease.rst:38
+#: ../../source/wxapp/CodeMgr/grayrelease.rst:59
+msgid "{"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/grayrelease.rst:17
+#: ../../source/wxapp/CodeMgr/grayrelease.rst:38
+msgid "\"errcode\":0, \"errmsg\":\"ok\","
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/grayrelease.rst:19
+#: ../../source/wxapp/CodeMgr/grayrelease.rst:40
+#: ../../source/wxapp/CodeMgr/grayrelease.rst:61
+msgid "} 错误码说明"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/grayrelease.rst:22
+msgid ""
+"错误码     说明 0       成功 -1      系统错误 86002   小程序未初始化完成 85079   "
+"小程序没有线上版本，不能进行灰度 85080   小程序提交的审核未审核通过 85081   无效的发布比例 85082   "
+"当前的发布比例需要比之前设置的高 （2）取消分阶段发布"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/grayrelease.rst:32
+#: ../../source/wxapp/CodeMgr/grayrelease.rst:48
+msgid "请求方式: GET（请使用https协议）"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/grayrelease.rst:34
+msgid "https://api.weixin.qq.com/wxa/revertgrayrelease?access_token=TOKEN 返回说明"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/grayrelease.rst:43
+msgid "错误码     说明 0       成功 -1      系统错误 （3）查询当前分阶段发布详情"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/grayrelease.rst:50
+msgid "https://api.weixin.qq.com/wxa/getgrayreleaseplan?access_token=TOKEN 返回说明"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/grayrelease.rst:54
+msgid "\"errcode\":0, \"errmsg\":\"ok\", \"gray_release_plan\" : {"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/grayrelease.rst:57
+msgid ""
+"\"status\" : 1, //0:初始状态 1:执行中 2:暂停中 3:执行完毕 4:被删除 \"create_timestamp\" : "
+"1517553721, //创建时间 \"gray_percentage\" : 8"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/grayrelease.rst:60
+msgid "},"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/grayrelease.rst:64
+msgid "错误码     说明 0       成功 -1      系统错误"
+msgstr ""
+

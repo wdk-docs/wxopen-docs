@@ -1,0 +1,220 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, nosy
+# This file is distributed under the same license as the wxopen-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: wxopen-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-11 22:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/wxapp/unionid.rst:2
+msgid "支付后获取用户 Unionid 接口"
+msgstr ""
+
+#: ../../source/wxapp/unionid.rst:4
+msgid "调用前需要用户完成支付，且在支付后的五分钟内有效。"
+msgstr ""
+
+#: ../../source/wxapp/unionid.rst:6
+msgid "用户支付完成后，第三方平台可以代理小程序获取该用户的 unionid,无需用户授权。"
+msgstr ""
+
+#: ../../source/wxapp/unionid.rst:10
+msgid "请求地址"
+msgstr ""
+
+#: ../../source/wxapp/unionid.rst:12
+msgid "以下两种方式任选其一。"
+msgstr ""
+
+#: ../../source/wxapp/unionid.rst:14
+msgid "微信订单号："
+msgstr ""
+
+#: ../../source/wxapp/unionid.rst:16
+msgid "GET https://api.weixin.qq.com/wxa/getpaidunionid?access_token=ACCESS_TOKEN&openid=OPENID&transaction_id=TRANSACTION_ID"
+msgstr ""
+
+#: ../../source/wxapp/unionid.rst:19
+msgid "商户订单号："
+msgstr ""
+
+#: ../../source/wxapp/unionid.rst:21
+msgid "GET https://api.weixin.qq.com/wxa/getpaidunionid?access_token=ACCESS_TOKEN&openid=OPENID&mch_id=MCH_ID&out_trade_no=OUT_TRADE_NO"
+msgstr ""
+
+#: ../../source/wxapp/unionid.rst:25
+msgid "请求参数"
+msgstr ""
+
+#: ../../source/wxapp/unionid.rst:28
+#: ../../source/wxapp/unionid.rst:41
+msgid "属性"
+msgstr ""
+
+#: ../../source/wxapp/unionid.rst:28
+#: ../../source/wxapp/unionid.rst:41
+msgid "类型"
+msgstr ""
+
+#: ../../source/wxapp/unionid.rst:28
+msgid "必填"
+msgstr ""
+
+#: ../../source/wxapp/unionid.rst:28
+#: ../../source/wxapp/unionid.rst:41
+#: ../../source/wxapp/unionid.rst:46
+msgid "说明"
+msgstr ""
+
+#: ../../source/wxapp/unionid.rst:30
+msgid "access_token"
+msgstr ""
+
+#: ../../source/wxapp/unionid.rst:30
+#: ../../source/wxapp/unionid.rst:31
+#: ../../source/wxapp/unionid.rst:32
+#: ../../source/wxapp/unionid.rst:33
+#: ../../source/wxapp/unionid.rst:34
+#: ../../source/wxapp/unionid.rst:43
+msgid "String"
+msgstr ""
+
+#: ../../source/wxapp/unionid.rst:30
+#: ../../source/wxapp/unionid.rst:31
+msgid "是"
+msgstr ""
+
+#: ../../source/wxapp/unionid.rst:30
+msgid "请使用第三方平台获取到的该小程序授权的 authorizer_access_token"
+msgstr ""
+
+#: ../../source/wxapp/unionid.rst:31
+msgid "openid"
+msgstr ""
+
+#: ../../source/wxapp/unionid.rst:31
+msgid "支付用户唯一标识"
+msgstr ""
+
+#: ../../source/wxapp/unionid.rst:32
+msgid "transaction_id"
+msgstr ""
+
+#: ../../source/wxapp/unionid.rst:32
+#: ../../source/wxapp/unionid.rst:33
+#: ../../source/wxapp/unionid.rst:34
+msgid "否"
+msgstr ""
+
+#: ../../source/wxapp/unionid.rst:32
+msgid "微信订单号"
+msgstr ""
+
+#: ../../source/wxapp/unionid.rst:33
+msgid "mch_id"
+msgstr ""
+
+#: ../../source/wxapp/unionid.rst:33
+msgid "商户号，和商户订单号配合使用"
+msgstr ""
+
+#: ../../source/wxapp/unionid.rst:34
+msgid "out_trade_no"
+msgstr ""
+
+#: ../../source/wxapp/unionid.rst:34
+msgid "商户订单号，和商户号配合使用"
+msgstr ""
+
+#: ../../source/wxapp/unionid.rst:38
+msgid "返回值"
+msgstr ""
+
+#: ../../source/wxapp/unionid.rst:43
+msgid "unionid"
+msgstr ""
+
+#: ../../source/wxapp/unionid.rst:43
+msgid "用户唯一标识，调用成功后返回"
+msgstr ""
+
+#: ../../source/wxapp/unionid.rst:44
+msgid "errcode"
+msgstr ""
+
+#: ../../source/wxapp/unionid.rst:44
+msgid "number"
+msgstr ""
+
+#: ../../source/wxapp/unionid.rst:44
+msgid "错误码"
+msgstr ""
+
+#: ../../source/wxapp/unionid.rst:45
+#: ../../source/wxapp/unionid.rst:46
+#: ../../source/wxapp/unionid.rst:47
+#: ../../source/wxapp/unionid.rst:48
+#: ../../source/wxapp/unionid.rst:49
+#: ../../source/wxapp/unionid.rst:50
+#: ../../source/wxapp/unionid.rst:51
+msgid "\\"
+msgstr ""
+
+#: ../../source/wxapp/unionid.rst:45
+msgid "errcode 的合法值"
+msgstr ""
+
+#: ../../source/wxapp/unionid.rst:46
+msgid "值"
+msgstr ""
+
+#: ../../source/wxapp/unionid.rst:47
+msgid "0"
+msgstr ""
+
+#: ../../source/wxapp/unionid.rst:47
+msgid "请求成功"
+msgstr ""
+
+#: ../../source/wxapp/unionid.rst:48
+msgid "-1"
+msgstr ""
+
+#: ../../source/wxapp/unionid.rst:48
+msgid "系统错误"
+msgstr ""
+
+#: ../../source/wxapp/unionid.rst:49
+msgid "40003"
+msgstr ""
+
+#: ../../source/wxapp/unionid.rst:49
+msgid "openid 错误"
+msgstr ""
+
+#: ../../source/wxapp/unionid.rst:50
+msgid "89002"
+msgstr ""
+
+#: ../../source/wxapp/unionid.rst:50
+msgid "没有绑定开放平台账号"
+msgstr ""
+
+#: ../../source/wxapp/unionid.rst:51
+msgid "89300"
+msgstr ""
+
+#: ../../source/wxapp/unionid.rst:51
+msgid "订单无效"
+msgstr ""
+

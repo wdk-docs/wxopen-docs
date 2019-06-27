@@ -1,0 +1,619 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, nosy
+# This file is distributed under the same license as the wxopen-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: wxopen-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-11 22:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/wxapp/fast-regeister.rst:2
+msgid "快速创建小程序接口"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:5
+msgid "说明"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:8
+msgid "接口说明："
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:10
+msgid ""
+"快速创建小程序接口优化了小程序注册认证的流程, 采用法人人脸识别方式替代小额打款等认证流程, 极大的减轻了小程序主体. "
+"类目资质信息收集的人力成本。第三方只需收集法人姓名. 法人微信. 企业名称. 企业代码信息四个信息, "
+"便可以向企业法人下发一条模板消息来采集法人人脸信息, 完成全部注册. 认证流程。 快速创建小程序接口能帮助第三方迅速拓展线下商户, "
+"拓展商户的服务范围, 占领小程序线下商业先机。"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:18
+msgid "通过该接口创建小程序默认“已认证”。为降低接入小程序的成本门槛, 通过该接口创建的小程序无需交 300 元认证费。"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:21
+msgid "注：该接口只能创建线下类目小程序, 创建线上类目小程序将被驳回, 且影响第三方调用该接口的 quota。"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:25
+msgid "创建小程序类目可参考"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:27
+msgid "快速创建小程序接口-类目参考表"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:30
+msgid "接口接入说明："
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:32
+msgid "|image0|"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:34
+msgid "权限集准备：第三方平台需具有以下权限集。（更新权限集后, 需通过审核并全网发布后才可生效."
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:38
+msgid "权限集"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:38
+msgid "是否必填"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:40
+msgid "账号管理权限"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:40
+#: ../../source/wxapp/fast-regeister.rst:41
+#: ../../source/wxapp/fast-regeister.rst:42
+#: ../../source/wxapp/fast-regeister.rst:43
+#: ../../source/wxapp/fast-regeister.rst:44
+#: ../../source/wxapp/fast-regeister.rst:45
+msgid "必填"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:41
+msgid "开发管理与数据分析权限"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:42
+msgid "开放平台账号管理权限"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:43
+msgid "小程序基本信息设置权限"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:44
+msgid "小程序认证权限"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:45
+msgid "插件管理权限"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:46
+msgid "附近地点权限"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:46
+msgid "选填（以防今后业务需要, 建议勾选."
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:49
+msgid "第三方收集法人微信. 法人姓名. 企业名称. 信用代码四个商户信息外加第三方客服电话, 方便商家与第三方联系（建议填写第三方客服电话. ；"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:53
+msgid "企业名称需与工商部门登记信息一致；法人姓名与绑定微信银行卡的姓名一致。信息收集时要确保四个信息的对应关系, 否则接口无法成功调用。"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:56
+msgid "通过法人&企业主体校验, 平台向法人微信下发模板消息。法人需在 24 小时内点击消息, 进行身份证信息与人脸识别信息收集；"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:59
+msgid ""
+"信息收集完毕, 验证通过后, 即可创建已认证的小程序。第三方平台服务器可以收到创建 appid 信息（通过授权登录相关-授权事件接收 URL "
+"接收信息. ；"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:63
+msgid "第三方获得小程序 appid 后, 可调用代码开发相关接口, 完成后续的小程序代码开发。"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:66
+msgid "小程序开发接口可参考："
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:68
+msgid "小程序基本信息设置"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:69
+msgid "成员管理"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:70
+msgid "代码管理"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:71
+msgid "小程序代码模板管理"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:74
+msgid "一. 创建小程序接口"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:76
+msgid "http 请求方式：POST (请使用 https 协议)"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:78
+msgid ""
+"https://api.weixin.qq.com/cgi-"
+"bin/component/fastregisterweapp?action=create&component_access_token=TOKEN"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:80
+#: ../../source/wxapp/fast-regeister.rst:155
+msgid "POST 数据示例："
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:93
+#: ../../source/wxapp/fast-regeister.rst:165
+msgid "参数说明："
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:96
+#: ../../source/wxapp/fast-regeister.rst:168
+msgid "参数名"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:96
+#: ../../source/wxapp/fast-regeister.rst:168
+msgid "描述"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:98
+#: ../../source/wxapp/fast-regeister.rst:170
+msgid "name"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:98
+msgid "企业名（需与工商部门登记信息一致."
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:100
+msgid "code"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:100
+msgid "企业代码"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:102
+msgid "code_type"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:102
+msgid "企业代码类型 1：统一社会信用代码（18 位. 2：组织机构代码（9 位 xxxxxxxx-x. 3：营业执照注册号(15 位)"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:106
+msgid "legal_per sona_wech at"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:106
+#: ../../source/wxapp/fast-regeister.rst:171
+msgid "法人微信号"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:110
+msgid "legal_per sona_name"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:110
+#: ../../source/wxapp/fast-regeister.rst:172
+msgid "法人姓名（绑定银行卡."
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:113
+msgid "component _phone"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:113
+msgid "第三方联系电话（方便法人与第三方联系."
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:117
+#: ../../source/wxapp/fast-regeister.rst:175
+msgid "返回结果示例："
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:126
+#: ../../source/wxapp/fast-regeister.rst:184
+msgid "错误码说明："
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:129
+#: ../../source/wxapp/fast-regeister.rst:187
+msgid "错误码"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:129
+#: ../../source/wxapp/fast-regeister.rst:187
+#: ../../source/wxapp/fast-regeister.rst:228
+msgid "含义"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:129
+#: ../../source/wxapp/fast-regeister.rst:187
+msgid "提示语"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:131
+#: ../../source/wxapp/fast-regeister.rst:189
+msgid "0"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:131
+#: ../../source/wxapp/fast-regeister.rst:189
+msgid "成功"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:131
+#: ../../source/wxapp/fast-regeister.rst:189
+msgid "ok"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:132
+#: ../../source/wxapp/fast-regeister.rst:190
+#: ../../source/wxapp/fast-regeister.rst:239
+msgid "-1"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:132
+#: ../../source/wxapp/fast-regeister.rst:190
+msgid "非法 action 参数"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:132
+#: ../../source/wxapp/fast-regeister.rst:190
+msgid "invalid action"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:133
+msgid "89249"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:133
+msgid "该主体已有任务执行中, 距上次任务 24h 后再试"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:133
+msgid "task running"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:134
+#: ../../source/wxapp/fast-regeister.rst:191
+msgid "89247"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:134
+#: ../../source/wxapp/fast-regeister.rst:191
+msgid "内部错误"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:134
+#: ../../source/wxapp/fast-regeister.rst:191
+msgid "inner error"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:135
+msgid "86004"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:135
+msgid "无效微信号"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:135
+msgid "invalid wechat"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:136
+msgid "61070"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:136
+msgid "法人姓名与微信号不一致 name,"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:136
+msgid "wechat name not in accordance"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:137
+msgid "89248"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:137
+msgid "企业代码类型无效, 请选择正确类型填写"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:137
+msgid "invalid code type"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:138
+#: ../../source/wxapp/fast-regeister.rst:192
+msgid "89250"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:138
+#: ../../source/wxapp/fast-regeister.rst:192
+msgid "未找到该任务"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:138
+#: ../../source/wxapp/fast-regeister.rst:192
+msgid "task not found"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:139
+#: ../../source/wxapp/fast-regeister.rst:193
+msgid "89251"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:139
+msgid "待法人人脸核身校验"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:139
+#: ../../source/wxapp/fast-regeister.rst:193
+msgid "legal person checking"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:140
+#: ../../source/wxapp/fast-regeister.rst:194
+msgid "89252"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:140
+#: ../../source/wxapp/fast-regeister.rst:194
+msgid "法人&企业信息一致性校验中"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:140
+#: ../../source/wxapp/fast-regeister.rst:194
+msgid "front checking"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:141
+#: ../../source/wxapp/fast-regeister.rst:195
+msgid "89253"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:141
+#: ../../source/wxapp/fast-regeister.rst:195
+msgid "缺少参数"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:141
+#: ../../source/wxapp/fast-regeister.rst:195
+msgid "lack of some params"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:142
+msgid "89254"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:142
+msgid "第三方权限集不全, 补全权限集全网发布后生效"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:142
+msgid "lack of some component rights"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:145
+msgid "注意：创建任务逻辑串行, 单次任务结束后才可以使用相同信息下发第二次任务, 请注意规避任务阻塞。"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:149
+msgid "二. 查询创建任务状态"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:151
+msgid "http 请求方式：POST（请使用 https 协议)"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:153
+msgid ""
+"https://api.weixin.qq.com/cgi-"
+"bin/component/fastregisterweapp?action=search&component_access_token=TOKEN"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:170
+msgid "企业名"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:171
+msgid "legal_persona_wechat"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:172
+msgid "legal_persona_name"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:193
+msgid "模板消息已下发, 待法人人脸核身校验"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:198
+msgid "注：该接口只提供当下任务结果查询, 不建议过分依赖该接口查询所创建小程序。小程序的成功状态可在第三方服务器中自行对账. 查询。"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:203
+msgid "三. 注册审核事件推送"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:205
+msgid "数据示例"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:228
+msgid "status 返回"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:230
+msgid "100001"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:230
+msgid "已下发的模板消息法人并未确认且已超时（24h), 未进行身份证校验"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:231
+msgid "100002"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:231
+msgid "已下发的模板消息法人并未确认且已超时（24h), 未进行人脸识别校验"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:232
+msgid "100003"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:232
+msgid "已下发的模板消息法人并未确认且已超时（24h)"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:233
+msgid "101"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:233
+msgid "工商数据返回：“企业已注销”"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:234
+msgid "102"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:234
+msgid "工商数据返回：“企业不存在或企业信息未更新”"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:235
+msgid "103"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:235
+msgid "工商数据返回：“企业法定代表人姓名不一致”"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:236
+msgid "104"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:236
+msgid "工商数据返回：“企业法定代表人身份证号码不一致”"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:237
+msgid "105"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:237
+msgid "法定代表人身份证号码, 工商数据未更新, 请 5-15 个工作日之后尝试"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:238
+msgid "1000"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:238
+msgid "工商数据返回：“企业信息或法定代表人信息不一致”"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:239
+msgid "企业与法人姓名不一致"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:244
+msgid "建议：可以使用接口请求的企业名称. 企业代码. 法人微信. 法人姓名四个字段作为每次任务的唯一标示, 来区别每次任务。"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:246
+msgid "常见问题整理："
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:248
+msgid "post 信息有误："
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:250
+msgid "注意编码问题, 中文无需转码；"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:251
+msgid ""
+"注意保证主体信息与工商部门登记一致。如：广州和广州市； 查看\\ `国家企业信用信息公示系统 "
+"<http://www.gsxt.gov.cn/index.html>`__"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:253
+msgid "微信号填写错误, 需正确引导获取位置“微信”-“我”（不能使用手机号或 QQ 号)"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:255
+msgid "确保微信号主人和微信支付绑定银行卡的主人姓名一致。核实用户是否有改过名字, 或者近期有做身份证升级（从 15 位身份证升级成 18 位身份证。"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:258
+msgid "不要频繁调用 ``search`` 接口, 消息接收需通过服务器查看。调用 ``search`` 接口会消耗接口整体调用 ``quato``."
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:261
+msgid "没有收到模板消息的情况："
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:263
+msgid "第三方需检查服务器是否有推送事件消息；"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:264
+msgid "引导用户寻找“公众平台安全助手”公众号, 查找“创建小程序申请”消息；"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:265
+msgid "第三方检查接收微信号是否一致；"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:267
+msgid "刚提交任务不会马上收到, 会有几分钟或者十几分钟延迟（实际时间取决于信息收集的准确程度)"
+msgstr ""
+
+#: ../../source/wxapp/fast-regeister.rst:270
+msgid "若提示法人验证失败, 查看服务器消息状态码（status), 调整信息, 重新提交任务。"
+msgstr ""
+

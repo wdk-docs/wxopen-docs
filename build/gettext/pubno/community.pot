@@ -1,0 +1,46 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, nosy
+# This file is distributed under the same license as the wxopen-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: wxopen-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-11 22:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/pubno/community.rst:2
+msgid ":wxopen:`交流互助 <open1419318209>`"
+msgstr ""
+
+#: ../../source/pubno/community.rst:5
+msgid "开发者问答系统"
+msgstr ""
+
+#: ../../source/pubno/community.rst:7
+msgid "访问 `公众平台开发者问答系统 <http://mp.weixin.qq.com/qa/home/index.html>`_ ，与其他开发者进行交流互助"
+msgstr ""
+
+#: ../../source/pubno/community.rst:10
+msgid "在线接口调试工具"
+msgstr ""
+
+#: ../../source/pubno/community.rst:12
+msgid "访问 `公众平台接口调试页 <http://mp.weixin.qq.com/debug/>`_ ，快速、方便地调试接口"
+msgstr ""
+
+#: ../../source/pubno/community.rst:16
+msgid "接口测试帐号申请"
+msgstr ""
+
+#: ../../source/pubno/community.rst:18
+msgid "访问 `公众平台接口测试帐号申请 <http://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login>`_ ，使用手机号免费申请测试帐号，体验所有高级接口"
+msgstr ""
+

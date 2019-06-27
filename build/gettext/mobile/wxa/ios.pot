@@ -1,0 +1,54 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, nosy
+# This file is distributed under the same license as the wxopen-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: wxopen-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-11 22:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/mobile/wxa/ios.rst:2
+msgid "iOS开发示例"
+msgstr ""
+
+#: ../../source/mobile/wxa/ios.rst:4
+msgid "开发前需下载iOS开发工具包（SDK），可在“资源中心-开发资源-资源下载-iOS资源下载”按照指引操作。"
+msgstr ""
+
+#: ../../source/mobile/wxa/ios.rst:6
+msgid "移动应用跳转到小程序示例："
+msgstr ""
+
+#: ../../source/mobile/wxa/ios.rst:8
+msgid "WXLaunchMiniProgramReq *launchMiniProgramReq = [WXLaunchMiniProgramReq object]; launchMiniProgramReq.userName = userName;  //拉起的小程序的username launchMiniProgramReq.path = path;    //拉起小程序页面的可带参路径，不填默认拉起小程序首页 launchMiniProgramReq.miniProgramType = miniProgramType; //拉起小程序的类型 return  [WXApi sendReq:launchMiniProgramReq]; 回调说明"
+msgstr ""
+
+#: ../../source/mobile/wxa/ios.rst:15
+msgid "-(void)onResp:(BaseResp *)resp {"
+msgstr ""
+
+#: ../../source/mobile/wxa/ios.rst:17
+msgid "if ([resp isKindOfClass:[WXLaunchMiniProgramResp class]]) {"
+msgstr ""
+
+#: ../../source/mobile/wxa/ios.rst:19
+msgid "NSString *string = resp.extMsg; // 对应JsApi navigateBackApplication中的extraData字段数据"
+msgstr ""
+
+#: ../../source/mobile/wxa/ios.rst:21
+msgid "}"
+msgstr ""
+
+#: ../../source/mobile/wxa/ios.rst:22
+msgid "} 小程序跳转回移动应用请参考《小程序开发文档》"
+msgstr ""
+

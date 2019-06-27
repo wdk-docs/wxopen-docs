@@ -6,6 +6,7 @@
    :glob:
 
    index
+   wxapp/index
    mobile/index
    website/index
    pubno/index
@@ -16,7 +17,7 @@
    glossary
 
 指数和表格
-================== 
+==================
 
 .. only:: builder_html
 

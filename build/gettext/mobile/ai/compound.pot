@@ -1,0 +1,34 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, nosy
+# This file is distributed under the same license as the wxopen-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: wxopen-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-11 22:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/mobile/ai/compound.rst:2
+msgid "语音合成接口开发指南"
+msgstr ""
+
+#: ../../source/mobile/ai/compound.rst:4
+msgid "微信语音合成接口具有语音合成功能，能够将移动应用中的文字用标准的声音朗读出来，丰富了应用的使用场景，提高可用性。"
+msgstr ""
+
+#: ../../source/mobile/ai/compound.rst:6
+msgid "点击此处查看iOS开发指南"
+msgstr ""
+
+#: ../../source/mobile/ai/compound.rst:8
+msgid "点击此处查看Android开发指南"
+msgstr ""
+

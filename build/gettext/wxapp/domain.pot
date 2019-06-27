@@ -1,0 +1,207 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, nosy
+# This file is distributed under the same license as the wxopen-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: wxopen-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-11 22:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/wxapp/domain.rst:2
+msgid "修改服务器地址"
+msgstr ""
+
+#: ../../source/wxapp/domain.rst:5
+msgid "1. 设置服务器域名"
+msgstr ""
+
+#: ../../source/wxapp/domain.rst:7
+msgid "授权给第三方的小程序，其服务器域名只可以为第三方的服务器，当小程序通过第三方发布代码上线后，小程序原先自己配置的服务器域名将被删除，只保留第三方平台的域名，所以第三方平台在代替小程序发布代码之前，需要调用接口为小程序添加第三方自身的域名。"
+msgstr ""
+
+#: ../../source/wxapp/domain.rst:11
+msgid "需要先将域名登记到第三方平台的小程序服务器域名中，才可以调用接口进行配置。"
+msgstr ""
+
+#: ../../source/wxapp/domain.rst:14
+#: ../../source/wxapp/domain.rst:83
+msgid "请求方式"
+msgstr ""
+
+#: ../../source/wxapp/domain.rst:16
+msgid "``POST`` **https**://api.weixin.qq.com/wxa/modify_domain?access_token=TOKEN"
+msgstr ""
+
+#: ../../source/wxapp/domain.rst:19
+#: ../../source/wxapp/domain.rst:91
+msgid "请求数据"
+msgstr ""
+
+#: ../../source/wxapp/domain.rst:21
+#: ../../source/wxapp/domain.rst:93
+msgid "示例："
+msgstr ""
+
+#: ../../source/wxapp/domain.rst:34
+#: ../../source/wxapp/domain.rst:105
+#: ../../source/wxapp/domain.rst:136
+msgid "参数说明"
+msgstr ""
+
+#: ../../source/wxapp/domain.rst:37
+#: ../../source/wxapp/domain.rst:139
+msgid "参数"
+msgstr ""
+
+#: ../../source/wxapp/domain.rst:37
+#: ../../source/wxapp/domain.rst:139
+#: ../../source/wxapp/domain.rst:149
+msgid "说明"
+msgstr ""
+
+#: ../../source/wxapp/domain.rst:39
+msgid "access_token"
+msgstr ""
+
+#: ../../source/wxapp/domain.rst:39
+msgid "请使用第三方平台获取到的该小程序授权的authorizer_access_token"
+msgstr ""
+
+#: ../../source/wxapp/domain.rst:40
+msgid "action"
+msgstr ""
+
+#: ../../source/wxapp/domain.rst:40
+msgid "add添加, delete删除, set覆盖, get获取。当参数是get时不需要填四个域名字段"
+msgstr ""
+
+#: ../../source/wxapp/domain.rst:41
+msgid "requestdomain"
+msgstr ""
+
+#: ../../source/wxapp/domain.rst:41
+msgid "request合法域名，当action参数是get时不需要此字段"
+msgstr ""
+
+#: ../../source/wxapp/domain.rst:42
+msgid "wsrequestdomain"
+msgstr ""
+
+#: ../../source/wxapp/domain.rst:42
+msgid "socket合法域名，当action参数是get时不需要此字段"
+msgstr ""
+
+#: ../../source/wxapp/domain.rst:43
+msgid "uploaddomain"
+msgstr ""
+
+#: ../../source/wxapp/domain.rst:43
+msgid "uploadFile合法域名，当action参数是get时不需要此字段"
+msgstr ""
+
+#: ../../source/wxapp/domain.rst:44
+msgid "downloaddomain"
+msgstr ""
+
+#: ../../source/wxapp/domain.rst:44
+msgid "downloadFile合法域名，当action参数是get时不需要此字段"
+msgstr ""
+
+#: ../../source/wxapp/domain.rst:48
+#: ../../source/wxapp/domain.rst:124
+msgid "返回说明"
+msgstr ""
+
+#: ../../source/wxapp/domain.rst:50
+msgid "正常时返回的json示例:"
+msgstr ""
+
+#: ../../source/wxapp/domain.rst:65
+msgid "2、设置业务域名"
+msgstr ""
+
+#: ../../source/wxapp/domain.rst:67
+msgid "!!! warning"
+msgstr ""
+
+#: ../../source/wxapp/domain.rst:73
+msgid "授权给第三方的小程序，其业务域名只可以为第三方的服务器，当小程序通过第三方发布代码上线后，小程序原先自己配置的业务域名将被删除，只保留第三方平台的域名，所以第三方平台在代替小程序发布代码之前，需要调用接口为小程序添加业务域名。"
+msgstr ""
+
+#: ../../source/wxapp/domain.rst:77
+msgid "需要先将域名登记到第三方平台的小程序业务域名中，才可以调用接口进行配置。"
+msgstr ""
+
+#: ../../source/wxapp/domain.rst:78
+msgid "为授权的小程序配置域名时支持配置子域名，例如第三方登记的业务域名如为qq.com，则可以直接将qq.com及其子域名（如xxx.qq.com）也配置到授权的小程序中。"
+msgstr ""
+
+#: ../../source/wxapp/domain.rst:85
+msgid "``POST`` **https**://api.weixin.qq.com/wxa/setwebviewdomain?access_token=TOKEN"
+msgstr ""
+
+#: ../../source/wxapp/domain.rst:141
+msgid "errcode"
+msgstr ""
+
+#: ../../source/wxapp/domain.rst:141
+msgid "错误码"
+msgstr ""
+
+#: ../../source/wxapp/domain.rst:142
+msgid "errmsg"
+msgstr ""
+
+#: ../../source/wxapp/domain.rst:142
+msgid "错误信息"
+msgstr ""
+
+#: ../../source/wxapp/domain.rst:146
+msgid "错误码说明"
+msgstr ""
+
+#: ../../source/wxapp/domain.rst:149
+msgid "返回码"
+msgstr ""
+
+#: ../../source/wxapp/domain.rst:151
+msgid "89019"
+msgstr ""
+
+#: ../../source/wxapp/domain.rst:151
+msgid "业务域名无更改，无需重复设置"
+msgstr ""
+
+#: ../../source/wxapp/domain.rst:152
+msgid "89020"
+msgstr ""
+
+#: ../../source/wxapp/domain.rst:152
+msgid "尚未设置小程序业务域名，请先在第三方平台中设置小程序业务域名后在调用本接口"
+msgstr ""
+
+#: ../../source/wxapp/domain.rst:153
+msgid "89021"
+msgstr ""
+
+#: ../../source/wxapp/domain.rst:153
+msgid "请求保存的域名不是第三方平台中已设置的小程序业务域名或子域名"
+msgstr ""
+
+#: ../../source/wxapp/domain.rst:154
+msgid "89029"
+msgstr ""
+
+#: ../../source/wxapp/domain.rst:154
+msgid "业务域名数量超过限制"
+msgstr ""
+

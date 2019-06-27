@@ -1,0 +1,258 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>16. 分阶段发布 &mdash; wxopen-docs 1.0.0 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../contents.html" class="icon icon-home"> wxopen-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">小程序管理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mobile/index.html">移动应用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../website/index.html">网站应用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pubno/index.html">公众号</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../open/index.html">第三方平台</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../code/index.html">错误码</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../download/index.html">资源下载</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary.html">术语</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../contents.html">wxopen-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../contents.html">Docs</a> &raquo;</li>
+        
+      <li>16. 分阶段发布</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/wxapp/CodeMgr/grayrelease.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>16. 分阶段发布<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<p>（1）分阶段发布接口</p>
+<p>请求方式: POST（请使用https协议）</p>
+<p><a class="reference external" href="https://api.weixin.qq.com/wxa/grayrelease?access_token=TOKEN">https://api.weixin.qq.com/wxa/grayrelease?access_token=TOKEN</a>
+POST数据示例</p>
+<p>{
+“gray_percentage”: 1 //灰度的百分比，1到100的整数
+}
+返回说明</p>
+<dl class="simple">
+<dt>{</dt><dd><p>“errcode”:0,
+“errmsg”:”ok”,</p>
+</dd>
+</dl>
+<p>}
+错误码说明</p>
+<p>错误码     说明
+0       成功
+-1      系统错误
+86002   小程序未初始化完成
+85079   小程序没有线上版本，不能进行灰度
+85080   小程序提交的审核未审核通过
+85081   无效的发布比例
+85082   当前的发布比例需要比之前设置的高
+（2）取消分阶段发布</p>
+<p>请求方式: GET（请使用https协议）</p>
+<p><a class="reference external" href="https://api.weixin.qq.com/wxa/revertgrayrelease?access_token=TOKEN">https://api.weixin.qq.com/wxa/revertgrayrelease?access_token=TOKEN</a>
+返回说明</p>
+<dl class="simple">
+<dt>{</dt><dd><p>“errcode”:0,
+“errmsg”:”ok”,</p>
+</dd>
+</dl>
+<p>}
+错误码说明</p>
+<p>错误码     说明
+0       成功
+-1      系统错误
+（3）查询当前分阶段发布详情</p>
+<p>请求方式: GET（请使用https协议）</p>
+<p><a class="reference external" href="https://api.weixin.qq.com/wxa/getgrayreleaseplan?access_token=TOKEN">https://api.weixin.qq.com/wxa/getgrayreleaseplan?access_token=TOKEN</a>
+返回说明</p>
+<dl>
+<dt>{</dt><dd><p>“errcode”:0,
+“errmsg”:”ok”,
+“gray_release_plan” : {</p>
+<blockquote>
+<div><p>“status” : 1, //0:初始状态 1:执行中 2:暂停中 3:执行完毕 4:被删除
+“create_timestamp” : 1517553721, //创建时间
+“gray_percentage” : 8</p>
+</div></blockquote>
+<p>},</p>
+</dd>
+</dl>
+<p>}
+错误码说明</p>
+<p>错误码     说明
+0       成功
+-1      系统错误</p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, nosy
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

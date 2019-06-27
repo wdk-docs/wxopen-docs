@@ -1,19 +1,16 @@
-2、获取第三方平台 component_access_token
+2. 获取第三方平台 component_access_token
 ========================================
 
-第三方平台 component_access_token
-是第三方平台的下文中接口的调用凭据，也叫做令牌（component_access_token）。每个令牌是存在有效期（2
-小时）的，且令牌的调用不是无限制的，请第三方平台做好令牌的管理，在令牌快过期时（比如
-1 小时 50 分）再进行刷新。
+第三方平台 component_access_token 是第三方平台的下文中接口的调用凭据，也叫做令牌（component_access_token）。
+每个令牌是存在有效期（2小时）的，且令牌的调用不是无限制的，请第三方平台做好令牌的管理，
+在令牌快过期时（比如1 小时 50 分）再进行刷新。
 
 请求方式
---------
 
 ``POST``
 **https**://api.weixin.qq.com/cgi-bin/component/api_component_token
 
 请求数据
---------
 
 .. code:: json
 
@@ -34,7 +31,6 @@ component_verify_ticket 微信后台推送的 ticket，此 ticket 会定时推�
 ======================= ===================================================================
 
 返回结果
---------
 
 .. code:: json
 

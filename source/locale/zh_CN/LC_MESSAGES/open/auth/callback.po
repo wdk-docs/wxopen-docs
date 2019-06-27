@@ -1,0 +1,115 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, nosy
+# This file is distributed under the same license as the wxopen-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: wxopen-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-11 22:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/open/auth/callback.rst:2
+msgid "9. 推送授权相关通知"
+msgstr ""
+
+#: ../../source/open/auth/callback.rst:4
+msgid "当公众号对第三方平台进行授权、取消授权、更新授权后，微信服务器会向第三方平台方的授权事件接收 URL（创建第三方平台时填写）推送相关通知。"
+msgstr ""
+
+#: ../../source/open/auth/callback.rst:7
+msgid "POST 数据示例（授权成功通知）"
+msgstr ""
+
+#: ../../source/open/auth/callback.rst:21
+msgid "POST 数据示例（取消授权通知）"
+msgstr ""
+
+#: ../../source/open/auth/callback.rst:32
+msgid "POST 数据示例（授权更新通知）"
+msgstr ""
+
+#: ../../source/open/auth/callback.rst:46
+msgid ""
+"第三方平台方在收到授权相关通知后也需进行解密（详细请见【消息加解密接入指引】），接收到后之后只需直接返回字符串 "
+"success。为了加强安全性，postdata 中的 xml 将使用服务申请时的加解密 key "
+"来进行加密，具体请见【公众号第三方平台的加密解密技术方案】"
+msgstr ""
+
+#: ../../source/open/auth/callback.rst:50
+msgid "字段说明："
+msgstr ""
+
+#: ../../source/open/auth/callback.rst:53
+msgid "字段名称"
+msgstr ""
+
+#: ../../source/open/auth/callback.rst:53
+msgid "字段描述"
+msgstr ""
+
+#: ../../source/open/auth/callback.rst:55
+msgid "AppId"
+msgstr ""
+
+#: ../../source/open/auth/callback.rst:55
+msgid "第三方平台 appid"
+msgstr ""
+
+#: ../../source/open/auth/callback.rst:56
+msgid "CreateTime"
+msgstr ""
+
+#: ../../source/open/auth/callback.rst:56
+msgid "时间戳"
+msgstr ""
+
+#: ../../source/open/auth/callback.rst:57
+msgid "InfoType"
+msgstr ""
+
+#: ../../source/open/auth/callback.rst:57
+msgid "nauthorized 是取消授权，updateauthorized 是更新授权，authorized 是授权成功通知"
+msgstr ""
+
+#: ../../source/open/auth/callback.rst:58
+msgid "AuthorizerAppid"
+msgstr ""
+
+#: ../../source/open/auth/callback.rst:58
+msgid "公众号或小程序"
+msgstr ""
+
+#: ../../source/open/auth/callback.rst:59
+msgid "AuthorizationCode"
+msgstr ""
+
+#: ../../source/open/auth/callback.rst:59
+msgid "授权码，可用于换取公众号的接口调用凭据，详细见上面的说明"
+msgstr ""
+
+#: ../../source/open/auth/callback.rst:60
+msgid "AuthorizationCodeExpiredTime"
+msgstr ""
+
+#: ../../source/open/auth/callback.rst:60
+msgid "授权码过期时间"
+msgstr ""
+
+#: ../../source/open/auth/callback.rst:61
+msgid "PreAuthCode"
+msgstr ""
+
+#: ../../source/open/auth/callback.rst:61
+msgid "预授权码"
+msgstr ""
+

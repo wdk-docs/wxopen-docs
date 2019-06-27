@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, nosy
+# This file is distributed under the same license as the wxopen-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: wxopen-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-11 22:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/open/auth/component_verify_ticket.rst:2
+msgid "1. 推送 component_verify_ticket 协议"
+msgstr ""
+
+#: ../../source/open/auth/component_verify_ticket.rst:4
+msgid "在第三方平台创建审核通过后，微信服务器会向其“授权事件接收 URL”每隔 10分钟定时推送 component_verify_ticket。 第三方平台方在收到 ticket 推送后也需进行解密（详细请见【 :wxopen:`消息加解密接入指引 <open1419318479>` 】）， 接收到后必须直接返回字符串 success。"
+msgstr ""
+
+#: ../../source/open/auth/component_verify_ticket.rst:8
+msgid "请求数据"
+msgstr ""
+
+#: ../../source/open/auth/component_verify_ticket.rst:19
+msgid "字段说明"
+msgstr ""
+
+#: ../../source/open/auth/component_verify_ticket.rst:22
+msgid "字段名称"
+msgstr ""
+
+#: ../../source/open/auth/component_verify_ticket.rst:22
+msgid "字段描述"
+msgstr ""
+
+#: ../../source/open/auth/component_verify_ticket.rst:24
+msgid "AppId"
+msgstr ""
+
+#: ../../source/open/auth/component_verify_ticket.rst:24
+msgid "第三方平台 appid"
+msgstr ""
+
+#: ../../source/open/auth/component_verify_ticket.rst:25
+msgid "CreateTime"
+msgstr ""
+
+#: ../../source/open/auth/component_verify_ticket.rst:25
+msgid "时间戳"
+msgstr ""
+
+#: ../../source/open/auth/component_verify_ticket.rst:26
+msgid "InfoType"
+msgstr ""
+
+#: ../../source/open/auth/component_verify_ticket.rst:26
+msgid "component_verify_ticket"
+msgstr ""
+
+#: ../../source/open/auth/component_verify_ticket.rst:27
+msgid "ComponentVerifyTicket"
+msgstr ""
+
+#: ../../source/open/auth/component_verify_ticket.rst:27
+msgid "Ticket 内容"
+msgstr ""
+
+#: ../../source/open/auth/component_verify_ticket.rst:32
+msgid "component_verify_ticket的有效时间较component_access_token更长， 建议保存最近可用的component_verify_ticket， 在component_access_token过期之前使用该ticket进行更新， 避免出现因为ticket接收失败而无法更新component_access_token的情况。"
+msgstr ""
+

@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, nosy
+# This file is distributed under the same license as the wxopen-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: wxopen-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-11 22:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/open/auth/api_authorizer_token.rst:2
+msgid "5. 获取（刷新）授权公众号或小程序的接口调用凭据（令牌）"
+msgstr ""
+
+#: ../../source/open/auth/api_authorizer_token.rst:4
+msgid "该 API 用于在授权方令牌（authorizer_access_token）失效时， 可用刷新令牌（authorizer_refresh_token）获取新的令牌。请注意， 此处 token 是 2 小时刷新一次，开发者需要自行进行 token 的缓存， 避免 token 的获取次数达到每日的限定额度。 缓存方法可以参考：http://mp.weixin.qq.com/wiki/2/88b2bf1265a707c031e51f26ca5e6512.html"
+msgstr ""
+
+#: ../../source/open/auth/api_authorizer_token.rst:10
+msgid "请求格式"
+msgstr ""
+
+#: ../../source/open/auth/api_authorizer_token.rst:12
+msgid "``POST`` **https**:// api.weixin.qq.com /cgi-bin/component/api_authorizer_token?component_access_token=xxxxx"
+msgstr ""
+
+#: ../../source/open/auth/api_authorizer_token.rst:15
+msgid "请求数据"
+msgstr ""
+
+#: ../../source/open/auth/api_authorizer_token.rst:25
+msgid "请求参数说明"
+msgstr ""
+
+#: ../../source/open/auth/api_authorizer_token.rst:44
+msgid "返回结果"
+msgstr ""
+
+#: ../../source/open/auth/api_authorizer_token.rst:54
+msgid "结果参数说明"
+msgstr ""
+
+#: ../../source/open/auth/api_authorizer_token.rst:57
+msgid "参数"
+msgstr ""
+
+#: ../../source/open/auth/api_authorizer_token.rst:57
+msgid "说明"
+msgstr ""
+
+#: ../../source/open/auth/api_authorizer_token.rst:59
+msgid "authorizer_access_token"
+msgstr ""
+
+#: ../../source/open/auth/api_authorizer_token.rst:59
+msgid "授权方令牌"
+msgstr ""
+
+#: ../../source/open/auth/api_authorizer_token.rst:60
+msgid "expires_in"
+msgstr ""
+
+#: ../../source/open/auth/api_authorizer_token.rst:60
+msgid "有效期，为 2 小时"
+msgstr ""
+
+#: ../../source/open/auth/api_authorizer_token.rst:61
+msgid "authorizer_refresh_token"
+msgstr ""
+
+#: ../../source/open/auth/api_authorizer_token.rst:61
+msgid "刷新令牌"
+msgstr ""
+

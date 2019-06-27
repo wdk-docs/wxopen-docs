@@ -1,24 +1,19 @@
-6、获取授权方的帐号基本信息
+6. 获取授权方的帐号基本信息
 ===========================
 
-该 API
-用于获取授权方的基本信息，包括头像、昵称、帐号类型、认证类型、微信号、原始
-ID 和二维码图片 URL。
+该 API 用于获取授权方的基本信息，包括头像、昵称、帐号类型、认证类型、微信号、原始ID 和二维码图片 URL。
 
-需要特别记录授权方的帐号类型，在消息及事件推送时，对于不具备客服接口的公众号，需要在
-5
-秒内立即响应；而若有客服接口，则可以选择暂时不响应，而选择后续通过客服接口来发送消息触达粉丝。
+需要特别记录授权方的帐号类型，在消息及事件推送时，对于不具备客服接口的公众号，需要在5秒内立即响应；
+而若有客服接口，则可以选择暂时不响应，而选择后续通过客服接口来发送消息触达粉丝。
 
 （1）公众号获取方法如下：
 
 请求格式
---------
 
 ``POST`` **https**:
 //api.weixin.qq.com/cgi-bin/component/api_get_authorizer_info?component_access_token=xxxx
 
 请求数据
---------
 
 .. code:: json
 
@@ -37,7 +32,6 @@ authorizer_appid 授权方 appid
 ================ ================
 
 返回结果
---------
 
 .. code:: json
 
@@ -217,7 +211,6 @@ authorizer_appid 授权方 appid
 .. _请求格式-1:
 
 请求格式
---------
 
 ``POST`` **https**:
 //api.weixin.qq.com/cgi-bin/component/api_get_authorizer_info?component_access_token=xxxx
@@ -225,7 +218,6 @@ authorizer_appid 授权方 appid
 .. _请求数据-1:
 
 请求数据
---------
 
 .. code:: json
 
@@ -246,7 +238,6 @@ authorizer_appid 授权方 appid
 .. _返回结果-1:
 
 返回结果
---------
 
 .. code:: json
 

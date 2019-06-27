@@ -1,0 +1,1462 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>sphinxcontrib.httpdomain — Sphinx domain for documenting HTTP APIs &mdash; wxopen-docs 1.0.0 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../../_static/translations.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../../../genindex.html" />
+    <link rel="search" title="搜索" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../contents.html" class="icon icon-home"> wxopen-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../wxapp/index.html">小程序管理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../mobile/index.html">移动应用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../website/index.html">网站应用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../pubno/index.html">公众号</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../open/index.html">第三方平台</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../code/index.html">错误码</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../download/index.html">资源下载</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../glossary.html">术语</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../contents.html">wxopen-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../contents.html">Docs</a> &raquo;</li>
+        
+      <li><code class="xref js js-mod docutils literal notranslate"><span class="pre">sphinxcontrib.httpdomain</span></code> — Sphinx domain for documenting HTTP APIs</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/_ext/httpdomain/doc/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <span class="target" id="module-sphinxcontrib.httpdomain"></span><div class="section" id="sphinxcontrib-httpdomain-sphinx-domain-for-documenting-http-apis">
+<h1><a class="reference internal" href="../test/index.html#sphinxcontrib.httpdomain" title="sphinxcontrib.httpdomain"><code class="xref js js-mod docutils literal notranslate"><span class="pre">sphinxcontrib.httpdomain</span></code></a> — Sphinx domain for documenting HTTP APIs<a class="headerlink" href="#sphinxcontrib-httpdomain-sphinx-domain-for-documenting-http-apis" title="永久链接至标题">¶</a></h1>
+<a class="reference external image-reference" href="https://pypi.org/project/sphinxcontrib-httpdomain/"><img alt="Latest PyPI version" src="https://badge.fury.io/py/sphinxcontrib-httpdomain.svg" /></a>
+<a class="reference external image-reference" href="https://sphinxcontrib-httpdomain.readthedocs.io/"><img alt="Documentation Status" src="https://readthedocs.org/projects/sphinxcontrib-httpdomain/badge/" /></a>
+<a class="reference external image-reference" href="https://travis-ci.org/sphinx-contrib/httpdomain"><img alt="Build Status" src="https://travis-ci.org/sphinx-contrib/httpdomain.svg?branch=master" /></a>
+<p>This contrib extension, <a class="reference internal" href="../test/index.html#sphinxcontrib.httpdomain" title="sphinxcontrib.httpdomain"><code class="xref js js-mod docutils literal notranslate"><span class="pre">sphinxcontrib.httpdomain</span></code></a>, provides a Sphinx
+domain for describing HTTP APIs.</p>
+<div class="admonition seealso">
+<p class="admonition-title">参见</p>
+<p>We might support reflection for web framework your webapp depends on.
+See the following <code class="xref js js-mod docutils literal notranslate"><span class="pre">sphinxcontrib.autohttp</span></code> modules:</p>
+<dl class="simple">
+<dt>Module <a class="reference internal" href="../test/index.html#sphinxcontrib.autohttp.flask" title="sphinxcontrib.autohttp.flask"><code class="xref js js-mod docutils literal notranslate"><span class="pre">sphinxcontrib.autohttp.flask</span></code></a></dt><dd><p>Reflection for <a class="reference external" href="http://flask.pocoo.org/">Flask</a> webapps.</p>
+</dd>
+<dt>Module <a class="reference internal" href="#sphinxcontrib.autohttp.flaskqref" title="sphinxcontrib.autohttp.flaskqref"><code class="xref js js-mod docutils literal notranslate"><span class="pre">sphinxcontrib.autohttp.flaskqref</span></code></a></dt><dd><p>Quick reference rendering with <a class="reference internal" href="../test/index.html#sphinxcontrib.autohttp.flask" title="sphinxcontrib.autohttp.flask"><code class="xref js js-mod docutils literal notranslate"><span class="pre">sphinxcontrib.autohttp.flask</span></code></a></p>
+</dd>
+<dt>Module <a class="reference internal" href="#sphinxcontrib.autohttp.bottle" title="sphinxcontrib.autohttp.bottle"><code class="xref js js-mod docutils literal notranslate"><span class="pre">sphinxcontrib.autohttp.bottle</span></code></a></dt><dd><p>Reflection for <a class="reference external" href="http://bottlepy.org/">Bottle</a> webapps.</p>
+</dd>
+<dt>Module <a class="reference internal" href="#sphinxcontrib.autohttp.tornado" title="sphinxcontrib.autohttp.tornado"><code class="xref js js-mod docutils literal notranslate"><span class="pre">sphinxcontrib.autohttp.tornado</span></code></a></dt><dd><p>Reflection for <a class="reference external" href="http://www.tornadoweb.org/">Tornado</a> webapps.</p>
+</dd>
+</dl>
+</div>
+<p>In order to use it, add <a class="reference internal" href="../test/index.html#sphinxcontrib.httpdomain" title="sphinxcontrib.httpdomain"><code class="xref js js-mod docutils literal notranslate"><span class="pre">sphinxcontrib.httpdomain</span></code></a> into
+<code class="xref js js-data docutils literal notranslate"><span class="pre">extensions</span></code> list of your Sphinx configuration file (<code class="file docutils literal notranslate"><span class="pre">conf.py</span></code>):</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">extensions</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sphinxcontrib.httpdomain&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="section" id="additional-configuration">
+<h2>Additional Configuration<a class="headerlink" href="#additional-configuration" title="永久链接至标题">¶</a></h2>
+<dl>
+<dt><code class="docutils literal notranslate"><span class="pre">http_headers_ignore_prefixes</span></code></dt><dd><p>List of HTTP header prefixes which should be ignored in strict mode:</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">http_headers_ignore_prefixes</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;X-&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified added">1.4.0 新版功能.</span></p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified deprecated">1.5.0 版后已移除: </span>strict mode no longer warns on non-standard header prefixes.</p>
+</div>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">http_index_ignore_prefixes</span></code></dt><dd><p>Strips the leading segments from the endpoint paths by given list
+of prefixes:</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">http_index_ignore_prefixes</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;/internal&#39;</span><span class="p">,</span> <span class="s1">&#39;/_proxy&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified added">1.3.0 新版功能.</span></p>
+</div>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">http_index_shortname</span></code></dt><dd><p>Short name of the index which will appear on every page:</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">http_index_shortname</span> <span class="o">=</span> <span class="s1">&#39;api&#39;</span>
+</pre></div>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified added">1.3.0 新版功能.</span></p>
+</div>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">http_index_localname</span></code></dt><dd><p>Full index name which is used on index page:</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">http_index_localname</span> <span class="o">=</span> <span class="s2">&quot;My Project HTTP API&quot;</span>
+</pre></div>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified added">1.3.0 新版功能.</span></p>
+</div>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">http_strict_mode</span></code></dt><dd><p>When <code class="docutils literal notranslate"><span class="pre">True</span></code> (default) emits build errors when status codes, methods and
+headers are looks non-standard:</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">http_strict_mode</span> <span class="o">=</span> <span class="nx">True</span>
+</pre></div>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified added">1.4.0 新版功能.</span></p>
+</div>
+</dd>
+</dl>
+</div>
+<div class="section" id="basic-usage">
+<h2>Basic usage<a class="headerlink" href="#basic-usage" title="永久链接至标题">¶</a></h2>
+<p>There are several provided <a class="reference internal" href="#directives"><span class="std std-ref">directives</span></a> that describe
+HTTP resources.</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">http:get</span><span class="p">::</span> /users/(int:user_id)/posts/(tag)
+
+   The posts tagged with <span class="nv">`tag`</span> that the user (<span class="nv">`user_id`</span>) wrote.
+
+   <span class="gs">**Example request**</span>:
+
+<span class="p">   ..</span> <span class="ow">sourcecode</span><span class="p">::</span> <span class="k">http</span>
+
+      <span class="nf">GET</span> <span class="nn">/users/123/posts/web</span> <span class="kr">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+      <span class="na">Host</span><span class="o">:</span> <span class="l">example.com</span>
+      <span class="na">Accept</span><span class="o">:</span> <span class="l">application/json, text/javascript</span>
+
+   <span class="gs">**Example response**</span>:
+
+<span class="p">   ..</span> <span class="ow">sourcecode</span><span class="p">::</span> <span class="k">http</span>
+
+      <span class="kr">HTTP</span><span class="o">/</span><span class="m">1.1</span> <span class="m">200</span> <span class="ne">OK</span>
+      <span class="na">Vary</span><span class="o">:</span> <span class="l">Accept</span>
+      <span class="na">Content-Type</span><span class="o">:</span> <span class="l">text/javascript</span>
+
+      <span class="p">[</span>
+        <span class="p">{</span>
+          <span class="s2">&quot;post_id&quot;</span><span class="o">:</span> <span class="mi">12345</span><span class="p">,</span>
+          <span class="s2">&quot;author_id&quot;</span><span class="o">:</span> <span class="mi">123</span><span class="p">,</span>
+          <span class="s2">&quot;tags&quot;</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;server&quot;</span><span class="p">,</span> <span class="s2">&quot;web&quot;</span><span class="p">],</span>
+          <span class="s2">&quot;subject&quot;</span><span class="o">:</span> <span class="s2">&quot;I tried Nginx&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="s2">&quot;post_id&quot;</span><span class="o">:</span> <span class="mi">12346</span><span class="p">,</span>
+          <span class="s2">&quot;author_id&quot;</span><span class="o">:</span> <span class="mi">123</span><span class="p">,</span>
+          <span class="s2">&quot;tags&quot;</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;html5&quot;</span><span class="p">,</span> <span class="s2">&quot;standards&quot;</span><span class="p">,</span> <span class="s2">&quot;web&quot;</span><span class="p">],</span>
+          <span class="s2">&quot;subject&quot;</span><span class="o">:</span> <span class="s2">&quot;We go to HTML 5&quot;</span>
+        <span class="p">}</span>
+      <span class="p">]</span>
+
+   <span class="nc">:query sort:</span> <span class="nf">one of ``hit``, ``created-at``</span>
+   <span class="nc">:query offset:</span> <span class="nf">offset number. default is 0</span>
+   <span class="nc">:query limit:</span> <span class="nf">limit number. default is 30</span>
+   <span class="nc">:reqheader Accept:</span> <span class="nf">the response content type depends on</span>
+                      <span class="na">:mailheader:</span><span class="nv">`Accept`</span> header
+   <span class="nc">:reqheader Authorization:</span> <span class="nf">optional OAuth token to authenticate</span>
+   <span class="nc">:resheader Content-Type:</span> <span class="nf">this depends on :mailheader:`Accept`</span>
+                            header of request
+   <span class="nc">:statuscode 200:</span> <span class="nf">no error</span>
+   <span class="nc">:statuscode 404:</span> <span class="nf">there&#39;s no user</span>
+</pre></div>
+</div>
+<p>will be rendered as:</p>
+<blockquote>
+<div><dl class="get">
+<dt id="get--users-(int-user_id)-posts-(tag)">
+<code class="descname">GET </code><code class="descname">/users/</code><span class="sig-paren">(</span><em class="property">int: </em><em>user_id</em><span class="sig-paren">)</span><code class="descname">/posts/</code><span class="sig-paren">(</span><em>tag</em><span class="sig-paren">)</span><a class="headerlink" href="#get--users-(int-user_id)-posts-(tag)" title="永久链接至目标">¶</a></dt>
+<dd><p>The posts tagged with <cite>tag</cite> that the user (<cite>user_id</cite>) wrote.</p>
+<p><strong>Example request</strong>:</p>
+<div class="highlight-http notranslate"><div class="highlight"><pre><span></span><span class="nf">GET</span> <span class="nn">/users/123/posts/web</span> <span class="kr">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Host</span><span class="o">:</span> <span class="l">example.com</span>
+<span class="na">Accept</span><span class="o">:</span> <span class="l">application/json, text/javascript</span>
+</pre></div>
+</div>
+<p><strong>Example response</strong>:</p>
+<div class="highlight-http notranslate"><div class="highlight"><pre><span></span><span class="kr">HTTP</span><span class="o">/</span><span class="m">1.1</span> <span class="m">200</span> <span class="ne">OK</span>
+<span class="na">Vary</span><span class="o">:</span> <span class="l">Accept</span>
+<span class="na">Content-Type</span><span class="o">:</span> <span class="l">text/javascript</span>
+
+<span class="p">[</span>
+  <span class="p">{</span>
+    <span class="s2">&quot;post_id&quot;</span><span class="o">:</span> <span class="mi">12345</span><span class="p">,</span>
+    <span class="s2">&quot;author_id&quot;</span><span class="o">:</span> <span class="mi">123</span><span class="p">,</span>
+    <span class="s2">&quot;tags&quot;</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;server&quot;</span><span class="p">,</span> <span class="s2">&quot;web&quot;</span><span class="p">],</span>
+    <span class="s2">&quot;subject&quot;</span><span class="o">:</span> <span class="s2">&quot;I tried Nginx&quot;</span>
+  <span class="p">},</span>
+  <span class="p">{</span>
+    <span class="s2">&quot;post_id&quot;</span><span class="o">:</span> <span class="mi">12346</span><span class="p">,</span>
+    <span class="s2">&quot;author_id&quot;</span><span class="o">:</span> <span class="mi">123</span><span class="p">,</span>
+    <span class="s2">&quot;tags&quot;</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;html5&quot;</span><span class="p">,</span> <span class="s2">&quot;standards&quot;</span><span class="p">,</span> <span class="s2">&quot;web&quot;</span><span class="p">],</span>
+    <span class="s2">&quot;subject&quot;</span><span class="o">:</span> <span class="s2">&quot;We go to HTML 5&quot;</span>
+  <span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Query Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sort</strong> – one of <code class="docutils literal notranslate"><span class="pre">hit</span></code>, <code class="docutils literal notranslate"><span class="pre">created-at</span></code></p></li>
+<li><p><strong>offset</strong> – offset number. default is 0</p></li>
+<li><p><strong>limit</strong> – limit number. default is 30</p></li>
+</ul>
+</dd>
+<dt class="field-even">Request Headers</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc7231#section-5.3.2">Accept</a> – the response content type depends on
+<em class="mailheader">Accept</em> header</p></li>
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc7235#section-4.2">Authorization</a> – optional OAuth token to authenticate</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Response Headers</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc7231#section-3.1.1.5">Content-Type</a> – this depends on <em class="mailheader">Accept</em>
+header of request</p></li>
+</ul>
+</dd>
+<dt class="field-even">Status Codes</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><a class="reference external" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1">200 OK</a> – no error</p></li>
+<li><p><a class="reference external" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5">404 Not Found</a> – there’s no user</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div></blockquote>
+<p>Of course, <a class="reference internal" href="#roles"><span class="std std-ref">roles</span></a> that refer the directives as well.
+For example:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="na">:http:get:</span><span class="nv">`/users/(int:user_id)/posts/(tag)`</span>
+</pre></div>
+</div>
+<p>will render like:</p>
+<blockquote>
+<div><p><a class="reference internal" href="../test/index.html#get--users-(int-user_id)-posts-(tag)" title="GET /users/(int:user_id)/posts/(tag)"><code class="xref http http-get docutils literal notranslate"><span class="pre">GET</span> <span class="pre">/users/(int:user_id)/posts/(tag)</span></code></a></p>
+</div></blockquote>
+</div>
+<div class="section" id="directives">
+<span id="id1"></span><h2>Directives<a class="headerlink" href="#directives" title="永久链接至标题">¶</a></h2>
+<dl class="directive">
+<dt id="directive-http:options">
+<code class="descname">.. http:options::</code><code class="descclassname"> path</code><a class="headerlink" href="#directive-http:options" title="永久链接至目标">¶</a></dt>
+<dd><p>Describes a HTTP resource’s <a class="reference external" href="https://tools.ietf.org/html/rfc7231#section-4.3.7">OPTIONS</a> method.
+It can also be referred by <a class="reference internal" href="#role-http:options" title="http:options role"><code class="xref rst rst-role docutils literal notranslate"><span class="pre">http:options</span></code></a> role.</p>
+</dd></dl>
+
+<dl class="directive">
+<dt id="directive-http:head">
+<code class="descname">.. http:head::</code><code class="descclassname"> path</code><a class="headerlink" href="#directive-http:head" title="永久链接至目标">¶</a></dt>
+<dd><p>Describes a HTTP resource’s <a class="reference external" href="https://tools.ietf.org/html/rfc7231#section-4.3.2">HEAD</a> method.
+It can also be referred by <a class="reference internal" href="#role-http:head" title="http:head role"><code class="xref rst rst-role docutils literal notranslate"><span class="pre">http:head</span></code></a> role.</p>
+</dd></dl>
+
+<dl class="directive">
+<dt id="directive-http:post">
+<code class="descname">.. http:post::</code><code class="descclassname"> path</code><a class="headerlink" href="#directive-http:post" title="永久链接至目标">¶</a></dt>
+<dd><p>Describes a HTTP resource’s <a class="reference external" href="https://tools.ietf.org/html/rfc7231#section-4.3.3">POST</a> method.
+It can also be referred by <a class="reference internal" href="#role-http:post" title="http:post role"><code class="xref rst rst-role docutils literal notranslate"><span class="pre">http:post</span></code></a> role.</p>
+</dd></dl>
+
+<dl class="directive">
+<dt id="directive-http:get">
+<code class="descname">.. http:get::</code><code class="descclassname"> path</code><a class="headerlink" href="#directive-http:get" title="永久链接至目标">¶</a></dt>
+<dd><p>Describes a HTTP resource’s <a class="reference external" href="https://tools.ietf.org/html/rfc7231#section-4.3.1">GET</a> method.
+It can also be referred by <a class="reference internal" href="#role-http:get" title="http:get role"><code class="xref rst rst-role docutils literal notranslate"><span class="pre">http:get</span></code></a> role.</p>
+</dd></dl>
+
+<dl class="directive">
+<dt id="directive-http:put">
+<code class="descname">.. http:put::</code><code class="descclassname"> path</code><a class="headerlink" href="#directive-http:put" title="永久链接至目标">¶</a></dt>
+<dd><p>Describes a HTTP resource’s <a class="reference external" href="https://tools.ietf.org/html/rfc7231#section-4.3.4">PUT</a> method.
+It can also be referred by <a class="reference internal" href="#role-http:put" title="http:put role"><code class="xref rst rst-role docutils literal notranslate"><span class="pre">http:put</span></code></a> role.</p>
+</dd></dl>
+
+<dl class="directive">
+<dt id="directive-http:patch">
+<code class="descname">.. http:patch::</code><code class="descclassname"> path</code><a class="headerlink" href="#directive-http:patch" title="永久链接至目标">¶</a></dt>
+<dd><p>Describes a HTTP resource’s <a class="reference external" href="https://tools.ietf.org/html/rfc5789#section-2">PATCH</a> method.
+It can also be referred by <a class="reference internal" href="#role-http:patch" title="http:patch role"><code class="xref rst rst-role docutils literal notranslate"><span class="pre">http:patch</span></code></a> role.</p>
+</dd></dl>
+
+<dl class="directive">
+<dt id="directive-http:delete">
+<code class="descname">.. http:delete::</code><code class="descclassname"> path</code><a class="headerlink" href="#directive-http:delete" title="永久链接至目标">¶</a></dt>
+<dd><p>Describes a HTTP resource’s <a class="reference external" href="https://tools.ietf.org/html/rfc7231#section-4.3.5">DELETE</a> method.
+It can also be referred by <a class="reference internal" href="#role-http:delete" title="http:delete role"><code class="xref rst rst-role docutils literal notranslate"><span class="pre">http:delete</span></code></a> role.</p>
+</dd></dl>
+
+<dl class="directive">
+<dt id="directive-http:trace">
+<code class="descname">.. http:trace::</code><code class="descclassname"> path</code><a class="headerlink" href="#directive-http:trace" title="永久链接至目标">¶</a></dt>
+<dd><p>Describes a HTTP resource’s <a class="reference external" href="https://tools.ietf.org/html/rfc7231#section-4.3.8">TRACE</a> method.
+It can also be referred by <a class="reference internal" href="#role-http:trace" title="http:trace role"><code class="xref rst rst-role docutils literal notranslate"><span class="pre">http:trace</span></code></a> role.</p>
+</dd></dl>
+
+<dl class="directive">
+<dt id="directive-http:copy">
+<code class="descname">.. http:copy::</code><code class="descclassname"> path</code><a class="headerlink" href="#directive-http:copy" title="永久链接至目标">¶</a></dt>
+<dd><p>Describes a HTTP resource’s <a class="reference external" href="https://tools.ietf.org/html/rfc2518#section-8.8">COPY</a> method.
+It can also be referred by <a class="reference internal" href="#role-http:copy" title="http:copy role"><code class="xref rst rst-role docutils literal notranslate"><span class="pre">http:copy</span></code></a> role.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">1.3.0 新版功能.</span></p>
+</div>
+</dd></dl>
+
+<dl class="directive">
+<dt id="directive-http:any">
+<code class="descname">.. http:any::</code><code class="descclassname"> path</code><a class="headerlink" href="#directive-http:any" title="永久链接至目标">¶</a></dt>
+<dd><p>Describes a HTTP resource’s which accepts requests with
+<em>any</em> method. Useful for cases when requested resource
+proxying the request to some other location keeping original request
+context. It can also be referred by <a class="reference internal" href="#role-http:any" title="http:any role"><code class="xref rst rst-role docutils literal notranslate"><span class="pre">http:any</span></code></a> role.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">1.3.0 新版功能.</span></p>
+</div>
+</dd></dl>
+
+<div class="section" id="options">
+<h3>Options<a class="headerlink" href="#options" title="永久链接至标题">¶</a></h3>
+<div class="versionadded">
+<p><span class="versionmodified added">1.3.0 新版功能.</span></p>
+</div>
+<p>Additionally, you may specify custom options to the directives:</p>
+<dl>
+<dt><code class="docutils literal notranslate"><span class="pre">noindex</span></code></dt><dd><p>Excludes specific directive from HTTP routing table.</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">http:get</span><span class="p">::</span> /users/(int:user_id)/posts/(tag)
+   <span class="nc">:noindex:</span>
+</pre></div>
+</div>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">deprecated</span></code></dt><dd><p>Marks the method as deprecated in HTTP routing table.</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">http:get</span><span class="p">::</span> /users/(int:user_id)/tagged_posts
+   <span class="nc">:deprecated:</span>
+</pre></div>
+</div>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">synopsis</span></code></dt><dd><p>Adds short description for HTTP routing table.</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">http:get</span><span class="p">::</span> /users/(int:user_id)/posts/(tag)
+   <span class="nc">:synopsis:</span> <span class="nf">Returns posts by the specified tag for the user</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="resource-fields">
+<span id="id2"></span><h2>Resource Fields<a class="headerlink" href="#resource-fields" title="永久链接至标题">¶</a></h2>
+<p>Inside HTTP resource description directives like <code class="xref rst rst-dir docutils literal notranslate"><span class="pre">get</span></code>,
+reStructuredText field lists with these fields are recognized and formatted
+nicely:</p>
+<dl>
+<dt><code class="docutils literal notranslate"><span class="pre">param</span></code>, <code class="docutils literal notranslate"><span class="pre">parameter</span></code>, <code class="docutils literal notranslate"><span class="pre">arg</span></code>, <code class="docutils literal notranslate"><span class="pre">argument</span></code></dt><dd><p>Description of URL parameter.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">queryparameter</span></code>, <code class="docutils literal notranslate"><span class="pre">queryparam</span></code>, <code class="docutils literal notranslate"><span class="pre">qparam</span></code>, <code class="docutils literal notranslate"><span class="pre">query</span></code></dt><dd><p>Description of parameter passed by request query string.</p>
+<p>It optionally can be typed, all the query parameters will have obviously
+string types though.  But it’s useful if there’s conventions for it.</p>
+<div class="versionchanged">
+<p><span class="versionmodified changed">在 1.1.9 版更改: </span>It can be typed e.g.:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="nc">:query string title:</span> <span class="nf">the post title</span>
+<span class="nc">:query string body:</span> <span class="nf">the post body</span>
+<span class="nc">:query boolean sticky:</span> <span class="nf">whether it&#39;s sticky or not</span>
+</pre></div>
+</div>
+</div>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">formparameter</span></code>, <code class="docutils literal notranslate"><span class="pre">formparam</span></code>, <code class="docutils literal notranslate"><span class="pre">fparam</span></code>, <code class="docutils literal notranslate"><span class="pre">form</span></code></dt><dd><p>Description of parameter passed by request content body, encoded in
+<em class="mimetype">application/x-www-form-urlencoded</em> or
+<em class="mimetype">multipart/form-data</em>.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">jsonparameter</span></code>, <code class="docutils literal notranslate"><span class="pre">jsonparam</span></code>, <code class="docutils literal notranslate"><span class="pre">json</span></code></dt><dd><p>Description of a parameter passed by request content body, encoded in
+<em class="mimetype">application/json</em>.</p>
+<div class="deprecated">
+<p><span class="versionmodified deprecated">1.3.0 版后已移除: </span>Use <code class="docutils literal notranslate"><span class="pre">reqjsonobj</span></code>/<code class="docutils literal notranslate"><span class="pre">reqjson</span></code>/<code class="docutils literal notranslate"><span class="pre">&lt;jsonobj</span></code>/<code class="docutils literal notranslate"><span class="pre">&lt;json</span></code> and
+<code class="docutils literal notranslate"><span class="pre">reqjsonarr</span></code>/<code class="docutils literal notranslate"><span class="pre">&lt;jsonarr</span></code> instead.</p>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified added">1.1.8 新版功能.</span></p>
+</div>
+<div class="versionchanged">
+<p><span class="versionmodified changed">在 1.1.9 版更改: </span>It can be typed e.g.:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="nc">:jsonparam string title:</span> <span class="nf">the post title</span>
+<span class="nc">:jsonparam string body:</span> <span class="nf">the post body</span>
+<span class="nc">:jsonparam boolean sticky:</span> <span class="nf">whether it&#39;s sticky or not</span>
+</pre></div>
+</div>
+</div>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">reqjsonobj</span></code>, <code class="docutils literal notranslate"><span class="pre">reqjson</span></code>, <code class="docutils literal notranslate"><span class="pre">&lt;jsonobj</span></code>, <code class="docutils literal notranslate"><span class="pre">&lt;json</span></code></dt><dd><p>Description of a single field of JSON object passed by request body,
+encoded in <em class="mimetype">application/json</em>. The key difference from <code class="docutils literal notranslate"><span class="pre">json</span></code> is
+explicitly defined use-case (request/response) of the described object.</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="nc">:&lt;json string title:</span> <span class="nf">the post title</span>
+<span class="nc">:&lt;json string body:</span> <span class="nf">the post body</span>
+<span class="nc">:&lt;json boolean sticky:</span> <span class="nf">whether it&#39;s sticky or not</span>
+</pre></div>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified added">1.3.0 新版功能.</span></p>
+</div>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">resjsonobj</span></code>, <code class="docutils literal notranslate"><span class="pre">resjson</span></code>, <code class="docutils literal notranslate"><span class="pre">&gt;jsonobj</span></code>, <code class="docutils literal notranslate"><span class="pre">&gt;json</span></code></dt><dd><p>Description of a single field of JSON object returned with response body,
+encoded in <em class="mimetype">application/json</em>.</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="nc">:&gt;json boolean ok:</span> <span class="nf">Operation status</span>
+</pre></div>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified added">1.3.0 新版功能.</span></p>
+</div>
+</dd>
+</dl>
+<p><code class="docutils literal notranslate"><span class="pre">reqjsonarr</span></code>, <code class="docutils literal notranslate"><span class="pre">&lt;jsonarr</span></code>
+<code class="docutils literal notranslate"><span class="pre">resjsonarr</span></code>, <code class="docutils literal notranslate"><span class="pre">&gt;jsonarr</span></code></p>
+<blockquote>
+<div><p>Similar to <code class="docutils literal notranslate"><span class="pre">&lt;json</span></code> and <code class="docutils literal notranslate"><span class="pre">&gt;json</span></code> respectively, but uses for describing
+objects schema inside of returned array.</p>
+<p>Let’s say, the response contains the following data:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">[{</span><span class="s2">&quot;id&quot;</span><span class="o">:</span> <span class="s2">&quot;foo&quot;</span><span class="p">,</span> <span class="s2">&quot;ok&quot;</span><span class="o">:</span> <span class="kc">true</span><span class="p">},</span> <span class="p">{</span><span class="s2">&quot;id&quot;</span><span class="o">:</span> <span class="s2">&quot;bar&quot;</span><span class="p">,</span> <span class="s2">&quot;error&quot;</span><span class="o">:</span> <span class="s2">&quot;forbidden&quot;</span><span class="p">,</span> <span class="s2">&quot;reason&quot;</span><span class="o">:</span> <span class="s2">&quot;sorry&quot;</span><span class="p">}]</span>
+</pre></div>
+</div>
+<p>Then we can describe it in the following way:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="nc">:&gt;jsonarr boolean ok:</span> <span class="nf">Operation status. Not present in case of error</span>
+<span class="nc">:&gt;jsonarr string id:</span> <span class="nf">Object ID</span>
+<span class="nc">:&gt;jsonarr string error:</span> <span class="nf">Error type</span>
+<span class="nc">:&gt;jsonarr string reason:</span> <span class="nf">Error reason</span>
+</pre></div>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified added">1.3.0 新版功能.</span></p>
+</div>
+</div></blockquote>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="nc">:&gt;json boolean status:</span> <span class="nf">Operation status</span>
+</pre></div>
+</div>
+<dl>
+<dt><code class="docutils literal notranslate"><span class="pre">requestheader</span></code>, <code class="docutils literal notranslate"><span class="pre">reqheader</span></code>, <code class="docutils literal notranslate"><span class="pre">&gt;header</span></code></dt><dd><p>Description of request header field.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">1.1.9 新版功能.</span></p>
+</div>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">responseheader</span></code>, <code class="docutils literal notranslate"><span class="pre">resheader</span></code>, <code class="docutils literal notranslate"><span class="pre">&lt;header</span></code></dt><dd><p>Description of response header field.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">1.1.9 新版功能.</span></p>
+</div>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">statuscode</span></code>, <code class="docutils literal notranslate"><span class="pre">status</span></code>, <code class="docutils literal notranslate"><span class="pre">code</span></code></dt><dd><p>Description of response status code.</p>
+</dd>
+</dl>
+<p>For example:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">http:post</span><span class="p">::</span> /posts/(int:post_id)
+
+   Replies a comment to the post.
+
+   <span class="nc">:param post_id:</span> <span class="nf">post&#39;s unique id</span>
+   <span class="nc">:type post_id:</span> <span class="nf">int</span>
+   <span class="nc">:form email:</span> <span class="nf">author email address</span>
+   <span class="nc">:form body:</span> <span class="nf">comment body</span>
+   <span class="nc">:reqheader Accept:</span> <span class="nf">the response content type depends on</span>
+                      <span class="na">:mailheader:</span><span class="nv">`Accept`</span> header
+   <span class="nc">:reqheader Authorization:</span> <span class="nf">optional OAuth token to authenticate</span>
+   <span class="nc">:resheader Content-Type:</span> <span class="nf">this depends on :mailheader:`Accept`</span>
+                            header of request
+   <span class="nc">:status 302:</span> <span class="nf">and then redirects to :http:get:`/posts/(int:post_id)`</span>
+   <span class="nc">:status 400:</span> <span class="nf">when form parameters are missing</span>
+
+<span class="p">..</span> <span class="ow">http:get</span><span class="p">::</span> /posts/(int:post_id)
+
+   Fetches the post
+
+   (...)
+</pre></div>
+</div>
+<p>It will render like this:</p>
+<blockquote>
+<div><dl class="post">
+<dt id="post--posts-(int-post_id)">
+<code class="descname">POST </code><code class="descname">/posts/</code><span class="sig-paren">(</span><em class="property">int: </em><em>post_id</em><span class="sig-paren">)</span><a class="headerlink" href="#post--posts-(int-post_id)" title="永久链接至目标">¶</a></dt>
+<dd><p>Replies a comment to the post.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>post_id</strong> (<em>int</em>) – post’s unique id</p></li>
+</ul>
+</dd>
+<dt class="field-even">Form Parameters</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>email</strong> – author email address</p></li>
+<li><p><strong>body</strong> – comment body</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Request Headers</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc7231#section-5.3.2">Accept</a> – the response content type depends on
+<em class="mailheader">Accept</em> header</p></li>
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc7235#section-4.2">Authorization</a> – optional OAuth token to authenticate</p></li>
+</ul>
+</dd>
+<dt class="field-even">Response Headers</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc7231#section-3.1.1.5">Content-Type</a> – this depends on <em class="mailheader">Accept</em>
+header of request</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Status Codes</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><a class="reference external" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.3.3">302 Found</a> – and then redirects to <a class="reference internal" href="#get--posts-(int-post_id)" title="GET /posts/(int:post_id)"><code class="xref http http-get docutils literal notranslate"><span class="pre">GET</span> <span class="pre">/posts/(int:post_id)</span></code></a></p></li>
+<li><p><a class="reference external" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.1">400 Bad Request</a> – when form parameters are missing</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="get">
+<dt id="get--posts-(int-post_id)">
+<code class="descname">GET </code><code class="descname">/posts/</code><span class="sig-paren">(</span><em class="property">int: </em><em>post_id</em><span class="sig-paren">)</span><a class="headerlink" href="#get--posts-(int-post_id)" title="永久链接至目标">¶</a></dt>
+<dd><p>Fetches the post</p>
+<p>(…)</p>
+</dd></dl>
+
+</div></blockquote>
+</div>
+<div class="section" id="roles">
+<span id="id3"></span><h2>Roles<a class="headerlink" href="#roles" title="永久链接至标题">¶</a></h2>
+<dl class="role">
+<dt id="role-http:options">
+<code class="descname">:http:options:</code><a class="headerlink" href="#role-http:options" title="永久链接至目标">¶</a></dt>
+<dd><p>Refers to the <a class="reference internal" href="#directive-http:options" title="http:options directive"><code class="xref rst rst-dir docutils literal notranslate"><span class="pre">http:options</span></code></a> directive.</p>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-http:head">
+<code class="descname">:http:head:</code><a class="headerlink" href="#role-http:head" title="永久链接至目标">¶</a></dt>
+<dd><p>Refers to the <a class="reference internal" href="#directive-http:head" title="http:head directive"><code class="xref rst rst-dir docutils literal notranslate"><span class="pre">http:head</span></code></a> directive.</p>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-http:post">
+<code class="descname">:http:post:</code><a class="headerlink" href="#role-http:post" title="永久链接至目标">¶</a></dt>
+<dd><p>Refers to the <a class="reference internal" href="#directive-http:post" title="http:post directive"><code class="xref rst rst-dir docutils literal notranslate"><span class="pre">http:post</span></code></a> directive.</p>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-http:get">
+<code class="descname">:http:get:</code><a class="headerlink" href="#role-http:get" title="永久链接至目标">¶</a></dt>
+<dd><p>Refers to the <a class="reference internal" href="#directive-http:get" title="http:get directive"><code class="xref rst rst-dir docutils literal notranslate"><span class="pre">http:get</span></code></a> directive.</p>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-http:put">
+<code class="descname">:http:put:</code><a class="headerlink" href="#role-http:put" title="永久链接至目标">¶</a></dt>
+<dd><p>Refers to the <a class="reference internal" href="#directive-http:put" title="http:put directive"><code class="xref rst rst-dir docutils literal notranslate"><span class="pre">http:put</span></code></a> directive.</p>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-http:patch">
+<code class="descname">:http:patch:</code><a class="headerlink" href="#role-http:patch" title="永久链接至目标">¶</a></dt>
+<dd><p>Refers to the <a class="reference internal" href="#directive-http:patch" title="http:patch directive"><code class="xref rst rst-dir docutils literal notranslate"><span class="pre">http:patch</span></code></a> directive.</p>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-http:delete">
+<code class="descname">:http:delete:</code><a class="headerlink" href="#role-http:delete" title="永久链接至目标">¶</a></dt>
+<dd><p>Refers to the <a class="reference internal" href="#directive-http:delete" title="http:delete directive"><code class="xref rst rst-dir docutils literal notranslate"><span class="pre">http:delete</span></code></a> directive.</p>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-http:trace">
+<code class="descname">:http:trace:</code><a class="headerlink" href="#role-http:trace" title="永久链接至目标">¶</a></dt>
+<dd><p>Refers to the <a class="reference internal" href="#directive-http:trace" title="http:trace directive"><code class="xref rst rst-dir docutils literal notranslate"><span class="pre">http:trace</span></code></a> directive.</p>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-http:copy">
+<code class="descname">:http:copy:</code><a class="headerlink" href="#role-http:copy" title="永久链接至目标">¶</a></dt>
+<dd><p>Refers to the <a class="reference internal" href="#directive-http:copy" title="http:copy directive"><code class="xref rst rst-dir docutils literal notranslate"><span class="pre">http:copy</span></code></a> directive.</p>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-http:any">
+<code class="descname">:http:any:</code><a class="headerlink" href="#role-http:any" title="永久链接至目标">¶</a></dt>
+<dd><p>Refers to the <a class="reference internal" href="#directive-http:any" title="http:any directive"><code class="xref rst rst-dir docutils literal notranslate"><span class="pre">http:any</span></code></a> directive.</p>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-http:statuscode">
+<code class="descname">:http:statuscode:</code><a class="headerlink" href="#role-http:statuscode" title="永久链接至目标">¶</a></dt>
+<dd><p>A reference to a HTTP status code. The text “<cite>code</cite> <cite>Status Name</cite>” is
+generated; in the HTML output, this text is a hyperlink to a web reference
+of the specified status code.</p>
+<p>For example:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="m">-</span> <span class="na">:http:statuscode:</span><span class="nv">`404`</span>
+<span class="m">-</span> <span class="na">:http:statuscode:</span><span class="nv">`200 OK`</span>
+</pre></div>
+</div>
+<p>will be rendered as:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference external" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5">404 Not Found</a></p></li>
+<li><p><a class="reference external" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1">200 OK</a></p></li>
+</ul>
+</div></blockquote>
+<div class="versionchanged">
+<p><span class="versionmodified changed">在 1.3.0 版更改: </span>It becomes to provide references to specification sections.</p>
+</div>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-http:method">
+<code class="descname">:http:method:</code><a class="headerlink" href="#role-http:method" title="永久链接至目标">¶</a></dt>
+<dd><p>A reference to a HTTP method (also known as <em>verb</em>). In the HTML output,
+this text is a hyperlink to a web reference of the specified HTTP method.</p>
+<p>For example:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>It accepts <span class="na">:http:method:</span><span class="nv">`post`</span> only.
+</pre></div>
+</div>
+<p>It will render like this:</p>
+<blockquote>
+<div><p>It accepts <a class="reference external" href="https://tools.ietf.org/html/rfc7231#section-4.3.3">POST</a> only.</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-mimetype">
+<code class="descname">:mimetype:</code><a class="headerlink" href="#role-mimetype" title="永久链接至目标">¶</a></dt>
+<dd><p>Exactly it doesn’t belong to HTTP domain, but standard domain. It refers
+to the MIME type like <em class="mimetype">text/html</em>.</p>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-mailheader">
+<code class="descname">:mailheader:</code><a class="headerlink" href="#role-mailheader" title="永久链接至目标">¶</a></dt>
+<dd><div class="deprecated">
+<p><span class="versionmodified deprecated">1.3.0 版后已移除: </span>Use <a class="reference internal" href="#role-http:header" title="http:header role"><code class="xref rst rst-role docutils literal notranslate"><span class="pre">http:header</span></code></a> instead.</p>
+</div>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-http:header">
+<code class="descname">:http:header:</code><a class="headerlink" href="#role-http:header" title="永久链接至目标">¶</a></dt>
+<dd><p>Similar to <a class="reference internal" href="#role-mimetype" title="mimetype role"><code class="xref rst rst-role docutils literal notranslate"><span class="pre">mimetype</span></code></a> role, it doesn’t belong to HTTP domain,
+but standard domain. It refers to the HTTP request/response header field
+like <a class="reference external" href="https://tools.ietf.org/html/rfc7231#section-3.1.1.5">Content-Type</a>.</p>
+<p>If the HTTP header is known, the text is a hyperlink to a web reference of
+the specified header.</p>
+<p>Known HTTP headers:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc7231#section-5.3.2">Accept</a></p></li>
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc7231#section-5.3.3">Accept-Charset</a></p></li>
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc7231#section-5.3.4">Accept-Encoding</a></p></li>
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc7231#section-5.3.5">Accept-Language</a></p></li>
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc7233#section-2.3">Accept-Ranges</a></p></li>
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc7234#section-5.1">Age</a></p></li>
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc7231#section-7.4.1">Allow</a></p></li>
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc7235#section-4.2">Authorization</a></p></li>
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc7234#section-5.2">Cache-Control</a></p></li>
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc7230#section-6.1">Connection</a></p></li>
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc7231#section-3.1.2.2">Content-Encoding</a></p></li>
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc7231#section-3.1.3.2">Content-Language</a></p></li>
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc7230#section-3.3.2">Content-Length</a></p></li>
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc7231#section-3.1.4.2">Content-Location</a></p></li>
+<li><p><a class="reference external" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.15">Content-MD5</a></p></li>
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc7233#section-4.2">Content-Range</a></p></li>
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc7231#section-3.1.1.5">Content-Type</a></p></li>
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc2109#section-4.3.4">Cookie</a></p></li>
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc7231#section-7.1.1.2">Date</a></p></li>
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc2518#section-9.3">Destination</a></p></li>
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc7232#section-2.3">ETag</a></p></li>
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc7231#section-5.1.1">Expect</a></p></li>
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc7234#section-5.3">Expires</a></p></li>
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc7231#section-5.5.2">From</a></p></li>
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc7230#section-5.4">Host</a></p></li>
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc7232#section-3.1">If-Match</a></p></li>
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc7232#section-3.3">If-Modified-Since</a></p></li>
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc7232#section-3.2">If-None-Match</a></p></li>
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc7233#section-3.2">If-Range</a></p></li>
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc7232#section-3.4">If-Unmodified-Since</a></p></li>
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc7232#section-2.2">Last-Modified</a></p></li>
+<li><p><a class="reference external" href="http://www.w3.org/TR/eventsource/#last-event-id">Last-Event-ID</a></p></li>
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc5988#section-5">Link</a></p></li>
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc7231#section-7.1.2">Location</a></p></li>
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc7231#section-5.1.2">Max-Forwards</a></p></li>
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc7234#section-5.4">Pragma</a></p></li>
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc7235#section-4.3">Proxy-Authenticate</a></p></li>
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc7235#section-4.4">Proxy-Authorization</a></p></li>
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc7233#section-3.1">Range</a></p></li>
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc7231#section-5.5.2">Referer</a></p></li>
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc7231#section-7.1.3">Retry-After</a></p></li>
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc7231#section-7.4.2">Server</a></p></li>
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc2109#section-4.2.2">Set-Cookie</a></p></li>
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc7230#section-4.3">TE</a></p></li>
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc7230#section-4.4">Trailer</a></p></li>
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc7230#section-3.3.1">Transfer-Encoding</a></p></li>
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc7230#section-6.7">Upgrade</a></p></li>
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc7231#section-5.5.3">User-Agent</a></p></li>
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc7231#section-7.1.4">Vary</a></p></li>
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc7230#section-5.7.1">Via</a></p></li>
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc7235#section-4.1">WWW-Authenticate</a></p></li>
+<li><p><a class="reference external" href="https://tools.ietf.org/html/rfc7234#section-5.5">Warning</a></p></li>
+</ul>
+<div class="versionadded">
+<p><span class="versionmodified added">1.3.0 新版功能.</span></p>
+</div>
+<div class="versionchanged">
+<p><span class="versionmodified changed">在 1.5.0 版更改: </span>No longer emits warnings for unrecognized headers</p>
+</div>
+</dd></dl>
+
+<span class="target" id="module-sphinxcontrib.autohttp.flask"></span></div>
+<div class="section" id="sphinxcontrib-autohttp-flask-exporting-api-reference-from-flask-app">
+<h2><a class="reference internal" href="../test/index.html#sphinxcontrib.autohttp.flask" title="sphinxcontrib.autohttp.flask"><code class="xref js js-mod docutils literal notranslate"><span class="pre">sphinxcontrib.autohttp.flask</span></code></a> — Exporting API reference from Flask app<a class="headerlink" href="#sphinxcontrib-autohttp-flask-exporting-api-reference-from-flask-app" title="永久链接至标题">¶</a></h2>
+<div class="versionadded">
+<p><span class="versionmodified added">1.1 新版功能.</span></p>
+</div>
+<p>It generates RESTful HTTP API reference documentation from a <a class="reference external" href="http://flask.pocoo.org/">Flask</a>
+application’s routing table, similar to <code class="xref js js-mod docutils literal notranslate"><span class="pre">sphinx.ext.autodoc</span></code>.</p>
+<p>In order to use it, add <a class="reference internal" href="../test/index.html#sphinxcontrib.autohttp.flask" title="sphinxcontrib.autohttp.flask"><code class="xref js js-mod docutils literal notranslate"><span class="pre">sphinxcontrib.autohttp.flask</span></code></a> into
+<code class="xref js js-data docutils literal notranslate"><span class="pre">extensions</span></code> list of your Sphinx configuration (<code class="file docutils literal notranslate"><span class="pre">conf.py</span></code>) file:</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">extensions</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sphinxcontrib.autohttp.flask&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>For example:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">autoflask</span><span class="p">::</span> autoflask_sampleapp:app
+   <span class="nc">:undoc-static:</span>
+</pre></div>
+</div>
+<p>will be rendered as:</p>
+<blockquote>
+<div></div></blockquote>
+<dl class="directive">
+<dt id="directive-autoflask">
+<code class="descname">.. autoflask::</code><code class="descclassname"> module:app</code><a class="headerlink" href="#directive-autoflask" title="永久链接至目标">¶</a></dt>
+<dd><div class="versionadded">
+<p><span class="versionmodified added">1.1 新版功能.</span></p>
+</div>
+<p>Generates HTTP API references from a Flask application. It takes an
+import name, like:</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">your</span><span class="p">.</span><span class="nx">webapplication</span><span class="p">.</span><span class="nx">module</span><span class="o">:</span><span class="nx">app</span>
+</pre></div>
+</div>
+<p>Colon character (<code class="docutils literal notranslate"><span class="pre">:</span></code>) separates module path and application variable.
+Latter part can be more complex:</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">your</span><span class="p">.</span><span class="nx">webapplication</span><span class="p">.</span><span class="nx">module</span><span class="o">:</span><span class="nx">create_app</span><span class="p">(</span><span class="nx">config</span><span class="o">=</span><span class="s1">&#39;default.cfg&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>It’s useful when a Flask application is created from the factory function
+(<code class="xref js js-func docutils literal notranslate"><span class="pre">create_app()</span></code>, in the above example).</p>
+<p>It takes several flag options as well.</p>
+<dl>
+<dt><code class="docutils literal notranslate"><span class="pre">endpoints</span></code></dt><dd><p>Endpoints to generate a reference.</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">autoflask</span><span class="p">::</span> yourwebapp:app
+   <span class="nc">:endpoints:</span> <span class="nf">user, post, friends</span>
+</pre></div>
+</div>
+<p>will document <code class="xref js js-func docutils literal notranslate"><span class="pre">user()</span></code>, <code class="xref js js-func docutils literal notranslate"><span class="pre">post()</span></code>, and <code class="xref js js-func docutils literal notranslate"><span class="pre">friends()</span></code>
+view functions, and</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">autoflask</span><span class="p">::</span> yourwebapp:app
+   <span class="nc">:endpoints:</span>
+</pre></div>
+</div>
+<p>will document all endpoints in the flask app.</p>
+<p>For compatibility, omitting this option will produce the same effect
+like above.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">1.1.8 新版功能.</span></p>
+</div>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">undoc-endpoints</span></code></dt><dd><p>Excludes specified endpoints from generated references.</p>
+<p>For example:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">autoflask</span><span class="p">::</span> yourwebapp:app
+   <span class="nc">:undoc-endpoints:</span> <span class="nf">admin, admin_login</span>
+</pre></div>
+</div>
+<p>will exclude <code class="xref js js-func docutils literal notranslate"><span class="pre">admin()</span></code>, <code class="xref js js-func docutils literal notranslate"><span class="pre">admin_login()</span></code> view functions.</p>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>It is worth noting that the names of endpoints that are applied to
+blueprints are prefixed with the blueprint’s name (e.g.
+blueprint.endpoint).</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>While the <a class="reference external" href="http://www.sphinx-doc.org/en/stable/ext/autodoc.html#directive-automodule">undoc-members</a> flag of <code class="xref js js-mod docutils literal notranslate"><span class="pre">sphinx.ext.autodoc</span></code> extension
+includes members without docstrings, <code class="docutils literal notranslate"><span class="pre">undoc-endpoints</span></code> option has
+nothing to do with docstrings. It just excludes specified endpoints.</p>
+</div>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">blueprints</span></code></dt><dd><p>Only include specified blueprints in generated references.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">1.1.9 新版功能.</span></p>
+</div>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">undoc-blueprints</span></code></dt><dd><p>Excludes specified blueprints from generated references.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">1.1.8 新版功能.</span></p>
+</div>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">modules</span></code></dt><dd><p>Only include specified view modules in generated references.</p>
+<p>For example:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">autoflask</span><span class="p">::</span> yourwebapp:app
+   <span class="nc">:modules:</span> <span class="nf">yourwebapp.views.admin</span>
+</pre></div>
+</div>
+<p>will include only views in <code class="docutils literal notranslate"><span class="pre">yourwebapp.views.admin</span></code> module</p>
+<div class="versionadded">
+<p><span class="versionmodified added">1.5.0 新版功能.</span></p>
+</div>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">undoc-modules</span></code></dt><dd><p>Excludes specified view modules from generated references.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">1.5.0 新版功能.</span></p>
+</div>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">undoc-static</span></code></dt><dd><p>Excludes a view function that serves static files, which is included
+in Flask by default.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">order</span></code></dt><dd><p>Determines the order in which endpoints are listed. Currently only
+<code class="docutils literal notranslate"><span class="pre">path</span></code> is supported.</p>
+<p>For example:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">autoflask</span><span class="p">::</span> yourwebapp:app
+   <span class="nc">:endpoints:</span>
+   <span class="nc">:order:</span> <span class="nf">path</span>
+</pre></div>
+</div>
+<p>will document all endpoints in the flask app, ordered by their route
+paths.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">1.5.0 新版功能.</span></p>
+</div>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">groupby</span></code></dt><dd><p>Determines the strategy to group paths. Currently only <code class="docutils literal notranslate"><span class="pre">view</span></code> is
+supported. Specified this will group paths by their view functions.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">1.6.0 新版功能.</span></p>
+</div>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">include-empty-docstring</span></code></dt><dd><p>View functions that don’t have docstring (<code class="xref js js-attr docutils literal notranslate"><span class="pre">__doc__</span></code>) are excluded
+by default. If this flag option has given, they become included also.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">1.1.2 新版功能.</span></p>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<span class="target" id="module-sphinxcontrib.autohttp.flaskqref"></span></div>
+<div class="section" id="sphinxcontrib-autohttp-flaskqref-quick-api-reference-for-flask-app">
+<h2><a class="reference internal" href="#sphinxcontrib.autohttp.flaskqref" title="sphinxcontrib.autohttp.flaskqref"><code class="xref js js-mod docutils literal notranslate"><span class="pre">sphinxcontrib.autohttp.flaskqref</span></code></a> — Quick API reference for Flask app<a class="headerlink" href="#sphinxcontrib-autohttp-flaskqref-quick-api-reference-for-flask-app" title="永久链接至标题">¶</a></h2>
+<div class="versionadded">
+<p><span class="versionmodified added">1.5.0 新版功能.</span></p>
+</div>
+<p>This generates a quick API reference table for the route documentation
+produced by <a class="reference internal" href="../test/index.html#sphinxcontrib.autohttp.flask" title="sphinxcontrib.autohttp.flask"><code class="xref js js-mod docutils literal notranslate"><span class="pre">sphinxcontrib.autohttp.flask</span></code></a></p>
+<p>To use it, both <a class="reference internal" href="../test/index.html#sphinxcontrib.autohttp.flask" title="sphinxcontrib.autohttp.flask"><code class="xref js js-mod docutils literal notranslate"><span class="pre">sphinxcontrib.autohttp.flask</span></code></a> and <a class="reference internal" href="#sphinxcontrib.autohttp.flaskqref" title="sphinxcontrib.autohttp.flaskqref"><code class="xref js js-mod docutils literal notranslate"><span class="pre">sphinxcontrib.autohttp.flaskqref</span></code></a> need to be added into the extensions
+of your configuration (<code class="file docutils literal notranslate"><span class="pre">conf.py</span></code>) file:</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">extensions</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sphinxcontrib.autohttp.flask&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;sphinxcontrib.autohttp.flaskqref&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<dl class="directive">
+<dt id="directive-qrefflask">
+<code class="descname">.. qrefflask::</code><code class="descclassname"> module:app</code><a class="headerlink" href="#directive-qrefflask" title="永久链接至目标">¶</a></dt>
+<dd><div class="versionadded">
+<p><span class="versionmodified added">1.5.0 新版功能.</span></p>
+</div>
+<p>Generates HTTP API references from a Flask application and places these
+in a list-table with quick reference links. The usage and options are identical
+to that of <a class="reference internal" href="../test/index.html#sphinxcontrib.autohttp.flask" title="sphinxcontrib.autohttp.flask"><code class="xref js js-mod docutils literal notranslate"><span class="pre">sphinxcontrib.autohttp.flask</span></code></a> with the addition of the
+<code class="docutils literal notranslate"><span class="pre">autoquickref</span></code> option.</p>
+</dd></dl>
+
+<div class="section" id="id4">
+<h3>Basic usage<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h3>
+<p>You typically would place the quick reference table near the top of your docco
+and use <em>.. autoflask::</em> further down.</p>
+<p>Unless you use the <code class="docutils literal notranslate"><span class="pre">autoquickref</span></code> option, routes that are to be included in
+the quick reference table require the following rst comment to be added to their
+doc string:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="cp">.. :quickref: [&lt;resource&gt;;] &lt;short description&gt;</span>
+</pre></div>
+</div>
+<p>&lt;resource&gt; is optional, if used a semi-colon separates it from &lt;short description&gt;
+The table is grouped and sorted by &lt;resource&gt;.</p>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">&lt;resource&gt;</span></code></dt><dd><p>This is the resource name of the operation.  The name maybe the same for a number
+of operations and enables grouping these together.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">&lt;short</span> <span class="pre">description&gt;</span></code></dt><dd><p>A brief description what the operation does.</p>
+</dd>
+</dl>
+<p>If you use the <code class="docutils literal notranslate"><span class="pre">autoquickref</span></code> option, all routes must be inside blueprints.
+The <code class="docutils literal notranslate"><span class="pre">&lt;resource&gt;</span></code> will be set to the blueprint’s name, and the <code class="docutils literal notranslate"><span class="pre">&lt;short</span>
+<span class="pre">description&gt;</span></code> will be set to the first line of the docstring.</p>
+<p>For example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@app.route</span><span class="p">(</span><span class="s1">&#39;/&lt;user&gt;&#39;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">user</span><span class="p">(</span><span class="n">user</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;User profile page.</span>
+
+<span class="sd">    .. :quickref: User; Get Profile Page</span>
+
+<span class="sd">    my docco here</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="s1">&#39;hi, &#39;</span> <span class="o">+</span> <span class="n">user</span>
+</pre></div>
+</div>
+<p>The quick reference table is defined as:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">qrefflask</span><span class="p">::</span> autoflask_sampleapp:app
+   <span class="nc">:undoc-static:</span>
+</pre></div>
+</div>
+<p>Using the autoflask_sampleapp with <em>.. :quickref:</em> annotations,
+this is rendered as:</p>
+<blockquote>
+<div></div></blockquote>
+<span class="target" id="module-sphinxcontrib.autohttp.bottle"></span></div>
+</div>
+<div class="section" id="sphinxcontrib-autohttp-bottle-exporting-api-reference-from-bottle-app">
+<h2><a class="reference internal" href="#sphinxcontrib.autohttp.bottle" title="sphinxcontrib.autohttp.bottle"><code class="xref js js-mod docutils literal notranslate"><span class="pre">sphinxcontrib.autohttp.bottle</span></code></a> — Exporting API reference from Bottle app<a class="headerlink" href="#sphinxcontrib-autohttp-bottle-exporting-api-reference-from-bottle-app" title="永久链接至标题">¶</a></h2>
+<p>It generates RESTful HTTP API reference documentation from a <a class="reference external" href="http://bottlepy.org/">Bottle</a>
+application’s routing table, similar to <code class="xref js js-mod docutils literal notranslate"><span class="pre">sphinx.ext.autodoc</span></code>.</p>
+<p>In order to use it, add <a class="reference internal" href="#sphinxcontrib.autohttp.bottle" title="sphinxcontrib.autohttp.bottle"><code class="xref js js-mod docutils literal notranslate"><span class="pre">sphinxcontrib.autohttp.bottle</span></code></a> into
+<code class="xref js js-data docutils literal notranslate"><span class="pre">extensions</span></code> list of your Sphinx configuration (<code class="file docutils literal notranslate"><span class="pre">conf.py</span></code>) file:</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">extensions</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sphinxcontrib.autohttp.bottle&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>For example:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">autobottle</span><span class="p">::</span> autobottle_sampleapp:app
+</pre></div>
+</div>
+<p>will be rendered as:</p>
+<blockquote>
+<div></div></blockquote>
+<dl class="directive">
+<dt id="directive-autobottle">
+<code class="descname">.. autobottle::</code><code class="descclassname"> module:app</code><a class="headerlink" href="#directive-autobottle" title="永久链接至目标">¶</a></dt>
+<dd><p>Generates HTTP API references from a Bottle application. It takes an
+import name, like:</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">your</span><span class="p">.</span><span class="nx">webapplication</span><span class="p">.</span><span class="nx">module</span><span class="o">:</span><span class="nx">app</span>
+</pre></div>
+</div>
+<p>Colon character (<code class="docutils literal notranslate"><span class="pre">:</span></code>) separates module path and application variable.
+Latter part can be more complex:</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">your</span><span class="p">.</span><span class="nx">webapplication</span><span class="p">.</span><span class="nx">module</span><span class="o">:</span><span class="nx">create_app</span><span class="p">(</span><span class="nx">config</span><span class="o">=</span><span class="s1">&#39;default.cfg&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>It’s useful when a Bottle application is created from the factory function
+(<code class="xref js js-func docutils literal notranslate"><span class="pre">create_app()</span></code>, in the above example).</p>
+<p>It takes several flag options as well.</p>
+<dl>
+<dt><code class="docutils literal notranslate"><span class="pre">endpoints</span></code></dt><dd><p>Endpoints to generate a reference.</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">autobottle</span><span class="p">::</span> yourwebapp:app
+   <span class="nc">:endpoints:</span> <span class="nf">user, post, friends</span>
+</pre></div>
+</div>
+<p>will document <code class="xref js js-func docutils literal notranslate"><span class="pre">user()</span></code>, <code class="xref js js-func docutils literal notranslate"><span class="pre">post()</span></code>, and <code class="xref js js-func docutils literal notranslate"><span class="pre">friends()</span></code>
+view functions, and</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">autobottle</span><span class="p">::</span> yourwebapp:app
+   <span class="nc">:endpoints:</span>
+</pre></div>
+</div>
+<p>will document all endpoints in the bottle app.</p>
+<p>For compatibility, omitting this option will produce the same effect
+like above.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">undoc-endpoints</span></code></dt><dd><p>Excludes specified endpoints from generated references.</p>
+<p>For example:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">autobottle</span><span class="p">::</span> yourwebapp:app
+   <span class="nc">:undoc-endpoints:</span> <span class="nf">admin, admin_login</span>
+</pre></div>
+</div>
+<p>will exclude <code class="xref js js-func docutils literal notranslate"><span class="pre">admin()</span></code>, <code class="xref js js-func docutils literal notranslate"><span class="pre">admin_login()</span></code> view functions.</p>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>While the <a class="reference external" href="http://www.sphinx-doc.org/en/stable/ext/autodoc.html#directive-automodule">undoc-members</a> flag of <code class="xref js js-mod docutils literal notranslate"><span class="pre">sphinx.ext.autodoc</span></code> extension
+includes members without docstrings, <code class="docutils literal notranslate"><span class="pre">undoc-endpoints</span></code> option has
+nothing to do with docstrings. It just excludes specified endpoints.</p>
+</div>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">include-empty-docstring</span></code></dt><dd><p>View functions that don’t have docstring (<code class="xref js js-attr docutils literal notranslate"><span class="pre">__doc__</span></code>) are excluded
+by default. If this flag option has given, they become included also.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<span class="target" id="module-sphinxcontrib.autohttp.tornado"></span></div>
+<div class="section" id="sphinxcontrib-autohttp-tornado-exporting-api-reference-from-tornado-app">
+<h2><a class="reference internal" href="#sphinxcontrib.autohttp.tornado" title="sphinxcontrib.autohttp.tornado"><code class="xref js js-mod docutils literal notranslate"><span class="pre">sphinxcontrib.autohttp.tornado</span></code></a> — Exporting API reference from Tornado app<a class="headerlink" href="#sphinxcontrib-autohttp-tornado-exporting-api-reference-from-tornado-app" title="永久链接至标题">¶</a></h2>
+<p>It generates RESTful HTTP API reference documentation from a <a class="reference external" href="http://www.tornadoweb.org/">Tornado</a>
+application’s routing table, similar to <code class="xref js js-mod docutils literal notranslate"><span class="pre">sphinx.ext.autodoc</span></code>.</p>
+<p>In order to use it, add <a class="reference internal" href="#sphinxcontrib.autohttp.tornado" title="sphinxcontrib.autohttp.tornado"><code class="xref js js-mod docutils literal notranslate"><span class="pre">sphinxcontrib.autohttp.tornado</span></code></a> into
+<code class="xref js js-data docutils literal notranslate"><span class="pre">extensions</span></code> list of your Sphinx configuration (<code class="file docutils literal notranslate"><span class="pre">conf.py</span></code>) file:</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">extensions</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sphinxcontrib.autohttp.tornado&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>For example:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">autotornado</span><span class="p">::</span> autotornado_sampleapp:app
+</pre></div>
+</div>
+<p>will be rendered as:</p>
+<blockquote>
+<div></div></blockquote>
+<dl class="directive">
+<dt id="directive-autotornado">
+<code class="descname">.. autotornado::</code><code class="descclassname"> module:app</code><a class="headerlink" href="#directive-autotornado" title="永久链接至目标">¶</a></dt>
+<dd><p>Generates HTTP API references from a Tornado application. It takes an
+import name, like:</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">your</span><span class="p">.</span><span class="nx">webapplication</span><span class="p">.</span><span class="nx">module</span><span class="o">:</span><span class="nx">app</span>
+</pre></div>
+</div>
+<p>Colon character (<code class="docutils literal notranslate"><span class="pre">:</span></code>) separates module path and application variable.</p>
+<p>It takes several flag options as well.</p>
+<dl>
+<dt><code class="docutils literal notranslate"><span class="pre">endpoints</span></code></dt><dd><p>Endpoints to generate a reference.</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">autotornado</span><span class="p">::</span> yourwebapp:app
+   <span class="nc">:endpoints:</span> <span class="nf">User.get, User.post, Friends.get</span>
+</pre></div>
+</div>
+<p>will document the <code class="xref js js-func docutils literal notranslate"><span class="pre">get()</span></code> and <code class="xref js js-func docutils literal notranslate"><span class="pre">post()</span></code> methods of the
+<code class="xref js js-class docutils literal notranslate"><span class="pre">User()</span></code> <code class="xref js js-class docutils literal notranslate"><span class="pre">RequestHandler()</span></code> and the <code class="xref js js-func docutils literal notranslate"><span class="pre">get()</span></code> method
+of the <code class="xref js js-class docutils literal notranslate"><span class="pre">Friend()</span></code> <code class="xref js js-class docutils literal notranslate"><span class="pre">RequestHandler()</span></code>, while</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">autotornado</span><span class="p">::</span> yourwebapp:app
+   <span class="nc">:endpoints:</span>
+</pre></div>
+</div>
+<p>will document all endpoints in the tornado app.</p>
+<p>For compatibility, omitting this option will produce the same effect
+like above.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">undoc-endpoints</span></code></dt><dd><p>Excludes specified endpoints from generated references.</p>
+<p>For example:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">autotornado</span><span class="p">::</span> yourwebapp:app
+   <span class="nc">:undoc-endpoints:</span> <span class="nf">admin, admin_login</span>
+</pre></div>
+</div>
+<p>will exclude <code class="xref js js-func docutils literal notranslate"><span class="pre">admin()</span></code>, <code class="xref js js-func docutils literal notranslate"><span class="pre">admin_login()</span></code> view functions.</p>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>While the <a class="reference external" href="http://www.sphinx-doc.org/en/stable/ext/autodoc.html#directive-automodule">undoc-members</a> flag of <code class="xref js js-mod docutils literal notranslate"><span class="pre">sphinx.ext.autodoc</span></code> extension
+includes members without docstrings, <code class="docutils literal notranslate"><span class="pre">undoc-endpoints</span></code> option has
+nothing to do with docstrings. It just excludes specified endpoints.</p>
+</div>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">include-empty-docstring</span></code></dt><dd><p>View functions that don’t have docstring (<code class="xref js js-attr docutils literal notranslate"><span class="pre">__doc__</span></code>) are excluded
+by default. If this flag option has given, they become included also.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="author-and-license">
+<h2>Author and License<a class="headerlink" href="#author-and-license" title="永久链接至标题">¶</a></h2>
+<p>The <a class="reference internal" href="../test/index.html#sphinxcontrib.httpdomain" title="sphinxcontrib.httpdomain"><code class="xref js js-mod docutils literal notranslate"><span class="pre">sphinxcontrib.httpdomain</span></code></a> and <code class="xref js js-mod docutils literal notranslate"><span class="pre">sphinxcontrib.autohttp</span></code>,
+parts of <code class="xref js js-mod docutils literal notranslate"><span class="pre">sphinxcontrib</span></code>, are written by <a class="reference external" href="https://hongminhee.org/">Hong Minhee</a>
+and distributed under BSD license.</p>
+<p>The source code is maintained under <a class="reference external" href="https://github.com/sphinx-contrib">the sphinx-contrib project</a>
+in the <a class="reference external" href="https://github.com/sphinx-contrib/httpdomain">httpdomain</a> repository</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git clone https://github.com/sphinx-contrib/httpdomain.git
+<span class="gp">$</span> <span class="nb">cd</span> httpdomain
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">orphan</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</div>
+<div class="section" id="changelog">
+<h2>Changelog<a class="headerlink" href="#changelog" title="永久链接至标题">¶</a></h2>
+<div class="section" id="version-1-7-0">
+<h3>Version 1.7.0<a class="headerlink" href="#version-1-7-0" title="永久链接至标题">¶</a></h3>
+<p>Released on July 1, 2018.</p>
+<ul class="simple">
+<li><p>Implemented <code class="docutils literal notranslate"><span class="pre">:autoquickref:</span></code> option that use available informations to
+build a <code class="docutils literal notranslate"><span class="pre">quickref</span></code>. [<a href="#id8"><span class="problematic" id="id9">:pull:`9`</span></a> by Alexandre Bonnetain]</p></li>
+<li><p>Improved <a class="reference internal" href="#sphinxcontrib.autohttp.tornado" title="sphinxcontrib.autohttp.tornado"><code class="xref js js-mod docutils literal notranslate"><span class="pre">sphinxcontrib.autohttp.tornado</span></code></a> compatibility with Tornado
+4.5 and newer. <cite>Tornado 4.5 &lt;http://www.tornadoweb.org/en/stable/releases/v4.5.0.html&gt;</cite>
+introduced the <code class="docutils literal notranslate"><span class="pre">Rule</span></code> class and made <code class="docutils literal notranslate"><span class="pre">URLSpec</span></code> a subclass of it, so certain
+rule attributes required updating. [<a href="#id10"><span class="problematic" id="id11">:issue:`7`</span></a>, <a href="#id12"><span class="problematic" id="id13">:pull:`11`</span></a> by Robert Zeigler]</p></li>
+</ul>
+</div>
+<div class="section" id="version-1-6-1">
+<h3>Version 1.6.1<a class="headerlink" href="#version-1-6-1" title="永久链接至标题">¶</a></h3>
+<p>Released on March 3, 2018.</p>
+<ul class="simple">
+<li><p>Remove references to the <code class="docutils literal notranslate"><span class="pre">sphinx.util.compat</span></code> module which was deprecated
+in Sphinx 1.6 and removed in 1.7.  [<a href="#id14"><span class="problematic" id="id15">:issue:`5`</span></a>, <a href="#id16"><span class="problematic" id="id17">:pull:`4`</span></a> by Jeremy Cline]</p></li>
+<li><p>Made <a class="reference internal" href="#sphinxcontrib.autohttp.tornado" title="sphinxcontrib.autohttp.tornado"><code class="xref js js-mod docutils literal notranslate"><span class="pre">sphinxcontrib.autohttp.tornado</span></code></a> compatible with Tornado 4.5 and
+newer.  <cite>Tornado 4.5 &lt;http://www.tornadoweb.org/en/stable/releases/v4.5.0.html&gt;</cite>
+removed the <code class="docutils literal notranslate"><span class="pre">handlers</span></code> attribute from <code class="docutils literal notranslate"><span class="pre">tornado.web.Application</span></code>.
+[<a href="#id18"><span class="problematic" id="id19">:pull:`3`</span></a> by Dave Shawley]</p></li>
+</ul>
+</div>
+<div class="section" id="version-1-6-0">
+<h3>Version 1.6.0<a class="headerlink" href="#version-1-6-0" title="永久链接至标题">¶</a></h3>
+<p>Released on January 13, 2018.</p>
+<ul class="simple">
+<li><p>Minimum compatible version of Sphinx became changed to 1.5.</p></li>
+<li><p>Fixed a bug that prevented building <code class="xref js js-mod docutils literal notranslate"><span class="pre">sphinxcontrib.autohttp</span></code>
+from building properly with Sphinx 1.6 or higher.
+[<a href="#id20"><span class="problematic" id="id21">:oldissue:`182`</span></a>, <a href="#id22"><span class="problematic" id="id23">:oldpull:`152`</span></a> by Dave Shawley]</p></li>
+<li><p>Use HTTPS for <code class="docutils literal notranslate"><span class="pre">:rfc:</span></code> generated links. [<a href="#id24"><span class="problematic" id="id25">:oldpull:`144`</span></a> by Devin Sevilla]</p></li>
+<li><p>Added <code class="docutils literal notranslate"><span class="pre">groupby</span></code> option to <a class="reference internal" href="#directive-autoflask" title="autoflask directive"><code class="xref rst rst-dir docutils literal notranslate"><span class="pre">autoflask</span></code></a> directive.  It makes
+paths be grouped by their view functions.  [<a href="#id26"><span class="problematic" id="id27">:oldpull:`147`</span></a> by Jiangge Zhang]</p></li>
+<li><p>Fixed a bug that <a class="reference internal" href="#directive-autoflask" title="autoflask directive"><code class="xref rst rst-dir docutils literal notranslate"><span class="pre">autoflask</span></code></a> directive had excluded nonsignificant
+routes with <a class="reference external" href="https://tools.ietf.org/html/rfc7231#section-4.3.2">HEAD</a>/<a class="reference external" href="https://tools.ietf.org/html/rfc7231#section-4.3.7">OPTIONS</a>.  [<a href="#id28"><span class="problematic" id="id29">:oldissue:`165`</span></a>]</p></li>
+</ul>
+</div>
+<div class="section" id="version-1-5-0">
+<h3>Version 1.5.0<a class="headerlink" href="#version-1-5-0" title="永久链接至标题">¶</a></h3>
+<p>Released on May 30, 2016.</p>
+<ul class="simple">
+<li><p>Added <a class="reference internal" href="#sphinxcontrib.autohttp.flaskqref" title="sphinxcontrib.autohttp.flaskqref"><code class="xref js js-mod docutils literal notranslate"><span class="pre">sphinxcontrib.autohttp.flaskqref</span></code></a> for generating quick reference
+table.  [<a href="#id30"><span class="problematic" id="id31">:oldpull:`80`</span></a>, <a href="#id32"><span class="problematic" id="id33">:oldpull:`100`</span></a> by Harry Raaymakers]</p></li>
+<li><p><a class="reference internal" href="#directive-autoflask" title="autoflask directive"><code class="xref rst rst-dir docutils literal notranslate"><span class="pre">autoflask</span></code></a> now supports <code class="docutils literal notranslate"><span class="pre">:modules:</span></code> and <code class="docutils literal notranslate"><span class="pre">:undoc-modules:</span></code>
+arguments, used to filter documented flask endpoints by view module
+[<a href="#id34"><span class="problematic" id="id35">:oldpull:`102`</span></a> by Ivelin Slavov]</p></li>
+<li><p>Added <code class="docutils literal notranslate"><span class="pre">:order:</span></code> option to <a class="reference internal" href="#directive-autoflask" title="autoflask directive"><code class="xref rst rst-dir docutils literal notranslate"><span class="pre">autoflask</span></code></a> directive.
+[<a href="#id36"><span class="problematic" id="id37">:oldpull:`103`</span></a> by Justin Gruca]</p></li>
+<li><p>HTTP message headers become to link the recent RFCs (<span class="target" id="index-0"></span><a class="rfc reference external" href="https://tools.ietf.org/html/rfc7230.html"><strong>RFC 7230</strong></a>, <span class="target" id="index-1"></span><a class="rfc reference external" href="https://tools.ietf.org/html/rfc7231.html"><strong>RFC 7231</strong></a>,
+<span class="target" id="index-2"></span><a class="rfc reference external" href="https://tools.ietf.org/html/rfc7232.html"><strong>RFC 7232</strong></a>, <span class="target" id="index-3"></span><a class="rfc reference external" href="https://tools.ietf.org/html/rfc7233.html"><strong>RFC 7233</strong></a>, <span class="target" id="index-4"></span><a class="rfc reference external" href="https://tools.ietf.org/html/rfc7234.html"><strong>RFC 7234</strong></a>, <span class="target" id="index-5"></span><a class="rfc reference external" href="https://tools.ietf.org/html/rfc7235.html"><strong>RFC 7235</strong></a>, <span class="target" id="index-6"></span><a class="rfc reference external" href="https://tools.ietf.org/html/rfc7236.html"><strong>RFC 7236</strong></a>, <span class="target" id="index-7"></span><a class="rfc reference external" href="https://tools.ietf.org/html/rfc7237.html"><strong>RFC 7237</strong></a>,
+that are separated to multiple RFCs from the old one) instead of <span class="target" id="index-8"></span><a class="rfc reference external" href="https://tools.ietf.org/html/rfc2615.html"><strong>RFC 2615</strong></a>
+which is replaced by them in 2014.
+[<a href="#id38"><span class="problematic" id="id39">:oldpull:`105`</span></a>, <a href="#id40"><span class="problematic" id="id41">:oldpull:`106`</span></a> by Alex C. (iscandr)]</p></li>
+<li><p>Support <code class="docutils literal notranslate"><span class="pre">resolve_any_xref</span></code> method introduced since Sphinx 1.3
+[<a href="#id42"><span class="problematic" id="id43">:oldpull:`108`</span></a> by Takayuki Shimizukawa]</p></li>
+<li><p>It no more warns non-standard message headers without <code class="docutils literal notranslate"><span class="pre">X-</span></code> prefix
+according as the deprecation of the practice of prefixing the names of
+unstandardized parameters with <code class="docutils literal notranslate"><span class="pre">X-</span></code> in all IETF protocols since June 2012
+by <span class="target" id="index-9"></span><a class="rfc reference external" href="https://tools.ietf.org/html/rfc6648.html"><strong>RFC 6648</strong></a>.  [<a href="#id44"><span class="problematic" id="id45">:oldpull:`114`</span></a> by Dolan Murvihill]</p></li>
+<li><p>Fixed performance bottleneck in doctree lookup by adding a cache for it.
+[<a href="#id46"><span class="problematic" id="id47">:oldpull:`115`</span></a> by Kai Lautaportti]</p></li>
+<li><p>Added <a class="reference external" href="http://www.ietf.org/rfc/rfc7725.txt">451 Unavailable For Legal Reasons</a> to <a class="reference internal" href="#role-http:statuscode" title="http:statuscode role"><code class="xref rst rst-role docutils literal notranslate"><span class="pre">http:statuscode</span></code></a>.
+[<a href="#id48"><span class="problematic" id="id49">:oldpull:`117`</span></a> by Xavier Oliver]</p></li>
+</ul>
+</div>
+<div class="section" id="version-1-4-0">
+<h3>Version 1.4.0<a class="headerlink" href="#version-1-4-0" title="永久链接至标题">¶</a></h3>
+<p>Released on August 13, 2015.</p>
+<ul class="simple">
+<li><p>Added <a class="reference external" href="http://tools.ietf.org/html/rfc6585#section-4">429 Too Many Requests</a> as a valid
+<a class="reference internal" href="#role-http:statuscode" title="http:statuscode role"><code class="xref rst rst-role docutils literal notranslate"><span class="pre">http:statuscode</span></code></a>.  [<a href="#id50"><span class="problematic" id="id51">:oldpull:`81`</span></a> by DDBReloaded]</p></li>
+<li><p>Became to not resolve references if they can’t be resolved.
+[<a href="#id52"><span class="problematic" id="id53">:oldpull:`87`</span></a> by Ken Robbins]</p></li>
+<li><p>Became to preserve endpoint ordering when <code class="docutils literal notranslate"><span class="pre">:endpoints:</span></code> option is given.
+[<a href="#id54"><span class="problematic" id="id55">:oldpull:`88`</span></a> by Dan Callaghan]</p></li>
+<li><p>Added status codes for WebDAV.  [<a href="#id56"><span class="problematic" id="id57">:oldpull:`92`</span></a> by Ewen Cheslack-Postava]</p></li>
+<li><p>Added <a class="reference external" href="http://www.w3.org/TR/cors/">CORS</a> headers.  [<a href="#id58"><span class="problematic" id="id59">:oldpull:`96`</span></a> by Tomi Pieviläinen]</p></li>
+<li><p>Now <a class="reference internal" href="../test/index.html#sphinxcontrib.autohttp.flask" title="sphinxcontrib.autohttp.flask"><code class="xref js js-mod docutils literal notranslate"><span class="pre">sphinxcontrib.autohttp.flask</span></code></a> supports multiple paths for
+endpoints using same HTTP method.  [<a href="#id60"><span class="problematic" id="id61">:oldpull:`97`</span></a> by Christian Felder]</p></li>
+</ul>
+</div>
+<div class="section" id="version-1-3-0">
+<h3>Version 1.3.0<a class="headerlink" href="#version-1-3-0" title="永久链接至标题">¶</a></h3>
+<p>Released on July 31, 2014.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">jsonparameter</span></code>/<code class="docutils literal notranslate"><span class="pre">jsonparam</span></code>/<code class="docutils literal notranslate"><span class="pre">json</span></code> became deprecated and split
+into <code class="docutils literal notranslate"><span class="pre">reqjsonobj</span></code>/<code class="docutils literal notranslate"><span class="pre">reqjson</span></code>/<code class="docutils literal notranslate"><span class="pre">&lt;jsonobj</span></code>/<code class="docutils literal notranslate"><span class="pre">&lt;json</span></code> and
+<code class="docutils literal notranslate"><span class="pre">reqjsonarr</span></code>/<code class="docutils literal notranslate"><span class="pre">&lt;jsonarr</span></code>.
+[<a href="#id62"><span class="problematic" id="id63">:oldissue:`55`</span></a>, <a href="#id64"><span class="problematic" id="id65">:oldpull:`72`</span></a> by Alexander Shorin]</p></li>
+<li><p>Support synopsis (short description in HTTP index),
+deprecation and noindex options for resources.
+[<a href="#id66"><span class="problematic" id="id67">:oldissue:`55`</span></a>, <a href="#id68"><span class="problematic" id="id69">:oldpull:`72`</span></a> by Alexander Shorin]</p></li>
+<li><p>Stabilize order of index items.
+[<a href="#id70"><span class="problematic" id="id71">:oldissue:`55`</span></a>, <a href="#id72"><span class="problematic" id="id73">:oldpull:`72`</span></a> by Alexander Shorin]</p></li>
+<li><p>Added <a class="reference internal" href="#directive-http:any" title="http:any directive"><code class="xref rst rst-dir docutils literal notranslate"><span class="pre">http:any</span></code></a> directive and <a class="reference internal" href="#role-http:any" title="http:any role"><code class="xref rst rst-role docutils literal notranslate"><span class="pre">http:any</span></code></a>
+role for <code class="docutils literal notranslate"><span class="pre">ANY</span></code> method.  [<a href="#id74"><span class="problematic" id="id75">:oldissue:`55`</span></a>, <a href="#id76"><span class="problematic" id="id77">:oldpull:`72`</span></a> by Alexander Shorin]</p></li>
+<li><p>Added <a class="reference internal" href="#directive-http:copy" title="http:copy directive"><code class="xref rst rst-dir docutils literal notranslate"><span class="pre">http:copy</span></code></a> directive and <a class="reference internal" href="#role-http:copy" title="http:copy role"><code class="xref rst rst-role docutils literal notranslate"><span class="pre">http:copy</span></code></a>
+role for <code class="docutils literal notranslate"><span class="pre">COPY</span></code> method.  [<a href="#id78"><span class="problematic" id="id79">:oldissue:`55`</span></a>, <a href="#id80"><span class="problematic" id="id81">:oldpull:`72`</span></a> by Alexander Shorin]</p></li>
+<li><p>Added <a class="reference internal" href="#role-http:header" title="http:header role"><code class="xref rst rst-role docutils literal notranslate"><span class="pre">http:header</span></code></a> role that also creates reference to the
+related specification.  [<a href="#id82"><span class="problematic" id="id83">:oldissue:`55`</span></a>, <a href="#id84"><span class="problematic" id="id85">:oldpull:`72`</span></a> by Alexander Shorin]</p></li>
+<li><p><a class="reference internal" href="#role-http:statuscode" title="http:statuscode role"><code class="xref rst rst-role docutils literal notranslate"><span class="pre">http:statuscode</span></code></a> role became to provide references to
+specification sections.  [<a href="#id86"><span class="problematic" id="id87">:oldissue:`55`</span></a>, <a href="#id88"><span class="problematic" id="id89">:oldpull:`72`</span></a> by Alexander Shorin]</p></li>
+<li><p>Fixed Python 3 incompatibility of <code class="xref js js-mod docutils literal notranslate"><span class="pre">autohttp.tornado</span></code>.
+[<a href="#id90"><span class="problematic" id="id91">:oldpull:`61`</span></a> by Dave Shawley]</p></li>
+</ul>
+</div>
+<div class="section" id="version-1-2-1">
+<h3>Version 1.2.1<a class="headerlink" href="#version-1-2-1" title="永久链接至标题">¶</a></h3>
+<p>Released on March 31, 2014.</p>
+<ul class="simple">
+<li><p>Fixed broken Python 2.6 compatibility.  [<a href="#id92"><span class="problematic" id="id93">:oldpull:`41`</span></a> by Kien Pham]</p></li>
+<li><p>Added missing link to <a class="reference external" href="http://pythonhosted.org/six/">six</a> dependency.</p></li>
+</ul>
+</div>
+<div class="section" id="version-1-2-0">
+<h3>Version 1.2.0<a class="headerlink" href="#version-1-2-0" title="永久链接至标题">¶</a></h3>
+<p>Released on October 19, 2013.</p>
+<ul class="simple">
+<li><p>Python 3 support!  [<a href="#id94"><span class="problematic" id="id95">:oldpull:`34`</span></a> by murchik, <a href="#id96"><span class="problematic" id="id97">:oldpull:`39`</span></a> Donald Stufft]</p></li>
+<li><p>Added support for Tornado webapps. (<a class="reference internal" href="#sphinxcontrib.autohttp.tornado" title="sphinxcontrib.autohttp.tornado"><code class="xref js js-mod docutils literal notranslate"><span class="pre">sphinxcontrib.autohttp.tornado</span></code></a>)
+[<a href="#id98"><span class="problematic" id="id99">:oldpull:`38`</span></a> by Rodrigo Machado]</p></li>
+</ul>
+</div>
+<div class="section" id="version-1-1-9">
+<h3>Version 1.1.9<a class="headerlink" href="#version-1-1-9" title="永久链接至标题">¶</a></h3>
+<p>Released on August 8, 2013.</p>
+<ul class="simple">
+<li><p>Now <a class="reference external" href="http://bottlepy.org/">Bottle</a> apps can be loaded by <code class="xref js js-mod docutils literal notranslate"><span class="pre">autohttp</span></code>.
+See <a class="reference internal" href="#sphinxcontrib.autohttp.bottle" title="sphinxcontrib.autohttp.bottle"><code class="xref js js-mod docutils literal notranslate"><span class="pre">sphinxcontrib.autohttp.bottle</span></code></a> module.
+[<a class="reference external" href="https://github.com/jalaziz/sphinxcontrib-httpdomain">patch</a> by Jameel Al-Aziz]</p></li>
+<li><p>Added <code class="docutils literal notranslate"><span class="pre">:reqheader:</span></code> and <code class="docutils literal notranslate"><span class="pre">:resheader:</span></code> option flags.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">:jsonparameter:</span></code> can be typed.  [<a href="#id100"><span class="problematic" id="id101">:oldpull:`31`</span></a> by Chuck Harmston]</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">:queryparameter:</span></code> can be typed.  [<a href="#id102"><span class="problematic" id="id103">:oldpull:`37`</span></a> by Viktor Haag]</p></li>
+<li><p><a class="reference internal" href="#directive-autoflask" title="autoflask directive"><code class="xref rst rst-dir docutils literal notranslate"><span class="pre">autoflask</span></code></a> and <a class="reference internal" href="#directive-autobottle" title="autobottle directive"><code class="xref rst rst-dir docutils literal notranslate"><span class="pre">autobottle</span></code></a> directives now allow
+empty <code class="docutils literal notranslate"><span class="pre">:endpoints:</span></code>, <code class="docutils literal notranslate"><span class="pre">:undoc-endpoints:</span></code>, and <code class="docutils literal notranslate"><span class="pre">:blueprints:</span></code>
+arguments.  [<a href="#id104"><span class="problematic" id="id105">:oldpull:`33`</span></a> by Michael Twomey]</p></li>
+</ul>
+</div>
+<div class="section" id="version-1-1-8">
+<h3>Version 1.1.8<a class="headerlink" href="#version-1-1-8" title="永久链接至标题">¶</a></h3>
+<p>Released on April 10, 2013.</p>
+<ul class="simple">
+<li><p>Added better support for docstrings in <code class="xref js js-class docutils literal notranslate"><span class="pre">flask.views.MethodView()</span></code>.
+[<a href="#id107"><span class="problematic" id="id108">:oldpull:`26`</span></a> by Simon Metson]</p></li>
+<li><p>Added <code class="docutils literal notranslate"><span class="pre">:jsonparameter:</span></code> along side <code class="docutils literal notranslate"><span class="pre">:form:</span></code> and <code class="docutils literal notranslate"><span class="pre">:query:</span></code> flag options.
+[<a href="#id109"><span class="problematic" id="id110">:oldpull:`25`</span></a> by Adam Lowry]</p></li>
+<li><p>Fixed issue with undefined <code class="docutils literal notranslate"><span class="pre">Value</span></code> and <code class="docutils literal notranslate"><span class="pre">umethod</span></code> variables.
+[<a href="#id111"><span class="problematic" id="id112">:oldpull:`23`</span></a> by Sebastian Kalinowski and <a href="#id113"><span class="problematic" id="id114">:oldpull:`24`</span></a> by Viktor Haag]</p></li>
+<li><p>Now <code class="docutils literal notranslate"><span class="pre">http</span></code> Pygments lexer can Handle continuous header lines well.</p></li>
+<li><p>Added <code class="docutils literal notranslate"><span class="pre">:undoc-blueprints:</span></code> flag option to <a class="reference internal" href="#directive-autoflask" title="autoflask directive"><code class="xref rst rst-dir docutils literal notranslate"><span class="pre">autoflask</span></code></a> directive.
+[<a href="#id115"><span class="problematic" id="id116">:oldpull:`21`</span></a> by Roman Podolyaka]</p></li>
+<li><p>Fixed <a href="#id117"><span class="problematic" id="id118">:oldissue:`29`</span></a>, a bug that <a class="reference internal" href="#directive-autoflask" title="autoflask directive"><code class="xref rst rst-dir docutils literal notranslate"><span class="pre">autoflask</span></code></a> directive raised
+<a href="#id119"><span class="problematic" id="id120">:exc:`UnicodeDecodeError`</span></a> when it contains non-ASCII characters.
+[<a href="#id121"><span class="problematic" id="id122">:oldissue:`29`</span></a> and <a href="#id123"><span class="problematic" id="id124">:oldpull:`18`</span></a> by Eunchong Yu]</p></li>
+<li><p>Added <code class="docutils literal notranslate"><span class="pre">:endpoints:</span></code> flag option to <a class="reference internal" href="#directive-autoflask" title="autoflask directive"><code class="xref rst rst-dir docutils literal notranslate"><span class="pre">autoflask</span></code></a> directive.
+[<a href="#id125"><span class="problematic" id="id126">:oldpull:`17`</span></a> by Eunchong Yu]</p></li>
+</ul>
+</div>
+<div class="section" id="version-1-1-7">
+<h3>Version 1.1.7<a class="headerlink" href="#version-1-1-7" title="永久链接至标题">¶</a></h3>
+<p>Released on March 28, 2012.</p>
+<ul class="simple">
+<li><p>Added <a class="reference external" href="https://tools.ietf.org/html/rfc5789#section-2">PATCH</a> method support.  See <a class="reference internal" href="#role-http:patch" title="http:patch role"><code class="xref rst rst-role docutils literal notranslate"><span class="pre">http:patch</span></code></a> role
+and <a class="reference internal" href="#directive-http:patch" title="http:patch directive"><code class="xref rst rst-dir docutils literal notranslate"><span class="pre">http:patch</span></code></a> directive.
+[<a href="#id127"><span class="problematic" id="id128">:oldpull:`9`</span></a> and <a href="#id129"><span class="problematic" id="id130">:oldpull:`10`</span></a> by Jeffrey Finkelstein]</p></li>
+<li><p>The HTTP routing table can be grouped based on prefix by specifying
+<code class="xref js js-data docutils literal notranslate"><span class="pre">http_index_ignore_prefixes</span></code> config in list of common prefixes to
+ignore.  [<a href="#id131"><span class="problematic" id="id132">:oldpull:`7`</span></a> and <a href="#id133"><span class="problematic" id="id134">:oldpull:`8`</span></a> by Andrey Popp]</p></li>
+<li><p>The order of HTTP routing table now provides sorting by path as key.
+Previously it was sorted by HTTP method and then by path, which is
+non-intuitive.  [<a href="#id135"><span class="problematic" id="id136">:oldpull:`7`</span></a> and <a href="#id137"><span class="problematic" id="id138">:oldpull:`8`</span></a> by Andrey Popp]</p></li>
+</ul>
+</div>
+<div class="section" id="version-1-1-6">
+<h3>Version 1.1.6<a class="headerlink" href="#version-1-1-6" title="永久链接至标题">¶</a></h3>
+<p>Released on December 16, 2011.</p>
+<ul class="simple">
+<li><p>Added <code class="docutils literal notranslate"><span class="pre">http</span></code> custom lexer for Pygments so that HTTP sessions can be
+highlighted in <code class="xref rst rst-dir docutils literal notranslate"><span class="pre">code-block</span></code> or <code class="xref rst rst-dir docutils literal notranslate"><span class="pre">sourcecode</span></code> directives.</p></li>
+</ul>
+</div>
+<div class="section" id="version-1-1-5">
+<h3>Version 1.1.5<a class="headerlink" href="#version-1-1-5" title="永久链接至标题">¶</a></h3>
+<p>Released on July 6, 2011.</p>
+<ul class="simple">
+<li><p>Flask 0.6–0.7 compatibility.  Flask renamed
+<code class="xref js js-attr docutils literal notranslate"><span class="pre">static_path</span></code> attribute to
+<code class="xref js js-attr docutils literal notranslate"><span class="pre">static_url_path</span></code>, so <a class="reference internal" href="#directive-autoflask" title="autoflask directive"><code class="xref rst rst-dir docutils literal notranslate"><span class="pre">autoflask</span></code></a> also reflect
+the change.
+[<a href="#id139"><span class="problematic" id="id140">:oldpull:`1`</span></a> by Jeffrey Finkelstein]</p></li>
+</ul>
+</div>
+<div class="section" id="version-1-1-4">
+<h3>Version 1.1.4<a class="headerlink" href="#version-1-1-4" title="永久链接至标题">¶</a></h3>
+<p>Released on June 8, 2011.</p>
+<ul class="simple">
+<li><p>CPython compatibility</p></li>
+<li><p>PyPy compatibility</p></li>
+</ul>
+</div>
+<div class="section" id="version-1-1-3">
+<h3>Version 1.1.3<a class="headerlink" href="#version-1-1-3" title="永久链接至标题">¶</a></h3>
+<p>Released on June 8, 2011.</p>
+<ul class="simple">
+<li><p>PyPy compatibility</p></li>
+</ul>
+</div>
+<div class="section" id="version-1-1-2">
+<h3>Version 1.1.2<a class="headerlink" href="#version-1-1-2" title="永久链接至标题">¶</a></h3>
+<p>Released on June 4, 2011.</p>
+<ul class="simple">
+<li><p>Added <code class="docutils literal notranslate"><span class="pre">:include-empty-docstring:</span></code> flag option.</p></li>
+</ul>
+</div>
+<div class="section" id="version-1-1-1">
+<h3>Version 1.1.1<a class="headerlink" href="#version-1-1-1" title="永久链接至标题">¶</a></h3>
+<p>Released on June 4, 2011.</p>
+<ul class="simple">
+<li><p>Fixed a backward incompatibility bug.</p></li>
+</ul>
+</div>
+<div class="section" id="version-1-1">
+<h3>Version 1.1<a class="headerlink" href="#version-1-1" title="永久链接至标题">¶</a></h3>
+<p>Released on June 4, 2011.</p>
+<ul class="simple">
+<li><p>Added <a class="reference internal" href="#directive-autoflask" title="autoflask directive"><code class="xref rst rst-dir docutils literal notranslate"><span class="pre">autoflask</span></code></a> directive.</p></li>
+</ul>
+</div>
+<div class="section" id="version-1-0">
+<h3>Version 1.0<a class="headerlink" href="#version-1-0" title="永久链接至标题">¶</a></h3>
+<p>Released on June 2, 2011.  The first release.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, nosy
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

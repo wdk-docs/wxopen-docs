@@ -1,0 +1,135 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, nosy
+# This file is distributed under the same license as the wxopen-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: wxopen-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-11 22:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/wxapp/CodeMgr/async.rst:2
+msgid "6. 通知审核结果"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/async.rst:5
+msgid "当小程序有审核结果后，第三方平台将可以通过开放平台上填写的回调地址，获得审核结果通知。"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/async.rst:7
+msgid "审核通过时，接收到的推送XML数据包示例如下："
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/async.rst:19
+#: ../../source/wxapp/CodeMgr/async.rst:56
+msgid "参数说明："
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/async.rst:22
+#: ../../source/wxapp/CodeMgr/async.rst:59
+msgid "参数"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/async.rst:22
+#: ../../source/wxapp/CodeMgr/async.rst:59
+msgid "说明"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/async.rst:24
+#: ../../source/wxapp/CodeMgr/async.rst:61
+msgid "ToUserName"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/async.rst:24
+#: ../../source/wxapp/CodeMgr/async.rst:61
+msgid "小程序的原始ID"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/async.rst:26
+#: ../../source/wxapp/CodeMgr/async.rst:63
+msgid "FromUserName"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/async.rst:26
+#: ../../source/wxapp/CodeMgr/async.rst:63
+msgid "发送方帐号（一个OpenID，此时发送方是系统帐号）"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/async.rst:28
+#: ../../source/wxapp/CodeMgr/async.rst:65
+msgid "CreateTime"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/async.rst:28
+#: ../../source/wxapp/CodeMgr/async.rst:65
+msgid "消息创建时间 （整型），时间戳"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/async.rst:30
+#: ../../source/wxapp/CodeMgr/async.rst:67
+msgid "MsgType"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/async.rst:30
+#: ../../source/wxapp/CodeMgr/async.rst:67
+msgid "消息类型，event"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/async.rst:32
+#: ../../source/wxapp/CodeMgr/async.rst:69
+msgid "Event"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/async.rst:32
+#: ../../source/wxapp/CodeMgr/async.rst:69
+msgid "事件类型 weapp_audit_success"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/async.rst:34
+msgid "SuccTime"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/async.rst:34
+msgid "审核成功时的时间（整形），时间戳"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/async.rst:37
+msgid "审核不通过时，接收到的推送XML数据包示例如下："
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/async.rst:71
+msgid "Reason"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/async.rst:71
+msgid "审核失败的原因"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/async.rst:73
+msgid "FailTime"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/async.rst:73
+msgid "审核失败时的时间（整型），时间戳"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/async.rst:75
+msgid "ScreenShot"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/async.rst:75
+msgid "审核失败的小程序截图示例 （xxx yyy zzz是图片media_id，可通过获取永久素材接口 拉取截图内容）"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/async.rst:78
+msgid "除了消息通知之外，第三方平台也可通过接口查询审核状态。"
+msgstr ""
+

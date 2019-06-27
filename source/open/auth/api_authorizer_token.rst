@@ -1,19 +1,18 @@
-5、获取（刷新）授权公众号或小程序的接口调用凭据（令牌）
+5. 获取（刷新）授权公众号或小程序的接口调用凭据（令牌）
 =======================================================
 
-该 API
-用于在授权方令牌（authorizer_access_token）失效时，可用刷新令牌（authorizer_refresh_token）获取新的令牌。请注意，此处
-token 是 2 小时刷新一次，开发者需要自行进行 token 的缓存，避免 token
-的获取次数达到每日的限定额度。缓存方法可以参考：http://mp.weixin.qq.com/wiki/2/88b2bf1265a707c031e51f26ca5e6512.html
+该 API 用于在授权方令牌（authorizer_access_token）失效时，
+可用刷新令牌（authorizer_refresh_token）获取新的令牌。请注意，
+此处 token 是 2 小时刷新一次，开发者需要自行进行 token 的缓存，
+避免 token 的获取次数达到每日的限定额度。
+缓存方法可以参考：http://mp.weixin.qq.com/wiki/2/88b2bf1265a707c031e51f26ca5e6512.html
 
 请求格式
---------
 
 ``POST`` **https**:// api.weixin.qq.com
 /cgi-bin/component/api_authorizer_token?component_access_token=xxxxx
 
 请求数据
---------
 
 .. code:: json
 
@@ -43,7 +42,6 @@ token 是 2 小时刷新一次，开发者需要自行进行 token 的缓存，�
 +--------+-------------------------------------------------------------+
 
 返回结果
---------
 
 .. code:: json
 

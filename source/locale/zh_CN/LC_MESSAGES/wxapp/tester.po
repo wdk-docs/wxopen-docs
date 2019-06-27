@@ -1,0 +1,135 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, nosy
+# This file is distributed under the same license as the wxopen-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: wxopen-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-11 22:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/wxapp/tester.rst:2
+msgid "成员管理"
+msgstr ""
+
+#: ../../source/wxapp/tester.rst:4
+msgid "第三方平台在帮助旗下授权的小程序提交代码审核之前，可先让小程序运营者体验，体验之前需要将运营者的个人微信号添加到该小程序的体验者名单中。"
+msgstr ""
+
+#: ../../source/wxapp/tester.rst:6
+msgid "注意：如果运营者同时也是该小程序的管理员，则无需绑定，管理员默认有体验权限。"
+msgstr ""
+
+#: ../../source/wxapp/tester.rst:9
+msgid "1.绑定体验者"
+msgstr ""
+
+#: ../../source/wxapp/tester.rst:11
+msgid "``POST`` **https**://api.weixin.qq.com/wxa/bind_tester?access_token=TOKEN"
+msgstr ""
+
+#: ../../source/wxapp/tester.rst:15 ../../source/wxapp/tester.rst:64
+msgid "请求数据"
+msgstr ""
+
+#: ../../source/wxapp/tester.rst:23 ../../source/wxapp/tester.rst:72
+msgid "参数说明："
+msgstr ""
+
+#: ../../source/wxapp/tester.rst:26 ../../source/wxapp/tester.rst:75
+msgid "参数"
+msgstr ""
+
+#: ../../source/wxapp/tester.rst:26 ../../source/wxapp/tester.rst:46
+#: ../../source/wxapp/tester.rst:75 ../../source/wxapp/tester.rst:99
+msgid "说明"
+msgstr ""
+
+#: ../../source/wxapp/tester.rst:28 ../../source/wxapp/tester.rst:77
+msgid "access_token"
+msgstr ""
+
+#: ../../source/wxapp/tester.rst:28 ../../source/wxapp/tester.rst:77
+msgid "请使用第三方平台获取到的该小程序授权的 authorizer_access_token"
+msgstr ""
+
+#: ../../source/wxapp/tester.rst:29 ../../source/wxapp/tester.rst:78
+msgid "wechatid"
+msgstr ""
+
+#: ../../source/wxapp/tester.rst:29 ../../source/wxapp/tester.rst:78
+msgid "微信号"
+msgstr ""
+
+#: ../../source/wxapp/tester.rst:33 ../../source/wxapp/tester.rst:84
+msgid "返回结果"
+msgstr ""
+
+#: ../../source/wxapp/tester.rst:43 ../../source/wxapp/tester.rst:96
+msgid "错误码"
+msgstr ""
+
+#: ../../source/wxapp/tester.rst:46 ../../source/wxapp/tester.rst:99
+msgid "返回码"
+msgstr ""
+
+#: ../../source/wxapp/tester.rst:48 ../../source/wxapp/tester.rst:101
+msgid "-1"
+msgstr ""
+
+#: ../../source/wxapp/tester.rst:48 ../../source/wxapp/tester.rst:101
+msgid "系统繁忙"
+msgstr ""
+
+#: ../../source/wxapp/tester.rst:49
+msgid "85001"
+msgstr ""
+
+#: ../../source/wxapp/tester.rst:49
+msgid "微信号不存在或微信号设置为不可搜索"
+msgstr ""
+
+#: ../../source/wxapp/tester.rst:50
+msgid "85002"
+msgstr ""
+
+#: ../../source/wxapp/tester.rst:50
+msgid "小程序绑定的体验者数量达到上限"
+msgstr ""
+
+#: ../../source/wxapp/tester.rst:51
+msgid "85003"
+msgstr ""
+
+#: ../../source/wxapp/tester.rst:51
+msgid "微信号绑定的小程序体验者达到上限"
+msgstr ""
+
+#: ../../source/wxapp/tester.rst:52
+msgid "85004"
+msgstr ""
+
+#: ../../source/wxapp/tester.rst:52
+msgid "微信号已经绑定"
+msgstr ""
+
+#: ../../source/wxapp/tester.rst:56
+msgid "2.解绑体验者"
+msgstr ""
+
+#: ../../source/wxapp/tester.rst:58
+msgid ""
+"``POST`` "
+"**https**://api.weixin.qq.com/wxa/unbind_tester?access_token=TOKEN"
+msgstr ""
+

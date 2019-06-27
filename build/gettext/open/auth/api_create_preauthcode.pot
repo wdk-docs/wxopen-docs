@@ -1,0 +1,50 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, nosy
+# This file is distributed under the same license as the wxopen-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: wxopen-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-11 22:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/open/auth/api_create_preauthcode.rst:2
+msgid "3. 获取预授权码 pre_auth_code"
+msgstr ""
+
+#: ../../source/open/auth/api_create_preauthcode.rst:4
+msgid "该 API 用于获取预授权码。预授权码用于公众号或小程序授权时的第三方平台方安全验证。"
+msgstr ""
+
+#: ../../source/open/auth/api_create_preauthcode.rst:6
+msgid "请求格式"
+msgstr ""
+
+#: ../../source/open/auth/api_create_preauthcode.rst:8
+msgid "``POST`` **https**://api.weixin.qq.com/cgi-bin/component/api_create_preauthcode?component_access_token=xxx"
+msgstr ""
+
+#: ../../source/open/auth/api_create_preauthcode.rst:11
+msgid "请求数据"
+msgstr ""
+
+#: ../../source/open/auth/api_create_preauthcode.rst:19
+msgid "请求参数说明 参数 说明 component_appid 第三方平台方 appid"
+msgstr ""
+
+#: ../../source/open/auth/api_create_preauthcode.rst:21
+msgid "返回结果"
+msgstr ""
+
+#: ../../source/open/auth/api_create_preauthcode.rst:30
+msgid "结果参数说明 参数 说明 pre_auth_code 预授权码 expires_in 有效期，为 10 分钟"
+msgstr ""
+

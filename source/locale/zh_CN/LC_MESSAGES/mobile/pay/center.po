@@ -1,0 +1,128 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, nosy
+# This file is distributed under the same license as the wxopen-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: wxopen-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-11 22:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/mobile/pay/center.rst:2
+msgid "微信APP支付接入商户服务中心"
+msgstr ""
+
+#: ../../source/mobile/pay/center.rst:5
+msgid "1. 申请流程指引"
+msgstr ""
+
+#: ../../source/mobile/pay/center.rst:7
+msgid "1.1 申请流程图"
+msgstr ""
+
+#: ../../source/mobile/pay/center.rst:11
+msgid "1.2 申请接入步骤详细说明"
+msgstr ""
+
+#: ../../source/mobile/pay/center.rst:13
+msgid "1.2.1 到微信开放平台添加移动应用"
+msgstr ""
+
+#: ../../source/mobile/pay/center.rst:15
+msgid "目前仅对已通过认证的开发者创建的移动应用开放申请，请登录微信开放平台 ，添加移动应用，等待审核。"
+msgstr ""
+
+#: ../../source/mobile/pay/center.rst:17
+msgid "1.2.2 申请支付功能，提交相关资料"
+msgstr ""
+
+#: ../../source/mobile/pay/center.rst:19
+msgid "审核通过后，可在管理中心-移动应用，为通过审核的移动应用申请支付功能；"
+msgstr ""
+
+#: ../../source/mobile/pay/center.rst:23
+msgid "1）填写资料：根据页面提示，分别填写应用基本资料、企业审核资料和财务审核资料"
+msgstr ""
+
+#: ../../source/mobile/pay/center.rst:27
+msgid "每一步填写所需的材料均会在填写前给予相应提示，您可提前进行准备，以加快填写和审批速度。"
+msgstr ""
+
+#: ../../source/mobile/pay/center.rst:29
+msgid "2）等待审核：微信团队会在7个工作日给出审核结果，结果会发送到开放平台通知中心和邮箱中；"
+msgstr ""
+
+#: ../../source/mobile/pay/center.rst:31
+msgid "通知中心：（登录后页面右上角）"
+msgstr ""
+
+#: ../../source/mobile/pay/center.rst:35
+msgid "通过审核后，商户将收到邮件通知，邮件中包含商户号和登录密码，请牢记申请时填写的邮箱地址。"
+msgstr ""
+
+#: ../../source/mobile/pay/center.rst:37
+msgid "1.2.3 验证结算账户，在线签署协议"
+msgstr ""
+
+#: ../../source/mobile/pay/center.rst:39
+msgid "1）验证账户，签署协议："
+msgstr ""
+
+#: ../../source/mobile/pay/center.rst:41
+msgid "微信支付会向申请时提交的结算账户汇入一笔金额随机的验证款，登陆商户平台 回填验证款，并签署在线协议，开启结算功能。"
+msgstr ""
+
+#: ../../source/mobile/pay/center.rst:43
+msgid "2）开始开发工作："
+msgstr ""
+
+#: ../../source/mobile/pay/center.rst:45
+msgid "开发文档：微信支付App支付开发文档"
+msgstr ""
+
+#: ../../source/mobile/pay/center.rst:48
+msgid "2. 开放类目及资费标准"
+msgstr ""
+
+#: ../../source/mobile/pay/center.rst:51
+msgid "移动应用申请接入微信APP支付，商户使用微信支付服务时，需按照腾讯规定的标准交纳微信支付手续费。费率及收费方式参见经营范围 。"
+msgstr ""
+
+#: ../../source/mobile/pay/center.rst:54
+msgid "3. 常见商户接入问题"
+msgstr ""
+
+#: ../../source/mobile/pay/center.rst:57
+msgid "3.1 我提交完申请资料之后一直没有通过审核，为什么？"
+msgstr ""
+
+#: ../../source/mobile/pay/center.rst:59
+msgid "在收到商户提交的申请资料之后，微信审核团队会在7个工作日以内通知审核结果。若审核被驳回，商户可登录微信开放平台查看驳回原因，请根据驳回原因调整填写内容，并再次提交，微信审核团队将继续进行审核。"
+msgstr ""
+
+#: ../../source/mobile/pay/center.rst:61
+msgid "3.2 个人开发的移动应用可以申请微信APP支付吗？"
+msgstr ""
+
+#: ../../source/mobile/pay/center.rst:63
+msgid "仅接受公司主体的移动应用申请微信APP支付权限。"
+msgstr ""
+
+#: ../../source/mobile/pay/center.rst:65
+msgid "3.3 交纳的支付手续费，会否开具发票或收据吗？"
+msgstr ""
+
+#: ../../source/mobile/pay/center.rst:67
+msgid "会开具支付手续费发票。"
+msgstr ""
+

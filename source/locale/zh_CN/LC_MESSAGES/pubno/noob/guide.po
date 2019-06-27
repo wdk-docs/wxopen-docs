@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, nosy
+# This file is distributed under the same license as the wxopen-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: wxopen-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-11 22:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/pubno/noob/guide.rst:2
+msgid "接入指南"
+msgstr ""
+
+#: ../../source/pubno/noob/guide.rst:5
+msgid ""
+"接入指南 第一步：申请消息接口 登录https://mp.weixin.qq.com/ 后，在公众平台后台管理页面 – "
+"开发者中心页，点击“修改配置”按钮，填写URL、Token和EncodingAESKey，其中URL是开发者用来接收微信服务器数据的接口URL。Token可由开发者可以任意填写，用作生成签名（该Token会和接口URL中包含的Token进行比对，从而验证安全性）。EncodingAESKey由开发者手动填写或随机生成，将用作消息体加解密密钥。同时，开发者可选择消息加解密方式：明文模式、兼容模式和安全模式。模式的选择与服务器配置在提交后都会立即生效，请开发者谨慎填写及选择。加解密方式的默认状态为明文模式，选择兼容模式和安全模式需要提前配置好相关加解密代码，详情请参考消息体签名及加解密部分的文档。"
+msgstr ""
+
+#: ../../source/pubno/noob/guide.rst:9
+msgid "接入指南新版.png"
+msgstr ""
+
+#: ../../source/pubno/noob/guide.rst:11
+msgid "第二步：验证URL有效性 开发者提交信息后，微信服务器将发送GET请求到填写的URL上，GET请求携带四个参数："
+msgstr ""
+
+#: ../../source/pubno/noob/guide.rst:14
+msgid ""
+"参数      描述 signature       "
+"微信加密签名，signature结合了开发者填写的token参数和请求中的timestamp参数、nonce参数。 timestamp"
+"       时间戳 nonce   随机数 echostr 随机字符串 "
+"开发者通过检验signature对请求进行校验（下面有校验方式）。若确认此次GET请求来自微信服务器，请原样返回echostr参数内容，则接入生效，成为开发者成功，否则接入失败。"
+msgstr ""
+
+#: ../../source/pubno/noob/guide.rst:21
+msgid "加密/校验流程如下："
+msgstr ""
+
+#: ../../source/pubno/noob/guide.rst:23
+msgid "将token、timestamp、nonce三个参数进行字典序排序"
+msgstr ""
+
+#: ../../source/pubno/noob/guide.rst:24
+msgid "将三个参数字符串拼接成一个字符串进行sha1加密"
+msgstr ""
+
+#: ../../source/pubno/noob/guide.rst:25
+msgid "3. 开发者获得加密后的字符串可与signature对比，标识该请求来源于微信 PHP示例代码下载：下载"
+msgstr ""
+
+#: ../../source/pubno/noob/guide.rst:28
+msgid ""
+"第三步：成为开发者 "
+"验证URL有效性成功后即接入生效，成为开发者。如果公众帐号类型为服务号（订阅号只能使用普通消息接口），可以在公众平台网站中申请认证，认证成功的服务号将获得众多接口权限，以满足开发者需求。"
+msgstr ""
+
+#: ../../source/pubno/noob/guide.rst:31
+msgid "此后用户每次向公众帐号发送消息、或者产生自定义菜单点击事件时，响应URL将得到推送。"
+msgstr ""
+
+#: ../../source/pubno/noob/guide.rst:33
+msgid "公众帐号调用各接口时，一般会获得正确的结果，具体结果可见对应接口的说明。返回错误时，可根据返回码来查询错误原因。全局返回码说明"
+msgstr ""
+
+#: ../../source/pubno/noob/guide.rst:35
+msgid "用户向公众帐号发送消息时，公众帐号方收到的消息发送者是一个OpenID，是使用用户微信号加密后的结果，每个用户对每个公众帐号有一个唯一的OpenID。"
+msgstr ""
+
+#: ../../source/pubno/noob/guide.rst:37
+msgid "此外请注意，微信公众帐号接口只支持80接口。"
+msgstr ""
+

@@ -1,0 +1,50 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, nosy
+# This file is distributed under the same license as the wxopen-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: wxopen-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-11 22:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/wxapp/CodeMgr/change_visitstatus.rst:2
+msgid "10. 修改线上代码可见状态"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/change_visitstatus.rst:4
+msgid "（仅供第三方代小程序调用）"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/change_visitstatus.rst:6
+msgid "请求方式: POST（请使用https协议）"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/change_visitstatus.rst:8
+msgid "https://api.weixin.qq.com/wxa/change_visitstatus?access_token=TOKEN POST数据示例:"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/change_visitstatus.rst:11
+msgid "{ \"action\"=\"close\" } 参数说明:"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/change_visitstatus.rst:16
+msgid "参数      说明 access_token    请使用第三方平台获取到的该小程序授权的authorizer_access_token action  设置可访问状态，发布后默认可访问，close为不可见，open为可见 返回说明（正常时返回的json示例）："
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/change_visitstatus.rst:21
+msgid "{ \"errcode\":0, \"errmsg\":\"ok\", } 错误码说明："
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/change_visitstatus.rst:27
+msgid "返回码     说明 -1      系统繁忙 85021   状态不可变 85022   action非法"
+msgstr ""
+

@@ -1,0 +1,107 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, nosy
+# This file is distributed under the same license as the wxopen-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: wxopen-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-11 22:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/open/auth/api_get_authorizer_info.rst:2
+msgid "6. 获取授权方的帐号基本信息"
+msgstr ""
+
+#: ../../source/open/auth/api_get_authorizer_info.rst:4
+msgid "该 API 用于获取授权方的基本信息，包括头像、昵称、帐号类型、认证类型、微信号、原始ID 和二维码图片 URL。"
+msgstr ""
+
+#: ../../source/open/auth/api_get_authorizer_info.rst:6
+msgid ""
+"需要特别记录授权方的帐号类型，在消息及事件推送时，对于不具备客服接口的公众号，需要在5秒内立即响应； "
+"而若有客服接口，则可以选择暂时不响应，而选择后续通过客服接口来发送消息触达粉丝。"
+msgstr ""
+
+#: ../../source/open/auth/api_get_authorizer_info.rst:9
+msgid "（1）公众号获取方法如下："
+msgstr ""
+
+#: ../../source/open/auth/api_get_authorizer_info.rst:11
+#: ../../source/open/auth/api_get_authorizer_info.rst:213
+msgid "请求格式"
+msgstr ""
+
+#: ../../source/open/auth/api_get_authorizer_info.rst:13
+#: ../../source/open/auth/api_get_authorizer_info.rst:215
+msgid ""
+"``POST`` **https**: //api.weixin.qq.com/cgi-"
+"bin/component/api_get_authorizer_info?component_access_token=xxxx"
+msgstr ""
+
+#: ../../source/open/auth/api_get_authorizer_info.rst:16
+#: ../../source/open/auth/api_get_authorizer_info.rst:220
+msgid "请求数据"
+msgstr ""
+
+#: ../../source/open/auth/api_get_authorizer_info.rst:25
+#: ../../source/open/auth/api_get_authorizer_info.rst:229
+msgid "请求参数说明"
+msgstr ""
+
+#: ../../source/open/auth/api_get_authorizer_info.rst:28
+#: ../../source/open/auth/api_get_authorizer_info.rst:232
+msgid "参数"
+msgstr ""
+
+#: ../../source/open/auth/api_get_authorizer_info.rst:28
+#: ../../source/open/auth/api_get_authorizer_info.rst:232
+msgid "说明"
+msgstr ""
+
+#: ../../source/open/auth/api_get_authorizer_info.rst:30
+#: ../../source/open/auth/api_get_authorizer_info.rst:234
+msgid "component_appid"
+msgstr ""
+
+#: ../../source/open/auth/api_get_authorizer_info.rst:30
+#: ../../source/open/auth/api_get_authorizer_info.rst:234
+msgid "第三方平台 appid"
+msgstr ""
+
+#: ../../source/open/auth/api_get_authorizer_info.rst:31
+#: ../../source/open/auth/api_get_authorizer_info.rst:235
+msgid "authorizer_appid"
+msgstr ""
+
+#: ../../source/open/auth/api_get_authorizer_info.rst:31
+#: ../../source/open/auth/api_get_authorizer_info.rst:235
+msgid "授权方 appid"
+msgstr ""
+
+#: ../../source/open/auth/api_get_authorizer_info.rst:34
+#: ../../source/open/auth/api_get_authorizer_info.rst:240
+msgid "返回结果"
+msgstr ""
+
+#: ../../source/open/auth/api_get_authorizer_info.rst:82
+msgid "结果参数说明"
+msgstr ""
+
+#: ../../source/open/auth/api_get_authorizer_info.rst:209
+msgid "（2）小程序获取方法如下"
+msgstr ""
+
+#: ../../source/open/auth/api_get_authorizer_info.rst:307
+msgid "返回参数说明"
+msgstr ""
+

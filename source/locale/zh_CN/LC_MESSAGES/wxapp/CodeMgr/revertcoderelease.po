@@ -1,0 +1,42 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, nosy
+# This file is distributed under the same license as the wxopen-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: wxopen-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-11 22:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/wxapp/CodeMgr/revertcoderelease.rst:2
+msgid "11. 版本回退"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/revertcoderelease.rst:4
+msgid "请求方式:GET（请使用https协议）"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/revertcoderelease.rst:6
+msgid "https://api.weixin.qq.com/wxa/revertcoderelease?access_token=TOKEN 返回说明"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/revertcoderelease.rst:9
+msgid "{ \"errcode\":0, \"errmsg\":\"ok\", } 错误码说明"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/revertcoderelease.rst:15
+msgid ""
+"错误码     说明 0       成功 -1      系统错误 87011   现网已经在灰度发布，不能进行版本回退 87012   "
+"该版本不能回退，可能的原因：1:无上一个线上版用于回退 2:此版本为已回退版本，不能回退 3:此版本为回退功能上线之前的版本，不能回退"
+msgstr ""
+

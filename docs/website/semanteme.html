@@ -83,13 +83,18 @@
             
             
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../index.html">概述</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../wxapp/index.html">小程序管理</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../mobile/index.html">移动应用</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">网站应用</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="login.html">网站应用微信登录开发指南</a></li>
 <li class="toctree-l2"><a class="reference internal" href="feedback.html">开发者反馈</a></li>
 <li class="toctree-l2"><a class="reference internal" href="UnionID.html">授权后接口调用（UnionID）</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">语义理解上手指南</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">语义理解上手指南</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">第一步：创建应用</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#appidappsecretaccess-token">第二步：根据AppID和AppSecret获得access token</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#access-token">第三步：使用access token调用语义理解接口</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../pubno/index.html">公众号</a></li>
@@ -165,15 +170,15 @@
             
   <div class="section" id="id1">
 <h1>语义理解上手指南<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
-<blockquote>
-<div><p>语义理解上手指南</p>
-</div></blockquote>
 <p>微信开放平台语义理解接口调用（http请求）简单方便，用户无需掌握语义理解及相关技术，只需根据自己的产品特点，选择相应的服务即可搭建一套智能语义服务。</p>
-<p>第一步：创建应用
-请到“管理中心”创建应用，点击“创建移动应用”或者“创建网站应用”，填写相关资料，然后将该应用提交审核，只有审核通过的应用才能进行开发。</p>
+<div class="section" id="id2">
+<h2>第一步：创建应用<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<p>请到“管理中心”创建应用，点击“创建移动应用”或者“创建网站应用”，填写相关资料，然后将该应用提交审核，只有审核通过的应用才能进行开发。</p>
 <p>注册完毕，我们会在 7 个工作日内完成审核工作。审核通过之后，开放平台将分配给该移动应用全局唯一的AppID和AppSecret。</p>
-<p>第二步：根据AppID和AppSecret获得access token
-调用接口：
+</div>
+<div class="section" id="appidappsecretaccess-token">
+<h2>第二步：根据AppID和AppSecret获得access token<a class="headerlink" href="#appidappsecretaccess-token" title="永久链接至标题">¶</a></h2>
+<p>调用接口：
 http请求方式: GET
 <a class="reference external" href="https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&amp;appid=APPID&amp;secret=APPSECRET">https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&amp;appid=APPID&amp;secret=APPSECRET</a>
 参数说明：
@@ -194,9 +199,11 @@ expires_in      凭证有效时间，单位：秒
 <p>{
 “errcode”:40013,
 “errmsg”:”invalid appid”
-}
-第三步：使用access token调用语义理解接口
-输入说明：
+}</p>
+</div>
+<div class="section" id="access-token">
+<h2>第三步：使用access token调用语义理解接口<a class="headerlink" href="#access-token" title="永久链接至标题">¶</a></h2>
+<p>输入说明：
 http请求方式: POST（请使用https协议）
 <a class="reference external" href="https://api.weixin.qq.com/semantic/semproxy/search?access_token=YOUR_ACCESS_TOKEN">https://api.weixin.qq.com/semantic/semproxy/search?access_token=YOUR_ACCESS_TOKEN</a>
 POST数据格式：JSON
@@ -265,6 +272,7 @@ result  否       Array   部分类别的结果
 answer  否       String  部分类别的结果html5展示，目前不支持
 text    否       String  特殊回复说明
 更多详细内容与协议说明，请查看：语义理解接口协议文档</p>
+</div>
 </div>
 
 

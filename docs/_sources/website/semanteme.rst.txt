@@ -1,16 +1,18 @@
 语义理解上手指南
 ====================================================================
 
-
- 语义理解上手指南
 微信开放平台语义理解接口调用（http请求）简单方便，用户无需掌握语义理解及相关技术，只需根据自己的产品特点，选择相应的服务即可搭建一套智能语义服务。
 
 第一步：创建应用
+------------------------------------------------------
+
 请到“管理中心”创建应用，点击“创建移动应用”或者“创建网站应用”，填写相关资料，然后将该应用提交审核，只有审核通过的应用才能进行开发。
 
 注册完毕，我们会在 7 个工作日内完成审核工作。审核通过之后，开放平台将分配给该移动应用全局唯一的AppID和AppSecret。
 
 第二步：根据AppID和AppSecret获得access token
+------------------------------------------------------
+
 调用接口：
 http请求方式: GET
 https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=APPID&secret=APPSECRET
@@ -35,7 +37,10 @@ expires_in	凭证有效时间，单位：秒
 "errcode":40013,
 "errmsg":"invalid appid"
 }
+
 第三步：使用access token调用语义理解接口
+------------------------------------------------------
+
 输入说明：
 http请求方式: POST（请使用https协议）
 https://api.weixin.qq.com/semantic/semproxy/search?access_token=YOUR_ACCESS_TOKEN

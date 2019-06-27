@@ -1,0 +1,1618 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, nosy
+# This file is distributed under the same license as the wxopen-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: wxopen-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-11 22:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/open/mp/regapp.rst:2
+msgid "复用公众号主体快速注册小程序"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:5
+msgid "能力介绍"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:7
+msgid "为帮助已有公众号用户快速接入小程序服务，公众平台新增“快速注册小程序”权限集。公众号可授权第三方平台快速注册并认证小程序。 一个公众号只可以将该权限集授权给一个第三方平台，即授权互斥。 完成注册后的小程序默认授权给该第三方平台管理，没有独立的帐号密码，不可登录小程序后台。"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:12
+msgid "开放范围"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:14
+msgid "已认证的企业/媒体/政府/其他组织类型公众号。一个公众号一个月可以复用资质注册 5 个小程序。"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:18
+msgid "相关规则"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:20
+msgid "复用资质创建的小程序默认与该公众号关联；不占一个月新增关联 13 个小程序的限制;"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:22
+msgid "复用资质创建的小程序关联公众号，不下发模板消息，不默认出现在公众号资料页;"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:23
+msgid "一个公众号若存在“待完成注册”的小程序，不可发起复用资质创建小程序;"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:24
+msgid "一个公众号一个月内可复用资质注册小程序不多于 5 个。(创建成功才占用);"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:25
+msgid "使用复用公众号资质注册小程序，将以本公众号的主体作为该小程序的开发者；"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:26
+msgid "若选择了复用认证资质，则小程序完成注册后即是“已认证”状态。认证到期时间与公众号一致。"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:29
+msgid "快速注册流程"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:31
+msgid "步骤一：权限准备"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:33
+msgid "第三方平台使用该接口前需具备以下 5 个权限集："
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:35
+msgid "账号服务权限"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:36
+msgid "小程序账号管理权限"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:37
+msgid "小程序开发管理与数据分析权限"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:38
+msgid "小程序认证权限"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:39
+msgid "小程序基本信息设置权限"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:41
+msgid "准备好权限集，全网发布视为生效。"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:43
+msgid "详细流程可参考：《授权流程技术说明》"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:45
+msgid "步骤二：使用注册接口创建小程序"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:47
+msgid "步骤三：使用小程序账号信息设置接口，补充新建小程序信息"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:50
+msgid "1. 注册流程及接口说明"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:52
+msgid "快速注册接口使用流程说明："
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:54
+msgid "步骤一：从第三方平台页面发起，并跳转至微信公众平台指定授权注册页面。"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:55
+msgid "步骤二：公众号管理员扫码确认复用公众号资质快速注册小程序。"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:56
+msgid "步骤三：管理员扫码验证通过后跳转至第三方平台页面，微信将注册结果返回给第三方平台。"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:59
+msgid "1.1. 从第三方平台跳转至微信公众平台授权注册页面"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:61
+msgid "从第三方平台跳转到微信公众平台授权页，需携带的参数如下"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:64
+#: ../../source/open/mp/regapp.rst:128
+#: ../../source/open/mp/regapp.rst:154
+#: ../../source/open/mp/regapp.rst:562
+#: ../../source/open/mp/regapp.rst:664
+#: ../../source/open/mp/regapp.rst:702
+#: ../../source/open/mp/regapp.rst:746
+#: ../../source/open/mp/regapp.rst:768
+#: ../../source/open/mp/regapp.rst:1224
+#: ../../source/open/mp/regapp.rst:1241
+msgid "参数"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:64
+#: ../../source/open/mp/regapp.rst:1238
+msgid "参数说明"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:66
+msgid "comp onen t_ap pid"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:66
+msgid "第三方平台的 appid"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:71
+msgid "appi d"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:71
+msgid "公众号的 appid"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:74
+msgid "copy _wx_ veri fy"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:74
+msgid "是否复用公众号的资质进行微信认证(1:申请复用资质进行微信 认证 0:不申请)"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:79
+msgid "redi rect _uri"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:79
+msgid "用户扫码授权后，MP 扫码页面将跳转到该地址(注:1.链接需 urlencode 2.Host 需和第三方平台在微信开放平台上面填写的登 录授权的发起页域名一致)"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:84
+#: ../../source/open/mp/regapp.rst:1188
+msgid "跳转到微信公众平台授权页面链接举例:"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:86
+msgid "https://mp.weixin.qq.com/cgi-bin/fastregisterauth?appid=wx28f759479ea1e090&component_appid=wx666666666666123&copy_wx_verify=1&redirect_uri=https%3a%2f%2fwww.qq.com%2fauth%2fcallback%3ffrom%3dmp"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:88
+#: ../../source/open/mp/regapp.rst:832
+msgid "示例示意图："
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:93
+msgid "授权页示意图"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:96
+msgid "1.2. 公众号管理员扫码确认授权注册，并跳转回第三方平台"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:98
+msgid "公众号管理员扫码后在手机端完成授权确认。"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:100
+msgid "跳转回第三方平台，会在上述 redirect_uri 后拼接 ticket=\\*"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:102
+msgid "跳转回第三方平台举例:"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:104
+msgid "https://www.qq.com/auth/callback?from=mp&ticket=b25519093b1e97239eff9d2bfc07e08e"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:107
+msgid "1.3. 跳转至第三方平台，第三方平台调用快速注册 API 完成注册"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:109
+#: ../../source/open/mp/regapp.rst:640
+msgid "请求方式:"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:111
+#: ../../source/open/mp/regapp.rst:547
+#: ../../source/open/mp/regapp.rst:642
+#: ../../source/open/mp/regapp.rst:791
+#: ../../source/open/mp/regapp.rst:854
+#: ../../source/open/mp/regapp.rst:970
+#: ../../source/open/mp/regapp.rst:1018
+#: ../../source/open/mp/regapp.rst:1094
+msgid "POST(请使用 https 协议)"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:113
+msgid "https://api.weixin.qq.com/cgi-bin/account/fastregister?access_token=TOKEN"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:115
+msgid "注：使用公众号 appid 换取 authorizer_access_token"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:117
+#: ../../source/open/mp/regapp.rst:1213
+msgid "请求示例:"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:125
+#: ../../source/open/mp/regapp.rst:151
+#: ../../source/open/mp/regapp.rst:1221
+msgid "参数说明:"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:128
+#: ../../source/open/mp/regapp.rst:154
+#: ../../source/open/mp/regapp.rst:534
+#: ../../source/open/mp/regapp.rst:562
+#: ../../source/open/mp/regapp.rst:664
+#: ../../source/open/mp/regapp.rst:702
+#: ../../source/open/mp/regapp.rst:711
+#: ../../source/open/mp/regapp.rst:746
+#: ../../source/open/mp/regapp.rst:768
+#: ../../source/open/mp/regapp.rst:780
+#: ../../source/open/mp/regapp.rst:810
+#: ../../source/open/mp/regapp.rst:839
+#: ../../source/open/mp/regapp.rst:869
+#: ../../source/open/mp/regapp.rst:886
+#: ../../source/open/mp/regapp.rst:953
+#: ../../source/open/mp/regapp.rst:996
+#: ../../source/open/mp/regapp.rst:1025
+#: ../../source/open/mp/regapp.rst:1075
+#: ../../source/open/mp/regapp.rst:1116
+#: ../../source/open/mp/regapp.rst:1136
+#: ../../source/open/mp/regapp.rst:1224
+#: ../../source/open/mp/regapp.rst:1241
+msgid "说明"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:130
+msgid "ticket"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:130
+msgid "公众号扫码授权的凭证(公众平台扫码页面回跳到第三方平台时携带)"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:133
+#: ../../source/open/mp/regapp.rst:1229
+msgid "返回说明:"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:146
+msgid "注：使用 ``appid`` 及 ``authorization_code`` 换取 ``authorizer_refresh_token`` 后需及时保存。"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:149
+msgid "如未保存可参考公众号第三方平台的权限说明 重新获取。"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:156
+#: ../../source/open/mp/regapp.rst:1243
+msgid "errcode"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:156
+#: ../../source/open/mp/regapp.rst:167
+#: ../../source/open/mp/regapp.rst:1243
+#: ../../source/open/mp/regapp.rst:1250
+msgid "错误码"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:157
+#: ../../source/open/mp/regapp.rst:1244
+msgid "errmsg"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:157
+#: ../../source/open/mp/regapp.rst:1244
+msgid "错误信息"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:158
+msgid "appid"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:158
+msgid "新创建小程序的 appid"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:159
+msgid "authorization_code"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:159
+msgid "新创建小程序的授权码"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:160
+msgid "is_wx_verify_succ"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:160
+msgid "复用公众号微信认证小程序是否成功"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:161
+msgid "is_link_succ"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:161
+msgid "小程序是否和公众号关联成功"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:164
+#: ../../source/open/mp/regapp.rst:708
+msgid "错误码说明:"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:167
+msgid "错误说明"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:169
+msgid "61051"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:169
+msgid "公众号主体类型不允许快速创建"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:170
+msgid "61052"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:170
+msgid "公众号未认证"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:171
+msgid "61053"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:171
+msgid "超过主体可注册数量上限"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:172
+msgid "61054"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:172
+msgid "主体黑名单"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:173
+msgid "61055"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:173
+msgid "超出公众号每月可快速创建限额"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:174
+msgid "61056"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:174
+msgid "政府. 媒体. 其他组织必须复选微信认证"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:175
+msgid "61057"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:175
+msgid "公众号仍有快速创建的账号在流程中"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:176
+msgid "61058"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:176
+msgid "用户扫码凭证校验不通过"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:177
+msgid "61028"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:177
+msgid "第三方平台未发布"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:178
+msgid "61029"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:178
+msgid "第三方平台缺少必备权限集(帐号服务权限. 程序帐号管理权限. 小程序开发管理与数据分析权限)"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:179
+msgid "61060"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:179
+msgid "转 uri 不合法"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:180
+msgid "61061"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:180
+msgid "海外帐号不允许快速创建"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:183
+msgid "!!! note “注:小程序信息设置相关接口”"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:190
+msgid "2. 获取帐号基本信息"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:192
+#: ../../source/open/mp/regapp.rst:545
+#: ../../source/open/mp/regapp.rst:729
+#: ../../source/open/mp/regapp.rst:789
+#: ../../source/open/mp/regapp.rst:852
+#: ../../source/open/mp/regapp.rst:903
+#: ../../source/open/mp/regapp.rst:968
+#: ../../source/open/mp/regapp.rst:1016
+#: ../../source/open/mp/regapp.rst:1043
+#: ../../source/open/mp/regapp.rst:1092
+#: ../../source/open/mp/regapp.rst:1207
+msgid "请求方式："
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:194
+msgid "GET: https://api.weixin.qq.com/cgi-bin/account/getaccountbasicinfo?access_token=TOKEN"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:197
+#: ../../source/open/mp/regapp.rst:567
+#: ../../source/open/mp/regapp.rst:819
+#: ../../source/open/mp/regapp.rst:874
+msgid "返回数据："
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:228
+#: ../../source/open/mp/regapp.rst:559
+#: ../../source/open/mp/regapp.rst:578
+#: ../../source/open/mp/regapp.rst:807
+#: ../../source/open/mp/regapp.rst:866
+#: ../../source/open/mp/regapp.rst:950
+#: ../../source/open/mp/regapp.rst:993
+#: ../../source/open/mp/regapp.rst:1022
+#: ../../source/open/mp/regapp.rst:1048
+#: ../../source/open/mp/regapp.rst:1072
+#: ../../source/open/mp/regapp.rst:1113
+msgid "参数说明："
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:531
+#: ../../source/open/mp/regapp.rst:587
+#: ../../source/open/mp/regapp.rst:836
+#: ../../source/open/mp/regapp.rst:883
+#: ../../source/open/mp/regapp.rst:1133
+msgid "返回码说明："
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:534
+#: ../../source/open/mp/regapp.rst:839
+#: ../../source/open/mp/regapp.rst:886
+#: ../../source/open/mp/regapp.rst:1136
+msgid "errcode 取值"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:536
+msgid "非 0"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:536
+msgid "异常"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:540
+msgid "3. 设置名称"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:543
+msgid "3.1. 微信认证名称检测"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:549
+msgid "URL：https://api.weixin.qq.com/cgi-bin/wxverify/checkwxverifynickname?access_token=TOKEN"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:551
+#: ../../source/open/mp/regapp.rst:795
+#: ../../source/open/mp/regapp.rst:858
+#: ../../source/open/mp/regapp.rst:1098
+msgid "POST 数据："
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:562
+#: ../../source/open/mp/regapp.rst:810
+#: ../../source/open/mp/regapp.rst:869
+#: ../../source/open/mp/regapp.rst:996
+#: ../../source/open/mp/regapp.rst:1025
+#: ../../source/open/mp/regapp.rst:1075
+#: ../../source/open/mp/regapp.rst:1116
+msgid "必填/选填"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:562
+#: ../../source/open/mp/regapp.rst:581
+#: ../../source/open/mp/regapp.rst:810
+#: ../../source/open/mp/regapp.rst:869
+#: ../../source/open/mp/regapp.rst:996
+#: ../../source/open/mp/regapp.rst:1025
+#: ../../source/open/mp/regapp.rst:1075
+#: ../../source/open/mp/regapp.rst:1116
+msgid "类型"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:564
+#: ../../source/open/mp/regapp.rst:666
+msgid "nick_name"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:564
+#: ../../source/open/mp/regapp.rst:666
+#: ../../source/open/mp/regapp.rst:748
+#: ../../source/open/mp/regapp.rst:812
+#: ../../source/open/mp/regapp.rst:813
+#: ../../source/open/mp/regapp.rst:814
+#: ../../source/open/mp/regapp.rst:815
+#: ../../source/open/mp/regapp.rst:816
+#: ../../source/open/mp/regapp.rst:871
+#: ../../source/open/mp/regapp.rst:998
+#: ../../source/open/mp/regapp.rst:999
+#: ../../source/open/mp/regapp.rst:1000
+#: ../../source/open/mp/regapp.rst:1001
+#: ../../source/open/mp/regapp.rst:1027
+#: ../../source/open/mp/regapp.rst:1028
+#: ../../source/open/mp/regapp.rst:1077
+#: ../../source/open/mp/regapp.rst:1078
+#: ../../source/open/mp/regapp.rst:1079
+#: ../../source/open/mp/regapp.rst:1080
+#: ../../source/open/mp/regapp.rst:1081
+#: ../../source/open/mp/regapp.rst:1082
+#: ../../source/open/mp/regapp.rst:1083
+#: ../../source/open/mp/regapp.rst:1084
+#: ../../source/open/mp/regapp.rst:1085
+#: ../../source/open/mp/regapp.rst:1086
+#: ../../source/open/mp/regapp.rst:1118
+#: ../../source/open/mp/regapp.rst:1119
+#: ../../source/open/mp/regapp.rst:1120
+#: ../../source/open/mp/regapp.rst:1121
+msgid "必填"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:564
+#: ../../source/open/mp/regapp.rst:584
+#: ../../source/open/mp/regapp.rst:871
+#: ../../source/open/mp/regapp.rst:1079
+#: ../../source/open/mp/regapp.rst:1081
+msgid "string"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:564
+msgid "名称（昵称）"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:581
+#: ../../source/open/mp/regapp.rst:810
+#: ../../source/open/mp/regapp.rst:869
+#: ../../source/open/mp/regapp.rst:953
+#: ../../source/open/mp/regapp.rst:996
+#: ../../source/open/mp/regapp.rst:1025
+#: ../../source/open/mp/regapp.rst:1075
+#: ../../source/open/mp/regapp.rst:1116
+msgid "参数名"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:581
+msgid "描述"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:583
+msgid "hit_condition"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:583
+msgid "bool"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:583
+msgid "是否命中关键字策略。若命中，可以选填关键字材料"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:584
+#: ../../source/open/mp/regapp.rst:704
+msgid "wording"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:584
+msgid "命中关键字的说明描述（给用户看的）"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:638
+msgid "3.2. 名称设置及改名"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:644
+msgid "https://api.weixin.qq.com/wxa/setnickname?access_token=TOKEN"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:646
+msgid "POST 数据示例:"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:661
+msgid "请求参数:"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:664
+#: ../../source/open/mp/regapp.rst:746
+msgid "备注"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:666
+msgid "昵称"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:667
+msgid "id_card"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:667
+msgid "身份证照片–临时素材 mediaid"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:667
+msgid "个人号必填"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:668
+msgid "license"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:668
+msgid "组织机构代码证或营业执照–临时素材 mediaid"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:668
+msgid "组织号必填"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:669
+msgid "naming_other_stuff_1"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:669
+#: ../../source/open/mp/regapp.rst:670
+#: ../../source/open/mp/regapp.rst:671
+#: ../../source/open/mp/regapp.rst:672
+#: ../../source/open/mp/regapp.rst:673
+msgid "其他证明材料—临时素材 mediaid"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:669
+#: ../../source/open/mp/regapp.rst:670
+#: ../../source/open/mp/regapp.rst:671
+#: ../../source/open/mp/regapp.rst:672
+#: ../../source/open/mp/regapp.rst:673
+msgid "选填"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:670
+msgid "naming_other_stuff_2"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:671
+msgid "naming_other_stuff_3"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:672
+msgid "naming_other_stuff_4"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:673
+msgid "naming_other_stuff_5"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:676
+msgid "注: 临时素材 mediaid 通过调用“临时素材管理接口”获取."
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:678
+msgid "新增临时素材: https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1444738726"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:681
+msgid "获取临时素材: https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1444738727"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:684
+msgid "第三方代小程序调用上述接口:"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:686
+msgid "https://open.weixin.qq.com/cgi-bin/showdocument?action=dir_list&t=resourceres_list&verify=1&id=open1453779503&token=&lang=zh_CN"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:688
+msgid "返回 json 示例(门店小程序类目分一级和二级类目):"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:699
+msgid "返回参数说明:"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:704
+msgid "材料说明"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:705
+#: ../../source/open/mp/regapp.rst:748
+msgid "audit_id"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:705
+#: ../../source/open/mp/regapp.rst:748
+msgid "审核单 id"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:711
+#: ../../source/open/mp/regapp.rst:780
+msgid "返回码"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:713
+msgid "91001"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:713
+msgid "不是公众号快速创建的小程序"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:714
+msgid "91002"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:714
+msgid "小程序发布后不可改名"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:715
+msgid "91003"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:715
+msgid "改名状态不合法"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:716
+msgid "91004"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:716
+msgid "昵称不合法"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:717
+msgid "91005"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:717
+msgid "昵称命中主体保护"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:718
+msgid "91006"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:718
+msgid "昵称命中微信号"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:719
+msgid "91007"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:719
+msgid "昵称已被占用"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:720
+msgid "91008"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:720
+msgid "昵称命中 7 天侵权保护期"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:721
+msgid "91009"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:721
+msgid "需要提交材料"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:722
+msgid "91010"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:722
+msgid "其他错误"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:723
+msgid "91015"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:723
+msgid "创建的小程序名称与对应公众号主体不一致"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:727
+msgid "3.3. 改名审核状态查询"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:731
+msgid "POST（请使用 https 协议）"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:733
+msgid "https://api.weixin.qq.com/wxa/api_wxa_querynickname?access_token=TOKEN"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:735
+msgid "POST 数据示例："
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:743
+#: ../../source/open/mp/regapp.rst:974
+msgid "请求参数："
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:751
+msgid "返回 json 示例："
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:765
+msgid "返回参数说明："
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:770
+msgid "nickname"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:770
+msgid "审核昵称"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:771
+msgid "audit_stat"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:771
+msgid "审核状态，1：审核中，2：审核失败，3：审核成功"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:772
+msgid "fail_reason"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:772
+msgid "失败原因"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:773
+msgid "create_time"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:773
+msgid "审核提交时间"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:774
+msgid "audit_time"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:774
+msgid "审核完成时间"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:777
+msgid "错误码说明："
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:782
+msgid "91011"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:782
+msgid "查不到昵称修改审核单信息"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:783
+msgid "91012"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:783
+msgid "其它错误"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:787
+msgid "4. 修改头像"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:793
+msgid "URL：https://api.weixin.qq.com/cgi-bin/account/modifyheadimage?access_token=TOKEN"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:812
+msgid "head_img_media_id"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:812
+#: ../../source/open/mp/regapp.rst:1001
+msgid "media_id"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:812
+msgid "头像素材 media_id"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:813
+msgid "x1"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:813
+#: ../../source/open/mp/regapp.rst:814
+#: ../../source/open/mp/regapp.rst:815
+#: ../../source/open/mp/regapp.rst:816
+msgid "float"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:813
+msgid "裁剪框左上角 x 坐标（取值范围：[0, 1]）"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:814
+msgid "y1"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:814
+msgid "裁剪框左上角 y 坐标（取值范围：[0, 1]）"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:815
+msgid "x2"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:815
+msgid "裁剪框右下角 x 坐标（取值范围：[0, 1]）"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:816
+msgid "y2"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:816
+msgid "裁剪框右下角 y 坐标（取值范围：[0, 1]）"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:828
+msgid "图片格式只支持：BMP. JPEG. JPG. GIF. PNG，大小不超过 2M"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:830
+msgid "注：实际头像始终为正方形"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:834
+msgid "头像示意图"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:841
+#: ../../source/open/mp/regapp.rst:888
+msgid "40097"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:841
+#: ../../source/open/mp/regapp.rst:888
+msgid "参数错误"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:842
+msgid "41006"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:842
+msgid "media_id 不能为空"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:843
+msgid "40007"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:843
+msgid "非法的 media_id"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:844
+msgid "46001"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:844
+msgid "media_id 不存在"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:845
+msgid "40009"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:845
+msgid "图片尺寸太大"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:846
+msgid "53202"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:846
+msgid "本月头像修改次数已用完"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:850
+msgid "5. 修改功能介绍"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:856
+msgid "URL：https://api.weixin.qq.com/cgi-bin/account/modifysignature?access_token=TOKEN"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:871
+msgid "signature"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:871
+msgid "功能介绍（简介）"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:889
+msgid "53200"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:889
+msgid "本月功能介绍修改次数已用完"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:890
+msgid "53201"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:890
+msgid "功能介绍内容命中黑名单关键字"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:894
+msgid "6. 设置类目"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:896
+msgid "注：该章节接口需要使用 1.3 环节获取到的新创建小程序 appid 及 authorization_code 换取 authorizer_refresh_token 进而得到 authorizer_access_token。"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:901
+msgid "6.1. 获取账号可以设置的所有类目"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:905
+msgid "GET 数据"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:907
+msgid "URL：https://api.weixin.qq.com/cgi-bin/wxopen/getallcategories?access_token=TOKEN"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:909
+#: ../../source/open/mp/regapp.rst:1004
+msgid "返回参数（JSON 格式）："
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:955
+msgid "id"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:955
+msgid "类目 ID"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:956
+msgid "Name"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:956
+msgid "类目名称"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:957
+msgid "Level"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:957
+msgid "类目层级"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:958
+msgid "Father"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:958
+msgid "类目父级 ID"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:959
+msgid "Children"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:959
+msgid "子级类目 ID"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:960
+msgid "Sensitive_type"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:960
+msgid "是否为敏感类目（1 为敏感类目，需要提供相应资质审核；0 为非敏感类目，无需审核）"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:961
+msgid "Qualify.exter_list.inner_list.name"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:961
+msgid "Sensitive_type 为 1 的类目需要提供的资质文件名称"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:962
+msgid "Qualify.exter_list.inner_list.url"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:962
+msgid "资质文件示例"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:966
+msgid "6.2. 添加类目"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:972
+msgid "URL：https://api.weixin.qq.com/cgi-bin/wxopen/addcategory?access_token=TOKEN"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:998
+#: ../../source/open/mp/regapp.rst:1027
+#: ../../source/open/mp/regapp.rst:1078
+#: ../../source/open/mp/regapp.rst:1118
+msgid "first"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:998
+#: ../../source/open/mp/regapp.rst:999
+#: ../../source/open/mp/regapp.rst:1027
+#: ../../source/open/mp/regapp.rst:1028
+#: ../../source/open/mp/regapp.rst:1078
+#: ../../source/open/mp/regapp.rst:1080
+#: ../../source/open/mp/regapp.rst:1082
+#: ../../source/open/mp/regapp.rst:1084
+#: ../../source/open/mp/regapp.rst:1085
+#: ../../source/open/mp/regapp.rst:1086
+#: ../../source/open/mp/regapp.rst:1118
+#: ../../source/open/mp/regapp.rst:1119
+msgid "Unsigned int"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:998
+#: ../../source/open/mp/regapp.rst:1027
+#: ../../source/open/mp/regapp.rst:1078
+#: ../../source/open/mp/regapp.rst:1118
+msgid "一级类目 ID"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:999
+#: ../../source/open/mp/regapp.rst:1028
+#: ../../source/open/mp/regapp.rst:1119
+msgid "Second"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:999
+#: ../../source/open/mp/regapp.rst:1028
+#: ../../source/open/mp/regapp.rst:1080
+#: ../../source/open/mp/regapp.rst:1119
+msgid "二级类目 ID"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1000
+#: ../../source/open/mp/regapp.rst:1120
+msgid "Key"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1000
+#: ../../source/open/mp/regapp.rst:1083
+#: ../../source/open/mp/regapp.rst:1120
+#: ../../source/open/mp/regapp.rst:1121
+msgid "String"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1000
+#: ../../source/open/mp/regapp.rst:1120
+msgid "资质名称"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1001
+#: ../../source/open/mp/regapp.rst:1121
+msgid "Value"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1001
+#: ../../source/open/mp/regapp.rst:1121
+msgid "资质图片"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1014
+msgid "6.3. 删除类目"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1020
+msgid "URL：https://api.weixin.qq.com/cgi-bin/wxopen/deletecategory?access_token=TOKEN"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1031
+#: ../../source/open/mp/regapp.rst:1050
+#: ../../source/open/mp/regapp.rst:1124
+msgid "返回（JSON 格式）："
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1041
+msgid "6.4. 获取账号已经设置的所有类目"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1045
+msgid "GET URL：https://api.weixin.qq.com/cgi-bin/wxopen/getcategory?access_token=TOKEN"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1075
+msgid "子参数"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1077
+msgid "categories"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1077
+msgid "object"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1077
+msgid "类目对象"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1078
+#: ../../source/open/mp/regapp.rst:1079
+#: ../../source/open/mp/regapp.rst:1080
+#: ../../source/open/mp/regapp.rst:1081
+#: ../../source/open/mp/regapp.rst:1082
+#: ../../source/open/mp/regapp.rst:1083
+msgid "\\"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1079
+msgid "first_name"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1079
+msgid "一级类目名称"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1080
+msgid "second"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1081
+msgid "second_name"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1081
+msgid "二级类目名称"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1082
+msgid "audit_status"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1082
+msgid "审核状态（1 审核中 2 审核不通过 3 审核通过）"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1083
+msgid "audit_reason"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1083
+msgid "审核不通过原因"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1084
+msgid "limit"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1084
+msgid "一个更改周期内可以设置类目的次数"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1085
+msgid "quota"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1085
+msgid "本更改周期内还可以设置类目的次数"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1086
+msgid "category_limit"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1086
+msgid "最多可以设置的类目数量"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1090
+msgid "6.5. 修改类目"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1096
+msgid "URL：https://api.weixin.qq.com/cgi-bin/wxopen/modifycategory?access_token=TOKEN"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1138
+msgid "53300"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1138
+msgid "超出每月次数限制"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1139
+msgid "53301"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1139
+msgid "超出可配置类目总数限制"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1140
+msgid "53302"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1140
+msgid "当前账号主体类型不允许设置此种类目"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1141
+msgid "53303"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1141
+msgid "提交的参数不合法"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1142
+msgid "53304"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1142
+msgid "与已有类目重复"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1143
+msgid "53305"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1143
+msgid "包含未通过 IPC 校验的类目"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1144
+msgid "53306"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1144
+msgid "修改类目只允许修改类目资质，不允许修改类目 ID"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1145
+msgid "53307"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1145
+msgid "只有审核失败的类目允许修改"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1146
+msgid "53308"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1146
+msgid "审核中的类目不允许删除"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1150
+msgid "7. 换绑管理员"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1152
+msgid "流程"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1154
+msgid "步骤一：从第三方平台页面发起，并跳转至微信公众平台指定换绑页面。"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1155
+msgid "步骤二：小程序原管理员扫码，并填写原管理员身份证信息确认。"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1156
+msgid "步骤三：填写新管理员信息(姓名. 身份证. 手机号)，使用新管理员的微信确认。"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1158
+msgid "步骤四：点击提交后跳转至第三方平台页面，第三方平台回调对应 api 完成换绑流程。"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1161
+msgid "流程及接口说明"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1166
+msgid "7.1. 从第三方平台跳转至微信公众平台授权注册页面"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1168
+msgid "从第三方平台跳转到微信公众平台授权页，需携带的参数如下："
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1190
+msgid "https://mp.weixin.qq.com/wxopen/componentrebindadmin?appid=wx28f759479ea1e090&component_appid=wx666666666666123&redirect_uri=https%3a%2f%2f www.qq.com%2fauth%2fcallback%3ffrom%3dmp"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1194
+msgid "7.2. 小程序新旧管理员填写信息，扫码确认提交后跳转回第三方平台"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1196
+msgid "点击页面提交按钮。"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1198
+msgid "跳转回第三方平台，会在上述 redirect_uri 后拼接 taskid=\\*"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1200
+msgid "跳转回第三方平台举例："
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1202
+msgid "https://www.qq.com/auth/callback?taskid=b25519093b1e97239eff9d2bfc07e08e"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1205
+msgid "7.3. 跳转至第三方平台，第三方平台调用快速注册 API 完成管理员换绑。"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1209
+msgid "请求方式: POST(请使用 https 协议)"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1211
+msgid "https://api.weixin.qq.com/cgi-bin/account/componentrebindadmin?access_token=TOKEN"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1226
+msgid "taskid"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1226
+msgid "换绑管理员任务序列号(公众平台最终点击提交回跳到第三方平台时携带)"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1247
+#: ../../source/open/mp/regapp.rst:1250
+msgid "错误码说明"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1252
+msgid "85060"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1252
+msgid "无效的 taskid"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1253
+msgid "85027"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1253
+msgid "身份证绑定管理员名额达到上限"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1254
+msgid "85061"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1254
+msgid "手机号绑定管理员名额达到上限"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1255
+msgid "85026"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1255
+msgid "微信号绑定管理员名额达到上限"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1256
+msgid "85063"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1256
+msgid "身份证黑名单"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1257
+msgid "85062"
+msgstr ""
+
+#: ../../source/open/mp/regapp.rst:1257
+msgid "手机号黑名单"
+msgstr ""
+

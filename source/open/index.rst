@@ -7,9 +7,7 @@
 
    overview.rst
    auth/index
-   mini/index
    mp/index
    pre/index
    wire
-   open/index
 

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>9、推送授权相关通知 &mdash; wxopen-docs 1.0.0 文档</title>
+  <title>9. 推送授权相关通知 &mdash; wxopen-docs 1.0.0 文档</title>
   
 
   
@@ -37,8 +37,8 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
-    <link rel="next" title="代小程序实现业务-开发简介" href="../mini/index.html" />
-    <link rel="prev" title="8、设置授权方的选项信息" href="api_set_authorizer_option.html" /> 
+    <link rel="next" title="代公众号实现业务" href="../mp/index.html" />
+    <link rel="prev" title="8. 设置授权方的选项信息" href="api_set_authorizer_option.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -83,32 +83,25 @@
             
             
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../index.html">概述</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../wxapp/index.html">小程序管理</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../mobile/index.html">移动应用</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../website/index.html">网站应用</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../pubno/index.html">公众号</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">第三方平台</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../overview.html">第三方平台概述</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="index.html">授权流程技术说明</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">授权流程</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="auth.html">授权流程技术说明</a></li>
-<li class="toctree-l3"><a class="reference internal" href="component_verify_ticket.html">推送 component_verify_ticket 协议</a></li>
-<li class="toctree-l3"><a class="reference internal" href="component_access_token.html">2、获取第三方平台 component_access_token</a></li>
-<li class="toctree-l3"><a class="reference internal" href="api_create_preauthcode.html">3、获取预授权码 pre_auth_code</a></li>
-<li class="toctree-l3"><a class="reference internal" href="api_query_auth.html">4、使用授权码换取公众号或小程序的接口调用凭据和授权信息</a></li>
-<li class="toctree-l3"><a class="reference internal" href="api_authorizer_token.html">5、获取（刷新）授权公众号或小程序的接口调用凭据（令牌）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="api_get_authorizer_info.html">6、获取授权方的帐号基本信息</a></li>
-<li class="toctree-l3"><a class="reference internal" href="api_get_authorizer_option.html">7、获取授权方的选项设置信息</a></li>
-<li class="toctree-l3"><a class="reference internal" href="api_set_authorizer_option.html">8、设置授权方的选项信息</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">9、推送授权相关通知</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#post">POST 数据示例（授权成功通知）</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id2">POST 数据示例（取消授权通知）</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id3">POST 数据示例（授权更新通知）</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id4">字段说明：</a></li>
+<li class="toctree-l3"><a class="reference internal" href="component_verify_ticket.html">1. 推送 component_verify_ticket 协议</a></li>
+<li class="toctree-l3"><a class="reference internal" href="component_access_token.html">2. 获取第三方平台 component_access_token</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_create_preauthcode.html">3. 获取预授权码 pre_auth_code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_query_auth.html">4. 使用授权码换取公众号或小程序的接口调用凭据和授权信息</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_authorizer_token.html">5. 获取（刷新）授权公众号或小程序的接口调用凭据（令牌）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_get_authorizer_info.html">6. 获取授权方的帐号基本信息</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_get_authorizer_option.html">7. 获取授权方的选项设置信息</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_set_authorizer_option.html">8. 设置授权方的选项信息</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">9. 推送授权相关通知</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../mini/index.html">代小程序实现业务-开发简介</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../mp/index.html">代公众号实现业务</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pre/index.html">开发前必读</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../wire.html">消息加解密说明</a></li>
@@ -164,9 +157,9 @@
         
           <li><a href="../index.html">第三方平台</a> &raquo;</li>
         
-          <li><a href="index.html">授权流程技术说明</a> &raquo;</li>
+          <li><a href="index.html">授权流程</a> &raquo;</li>
         
-      <li>9、推送授权相关通知</li>
+      <li>9. 推送授权相关通知</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -186,11 +179,10 @@
            <div itemprop="articleBody">
             
   <div class="section" id="id1">
-<h1>9、推送授权相关通知<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<h1>9. 推送授权相关通知<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
 <p>当公众号对第三方平台进行授权、取消授权、更新授权后，微信服务器会向第三方平台方的授权事件接收
 URL（创建第三方平台时填写）推送相关通知。</p>
-<div class="section" id="post">
-<h2>POST 数据示例（授权成功通知）<a class="headerlink" href="#post" title="永久链接至标题">¶</a></h2>
+<p>POST 数据示例（授权成功通知）</p>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;xml&gt;</span>
     <span class="nt">&lt;AppId&gt;</span>第三方平台appid<span class="nt">&lt;/AppId&gt;</span>
     <span class="nt">&lt;CreateTime&gt;</span>1413192760<span class="nt">&lt;/CreateTime&gt;</span>
@@ -202,9 +194,7 @@ URL（创建第三方平台时填写）推送相关通知。</p>
 <span class="nt">&lt;xml&gt;</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="id2">
-<h2>POST 数据示例（取消授权通知）<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<p>POST 数据示例（取消授权通知）</p>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;xml&gt;</span>
     <span class="nt">&lt;AppId&gt;</span>第三方平台appid<span class="nt">&lt;/AppId&gt;</span>
     <span class="nt">&lt;CreateTime&gt;</span>1413192760<span class="nt">&lt;/CreateTime&gt;</span>
@@ -213,9 +203,7 @@ URL（创建第三方平台时填写）推送相关通知。</p>
 <span class="nt">&lt;/xml&gt;</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="id3">
-<h2>POST 数据示例（授权更新通知）<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<p>POST 数据示例（授权更新通知）</p>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;xml&gt;</span>
     <span class="nt">&lt;AppId&gt;</span>第三方平台appid<span class="nt">&lt;/AppId&gt;</span>
     <span class="nt">&lt;CreateTime&gt;</span>1413192760<span class="nt">&lt;/CreateTime&gt;</span>
@@ -230,9 +218,7 @@ URL（创建第三方平台时填写）推送相关通知。</p>
 <p>第三方平台方在收到授权相关通知后也需进行解密（详细请见【消息加解密接入指引】），接收到后之后只需直接返回字符串
 success。为了加强安全性，postdata 中的 xml 将使用服务申请时的加解密 key
 来进行加密，具体请见【公众号第三方平台的加密解密技术方案】</p>
-</div>
-<div class="section" id="id4">
-<h2>字段说明：<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
+<p>字段说明：</p>
 <table class="docutils align-center">
 <colgroup>
 <col style="width: 26%" />
@@ -268,7 +254,6 @@ success。为了加强安全性，postdata 中的 xml 将使用服务申请时�
 </tbody>
 </table>
 </div>
-</div>
 
 
            </div>
@@ -278,10 +263,10 @@ success。为了加强安全性，postdata 中的 xml 将使用服务申请时�
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../mini/index.html" class="btn btn-neutral float-right" title="代小程序实现业务-开发简介" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../mp/index.html" class="btn btn-neutral float-right" title="代公众号实现业务" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="api_set_authorizer_option.html" class="btn btn-neutral float-left" title="8、设置授权方的选项信息" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="api_set_authorizer_option.html" class="btn btn-neutral float-left" title="8. 设置授权方的选项信息" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

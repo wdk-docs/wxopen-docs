@@ -1,0 +1,94 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, nosy
+# This file is distributed under the same license as the wxopen-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: wxopen-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-11 22:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/wxapp/sec-check.rst:2
+msgid "内容安全接口"
+msgstr ""
+
+#: ../../source/wxapp/sec-check.rst:4
+msgid "内容运营领域涌现出众多优秀小程序。随之而来的内容安全风险也逐步显露，近年来诸如新媒体，直播，游戏等热点领域的应用因为内容安全问题被通报处罚，甚至关停下架的案例不时可见。"
+msgstr ""
+
+#: ../../source/wxapp/sec-check.rst:6
+msgid "对于开发运营者而言，内容审核工作除具有信息安全的技术门槛外，还有人工审核资源投入的要求，对于一般的运营者而言是个不小的难题。平台将已有的信息安全优势能力封装成 API 接口，通过小程序开放平台对外输出，提供内容审核能力，帮助小程序内容开发者发现图片、文字内容里的涉黄涉政违规信息，节约开发者在内容安全上投入的精力和成本。"
+msgstr ""
+
+#: ../../source/wxapp/sec-check.rst:11
+msgid "内容安全接口提供的能力如下："
+msgstr ""
+
+#: ../../source/wxapp/sec-check.rst:14
+msgid "图片智能鉴黄"
+msgstr ""
+
+#: ../../source/wxapp/sec-check.rst:16
+msgid "**功能描述：** 当用户需要与平台进行图片交互时，无论是通过拍照上传的内容，或是自定义头像，文章评论的图片，都可能含有色情特征的图片。图片智能鉴黄接口提供了主动识别的能力，图片可以通过接口检测，根据图片的色情量化程度以及色情特征检测，来判断图片是否涉黄违规。"
+msgstr ""
+
+#: ../../source/wxapp/sec-check.rst:19
+msgid "**优势特点：** 图片智能鉴黄采用了领先的识别技术，包含了：色情特征提示、局部区域强识别、图文结合。等识别模式，多维度进行判断，最终给出一个系统判定信息。该功能可以辅助开发者判断图片中的色情元素，阻止色情图片在小程序中的传播。"
+msgstr ""
+
+#: ../../source/wxapp/sec-check.rst:22
+msgid "**应用场景：** 涉及拍照的工具类应用(如 P 图，自拍类应用)用户拍照上传检测；电商类商品上架图片检测；媒体类用户文章里的图片检测等。"
+msgstr ""
+
+#: ../../source/wxapp/sec-check.rst:26
+msgid "敏感人脸识别"
+msgstr ""
+
+#: ../../source/wxapp/sec-check.rst:28
+msgid "**业务功能：** 某些用户会藉由上传的功能发布包含敏感人物的图片，进而散布一些骇人听闻的言论。这种情况会导致不良舆论的扩散，影响小程序的正常运营。内容安全接口提供了敏感人脸识别能力。接口通过提取图片中的人脸信息，寻找并判断相似的敏感人脸，将图片是否包含敏感人物反馈给开发者，帮助开发者提升对有害内容的发现能力。"
+msgstr ""
+
+#: ../../source/wxapp/sec-check.rst:31
+msgid "**优势特点：** 除了支持标准的人脸正脸识别，敏感人脸识别能力还支持以下情景：侧脸检测、干扰物过滤、多人脸识别。"
+msgstr ""
+
+#: ../../source/wxapp/sec-check.rst:34
+msgid "**应用场景：** 用户头像检测；媒体类用户文章里的图片检测；社交类用户上传的图片检测等。"
+msgstr ""
+
+#: ../../source/wxapp/sec-check.rst:38
+msgid "垃圾文本检测"
+msgstr ""
+
+#: ../../source/wxapp/sec-check.rst:40
+msgid "**业务功能：** 除了图片文件，用户与平台，用户之间的交互更多来自于文本文字。文本包含的潜在违法元素涉及更多更广，而且也存在各种各样的文本变异行为，使得简单的关键字过滤无法满足拦截所有垃圾文本的需求。内容安全接口提供了完整的垃圾文本检测能力，能够识别文本内容中色情，违法，涉政，谩骂等违规文字信息并及时给予拒绝。"
+msgstr ""
+
+#: ../../source/wxapp/sec-check.rst:43
+msgid "**优势特点：** 对于有干扰性的文本以及层出不穷的新型违规文本，同样具有精准的识别能力。包含而不限于以下抗干扰能力：文字变异、拼音混合、符号干扰、表情干扰。垃圾文本检测功能可以让开发者更好地专注于小程序的内容开发，而不用在内容审核中花费大量时间精力，从而提高开发效率，方便开发者创作更高质量的小程序。"
+msgstr ""
+
+#: ../../source/wxapp/sec-check.rst:46
+msgid "**应用场景：** 用户个人资料违规文字检测；媒体新闻类用户发表文章，评论内容检测；游戏类用户编辑上传的素材(如答题类小程序用户上传的问题及答案)检测等。"
+msgstr ""
+
+#: ../../source/wxapp/sec-check.rst:50
+msgid "接入指引："
+msgstr ""
+
+#: ../../source/wxapp/sec-check.rst:52
+msgid "文字内容检测接口文档： `msgSecCheck <https://developers.weixin.qq.com/miniprogram/dev/api/msgSecCheck.html>`__"
+msgstr ""
+
+#: ../../source/wxapp/sec-check.rst:55
+msgid "图片内容检测接口文档： `imgSecCheck <https://developers.weixin.qq.com/miniprogram/dev/api/imgSecCheck.html>`__"
+msgstr ""
+

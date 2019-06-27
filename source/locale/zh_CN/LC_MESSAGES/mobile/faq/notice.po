@@ -1,0 +1,172 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, nosy
+# This file is distributed under the same license as the wxopen-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: wxopen-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-11 22:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/mobile/faq/notice.rst:2
+msgid "开发者须知"
+msgstr ""
+
+#: ../../source/mobile/faq/notice.rst:4
+msgid "AppID审核的速度、流程"
+msgstr ""
+
+#: ../../source/mobile/faq/notice.rst:6
+msgid "三个工作日内完成审核。目前应用登记审核只审核开发者的资质和真实性，一般不涉及应用内容本身，不需要开发者提交ipa文件或将含微信SDK的版本在AppStore上线后再审核，但要求开发者提供该应用已经上线的版本的下载地址。"
+msgstr ""
+
+#: ../../source/mobile/faq/notice.rst:8
+msgid "AppID注册数据限制"
+msgstr ""
+
+#: ../../source/mobile/faq/notice.rst:10
+msgid "一个开发者帐号现已允许登记十个应用。"
+msgstr ""
+
+#: ../../source/mobile/faq/notice.rst:12
+msgid "应用名称规范"
+msgstr ""
+
+#: ../../source/mobile/faq/notice.rst:14
+msgid "同一应用在不同平台的版本应共用一个AppID，请不要在应用名称中出现平台相关字样（例如：XXX应用Android版）。"
+msgstr ""
+
+#: ../../source/mobile/faq/notice.rst:16
+msgid "微信开放平台应用名称需保证具有唯一识别性和客观性，禁止侵权，禁止使用具有夸大性和误导性的名称。"
+msgstr ""
+
+#: ../../source/mobile/faq/notice.rst:18
+msgid "禁止使用的应用名称："
+msgstr ""
+
+#: ../../source/mobile/faq/notice.rst:20
+msgid "（一）违反宪法或法律法规规定的；"
+msgstr ""
+
+#: ../../source/mobile/faq/notice.rst:22
+msgid "（二）危害国家安全，泄露国家秘密，颠覆国家政权，破坏国家统一的；"
+msgstr ""
+
+#: ../../source/mobile/faq/notice.rst:24
+msgid "（三）损害国家荣誉和利益的，损害公共利益的；"
+msgstr ""
+
+#: ../../source/mobile/faq/notice.rst:26
+msgid "（四）煽动民族仇恨、民族歧视，破坏民族团结的；"
+msgstr ""
+
+#: ../../source/mobile/faq/notice.rst:28
+msgid "（五）破坏国家宗教政策，宣扬邪教和封建迷信的；"
+msgstr ""
+
+#: ../../source/mobile/faq/notice.rst:30
+msgid "（六）散布谣言，扰乱社会秩序，破坏社会稳定的；"
+msgstr ""
+
+#: ../../source/mobile/faq/notice.rst:32
+msgid "（七）散布淫秽、色情、赌博、暴力、凶杀、恐怖或者教唆犯罪的；"
+msgstr ""
+
+#: ../../source/mobile/faq/notice.rst:34
+msgid "（八）侮辱或者诽谤他人，侵害他人合法权益的；"
+msgstr ""
+
+#: ../../source/mobile/faq/notice.rst:36
+msgid "（九）含有法律、行政法规禁止的其他内容的；"
+msgstr ""
+
+#: ../../source/mobile/faq/notice.rst:38
+msgid "（十）有歧义，误导用户或侵犯其他用户、第三方合法权益的，包括但不限于：侵权，冒充其他公司品牌，利用命名进行夸大宣传（如“全国第一”“国内最大”等描述），非腾讯官方、微信官方但名称包含“腾讯”“微信”等（内部应用除外）；"
+msgstr ""
+
+#: ../../source/mobile/faq/notice.rst:40
+msgid "（十一）包含广告性质的口号、标语等营销推广内容。"
+msgstr ""
+
+#: ../../source/mobile/faq/notice.rst:42
+msgid "不同微信版本对开放平台接口的支持(New)"
+msgstr ""
+
+#: ../../source/mobile/faq/notice.rst:44
+msgid "发送信息：4.0及以上版本微信iPhone、Android客户端；"
+msgstr ""
+
+#: ../../source/mobile/faq/notice.rst:46
+msgid "接收/查看信息：4.0及以上版本微信iPhone、Android、Sybiam客户端；"
+msgstr ""
+
+#: ../../source/mobile/faq/notice.rst:48
+msgid "发送到朋友圈：4.2及以上版本微信iPhone、Android客户端；"
+msgstr ""
+
+#: ../../source/mobile/faq/notice.rst:50
+msgid "收藏到我的收藏：5.0及以上版本微信iPhone、Android客户端。"
+msgstr ""
+
+#: ../../source/mobile/faq/notice.rst:52
+msgid "网站端开放接口注册登记和使用"
+msgstr ""
+
+#: ../../source/mobile/faq/notice.rst:54
+msgid "暂缓开放。未获取权限的应用无法访问OAuth接口。App提供发送到朋友圈的功能请使用SDK直接跳转的形式，详细实现请参见对应平台的上手指南说明和Demo演示。"
+msgstr ""
+
+#: ../../source/mobile/faq/notice.rst:56
+msgid "Q：在开放平台网站注册并提交审核时，提示应用名已被注册，怎么办？"
+msgstr ""
+
+#: ../../source/mobile/faq/notice.rst:58
+msgid "A：遇到此情况，请确认应用名输入无误以及你对该应用的所有权，仍有疑问，请发邮件到 weixin-open@qq.com 进行申诉。"
+msgstr ""
+
+#: ../../source/mobile/faq/notice.rst:60
+msgid "Q：如何指定App信息的“来自……”跳转的链接？"
+msgstr ""
+
+#: ../../source/mobile/faq/notice.rst:62
+msgid "A：在微信开放平台网站所登记应用信息的“应用官方网站”填定正确的官方网站地址即可。P.S.为保证用户使用体验，此处不允许填写App在某一个平台的下载地址，如AppStore下载地址。"
+msgstr ""
+
+#: ../../source/mobile/faq/notice.rst:64
+msgid "Q：用户使用App发送链接给微信好友，点击该链接信息打开的页面如何知道接收方的手机中是否已安装App？"
+msgstr ""
+
+#: ../../source/mobile/faq/notice.rst:66
+msgid ""
+"A：微信打开指定页面的时候，会在原链接后加上参数isappinstalled，即http://xxxx/?isappinstalled=[1|0]，"
+" 1为已安装，0为未安装。"
+msgstr ""
+
+#: ../../source/mobile/faq/notice.rst:68
+msgid "Q：为什么使用微信SDK分享信息给微信好友，有的消息发送成功，有的消息发送失败（打不开微信）？"
+msgstr ""
+
+#: ../../source/mobile/faq/notice.rst:70
+msgid ""
+"A：这是因为SDK协议中对缩略图的大小作了限制，内存大小不能超过32K。另外限制的还有title、description等参数的大小。iOS开发者请在微信开放平台网站iOS手册搜索“thumbData”，"
+" Android开发者请见微信开放平台网站Android手册的“WXMediaMessage”页面。"
+msgstr ""
+
+#: ../../source/mobile/faq/notice.rst:72
+msgid "Q：APP审核通过之后，在微信里为什么还是会显示“来自未通过审核应用”呢？"
+msgstr ""
+
+#: ../../source/mobile/faq/notice.rst:74
+msgid "A：一般是本机缓存的问题，可以测试查看其他机器中的显示情况，本机删除微信和该应用后重新安装即可解决。"
+msgstr ""
+

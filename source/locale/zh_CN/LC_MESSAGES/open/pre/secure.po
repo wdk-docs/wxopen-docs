@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, nosy
+# This file is distributed under the same license as the wxopen-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: wxopen-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-11 22:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/open/pre/secure.rst:2
+msgid "第三方平台安全管理说明"
+msgstr ""
+
+#: ../../source/open/pre/secure.rst:4
+msgid ""
+"如\\ `《公众号第三方平台总体说明》 </open/overview>`__\\ "
+"所述，为公众号提供第三方功能或解决方案的第三方平台，必须通过公众号登录授权机制，接入成为微信开放平台认可的平台。"
+msgstr ""
+
+#: ../../source/open/pre/secure.rst:6
+msgid ""
+"未根据公众号登录授权机制接入的第三方平台，都是通过明文存储公众号的关键开发凭据（AppID 和 AppSecret）来为公众号服务的，而 "
+"AppID 和 AppSecret "
+"的安全风险远大于公众号登录帐号和登录密码。因此，将根据旗下服务的公众号数量，来评估安全风险的大小，对其进行督促。"
+msgstr ""
+
+#: ../../source/open/pre/secure.rst:10
+msgid ""
+"\\*\\* "
+"安全风险严重且限期未接入的第三方平台，微信将对其逐步进行公众号接入、提醒已接入该平台的公众号更换第三方、朋友圈分享限制等控制措施。*\\*"
+msgstr ""
+
+#: ../../source/open/pre/secure.rst:14
+msgid "具体如下："
+msgstr ""
+
+#: ../../source/open/pre/secure.rst:17
+msgid "1. 对存在风险的第三方进行安全警告"
+msgstr ""
+
+#: ../../source/open/pre/secure.rst:19
+msgid "针对存在风险的未接入第三方平台，微信公众平台将在公众号设置该平台域名为自己的服务器地址时进行安全警告（警告同时暂仍可设置），提醒公众号注意安全风险。"
+msgstr ""
+
+#: ../../source/open/pre/secure.rst:22
+msgid "2. 对存在高风险的第三方进行限期接入"
+msgstr ""
+
+#: ../../source/open/pre/secure.rst:24
+msgid ""
+"对于存在更大安全隐患的未接入第三方平台，除了警告外，微信公众平台将对其进行限期接入（第一次弹出高风险警告后 2 "
+"个月内），如到期未接入，该域名将被禁止被填写到服务器地址（已填公众号暂不受影响）。"
+msgstr ""
+

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>3、获取预授权码 pre_auth_code &mdash; wxopen-docs 1.0.0 文档</title>
+  <title>3. 获取预授权码 pre_auth_code &mdash; wxopen-docs 1.0.0 文档</title>
   
 
   
@@ -37,8 +37,8 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
-    <link rel="next" title="4、使用授权码换取公众号或小程序的接口调用凭据和授权信息" href="api_query_auth.html" />
-    <link rel="prev" title="2、获取第三方平台 component_access_token" href="component_access_token.html" /> 
+    <link rel="next" title="4. 使用授权码换取公众号或小程序的接口调用凭据和授权信息" href="api_query_auth.html" />
+    <link rel="prev" title="2. 获取第三方平台 component_access_token" href="component_access_token.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -83,31 +83,25 @@
             
             
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../index.html">概述</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../wxapp/index.html">小程序管理</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../mobile/index.html">移动应用</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../website/index.html">网站应用</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../pubno/index.html">公众号</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">第三方平台</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../overview.html">第三方平台概述</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="index.html">授权流程技术说明</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">授权流程</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="auth.html">授权流程技术说明</a></li>
-<li class="toctree-l3"><a class="reference internal" href="component_verify_ticket.html">推送 component_verify_ticket 协议</a></li>
-<li class="toctree-l3"><a class="reference internal" href="component_access_token.html">2、获取第三方平台 component_access_token</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">3、获取预授权码 pre_auth_code</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id1">请求格式</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id2">请求数据</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id3">返回结果</a></li>
+<li class="toctree-l3"><a class="reference internal" href="component_verify_ticket.html">1. 推送 component_verify_ticket 协议</a></li>
+<li class="toctree-l3"><a class="reference internal" href="component_access_token.html">2. 获取第三方平台 component_access_token</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">3. 获取预授权码 pre_auth_code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_query_auth.html">4. 使用授权码换取公众号或小程序的接口调用凭据和授权信息</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_authorizer_token.html">5. 获取（刷新）授权公众号或小程序的接口调用凭据（令牌）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_get_authorizer_info.html">6. 获取授权方的帐号基本信息</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_get_authorizer_option.html">7. 获取授权方的选项设置信息</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_set_authorizer_option.html">8. 设置授权方的选项信息</a></li>
+<li class="toctree-l3"><a class="reference internal" href="callback.html">9. 推送授权相关通知</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="api_query_auth.html">4、使用授权码换取公众号或小程序的接口调用凭据和授权信息</a></li>
-<li class="toctree-l3"><a class="reference internal" href="api_authorizer_token.html">5、获取（刷新）授权公众号或小程序的接口调用凭据（令牌）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="api_get_authorizer_info.html">6、获取授权方的帐号基本信息</a></li>
-<li class="toctree-l3"><a class="reference internal" href="api_get_authorizer_option.html">7、获取授权方的选项设置信息</a></li>
-<li class="toctree-l3"><a class="reference internal" href="api_set_authorizer_option.html">8、设置授权方的选项信息</a></li>
-<li class="toctree-l3"><a class="reference internal" href="callback.html">9、推送授权相关通知</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../mini/index.html">代小程序实现业务-开发简介</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../mp/index.html">代公众号实现业务</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pre/index.html">开发前必读</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../wire.html">消息加解密说明</a></li>
@@ -163,9 +157,9 @@
         
           <li><a href="../index.html">第三方平台</a> &raquo;</li>
         
-          <li><a href="index.html">授权流程技术说明</a> &raquo;</li>
+          <li><a href="index.html">授权流程</a> &raquo;</li>
         
-      <li>3、获取预授权码 pre_auth_code</li>
+      <li>3. 获取预授权码 pre_auth_code</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -185,25 +179,19 @@
            <div itemprop="articleBody">
             
   <div class="section" id="pre-auth-code">
-<h1>3、获取预授权码 pre_auth_code<a class="headerlink" href="#pre-auth-code" title="永久链接至标题">¶</a></h1>
-<p>该 API
-用于获取预授权码。预授权码用于公众号或小程序授权时的第三方平台方安全验证。</p>
-<div class="section" id="id1">
-<h2>请求格式<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<h1>3. 获取预授权码 pre_auth_code<a class="headerlink" href="#pre-auth-code" title="永久链接至标题">¶</a></h1>
+<p>该 API 用于获取预授权码。预授权码用于公众号或小程序授权时的第三方平台方安全验证。</p>
+<p>请求格式</p>
 <p><code class="docutils literal notranslate"><span class="pre">POST</span></code>
 <strong>https</strong>://api.weixin.qq.com/cgi-bin/component/api_create_preauthcode?component_access_token=xxx</p>
-</div>
-<div class="section" id="id2">
-<h2>请求数据<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<p>请求数据</p>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
   <span class="nt">&quot;component_appid&quot;</span><span class="p">:</span> <span class="s2">&quot;appid_value&quot;</span>
 <span class="p">}</span>
 </pre></div>
 </div>
 <p>请求参数说明 参数 说明 component_appid 第三方平台方 appid</p>
-</div>
-<div class="section" id="id3">
-<h2>返回结果<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<p>返回结果</p>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
   <span class="nt">&quot;pre_auth_code&quot;</span><span class="p">:</span> <span class="s2">&quot;Cx_Dk6qiBE0Dmx4EmlT3oRfArPvwSQ-oa3NL_fwHM7VI08r52wazoZX2Rhpz1dEw&quot;</span><span class="p">,</span>
   <span class="nt">&quot;expires_in&quot;</span><span class="p">:</span> <span class="mi">600</span>
@@ -212,7 +200,6 @@
 </div>
 <p>结果参数说明 参数 说明 pre_auth_code 预授权码 expires_in 有效期，为 10
 分钟</p>
-</div>
 </div>
 
 
@@ -223,10 +210,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="api_query_auth.html" class="btn btn-neutral float-right" title="4、使用授权码换取公众号或小程序的接口调用凭据和授权信息" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="api_query_auth.html" class="btn btn-neutral float-right" title="4. 使用授权码换取公众号或小程序的接口调用凭据和授权信息" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="component_access_token.html" class="btn btn-neutral float-left" title="2、获取第三方平台 component_access_token" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="component_access_token.html" class="btn btn-neutral float-left" title="2. 获取第三方平台 component_access_token" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

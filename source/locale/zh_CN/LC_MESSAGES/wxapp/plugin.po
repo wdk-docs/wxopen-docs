@@ -1,0 +1,318 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, nosy
+# This file is distributed under the same license as the wxopen-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: wxopen-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-11 22:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/wxapp/plugin.rst:2
+msgid "小程序插件管理权限集"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:4
+msgid "插件管理权限集用于第三方代小程序管理插件，具体包括：添加插件、查询已添加的插件、删除插件、快速更新插件版本。具体接口列表如下："
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:6
+msgid "申请使用插件"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:7
+msgid "查询已添加的插件"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:8
+msgid "删除已添加的插件"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:9
+msgid "快速更新插件版本号"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:12
+msgid "1.申请使用插件接口"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:14
+msgid "此接口用于小程序向插件开发者发起使用插件的申请。"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:16 ../../source/wxapp/plugin.rst:74
+#: ../../source/wxapp/plugin.rst:138 ../../source/wxapp/plugin.rst:185
+msgid "请求方式: POST（请使用 https 协议）"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:18 ../../source/wxapp/plugin.rst:76
+#: ../../source/wxapp/plugin.rst:140 ../../source/wxapp/plugin.rst:187
+msgid "https://api.weixin.qq.com/wxa/plugin?access_token=TOKEN"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:20 ../../source/wxapp/plugin.rst:142
+#: ../../source/wxapp/plugin.rst:189
+msgid "POST 数据示例"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:29 ../../source/wxapp/plugin.rst:47
+#: ../../source/wxapp/plugin.rst:86 ../../source/wxapp/plugin.rst:110
+#: ../../source/wxapp/plugin.rst:151 ../../source/wxapp/plugin.rst:199
+msgid "参数说明"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:32 ../../source/wxapp/plugin.rst:50
+#: ../../source/wxapp/plugin.rst:89 ../../source/wxapp/plugin.rst:113
+#: ../../source/wxapp/plugin.rst:154 ../../source/wxapp/plugin.rst:202
+msgid "参数"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:32 ../../source/wxapp/plugin.rst:50
+#: ../../source/wxapp/plugin.rst:59 ../../source/wxapp/plugin.rst:89
+#: ../../source/wxapp/plugin.rst:113 ../../source/wxapp/plugin.rst:127
+#: ../../source/wxapp/plugin.rst:154 ../../source/wxapp/plugin.rst:172
+#: ../../source/wxapp/plugin.rst:202 ../../source/wxapp/plugin.rst:222
+msgid "说明"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:34 ../../source/wxapp/plugin.rst:91
+#: ../../source/wxapp/plugin.rst:156 ../../source/wxapp/plugin.rst:205
+msgid "action"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:34
+msgid "填写 apply"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:35 ../../source/wxapp/plugin.rst:157
+#: ../../source/wxapp/plugin.rst:206
+msgid "plugin_appid"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:35 ../../source/wxapp/plugin.rst:118
+#: ../../source/wxapp/plugin.rst:157 ../../source/wxapp/plugin.rst:206
+msgid "插件 appid"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:38
+msgid "返回说明"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:52 ../../source/wxapp/plugin.rst:115
+msgid "errcode"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:52 ../../source/wxapp/plugin.rst:59
+#: ../../source/wxapp/plugin.rst:115 ../../source/wxapp/plugin.rst:127
+#: ../../source/wxapp/plugin.rst:172 ../../source/wxapp/plugin.rst:222
+msgid "错误码"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:53 ../../source/wxapp/plugin.rst:116
+msgid "errmsg"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:53 ../../source/wxapp/plugin.rst:116
+msgid "错误信息"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:56 ../../source/wxapp/plugin.rst:124
+#: ../../source/wxapp/plugin.rst:169 ../../source/wxapp/plugin.rst:219
+msgid "错误码说明"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:61 ../../source/wxapp/plugin.rst:129
+#: ../../source/wxapp/plugin.rst:174 ../../source/wxapp/plugin.rst:224
+msgid "0"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:61 ../../source/wxapp/plugin.rst:129
+#: ../../source/wxapp/plugin.rst:174 ../../source/wxapp/plugin.rst:224
+msgid "成功"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:62 ../../source/wxapp/plugin.rst:130
+#: ../../source/wxapp/plugin.rst:175 ../../source/wxapp/plugin.rst:225
+msgid "-1"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:62 ../../source/wxapp/plugin.rst:130
+#: ../../source/wxapp/plugin.rst:175 ../../source/wxapp/plugin.rst:225
+msgid "系统错误"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:63
+msgid "89236"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:63
+msgid "该插件不能申请"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:64
+msgid "89237"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:64
+msgid "已经添加该插件"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:65
+msgid "89238"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:65
+msgid "申请或使用的插件已经达到上限"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:66
+msgid "89239"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:66
+msgid "该插件不存在"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:70
+msgid "2. 查询已添加的插件"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:72
+msgid "此接口用于查询小程序目前已添加的插件（包括确认中、已通过、已拒绝、已超时状态）"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:78
+msgid "POST 数据示例："
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:91 ../../source/wxapp/plugin.rst:156
+msgid "填写 list"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:94 ../../source/wxapp/plugin.rst:160
+#: ../../source/wxapp/plugin.rst:210
+msgid "返回说明（正常时返回的 json 示例）"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:117
+msgid "plugin_list"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:117
+msgid "申请或使用中的插件列表"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:118
+msgid "appid"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:119
+msgid "status"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:119
+msgid "插件状态（1：申请中，2：申请通过，3：被拒绝；4：已超时）"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:120
+msgid "nickname"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:120
+msgid "插件昵称"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:121
+msgid "headimgurl"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:121
+msgid "插件头像"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:134
+msgid "3. 删除已添加的插件"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:136
+msgid "此接口用户小程序删除当前已添加的插件（包括已通过和已拒绝）"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:176
+msgid "89243"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:176
+msgid "该申请为“待确认”状态，不可删除"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:177
+msgid "89244"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:177
+msgid "不存在该插件 appid"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:181
+msgid "4. 快速更新插件版本"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:183
+msgid "此接口用于快速更新插件的版本号，小程序不需要修改代码、不需要重新提交版本审核，即可快速更新当前小程序正在使用的插件版本号。"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:204
+msgid "TOKEN"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:204
+msgid "接口调用凭证"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:205
+msgid "此接口下填写 “update”"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:207
+msgid "user_version"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:207
+msgid "升级至版本号，要求此插件版本支持快速更新"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:226
+msgid "89256"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:226
+msgid "token 信息有误"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:227
+msgid "89257"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:227
+msgid "该插件版本不支持快速更新"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:228
+msgid "89258"
+msgstr ""
+
+#: ../../source/wxapp/plugin.rst:228
+msgid "当前小程序帐号存在灰度发布中的版本，不可操作快速更新"
+msgstr ""
+

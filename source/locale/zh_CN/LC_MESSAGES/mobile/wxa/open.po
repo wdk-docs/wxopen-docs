@@ -1,0 +1,40 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, nosy
+# This file is distributed under the same license as the wxopen-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: wxopen-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-11 22:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/mobile/wxa/open.rst:2
+msgid "移动应用拉起小程序功能"
+msgstr ""
+
+#: ../../source/mobile/wxa/open.rst:4
+msgid ""
+"移动应用拉起小程序是指用户可以通过接入该功能的第三方移动应用（APP）跳转至某一微信小程序的指定页面，完成服务后跳回至原移动应用（APP）。 "
+"移动应用拉起小程序功能已向全体开发者开放，开发者在微信开放平台帐号下申请移动应用并通过审核后，即可获得移动应用拉起小程序功能权限。 "
+"可在“管理中心-移动应用-应用详情-关联小程序信息”，为通过审核的移动应用发起关联小程序操作。 "
+"在同一开放平台账号下的移动应用及小程序无需关联即可完成跳转，非同一开放平台账号下的小程序需与移动应用（APP）成功关联后才支持跳转。"
+msgstr ""
+
+#: ../../source/mobile/wxa/open.rst:9
+msgid "一个移动应用只能最多同时绑定3个小程序，每月支持绑定3次。同一个小程序可被500个移动应用关联。"
+msgstr ""
+
+#: ../../source/mobile/wxa/open.rst:11
+msgid "示意图"
+msgstr ""
+

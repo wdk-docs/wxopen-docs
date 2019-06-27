@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, nosy
+# This file is distributed under the same license as the wxopen-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: wxopen-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-11 22:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/wxapp/CodeMgr/get_category.rst:2
+msgid "3. 获取已设置类目"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/get_category.rst:4
+msgid "注意：该接口可获取已设置的二级类目及用于代码审核的可选三级类目。"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/get_category.rst:6
+msgid "请求方式: get（请使用https协议）"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/get_category.rst:8
+msgid "https://api.weixin.qq.com/wxa/get_category?access_token=TOKEN 参数说明"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/get_category.rst:11
+msgid ""
+"参数      说明 access_token    请使用第三方平台获取到的该小程序授权的authorizer_access_token "
+"返回说明（正常时返回的json示例）："
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/get_category.rst:22
+#: ../../source/wxapp/CodeMgr/get_category.rst:32
+msgid "{"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/get_category.rst:16
+msgid "\"errcode\":0, \"errmsg\": \"ok\", \"category_list\" : ["
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/get_category.rst:20
+msgid ""
+"\"first_class\":\"工具\", \"second_class\":\"备忘录\"， \"first_id\":1, "
+"\"second_id\":2,"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/get_category.rst:26
+msgid ""
+"\"first_class\":\"教育\", \"second_class\":\"学历教育\", \"third_class\":\"高等\""
+" \"first_id\":3, \"second_id\":4, \"third_id\":5,"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/get_category.rst:32
+msgid "}"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/get_category.rst:33
+msgid "]"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/get_category.rst:34
+msgid "} 返回参数说明："
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/get_category.rst:37
+msgid ""
+"参数      说明 category_list   可填选的类目列表 first_class     一级类目名称 second_class"
+"    二级类目名称 third_class?    三级类目名称 first_id        一级类目的ID编号 second_id"
+"       二级类目的ID编号 third_id        三级类目的ID编号 错误码说明："
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/get_category.rst:47
+msgid "返回码     说明 -1      系统繁忙"
+msgstr ""
+

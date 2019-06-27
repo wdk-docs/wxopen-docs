@@ -6,5 +6,5 @@
    :glob:
 
    noob/index
-   community/index
+   community
    develop

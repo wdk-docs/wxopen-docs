@@ -1,0 +1,1584 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>代码管理 &mdash; wxopen-docs 1.0.0 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../contents.html" class="icon icon-home"> wxopen-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">小程序管理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mobile/index.html">移动应用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../website/index.html">网站应用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pubno/index.html">公众号</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../open/index.html">第三方平台</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../code/index.html">错误码</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../download/index.html">资源下载</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary.html">术语</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../contents.html">wxopen-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../contents.html">Docs</a> &raquo;</li>
+        
+      <li>代码管理</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/wxapp/CodeMgr/code.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>代码管理<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<p>第三方平台在开发者工具上开发完成后,可点击上传,代码将上传到开放平台草稿箱中,第三方平台可选择将代码添加到模板中,获得代码模版
+ID 后,可调用以下接口进行代码管理。</p>
+<div class="section" id="id2">
+<h2>1. 上传代码<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<p>请求方式: POST（请使用 https 协议）</p>
+<p><a class="reference external" href="https://api.weixin.qq.com/wxa/commit?access_token=TOKEN">https://api.weixin.qq.com/wxa/commit?access_token=TOKEN</a></p>
+<p>POST 数据示例:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span>{
+  &quot;template*id&quot;: 0,
+  &quot;ext_json&quot;: &quot;JSON_STRING&quot;, //\_ext_json 需为 string 类型,请参考下面的格式*
+  &quot;user_version&quot;: &quot;V1.0&quot;,
+  &quot;user_desc&quot;: &quot;test&quot;
+}
+</pre></div>
+</div>
+<p>参数说明: 参数 说明 access_token 请使用第三方平台获取到的该小程序授权的
+authorizer_access_token template_id 代码库中的代码模版 ID ext_json
+第三方自定义的配置 user_version 代码版本号,开发者可自定义（长度不要超过
+64 个字符） user_desc 代码描述,开发者可自定义</p>
+<p>ext_json 需为 string 类型,格式示例如下 ：</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;extAppid&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ext&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;attr1&quot;</span><span class="p">:</span> <span class="s2">&quot;value1&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;attr2&quot;</span><span class="p">:</span> <span class="s2">&quot;value2&quot;</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;extPages&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;index&quot;</span><span class="p">:</span> <span class="p">{},</span>
+    <span class="nt">&quot;search/index&quot;</span><span class="p">:</span> <span class="p">{}</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;pages&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;index&quot;</span><span class="p">,</span> <span class="s2">&quot;search/index&quot;</span><span class="p">],</span>
+  <span class="nt">&quot;window&quot;</span><span class="p">:</span> <span class="p">{},</span>
+  <span class="nt">&quot;networkTimeout&quot;</span><span class="p">:</span> <span class="p">{},</span>
+  <span class="nt">&quot;tabBar&quot;</span><span class="p">:</span> <span class="p">{}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>（1）为了便于第三方平台使用同一个小程序模版为不同的小程序提供服务,第三方可以将自定义信息放置在
+ext_json
+中,在模版小程序中,可以使用接口获取自定义信息,从而区分不同的小程序。详见：小程序模版开发</p>
+<p>（2）ext_json 中的参数可选,参数详见
+<a class="reference external" href="https://mp.weixin.qq.com/debug/wxadoc/dev/framework/config.html">https://mp.weixin.qq.com/debug/wxadoc/dev/framework/config.html</a></p>
+<p>（3）如果代码中已经有配置,则配置的合并规则为：除了 pages 和 tabBar.list
+直接覆盖原配置,其他都为插入或同级覆盖。</p>
+<p>特殊字段说明： 参数 说明 ext 自定义字段仅允许在这里定义,可在小程序中调用
+extPages 页面配置 extAppid 授权方 Appid,可填入商户 AppID,以区分不同商户</p>
+<p>返回说明（正常时返回的 json 示例）：</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;errcode&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span> <span class="s2">&quot;ok&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>错误码说明： 返回码 说明 -1 系统繁忙 85013 无效的自定义配置 85014
+无效的模版编号 85043 模版错误 85044 代码包超过大小限制 85045 ext_json
+有不存在的路径 85046 tabBar 中缺少 path 85047 pages 字段为空 85048
+ext_json 解析失败</p>
+</div>
+<div class="section" id="id3">
+<h2>2. 获取体验码<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<p>请求方式: get（请使用 https 协议）</p>
+<p><a class="reference external" href="https://api.weixin.qq.com/wxa/get_qrcode?access_token=TOKEN&amp;path=page%2Findex%3Faction%3D1">https://api.weixin.qq.com/wxa/get_qrcode?access_token=TOKEN&amp;path=page%2Findex%3Faction%3D1</a></p>
+<p>参数说明 参数 说明 path
+指定体验版二维码跳转到某个具体页面（如果不需要的话,则不需要填 path
+参数,可在路径后以“参数”方式传入参数） 具体的路径加参数需要
+urlencode,比如 page/index?action=1 编码后得到 page%2Findex%3Faction%3D1</p>
+<p>返回说明（正确情况下的返回 HTTP 头如下）：</p>
+<p>HTTP/1.1 200 OK</p>
+<p>Connection: close</p>
+<p>Content-Type: image/jpeg</p>
+<p>Content-disposition: attachment; filename=“QRCode.jpg”</p>
+<p>Date: Sun, 06 Jan 2013 10:20:18 GMT</p>
+<p>Cache-Control: no-cache, must-revalidate</p>
+<p>Content-Length: 339721</p>
+<p>错误情况下的返回 JSON 数据包示例如下：</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;errcode&quot;</span><span class="p">:</span> <span class="mi">-1</span><span class="p">,</span>
+  <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span> <span class="s2">&quot;system error&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id4">
+<h2>3. 获取已设置类目<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
+<p>注意：该接口可获取已设置的二级类目及用于代码审核的可选三级类目。</p>
+<p>请求方式: get（请使用 https 协议）</p>
+<p><a class="reference external" href="https://api.weixin.qq.com/wxa/get_category?access_token=TOKEN">https://api.weixin.qq.com/wxa/get_category?access_token=TOKEN</a></p>
+<p>参数说明 参数 说明 access_token 请使用第三方平台获取到的该小程序授权的
+authorizer_access_token</p>
+<p>返回说明（正常时返回的 json 示例）：</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;errcode&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span> <span class="s2">&quot;ok&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;category_list&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;first_class&quot;</span><span class="p">:</span> <span class="s2">&quot;工具&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;second_class&quot;</span><span class="p">:</span> <span class="s2">&quot;备忘录&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;first_id&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+      <span class="nt">&quot;second_id&quot;</span><span class="p">:</span> <span class="mi">2</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;first_class&quot;</span><span class="p">:</span> <span class="s2">&quot;教育&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;second_class&quot;</span><span class="p">:</span> <span class="s2">&quot;学历教育&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;third_class&quot;</span><span class="p">:</span> <span class="s2">&quot;高等&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;first_id&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+      <span class="nt">&quot;second_id&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+      <span class="nt">&quot;third_id&quot;</span><span class="p">:</span> <span class="mi">5</span>
+    <span class="p">}</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>返回参数说明：</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 42%" />
+<col style="width: 58%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>参数</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>category_list</p></td>
+<td><p>可填选的类目列表</p></td>
+</tr>
+<tr class="row-odd"><td><p>first_class</p></td>
+<td><p>一级类目名称</p></td>
+</tr>
+<tr class="row-even"><td><p>second_class</p></td>
+<td><p>二级类目名称</p></td>
+</tr>
+<tr class="row-odd"><td><p>third_class?</p></td>
+<td><p>三级类目名称</p></td>
+</tr>
+<tr class="row-even"><td><p>first_id</p></td>
+<td><p>一级类目的 ID 编号</p></td>
+</tr>
+<tr class="row-odd"><td><p>second_id</p></td>
+<td><p>二级类目的 ID 编号</p></td>
+</tr>
+<tr class="row-even"><td><p>third_id</p></td>
+<td><p>三级类目的 ID 编号</p></td>
+</tr>
+</tbody>
+</table>
+<p>错误码说明：</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 43%" />
+<col style="width: 57%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>返回码</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>-1</p></td>
+<td><p>系统繁忙</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id5">
+<h2>4. 获取代码页面配置<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
+<p>请求方式: get（请使用 https 协议）</p>
+<p><a class="reference external" href="https://api.weixin.qq.com/wxa/get_page?access_token=TOKEN">https://api.weixin.qq.com/wxa/get_page?access_token=TOKEN</a></p>
+<p>参数说明</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 84%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>参数</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>access_token</p></td>
+<td><p>请使用第三方平台获取到的该小程序授权的 authorizer_access_token</p></td>
+</tr>
+</tbody>
+</table>
+<p>返回说明（正常时返回的 json 示例）：</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;errcode&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span> <span class="s2">&quot;ok&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;page_list&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;index&quot;</span><span class="p">,</span> <span class="s2">&quot;page/list&quot;</span><span class="p">,</span> <span class="s2">&quot;page/detail&quot;</span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>返回参数说明：</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 29%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>参数</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>page_list</p></td>
+<td><p>page_list 页面配置列表</p></td>
+</tr>
+</tbody>
+</table>
+<p>错误码说明：</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 82%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>返回码</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>-1</p></td>
+<td><p>系统繁忙</p></td>
+</tr>
+<tr class="row-odd"><td><p>86000</p></td>
+<td><p>不是由第三方代小程序进行调用</p></td>
+</tr>
+<tr class="row-even"><td><p>86001</p></td>
+<td><p>不存在第三方的已经提交的代码</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id6">
+<h2>5. 提交审核<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h2>
+<p>请求方式: POST（请使用 https 协议）</p>
+<p><a class="reference external" href="https://api.weixin.qq.com/wxa/submit_audit?access_token=TOKEN">https://api.weixin.qq.com/wxa/submit_audit?access_token=TOKEN</a></p>
+<p>POST 数据示例:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;item_list&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;index&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;tag&quot;</span><span class="p">:</span> <span class="s2">&quot;学习 生活&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;first_class&quot;</span><span class="p">:</span> <span class="s2">&quot;文娱&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;second_class&quot;</span><span class="p">:</span> <span class="s2">&quot;资讯&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;first_id&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+      <span class="nt">&quot;second_id&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+      <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;首页&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;page/logs/logs&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;tag&quot;</span><span class="p">:</span> <span class="s2">&quot;学习 工作&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;first_class&quot;</span><span class="p">:</span> <span class="s2">&quot;教育&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;second_class&quot;</span><span class="p">:</span> <span class="s2">&quot;学历教育&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;third_class&quot;</span><span class="p">:</span> <span class="s2">&quot;高等&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;first_id&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+      <span class="nt">&quot;second_id&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+      <span class="nt">&quot;third_id&quot;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
+      <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;日志&quot;</span>
+    <span class="p">}</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>参数说明</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 85%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>参数</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>access_token</p></td>
+<td><p>请使用第三方平台获取到的该小程序授权的 authorizer_access_token</p></td>
+</tr>
+<tr class="row-odd"><td><p>item_list</p></td>
+<td><p>提交审核项的一个列表（至少填写 1 项,至多填写 5 项）</p></td>
+</tr>
+<tr class="row-even"><td><p>address</p></td>
+<td><p>小程序的页面,可通过“获取小程序的第三方提交代码的页面配置”接口获得</p></td>
+</tr>
+<tr class="row-odd"><td><p>tag</p></td>
+<td><p>小程序的标签,多个标签用空格分隔,标签不能多于 10 个,标签长度不超过 20</p></td>
+</tr>
+<tr class="row-even"><td><p>first_class</p></td>
+<td><p>一级类目名称,可通过“获取授权小程序帐号的可选类目”接口获得</p></td>
+</tr>
+<tr class="row-odd"><td><p>second_class</p></td>
+<td><p>二级类目(同上)</p></td>
+</tr>
+<tr class="row-even"><td><p>third_class</p></td>
+<td><p>三级类目(同上)</p></td>
+</tr>
+<tr class="row-odd"><td><p>first_id</p></td>
+<td><p>一级类目的 ID,可通过“获取授权小程序帐号的可选类目”接口获得</p></td>
+</tr>
+<tr class="row-even"><td><p>second_id</p></td>
+<td><p>二级类目的 ID(同上)</p></td>
+</tr>
+<tr class="row-odd"><td><p>third_id</p></td>
+<td><p>三级类目的 ID(同上)</p></td>
+</tr>
+<tr class="row-even"><td><p>title</p></td>
+<td><p>小程序页面的标题,标题长度不超过 32</p></td>
+</tr>
+</tbody>
+</table>
+<p>返回说明（正常时返回的 json 示例）：</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;errcode&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span> <span class="s2">&quot;ok&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;auditid&quot;</span><span class="p">:</span> <span class="mi">1234567</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>返回参数说明：</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 47%" />
+<col style="width: 53%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>参数</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>auditid</p></td>
+<td><p>审核编号</p></td>
+</tr>
+</tbody>
+</table>
+<p>错误码说明：</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 92%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>返回码</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>-1</p></td>
+<td><p>系统繁忙</p></td>
+</tr>
+<tr class="row-odd"><td><p>86000</p></td>
+<td><p>不是由第三方代小程序进行调用</p></td>
+</tr>
+<tr class="row-even"><td><p>86001</p></td>
+<td><p>不存在第三方的已经提交的代码</p></td>
+</tr>
+<tr class="row-odd"><td><p>85006</p></td>
+<td><p>标签格式错误</p></td>
+</tr>
+<tr class="row-even"><td><p>85007</p></td>
+<td><p>页面路径错误</p></td>
+</tr>
+<tr class="row-odd"><td><p>85008</p></td>
+<td><p>类目填写错误</p></td>
+</tr>
+<tr class="row-even"><td><p>85009</p></td>
+<td><p>已经有正在审核的版本</p></td>
+</tr>
+<tr class="row-odd"><td><p>85010</p></td>
+<td><p>item_list 有项目为空</p></td>
+</tr>
+<tr class="row-even"><td><p>85011</p></td>
+<td><p>标题填写错误</p></td>
+</tr>
+<tr class="row-odd"><td><p>85023</p></td>
+<td><p>审核列表填写的项目数不在 1-5 以内</p></td>
+</tr>
+<tr class="row-even"><td><p>85077</p></td>
+<td><p>小程序类目信息失效（类目中含有官方下架的类目,请重新选择类目）</p></td>
+</tr>
+<tr class="row-odd"><td><p>86002</p></td>
+<td><p>小程序还未设置昵称. 头像. 简介。请先设置完后再重新提交</p></td>
+</tr>
+<tr class="row-even"><td><p>85085</p></td>
+<td><p>近 7 天提交审核的小程序数量过多,请耐心等待审核完毕后再次提交</p></td>
+</tr>
+<tr class="row-odd"><td><p>85086</p></td>
+<td><p>提交代码审核之前需提前上传代码</p></td>
+</tr>
+<tr class="row-even"><td><p>85087</p></td>
+<td><p>小程序已使用 api navigateToMiniProgram,请声明跳转 appid 列表后再次提交</p></td>
+</tr>
+</tbody>
+</table>
+<p>!!! note “”</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span>注意：需要先提交体验版后再提交代码包审核。
+</pre></div>
+</div>
+</div>
+<div class="section" id="id7">
+<h2>6. 获取审核结果<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h2>
+<p>当小程序有审核结果后,第三方平台将可以通过开放平台上填写的回调地址,获得审核结果通知。</p>
+<p>审核通过时,接收到的推送 XML 数据包示例如下：</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;xml&gt;</span>
+  <span class="nt">&lt;ToUserName&gt;</span><span class="cp">&lt;![CDATA[gh_fb9688c2a4b2]]&gt;</span><span class="nt">&lt;/ToUserName&gt;</span>
+  <span class="nt">&lt;FromUserName&gt;</span><span class="cp">&lt;![CDATA[od1P50M-fNQI5Gcq-trm4a7apsU8]]&gt;</span><span class="nt">&lt;/FromUserName&gt;</span>
+  <span class="nt">&lt;CreateTime&gt;</span>1488856741<span class="nt">&lt;/CreateTime&gt;</span>
+  <span class="nt">&lt;MsgType&gt;</span><span class="cp">&lt;![CDATA[event]]&gt;</span><span class="nt">&lt;/MsgType&gt;</span>
+  <span class="nt">&lt;Event&gt;</span><span class="cp">&lt;![CDATA[weapp_audit_success]]&gt;</span><span class="nt">&lt;/Event&gt;</span>
+  <span class="nt">&lt;SuccTime&gt;</span>1488856741<span class="nt">&lt;/SuccTime&gt;</span>
+<span class="nt">&lt;/xml&gt;</span>
+</pre></div>
+</div>
+<p>参数说明：</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>参数</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>ToUserName</p></td>
+<td><p>小程序的原始 ID</p></td>
+</tr>
+<tr class="row-odd"><td><p>FromUserName</p></td>
+<td><p>发送方帐号（一个 OpenID,此时发送方是系统帐号）</p></td>
+</tr>
+<tr class="row-even"><td><p>CreateTime</p></td>
+<td><p>消息创建时间 （整型）,时间戳</p></td>
+</tr>
+<tr class="row-odd"><td><p>MsgType</p></td>
+<td><p>消息类型,event</p></td>
+</tr>
+<tr class="row-even"><td><p>Event</p></td>
+<td><p>事件类型 weapp_audit_success</p></td>
+</tr>
+<tr class="row-odd"><td><p>SuccTime</p></td>
+<td><p>审核成功时的时间（整形）,时间戳</p></td>
+</tr>
+</tbody>
+</table>
+<p>审核不通过时,接收到的推送 XML 数据包示例如下：</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;xml&gt;</span>
+  <span class="nt">&lt;ToUserName&gt;</span><span class="cp">&lt;![CDATA[gh_fb9688c2a4b2]]&gt;</span><span class="nt">&lt;/ToUserName&gt;</span>
+  <span class="nt">&lt;FromUserName&gt;</span><span class="cp">&lt;![CDATA[od1P50M-fNQI5Gcq-trm4a7apsU8]]&gt;</span><span class="nt">&lt;/FromUserName&gt;</span>
+  <span class="nt">&lt;CreateTime&gt;</span>1488856591<span class="nt">&lt;/CreateTime&gt;</span>
+  <span class="nt">&lt;MsgType&gt;</span><span class="cp">&lt;![CDATA[event]]&gt;</span><span class="nt">&lt;/MsgType&gt;</span>
+  <span class="nt">&lt;Event&gt;</span><span class="cp">&lt;![CDATA[weapp_audit_fail]]&gt;</span><span class="nt">&lt;/Event&gt;</span>
+  <span class="nt">&lt;Reason&gt;</span><span class="cp">&lt;![CDATA[1:账号信息不符合规范:&lt;br&gt;(1):包含色情因素&lt;br&gt;2:服务类目&quot;金融业-保险_&quot;与你提交代码审核时设置的功能页面内容不一致:&lt;br&gt;(1):功能页面设置的部分标签不属于所选的服务类目范围。&lt;br&gt;(2):功能页面设置的部分标签与该页面内容不相关。&lt;br&gt;]]&gt;</span><span class="nt">&lt;/Reason&gt;</span>
+  <span class="nt">&lt;FailTime&gt;</span>1488856591<span class="nt">&lt;/FailTime&gt;</span>
+<span class="nt">&lt;/xml&gt;</span>
+</pre></div>
+</div>
+<p>参数说明：</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>参数</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>ToUserName</p></td>
+<td><p>小程序的原始 ID</p></td>
+</tr>
+<tr class="row-odd"><td><p>FromUserName</p></td>
+<td><p>发送方帐号（一个 OpenID,此时发送方是系统帐号）</p></td>
+</tr>
+<tr class="row-even"><td><p>CreateTime</p></td>
+<td><p>消息创建时间 （整型）,时间戳</p></td>
+</tr>
+<tr class="row-odd"><td><p>MsgType</p></td>
+<td><p>消息类型,event</p></td>
+</tr>
+<tr class="row-even"><td><p>Event</p></td>
+<td><p>事件类型 weapp_audit_success</p></td>
+</tr>
+<tr class="row-odd"><td><p>Reason</p></td>
+<td><p>审核失败的原因</p></td>
+</tr>
+<tr class="row-even"><td><p>FailTime</p></td>
+<td><p>审核失败时的时间（整型）,时间戳</p></td>
+</tr>
+</tbody>
+</table>
+<p>除了消息通知之外,第三方平台也可通过接口查询审核状态。</p>
+</div>
+<div class="section" id="id8">
+<h2>7. 查询指定版本审核状态<a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h2>
+<p>请求方式: POST（请使用 https 协议）</p>
+<p><a class="reference external" href="https://api.weixin.qq.com/wxa/get_auditstatus?access_token=TOKEN">https://api.weixin.qq.com/wxa/get_auditstatus?access_token=TOKEN</a></p>
+<p>POST 数据示例:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;auditid&quot;</span><span class="p">:</span> <span class="mi">1234567</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>参数说明:</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 84%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>参数</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>access_token</p></td>
+<td><p>请使用第三方平台获取到的该小程序授权的 authorizer_access_token</p></td>
+</tr>
+<tr class="row-odd"><td><p>auditid</p></td>
+<td><p>提交审核时获得的审核 id</p></td>
+</tr>
+</tbody>
+</table>
+<p>返回说明（正常时返回的 json 示例）：</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;errcode&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span> <span class="s2">&quot;ok&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+  <span class="nt">&quot;reason&quot;</span><span class="p">:</span> <span class="s2">&quot;帐号信息不合规范&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>返回参数说明：</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 91%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>参数</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>status</p></td>
+<td><p>审核状态,其中 0 为审核成功,1 为审核失败,2 为审核中,3 已撤回</p></td>
+</tr>
+<tr class="row-odd"><td><p>reason</p></td>
+<td><p>当 status=1,审核被拒绝时,返回的拒绝原因</p></td>
+</tr>
+</tbody>
+</table>
+<p>错误码说明：</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 82%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>返回码</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>-1</p></td>
+<td><p>系统繁忙</p></td>
+</tr>
+<tr class="row-odd"><td><p>86000</p></td>
+<td><p>不是由第三方代小程序进行调用</p></td>
+</tr>
+<tr class="row-even"><td><p>86001</p></td>
+<td><p>不存在第三方的已经提交的代码</p></td>
+</tr>
+<tr class="row-odd"><td><p>85012</p></td>
+<td><p>无效的审核 id</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id9">
+<h2>8. 查询最新一次提交的审核状态<a class="headerlink" href="#id9" title="永久链接至标题">¶</a></h2>
+<p>请求方式: GET（请使用 https 协议）</p>
+<p><a class="reference external" href="https://api.weixin.qq.com/wxa/get_latest_auditstatus?access_token=TOKEN">https://api.weixin.qq.com/wxa/get_latest_auditstatus?access_token=TOKEN</a></p>
+<p>参数说明:</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 84%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>参数</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>access_token</p></td>
+<td><p>请使用第三方平台获取到的该小程序授权的 authorizer_access_token</p></td>
+</tr>
+</tbody>
+</table>
+<p>返回说明（正常时返回的 json 示例）：</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;errcode&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span> <span class="s2">&quot;ok&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;auditid&quot;</span><span class="p">:</span> <span class="s2">&quot;1234567&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+  <span class="nt">&quot;reason&quot;</span><span class="p">:</span> <span class="s2">&quot;帐号信息不合规范&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>返回参数说明：</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 89%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>参数</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>auditid</p></td>
+<td><p>最新的审核 ID</p></td>
+</tr>
+<tr class="row-odd"><td><p>status</p></td>
+<td><p>审核状态,其中 0 为审核成功,1 为审核失败,2 为审核中,3 已撤回</p></td>
+</tr>
+<tr class="row-even"><td><p>reason</p></td>
+<td><p>当 status=1,审核被拒绝时,返回的拒绝原因</p></td>
+</tr>
+</tbody>
+</table>
+<p>错误码说明：</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 82%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>返回码</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>-1</p></td>
+<td><p>系统繁忙</p></td>
+</tr>
+<tr class="row-odd"><td><p>86000</p></td>
+<td><p>不是由第三方代小程序进行调用</p></td>
+</tr>
+<tr class="row-even"><td><p>86001</p></td>
+<td><p>不存在第三方的已经提交的代码</p></td>
+</tr>
+<tr class="row-odd"><td><p>85012</p></td>
+<td><p>无效的审核 id</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id10">
+<h2>9. 发布已通过审核的小程序<a class="headerlink" href="#id10" title="永久链接至标题">¶</a></h2>
+<p>请求方式: POST（请使用 https 协议）</p>
+<p><a class="reference external" href="https://api.weixin.qq.com/wxa/release?access_token=TOKEN">https://api.weixin.qq.com/wxa/release?access_token=TOKEN</a></p>
+<p>POST 数据示例:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{}</span>
+</pre></div>
+</div>
+<p>参数说明：</p>
+<p>请填写空的数据包,POST 的 json 数据包为空即可。</p>
+<p>返回说明（正常时返回的 json 示例）：</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;errcode&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span> <span class="s2">&quot;ok&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>错误码说明：</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 75%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>返回码</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>-1</p></td>
+<td><p>系统繁忙</p></td>
+</tr>
+<tr class="row-odd"><td><p>85019</p></td>
+<td><p>没有审核版本</p></td>
+</tr>
+<tr class="row-even"><td><p>85020</p></td>
+<td><p>审核状态未满足发布</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id11">
+<h2>10. 修改线上代码的可见状态<a class="headerlink" href="#id11" title="永久链接至标题">¶</a></h2>
+<p>请求方式: POST（请使用 https 协议）</p>
+<p><a class="reference external" href="https://api.weixin.qq.com/wxa/change_visitstatus?access_token=TOKEN">https://api.weixin.qq.com/wxa/change_visitstatus?access_token=TOKEN</a></p>
+<p>POST 数据示例:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span>{
+&quot;action&quot;=&quot;close&quot;
+}
+</pre></div>
+</div>
+<p>参数说明:</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 84%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>参数</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>access_token</p></td>
+<td><p>请使用第三方平台获取到的该小程序授权的 authorizer_access_token</p></td>
+</tr>
+<tr class="row-odd"><td><p>action</p></td>
+<td><p>设置可访问状态,发布后默认可访问,close 为不可见,open 为可见</p></td>
+</tr>
+</tbody>
+</table>
+<p>返回说明（正常时返回的 json 示例）：</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;errcode&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span> <span class="s2">&quot;ok&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>错误码说明：</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 35%" />
+<col style="width: 65%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>返回码</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>-1</p></td>
+<td><p>系统繁忙</p></td>
+</tr>
+<tr class="row-odd"><td><p>85021</p></td>
+<td><p>状态不可变</p></td>
+</tr>
+<tr class="row-even"><td><p>85022</p></td>
+<td><p>action 非法</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id12">
+<h2>11. 版本回退<a class="headerlink" href="#id12" title="永久链接至标题">¶</a></h2>
+<p>请求方式:GET（请使用 https 协议）</p>
+<p><a class="reference external" href="https://api.weixin.qq.com/wxa/revertcoderelease?access_token=TOKEN">https://api.weixin.qq.com/wxa/revertcoderelease?access_token=TOKEN</a></p>
+<p>返回说明</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;errcode&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span> <span class="s2">&quot;ok&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>错误码说明</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 95%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>错误码</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>成功</p></td>
+</tr>
+<tr class="row-odd"><td><p>-1</p></td>
+<td><p>系统错误</p></td>
+</tr>
+<tr class="row-even"><td><p>87011</p></td>
+<td><p>现网已经在灰度发布,不能进行版本回退</p></td>
+</tr>
+<tr class="row-odd"><td><p>87012</p></td>
+<td><p>该版本不能回退,可能的原因：1:无上一个线上版用于回退 2:此版本为已回退版本,不能回退 3:此版本为回退功能上线之前的版本,不能回退</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id13">
+<h2>12. 查询当前设置的最低基础库版本及各版本用户占比<a class="headerlink" href="#id13" title="永久链接至标题">¶</a></h2>
+<p>请求方式: POST（请使用 https 协议）</p>
+<p><a class="reference external" href="https://api.weixin.qq.com/cgi-bin/wxopen/getweappsupportversion?access_token=TOKEN">https://api.weixin.qq.com/cgi-bin/wxopen/getweappsupportversion?access_token=TOKEN</a></p>
+<p>无需携带的参数</p>
+<p>返回说明</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;errcode&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span> <span class="s2">&quot;ok&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;now_version&quot;</span><span class="p">:</span> <span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;uv_info&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;items&quot;</span><span class="p">:</span> <span class="p">[</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;percentage&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;1.0.0&quot;</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;percentage&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;1.0.1&quot;</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;percentage&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;1.1.0&quot;</span>
+      <span class="p">}</span>
+    <span class="p">]</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>参数说明</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>参数</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>errcode</p></td>
+<td><p>错误码</p></td>
+</tr>
+<tr class="row-odd"><td><p>errmsg</p></td>
+<td><p>错误信息</p></td>
+</tr>
+<tr class="row-even"><td><p>now_version</p></td>
+<td><p>当前版本</p></td>
+</tr>
+<tr class="row-odd"><td><p>uv_info</p></td>
+<td><p>受影响用户占比,item 参数里面为一系列数组,每个数组带有参数 percentage（受影响比例）以及 version（版本号）</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id14">
+<h2>13. 设置最低基础库版本<a class="headerlink" href="#id14" title="永久链接至标题">¶</a></h2>
+<p>请求方式: POST（请使用 https 协议）</p>
+<p><a class="reference external" href="https://api.weixin.qq.com/cgi-bin/wxopen/setweappsupportversion?access_token=TOKEN">https://api.weixin.qq.com/cgi-bin/wxopen/setweappsupportversion?access_token=TOKEN</a></p>
+<p>请求示例：</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;1.0.0&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>参数说明</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 64%" />
+<col style="width: 36%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>参数</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>version</p></td>
+<td><p>版本</p></td>
+</tr>
+</tbody>
+</table>
+<p>返回说明</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;errcode&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span> <span class="s2">&quot;ok&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>参数说明</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 47%" />
+<col style="width: 53%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>参数</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>errcode</p></td>
+<td><p>错误码</p></td>
+</tr>
+<tr class="row-odd"><td><p>errmsg</p></td>
+<td><p>错误信息</p></td>
+</tr>
+</tbody>
+</table>
+<p>错误码说明</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 67%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>错误码</p></th>
+<th class="head"><p>错误说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>85015</p></td>
+<td><p>版本输入错误</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id15">
+<h2>14. 设置小程序“扫普通链接二维码打开小程序”能力<a class="headerlink" href="#id15" title="永久链接至标题">¶</a></h2>
+<p>功能介绍文档：</p>
+<p>扫描普通链接二维码打开小程序功能介绍</p>
+<p>此功能包括 4 个接口：</p>
+<ol class="arabic simple">
+<li><p>增加或修改二维码规则</p></li>
+<li><p>获取已设置的二维码规则</p></li>
+<li><p>获取校验文件名称和内容</p></li>
+<li><p>删除已设置的二维码规则</p></li>
+<li><p>发布已设置的二维码规则</p></li>
+</ol>
+<p>流程及接口说明</p>
+<div class="section" id="id16">
+<h3>1. 增加或修改二维码规则<a class="headerlink" href="#id16" title="永久链接至标题">¶</a></h3>
+<p>请求方式: POST（请使用 https 协议）</p>
+<p><a class="reference external" href="https://api.weixin.qq.com/cgi-bin/wxopen/qrcodejumpadd?access_token=TOKEN">https://api.weixin.qq.com/cgi-bin/wxopen/qrcodejumpadd?access_token=TOKEN</a></p>
+<p>请求示例：</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;prefix&quot;</span><span class="p">:</span> <span class="s2">&quot;https://weixin.qq.com/qrcodejump&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;permit_sub_rule&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;path&quot;</span><span class="p">:</span> <span class="s2">&quot;pages/index/index&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;open_version&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;debug_url&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="s2">&quot;https://weixin.qq.com/qrcodejump?a=1&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;https://weixin.qq.com/qrcodejump?a=2&quot;</span>
+  <span class="p">],</span>
+  <span class="nt">&quot;is_edit&quot;</span><span class="p">:</span> <span class="mi">0</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>需携带的参数如下</p>
+<p>返回说明</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;errcode&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span> <span class="s2">&quot;ok&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>参数说明</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 47%" />
+<col style="width: 53%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>参数</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>errcode</p></td>
+<td><p>错误码</p></td>
+</tr>
+<tr class="row-odd"><td><p>errmsg</p></td>
+<td><p>错误信息</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id17">
+<h3>2. 获取已设置的二维码规则<a class="headerlink" href="#id17" title="永久链接至标题">¶</a></h3>
+<p>请求方式: POST（请使用 https 协议）</p>
+<p><a class="reference external" href="https://api.weixin.qq.com/cgi-bin/wxopen/qrcodejumpget?access_token=TOKEN">https://api.weixin.qq.com/cgi-bin/wxopen/qrcodejumpget?access_token=TOKEN</a></p>
+<p>无需携带的参数</p>
+<p>返回说明</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;rule_list&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;prefix&quot;</span><span class="p">:</span> <span class="s2">&quot;https://weixin.qq.com/qrcodejump&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;open_version&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+      <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+      <span class="nt">&quot;permit_sub_rule&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+      <span class="nt">&quot;path&quot;</span><span class="p">:</span> <span class="s2">&quot;pages / index / index &quot;</span><span class="p">,</span>
+      <span class="nt">&quot;debug_url&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;https://weixin.qq.com/qrcodejump?a=1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;https://weixin.qq.com/qrcodejump?a=1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;https://weixin.qq.com/qrcodejump?a=2&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;https: //weixin.qq.com/qrcodejump?a=2&quot;</span>
+      <span class="p">]</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;prefix&quot;</span><span class="p">:</span> <span class="s2">&quot;https://weixin.qq.com/qrcodejumptest&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;open_version&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+      <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+      <span class="nt">&quot;permit_sub_rule&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+      <span class="nt">&quot;path&quot;</span><span class="p">:</span> <span class="s2">&quot;pages/index/index&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;debug_url&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;https://weixin.qq.com/qrcodejumptest?a=1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;https://weixin.qq.com/qrcodejumptest?a=1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;https://weixin.qq.com/qrcodejumptest?a=2&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;https: //weixin.qq.com/qrcodejumptest?a=2&quot;</span>
+      <span class="p">]</span>
+    <span class="p">}</span>
+  <span class="p">],</span>
+  <span class="nt">&quot;qrcodejump_open&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;errcode&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;list_size&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+  <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span> <span class="s2">&quot;ok&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;qrcodejump_pub_quota&quot;</span><span class="p">:</span> <span class="mi">20</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>参数说明</p>
+</div>
+<div class="section" id="id18">
+<h3>3. 获取校验文件名称及内容<a class="headerlink" href="#id18" title="永久链接至标题">¶</a></h3>
+<p>请求方式: POST（请使用 https 协议）</p>
+<p><a class="reference external" href="https://api.weixin.qq.com/cgi-bin/wxopen/qrcodejumpdownload?access_token=TOKEN">https://api.weixin.qq.com/cgi-bin/wxopen/qrcodejumpdownload?access_token=TOKEN</a></p>
+<p>无需携带的参数</p>
+<p>返回说明</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;errcode&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span> <span class="s2">&quot;ok&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 60%" />
+<col style="width: 40%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>参数</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>errcode</p></td>
+<td><p>错误码</p></td>
+</tr>
+<tr class="row-odd"><td><p>errmsg</p></td>
+<td><p>错误信息</p></td>
+</tr>
+<tr class="row-even"><td><p>file_name</p></td>
+<td><p>文件名称</p></td>
+</tr>
+<tr class="row-odd"><td><p>file_content</p></td>
+<td><p>文件内容</p></td>
+</tr>
+</tbody>
+</table>
+<p>下载随机校验文件,并将文件上传至服务器指定位置的目录下,方可通过所属权校验。</p>
+<p>验证文件放置规则：?放置于 URL
+中声明的最后一级子目录下,若无子目录,则放置于 host
+所属服务器的顶层目录下。</p>
+</div>
+<div class="section" id="id19">
+<h3>4. 删除已设置的二维码规则<a class="headerlink" href="#id19" title="永久链接至标题">¶</a></h3>
+<p>请求方式: POST（请使用 https 协议）</p>
+<p><a class="reference external" href="https://api.weixin.qq.com/cgi-bin/wxopen/qrcodejumpdelete?access_token=TOKEN">https://api.weixin.qq.com/cgi-bin/wxopen/qrcodejumpdelete?access_token=TOKEN</a></p>
+<p>请求示例：</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;prefix&quot;</span><span class="p">:</span> <span class="s2">&quot;https://weixin.qq.com/qrcodejump&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>参数说明</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 38%" />
+<col style="width: 63%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>参数</p></th>
+<th class="head"><p>参数说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>prefix</p></td>
+<td><p>二维码规则</p></td>
+</tr>
+</tbody>
+</table>
+<p>返回说明</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;errcode&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span> <span class="s2">&quot;ok&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>参数说明</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 47%" />
+<col style="width: 53%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>参数</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>errcode</p></td>
+<td><p>错误码</p></td>
+</tr>
+<tr class="row-odd"><td><p>errmsg</p></td>
+<td><p>错误信息</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id20">
+<h3>5. 发布已设置的二维码规则<a class="headerlink" href="#id20" title="永久链接至标题">¶</a></h3>
+<p>请求方式: POST（请使用 https 协议）</p>
+<p><a class="reference external" href="https://api.weixin.qq.com/cgi-bin/wxopen/qrcodejumppublish?access_token=TOKEN">https://api.weixin.qq.com/cgi-bin/wxopen/qrcodejumppublish?access_token=TOKEN</a></p>
+<p>请求示例：</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;prefix&quot;</span><span class="p">:</span> <span class="s2">&quot;https://weixin.qq.com/qrcodejump&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>需携带的参数如下</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 38%" />
+<col style="width: 63%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>参数</p></th>
+<th class="head"><p>参数说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>prefix</p></td>
+<td><p>二维码规则</p></td>
+</tr>
+</tbody>
+</table>
+<p>返回说明</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;errcode&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span> <span class="s2">&quot;ok&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 89%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>参数</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>errcode</p></td>
+<td><p>错误码</p></td>
+</tr>
+<tr class="row-odd"><td><p>errmsg</p></td>
+<td><p>错误信息</p></td>
+</tr>
+<tr class="row-even"><td><p>错误码</p></td>
+<td><p>错误说明</p></td>
+</tr>
+<tr class="row-odd"><td><p>85066</p></td>
+<td><p>链接错误</p></td>
+</tr>
+<tr class="row-even"><td><p>85068</p></td>
+<td><p>测试链接不是子链接</p></td>
+</tr>
+<tr class="row-odd"><td><p>85069</p></td>
+<td><p>校验文件失败</p></td>
+</tr>
+<tr class="row-even"><td><p>85070</p></td>
+<td><p>链接为黑名单</p></td>
+</tr>
+<tr class="row-odd"><td><p>85071</p></td>
+<td><p>已添加该链接,请勿重复添加</p></td>
+</tr>
+<tr class="row-even"><td><p>85072</p></td>
+<td><p>该链接已被占用</p></td>
+</tr>
+<tr class="row-odd"><td><p>85073</p></td>
+<td><p>二维码规则已满</p></td>
+</tr>
+<tr class="row-even"><td><p>85074</p></td>
+<td><p>小程序未发布, 小程序必须先发布代码才可以发布二维码跳转规则</p></td>
+</tr>
+<tr class="row-odd"><td><p>85075</p></td>
+<td><p>个人类型小程序无法设置二维码规则</p></td>
+</tr>
+<tr class="row-even"><td><p>85076</p></td>
+<td><p>链接没有 ICP 备案</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="id21">
+<h2>15. 小程序审核撤回<a class="headerlink" href="#id21" title="永久链接至标题">¶</a></h2>
+<p>单个帐号每天审核撤回次数最多不超过 1 次,一个月不超过 10 次。</p>
+<p>请求方式:</p>
+<p>GET（请使用 https 协议）</p>
+<p><a class="reference external" href="https://api.weixin.qq.com/wxa/undocodeaudit?access_token=TOKEN">https://api.weixin.qq.com/wxa/undocodeaudit?access_token=TOKEN</a></p>
+<p>返回说明</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;errcode&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span> <span class="s2">&quot;ok&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>错误码说明</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 87%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>错误码</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>成功</p></td>
+</tr>
+<tr class="row-odd"><td><p>-1</p></td>
+<td><p>系统错误</p></td>
+</tr>
+<tr class="row-even"><td><p>87013</p></td>
+<td><p>撤回次数达到上限（每天一次,每个月 10 次）</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id22">
+<h2>16.小程序分阶段发布<a class="headerlink" href="#id22" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id23">
+<h3>1. 分阶段发布接口<a class="headerlink" href="#id23" title="永久链接至标题">¶</a></h3>
+<p>请求方式: POST（请使用 https 协议）</p>
+<p><a class="reference external" href="https://api.weixin.qq.com/wxa/grayrelease?access_token=TOKEN">https://api.weixin.qq.com/wxa/grayrelease?access_token=TOKEN</a></p>
+<p>POST 数据示例</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span>{
+  &quot;gray_percentage&quot;: 1 //灰度的百分比,1 到 100 的整数
+}
+</pre></div>
+</div>
+<p>返回说明</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;errcode&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span> <span class="s2">&quot;ok&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>错误码说明</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 84%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>错误码</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>成功</p></td>
+</tr>
+<tr class="row-odd"><td><p>-1</p></td>
+<td><p>系统错误</p></td>
+</tr>
+<tr class="row-even"><td><p>86002</p></td>
+<td><p>小程序未初始化完成</p></td>
+</tr>
+<tr class="row-odd"><td><p>85079</p></td>
+<td><p>小程序没有线上版本,不能进行灰度</p></td>
+</tr>
+<tr class="row-even"><td><p>85080</p></td>
+<td><p>小程序提交的审核未审核通过</p></td>
+</tr>
+<tr class="row-odd"><td><p>85081</p></td>
+<td><p>无效的发布比例</p></td>
+</tr>
+<tr class="row-even"><td><p>85082</p></td>
+<td><p>当前的发布比例需要比之前设置的高</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id24">
+<h3>2. 取消分阶段发布<a class="headerlink" href="#id24" title="永久链接至标题">¶</a></h3>
+<p>请求方式: GET（请使用 https 协议）</p>
+<p><a class="reference external" href="https://api.weixin.qq.com/wxa/revertgrayrelease?access_token=TOKEN">https://api.weixin.qq.com/wxa/revertgrayrelease?access_token=TOKEN</a></p>
+<p>返回说明</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;errcode&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;errmsg&quot;</span><span class="p">:</span> <span class="s2">&quot;ok&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>错误码说明</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 43%" />
+<col style="width: 57%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>错误码</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>成功</p></td>
+</tr>
+<tr class="row-odd"><td><p>-1</p></td>
+<td><p>系统错误</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id25">
+<h3>3. 查询当前分阶段发布详情<a class="headerlink" href="#id25" title="永久链接至标题">¶</a></h3>
+<p>请求方式: GET（请使用 https 协议）</p>
+<p><a class="reference external" href="https://api.weixin.qq.com/wxa/getgrayreleaseplan?access_token=TOKEN">https://api.weixin.qq.com/wxa/getgrayreleaseplan?access_token=TOKEN</a></p>
+<p>返回说明</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span>{
+  &quot;errcode&quot;: 0,
+  &quot;errmsg&quot;: &quot;ok&quot;,
+  &quot;gray_release_plan&quot;: {
+    &quot;status&quot;: 1, //0:初始状态 1:执行中 2:暂停中 3:执行完毕 4:被删除
+    &quot;create_timestamp&quot;: 1517553721, //创建时间
+    &quot;gray_percentage&quot;: 8
+  }
+}
+</pre></div>
+</div>
+<p>错误码说明</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 43%" />
+<col style="width: 57%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>错误码</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>成功</p></td>
+</tr>
+<tr class="row-odd"><td><p>-1</p></td>
+<td><p>系统错误</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, nosy
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

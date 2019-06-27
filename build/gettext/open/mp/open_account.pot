@@ -1,0 +1,348 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, nosy
+# This file is distributed under the same license as the wxopen-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: wxopen-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-11 22:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/open/mp/open_account.rst:2
+msgid "微信开放平台帐号管理"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:4
+msgid "第三方平台在获得此权限后，可以代替已授权的公众号/小程序创建开放平台帐号或进行绑定/解绑操作。"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:6
+msgid "绑定在同一个开放平台帐号下的公众号及小程序，用户 unionid 一致。开发者可调用“获取用户基本信息”接口获取用户 unionid。具体包括以下接口："
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:10
+msgid "创建开放平台帐号并绑定公众号/小程序"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:11
+msgid "将公众号/小程序绑定到已有开放平台帐号下"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:12
+msgid "将公众号/小程序从开放平台帐号下解绑"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:13
+msgid "获取公众号/小程序所绑定的开放平台帐号"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:15
+msgid "注："
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:17
+msgid "一个公众号/小程序帐号只可以绑定在一个开放平台帐号下。"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:18
+msgid "授权第三方平台注册的开放平台帐号只可用于获取用户 unionid 实现用户身份打通，支持绑定同主体的公众号及小程序，不可独立登录。"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:20
+msgid "第三方平台不可操作（包括绑定/解绑. 通过 open.weixin.qq.com 线上流程注册的开放平台帐号。"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:22
+msgid "公众号只可将此权限集授权给一个第三方平台，授权互斥。"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:25
+msgid "1、创建 开放平台帐号并绑定公众号/小程序"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:27
+msgid "该 API 用于创建一个开放平台帐号，并将一个尚未绑定开放平台帐号的公众号/小程序绑定至该开放平台帐号上。新创建的开放平台帐号的主体信息将设置为与之绑定的公众号或小程序的主体。"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:30
+#: ../../source/open/mp/open_account.rst:88
+#: ../../source/open/mp/open_account.rst:149
+#: ../../source/open/mp/open_account.rst:207
+msgid "接口调用请求说明"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:32
+msgid "http 请求方式: POST（请使用 https 协议. https://api.weixin.qq.com/cgi-bin/open/create?access_token=xxxx"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:35
+#: ../../source/open/mp/open_account.rst:93
+#: ../../source/open/mp/open_account.rst:154
+#: ../../source/open/mp/open_account.rst:212
+msgid "POST 数据示例"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:43
+#: ../../source/open/mp/open_account.rst:102
+#: ../../source/open/mp/open_account.rst:163
+#: ../../source/open/mp/open_account.rst:220
+msgid "请求参数说明"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:46
+#: ../../source/open/mp/open_account.rst:64
+#: ../../source/open/mp/open_account.rst:105
+#: ../../source/open/mp/open_account.rst:123
+#: ../../source/open/mp/open_account.rst:166
+#: ../../source/open/mp/open_account.rst:184
+#: ../../source/open/mp/open_account.rst:223
+#: ../../source/open/mp/open_account.rst:241
+msgid "参数"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:46
+#: ../../source/open/mp/open_account.rst:64
+#: ../../source/open/mp/open_account.rst:74
+#: ../../source/open/mp/open_account.rst:105
+#: ../../source/open/mp/open_account.rst:123
+#: ../../source/open/mp/open_account.rst:132
+#: ../../source/open/mp/open_account.rst:166
+#: ../../source/open/mp/open_account.rst:184
+#: ../../source/open/mp/open_account.rst:193
+#: ../../source/open/mp/open_account.rst:223
+#: ../../source/open/mp/open_account.rst:241
+#: ../../source/open/mp/open_account.rst:251
+msgid "说明"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:48
+#: ../../source/open/mp/open_account.rst:107
+#: ../../source/open/mp/open_account.rst:168
+#: ../../source/open/mp/open_account.rst:225
+msgid "appid"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:48
+#: ../../source/open/mp/open_account.rst:107
+#: ../../source/open/mp/open_account.rst:168
+#: ../../source/open/mp/open_account.rst:225
+msgid "授权公众号或小程序的 appid"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:51
+#: ../../source/open/mp/open_account.rst:111
+#: ../../source/open/mp/open_account.rst:172
+#: ../../source/open/mp/open_account.rst:228
+msgid "返回结果示例"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:61
+#: ../../source/open/mp/open_account.rst:120
+#: ../../source/open/mp/open_account.rst:181
+#: ../../source/open/mp/open_account.rst:238
+msgid "结果参数说明"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:66
+#: ../../source/open/mp/open_account.rst:108
+#: ../../source/open/mp/open_account.rst:169
+#: ../../source/open/mp/open_account.rst:245
+msgid "open_appid"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:66
+msgid "所创建的开放平台帐号 的 appid"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:67
+#: ../../source/open/mp/open_account.rst:125
+#: ../../source/open/mp/open_account.rst:186
+#: ../../source/open/mp/open_account.rst:243
+msgid "errcode"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:67
+#: ../../source/open/mp/open_account.rst:125
+#: ../../source/open/mp/open_account.rst:186
+#: ../../source/open/mp/open_account.rst:243
+msgid "错误码"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:68
+#: ../../source/open/mp/open_account.rst:126
+#: ../../source/open/mp/open_account.rst:187
+#: ../../source/open/mp/open_account.rst:244
+msgid "errmsg"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:68
+#: ../../source/open/mp/open_account.rst:126
+#: ../../source/open/mp/open_account.rst:187
+#: ../../source/open/mp/open_account.rst:244
+msgid "错误信息"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:71
+#: ../../source/open/mp/open_account.rst:129
+#: ../../source/open/mp/open_account.rst:190
+#: ../../source/open/mp/open_account.rst:248
+msgid "返回码说明"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:74
+#: ../../source/open/mp/open_account.rst:132
+#: ../../source/open/mp/open_account.rst:193
+#: ../../source/open/mp/open_account.rst:251
+msgid "返回码"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:76
+#: ../../source/open/mp/open_account.rst:134
+#: ../../source/open/mp/open_account.rst:195
+#: ../../source/open/mp/open_account.rst:253
+msgid "0"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:76
+#: ../../source/open/mp/open_account.rst:134
+#: ../../source/open/mp/open_account.rst:195
+#: ../../source/open/mp/open_account.rst:253
+msgid "ok"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:77
+#: ../../source/open/mp/open_account.rst:135
+#: ../../source/open/mp/open_account.rst:196
+#: ../../source/open/mp/open_account.rst:254
+msgid "-1"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:77
+msgid "system error ， 系统错误"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:78
+#: ../../source/open/mp/open_account.rst:136
+#: ../../source/open/mp/open_account.rst:197
+#: ../../source/open/mp/open_account.rst:255
+msgid "40013"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:78
+msgid "invalid appid ， appid 无效。"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:79
+#: ../../source/open/mp/open_account.rst:137
+msgid "89000"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:79
+#: ../../source/open/mp/open_account.rst:137
+msgid "account has bound open，该公众号/小程序已经绑定了开放平台帐号"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:83
+msgid "2 、将公众号/小程序绑定到开放平台帐号下"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:85
+msgid "该 API 用于将一个尚未绑定开放平台帐号的公众号或小程序绑定至指定开放平台帐号上。二者须主体相同。"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:90
+msgid "http 请求方式: POST（请使用 https 协议. https://api.weixin.qq.com/cgi-bin/open/bind?access_token=xxxx"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:108
+#: ../../source/open/mp/open_account.rst:169
+msgid "开放平台帐号 appid"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:135
+#: ../../source/open/mp/open_account.rst:196
+#: ../../source/open/mp/open_account.rst:254
+msgid "system error，系统错误"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:136
+#: ../../source/open/mp/open_account.rst:197
+msgid "invalid appid，appid 或 open_appid 无效。"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:138
+#: ../../source/open/mp/open_account.rst:198
+msgid "89001"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:138
+#: ../../source/open/mp/open_account.rst:198
+msgid "not same contractor，Authorizer 与开放平台帐号主体不相同"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:139
+#: ../../source/open/mp/open_account.rst:199
+msgid "89003"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:139
+#: ../../source/open/mp/open_account.rst:199
+msgid "该开放平台帐号并非通过 api 创建，不允许操作"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:140
+msgid "89004"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:140
+msgid "该开放平台帐号所绑定的公众号/小程序已达上限(100 个)"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:144
+msgid "3、将公众号/小程序从开放平台帐号下解绑"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:146
+msgid "该 API 用于将一个公众号或小程序与指定开放平台帐号解绑。开发者须确认所指定帐号与当前该公众号或小程序所绑定的开放平台帐号一致。"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:151
+msgid "http 请求方式: POST（请使用 https 协议. https://api.weixin.qq.com/cgi-bin/open/unbind?access_token=xxxx"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:203
+msgid "4、获取公众号/小程序所绑定的开放平台帐号"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:205
+msgid "该 API 用于获取公众号或小程序所绑定的开放平台帐号。"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:209
+msgid "http 请求方式: POST（请使用 https 协议. https://api.weixin.qq.com/cgi-bin/open/get?access_token=xxxx"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:245
+msgid "公众号或小程序所绑定的开放平台帐号的 appid"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:255
+msgid "invalid appid，appid 无效。"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:256
+msgid "89002"
+msgstr ""
+
+#: ../../source/open/mp/open_account.rst:256
+msgid "open not exists，该公众号/小程序未绑定微信开放平台帐号。"
+msgstr ""
+

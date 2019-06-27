@@ -83,12 +83,17 @@
             
             
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../index.html">概述</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../wxapp/index.html">小程序管理</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../mobile/index.html">移动应用</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">网站应用</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="login.html">网站应用微信登录开发指南</a></li>
 <li class="toctree-l2"><a class="reference internal" href="feedback.html">开发者反馈</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">授权后接口调用（UnionID）</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">授权后接口调用（UnionID）</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">授权后接口调用（UnionID）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#access-token">刷新或续期access_token使用</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">获取用户个人信息（UnionID机制）</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="semanteme.html">语义理解上手指南</a></li>
 </ul>
 </li>
@@ -165,8 +170,9 @@
             
   <div class="section" id="unionid">
 <h1>授权后接口调用（UnionID）<a class="headerlink" href="#unionid" title="永久链接至标题">¶</a></h1>
-<p>授权后接口调用（UnionID）
-通过code获取access_token</p>
+<div class="section" id="id1">
+<h2>授权后接口调用（UnionID）<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<p>通过code获取access_token</p>
 <p>接口说明</p>
 <p>通过code获取access_token的接口。</p>
 <p>请求说明</p>
@@ -195,9 +201,11 @@ scope   用户授权的作用域，使用逗号（,）分隔
 错误返回样例：</p>
 <p>{
 “errcode”:40029,”errmsg”:”invalid code”
-}
-刷新或续期access_token使用
-接口说明</p>
+}</p>
+</div>
+<div class="section" id="access-token">
+<h2>刷新或续期access_token使用<a class="headerlink" href="#access-token" title="永久链接至标题">¶</a></h2>
+<p>接口说明</p>
 <p>access_token是调用授权关系接口的调用凭证，由于access_token有效期（目前为2个小时）较短，当access_token超时后，可以使用refresh_token进行刷新，access_token刷新结果有两种：</p>
 <ol class="arabic simple">
 <li><p>若access_token已超时，那么进行refresh_token会获取一个新的access_token，新的超时时间；</p></li>
@@ -249,8 +257,10 @@ openid  是       普通用户标识，对该公众帐号唯一
 错误的Json返回示例:</p>
 <p>{
 “errcode”:40003,”errmsg”:”invalid openid”
-}
-获取用户个人信息（UnionID机制）</p>
+}</p>
+</div>
+<div class="section" id="id2">
+<h2>获取用户个人信息（UnionID机制）<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
 <p>接口说明</p>
 <p>此接口用于获取用户个人信息。开发者可通过OpenID来获取用户基本信息。特别需要注意的是，如果开发者拥有多个移动应用、网站应用和公众帐号，可通过获取用户基本信息中的unionid来区分用户的唯一性，因为只要是同一个微信开放平台帐号下的移动应用、网站应用和公众帐号，用户的unionid是唯一的。换句话说，同一用户，对同一个微信开放平台下的不同应用，unionid是相同的。请注意，在用户修改微信头像后，旧的微信头像URL将会失效，因此开发者应该自己在获取用户信息后，将头像图片保存下来，避免微信头像URL失效后的异常情况。</p>
 <p>请求说明</p>
@@ -298,6 +308,7 @@ unionid 用户统一标识。针对一个微信开放平台帐号下的应用，
 通过code换取access_token    1万/分钟
 刷新access_token  5万/分钟
 获取用户基本信息        5万/分钟</p>
+</div>
 </div>
 
 

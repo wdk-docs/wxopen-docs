@@ -1,0 +1,301 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, nosy
+# This file is distributed under the same license as the wxopen-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: wxopen-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-11 22:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/wxapp/qrcode.rst:2
+msgid "设置小程序“扫普通链接二维码打开小程序”能力"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:4
+msgid "功能介绍文档:"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:6
+msgid "扫描普通链接二维码打开小程序功能介绍"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:8
+msgid "此功能包括5个接口:"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:10
+msgid "增加或修改二维码规则"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:11
+msgid "获取已设置的二维码规则"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:12
+msgid "获取校验文件名称和内容"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:13
+msgid "删除已设置的二维码规则"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:14
+msgid "发布已设置的二维码规则"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:16
+msgid "流程及接口说明"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:19
+msgid "1. 增加或修改二维码规则"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:22
+#: ../../source/wxapp/qrcode.rst:93
+#: ../../source/wxapp/qrcode.rst:182
+#: ../../source/wxapp/qrcode.rst:221
+#: ../../source/wxapp/qrcode.rst:272
+msgid "请求方式"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:24
+msgid "``POST`` **https**://api.weixin.qq.com/cgi-bin/wxopen/qrcodejumpadd?access_token=TOKEN"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:28
+#: ../../source/wxapp/qrcode.rst:229
+#: ../../source/wxapp/qrcode.rst:280
+msgid "请求数据"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:44
+#: ../../source/wxapp/qrcode.rst:288
+msgid "需携带的参数如下"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:69
+#: ../../source/wxapp/qrcode.rst:101
+#: ../../source/wxapp/qrcode.rst:192
+#: ../../source/wxapp/qrcode.rst:248
+#: ../../source/wxapp/qrcode.rst:299
+msgid "返回说明"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:78
+#: ../../source/wxapp/qrcode.rst:135
+#: ../../source/wxapp/qrcode.rst:237
+#: ../../source/wxapp/qrcode.rst:240
+#: ../../source/wxapp/qrcode.rst:257
+#: ../../source/wxapp/qrcode.rst:291
+#: ../../source/wxapp/qrcode.rst:308
+msgid "参数说明"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:81
+#: ../../source/wxapp/qrcode.rst:202
+#: ../../source/wxapp/qrcode.rst:240
+#: ../../source/wxapp/qrcode.rst:260
+#: ../../source/wxapp/qrcode.rst:291
+#: ../../source/wxapp/qrcode.rst:311
+msgid "参数"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:81
+#: ../../source/wxapp/qrcode.rst:202
+#: ../../source/wxapp/qrcode.rst:260
+#: ../../source/wxapp/qrcode.rst:311
+#: ../../source/wxapp/qrcode.rst:321
+msgid "说明"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:83
+#: ../../source/wxapp/qrcode.rst:204
+#: ../../source/wxapp/qrcode.rst:262
+#: ../../source/wxapp/qrcode.rst:313
+msgid "errcode"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:83
+#: ../../source/wxapp/qrcode.rst:204
+#: ../../source/wxapp/qrcode.rst:262
+#: ../../source/wxapp/qrcode.rst:313
+#: ../../source/wxapp/qrcode.rst:318
+#: ../../source/wxapp/qrcode.rst:321
+msgid "错误码"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:84
+#: ../../source/wxapp/qrcode.rst:205
+#: ../../source/wxapp/qrcode.rst:263
+#: ../../source/wxapp/qrcode.rst:314
+msgid "errmsg"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:84
+#: ../../source/wxapp/qrcode.rst:205
+#: ../../source/wxapp/qrcode.rst:263
+#: ../../source/wxapp/qrcode.rst:314
+msgid "错误信息"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:88
+msgid "2. 获取已设置的二维码规则"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:95
+msgid "``POST`` **https**://api.weixin.qq.com/cgi-bin/wxopen/qrcodejumpget?access_token=TOKEN"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:98
+#: ../../source/wxapp/qrcode.rst:187
+msgid "无需携带的参数"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:177
+msgid "3. 获取校验文件名称及内容"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:184
+msgid "``POST`` **https**://api.weixin.qq.com/cgi-bin/wxopen/qrcodejumpdownload?access_token=TOKEN"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:206
+msgid "file_name"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:206
+msgid "文件名称"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:207
+msgid "file_content"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:207
+msgid "文件内容"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:210
+msgid "下载随机校验文件，并将文件上传至服务器指定位置的目录下，方可通过所属权校验。"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:212
+msgid "验证文件放置规则: 放置于URL中声明的最后一级子目录下，若无子目录，则放置于host所属服务器的顶层目录下。"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:216
+msgid "4. 删除已设置的二维码规则"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:223
+msgid "``POST`` **https**://api.weixin.qq.com/cgi-bin/wxopen/qrcodejumpdelete?access_token=TOKEN"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:242
+#: ../../source/wxapp/qrcode.rst:293
+msgid "prefix"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:242
+#: ../../source/wxapp/qrcode.rst:293
+msgid "二维码规则"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:267
+msgid "5. 发布已设置的二维码规则"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:274
+msgid "``POST`` **https**://api.weixin.qq.com/cgi-bin/wxopen/qrcodejumppublish?access_token=TOKEN"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:323
+msgid "85066"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:323
+msgid "链接错误"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:324
+msgid "85068"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:324
+msgid "测试链接不是子链接"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:325
+msgid "85069"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:325
+msgid "校验文件失败"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:326
+msgid "85070"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:326
+msgid "链接为黑名单"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:327
+msgid "85071"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:327
+msgid "已添加该链接，请勿重复添加"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:328
+msgid "85072"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:328
+msgid "该链接已被占用"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:329
+msgid "85073"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:329
+msgid "二维码规则已满"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:330
+msgid "85074"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:330
+msgid "小程序未发布, 小程序必须先发布代码才可以发布二维码跳转规则"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:331
+msgid "85075"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:331
+msgid "个人类型小程序无法设置二维码规则"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:332
+msgid "85076"
+msgstr ""
+
+#: ../../source/wxapp/qrcode.rst:332
+msgid "链接没有ICP备案"
+msgstr ""
+

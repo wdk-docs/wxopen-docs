@@ -1,0 +1,1106 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, nosy
+# This file is distributed under the same license as the wxopen-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: wxopen-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-11 22:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/wxapp/info.rst:2
+msgid "小程序信息设置"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:6
+msgid ""
+"该章节接口需要使用 1.3 环节获取到的新创建小程序 appid 及 authorization_code 换取 "
+"authorizer_refresh_token 进而得到 authorizer_access_token。"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:9
+msgid "1 获取帐号基本信息"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:11 ../../source/wxapp/info.rst:466
+#: ../../source/wxapp/info.rst:526 ../../source/wxapp/info.rst:621
+#: ../../source/wxapp/info.rst:684 ../../source/wxapp/info.rst:777
+#: ../../source/wxapp/info.rst:832 ../../source/wxapp/info.rst:896
+#: ../../source/wxapp/info.rst:943 ../../source/wxapp/info.rst:970
+#: ../../source/wxapp/info.rst:1019
+msgid "请求方式："
+msgstr ""
+
+#: ../../source/wxapp/info.rst:13 ../../source/wxapp/info.rst:972
+msgid "GET"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:15
+msgid ""
+"URL：https://api.weixin.qq.com/cgi-"
+"bin/account/getaccountbasicinfo?access_token=TOKEN"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:17 ../../source/wxapp/info.rst:548
+#: ../../source/wxapp/info.rst:651 ../../source/wxapp/info.rst:706
+msgid "返回数据："
+msgstr ""
+
+#: ../../source/wxapp/info.rst:48 ../../source/wxapp/info.rst:540
+#: ../../source/wxapp/info.rst:559 ../../source/wxapp/info.rst:639
+#: ../../source/wxapp/info.rst:698 ../../source/wxapp/info.rst:878
+#: ../../source/wxapp/info.rst:920 ../../source/wxapp/info.rst:949
+#: ../../source/wxapp/info.rst:976 ../../source/wxapp/info.rst:1000
+#: ../../source/wxapp/info.rst:1034
+msgid "参数说明："
+msgstr ""
+
+#: ../../source/wxapp/info.rst:351 ../../source/wxapp/info.rst:568
+#: ../../source/wxapp/info.rst:668 ../../source/wxapp/info.rst:715
+#: ../../source/wxapp/info.rst:1054
+msgid "返回码说明："
+msgstr ""
+
+#: ../../source/wxapp/info.rst:354 ../../source/wxapp/info.rst:671
+#: ../../source/wxapp/info.rst:718 ../../source/wxapp/info.rst:1057
+msgid "errcode 取值"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:354 ../../source/wxapp/info.rst:383
+#: ../../source/wxapp/info.rst:419 ../../source/wxapp/info.rst:432
+#: ../../source/wxapp/info.rst:483 ../../source/wxapp/info.rst:505
+#: ../../source/wxapp/info.rst:517 ../../source/wxapp/info.rst:543
+#: ../../source/wxapp/info.rst:642 ../../source/wxapp/info.rst:671
+#: ../../source/wxapp/info.rst:701 ../../source/wxapp/info.rst:718
+#: ../../source/wxapp/info.rst:793 ../../source/wxapp/info.rst:881
+#: ../../source/wxapp/info.rst:923 ../../source/wxapp/info.rst:952
+#: ../../source/wxapp/info.rst:1003 ../../source/wxapp/info.rst:1037
+#: ../../source/wxapp/info.rst:1057
+msgid "说明"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:356
+msgid "非 0"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:356
+msgid "异常"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:360
+msgid "2 小程序名称设置及改名"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:362
+msgid "请求方式:"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:364 ../../source/wxapp/info.rst:528
+#: ../../source/wxapp/info.rst:623 ../../source/wxapp/info.rst:686
+#: ../../source/wxapp/info.rst:945
+msgid "POST(请使用 https 协议)"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:366
+msgid "https://api.weixin.qq.com/wxa/setnickname?access_token=TOKEN"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:368
+msgid "POST 数据示例:"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:380
+msgid "请求参数:"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:383 ../../source/wxapp/info.rst:419
+#: ../../source/wxapp/info.rst:483 ../../source/wxapp/info.rst:505
+#: ../../source/wxapp/info.rst:543 ../../source/wxapp/info.rst:793
+msgid "参数"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:383 ../../source/wxapp/info.rst:483
+msgid "备注"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:385 ../../source/wxapp/info.rst:545
+msgid "nick_name"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:385
+msgid "昵称"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:385 ../../source/wxapp/info.rst:386
+#: ../../source/wxapp/info.rst:387 ../../source/wxapp/info.rst:485
+#: ../../source/wxapp/info.rst:545 ../../source/wxapp/info.rst:644
+#: ../../source/wxapp/info.rst:645 ../../source/wxapp/info.rst:646
+#: ../../source/wxapp/info.rst:647 ../../source/wxapp/info.rst:648
+#: ../../source/wxapp/info.rst:703 ../../source/wxapp/info.rst:925
+#: ../../source/wxapp/info.rst:926 ../../source/wxapp/info.rst:927
+#: ../../source/wxapp/info.rst:928 ../../source/wxapp/info.rst:954
+#: ../../source/wxapp/info.rst:955 ../../source/wxapp/info.rst:1005
+#: ../../source/wxapp/info.rst:1006 ../../source/wxapp/info.rst:1007
+#: ../../source/wxapp/info.rst:1008 ../../source/wxapp/info.rst:1009
+#: ../../source/wxapp/info.rst:1010 ../../source/wxapp/info.rst:1011
+#: ../../source/wxapp/info.rst:1012 ../../source/wxapp/info.rst:1013
+#: ../../source/wxapp/info.rst:1039 ../../source/wxapp/info.rst:1040
+#: ../../source/wxapp/info.rst:1041 ../../source/wxapp/info.rst:1042
+msgid "必填"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:386
+msgid "id_card"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:386
+msgid "身份证照片–临时素材 mediaid 个人号"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:387
+msgid "license"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:387
+msgid "组织机构代码证或营业执照–临时素材 mediaid 组织号"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:388
+msgid "naming_other_stuff_1"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:388 ../../source/wxapp/info.rst:389
+msgid "其他证明材料—临时素材 mediaid"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:388 ../../source/wxapp/info.rst:389
+msgid "选填"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:389
+msgid "naming_other_stuff_2"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:394
+msgid "注:临时素材 mediaid 通过调用\"临时素材管理接口\"获取."
+msgstr ""
+
+#: ../../source/wxapp/info.rst:396
+msgid "新增临时素材: https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1444738726"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:399
+msgid "获取临时素材: https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1444738727"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:402
+msgid ""
+"第三方代小程序调用上述接口: https://open.weixin.qq.com/cgi-"
+"bin/showdocument?action=dir_list&t=resourceres_list&verify=1&id=open1453779503&token=&lang=zh_CN"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:405
+msgid "返回 json 示例(门店小程序类目分一级和二级类目):"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:416
+msgid "返回参数说明:"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:421 ../../source/wxapp/info.rst:565
+msgid "wording"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:421
+msgid "材料说明"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:422 ../../source/wxapp/info.rst:485
+msgid "audit_id"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:422 ../../source/wxapp/info.rst:485
+msgid "审核单 id"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:427
+msgid "注：若接口未返回 audit_id，说明名称已直接设置成功，无需审核；若返回 audit_id 则名称正在审核中。"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:429
+msgid "错误码说明:"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:432 ../../source/wxapp/info.rst:517
+msgid "返回码"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:434
+msgid "91001"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:434
+msgid "不是公众号快速创建的小程序"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:435
+msgid "91002"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:435
+msgid "小程序发布后不可改名"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:436
+msgid "91003"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:436
+msgid "改名状态不合法"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:437
+msgid "91004"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:437
+msgid "昵称不合法"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:438
+msgid "91005"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:438
+msgid "昵称命中主体保护"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:439
+msgid "91006"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:439
+msgid "昵称命中微信号"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:440
+msgid "91007"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:440
+msgid "昵称已被占用"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:441
+msgid "91008"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:441
+msgid "昵称命中 7 天侵权保护期"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:442
+msgid "91009"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:442
+msgid "需要提交材料"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:443
+msgid "91010"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:443
+msgid "其他错误"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:446
+msgid "审核事件推送"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:448
+msgid "数据示例："
+msgstr ""
+
+#: ../../source/wxapp/info.rst:464
+msgid "3 小程序改名审核状态查询"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:468
+msgid "POST（请使用 https 协议）"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:470
+msgid "https://api.weixin.qq.com/wxa/api_wxa_querynickname?access_token=TOKEN"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:472
+msgid "POST 数据示例："
+msgstr ""
+
+#: ../../source/wxapp/info.rst:480 ../../source/wxapp/info.rst:901
+msgid "请求参数："
+msgstr ""
+
+#: ../../source/wxapp/info.rst:488
+msgid "返回 json 示例："
+msgstr ""
+
+#: ../../source/wxapp/info.rst:502
+msgid "返回参数说明："
+msgstr ""
+
+#: ../../source/wxapp/info.rst:507
+msgid "nickname"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:507
+msgid "审核昵称"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:508
+msgid "audit_stat"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:508
+msgid "审核状态，1：审核中，2：审核失败，3：审核成功"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:509
+msgid "fail_reason"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:509
+msgid "失败原因"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:510
+msgid "create_time"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:510
+msgid "审核提交时间"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:511
+msgid "audit_time"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:511
+msgid "审核完成时间"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:514
+msgid "错误码说明："
+msgstr ""
+
+#: ../../source/wxapp/info.rst:519
+msgid "91011"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:519
+msgid "查不到昵称修改审核单信息"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:520
+msgid "91012"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:520
+msgid "其它错误"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:524
+msgid "4 微信认证名称检测"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:530
+msgid ""
+"URL：https://api.weixin.qq.com/cgi-"
+"bin/wxverify/checkwxverifynickname?access_token=TOKEN"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:532 ../../source/wxapp/info.rst:627
+#: ../../source/wxapp/info.rst:690 ../../source/wxapp/info.rst:1024
+msgid "POST 数据："
+msgstr ""
+
+#: ../../source/wxapp/info.rst:543 ../../source/wxapp/info.rst:642
+#: ../../source/wxapp/info.rst:701 ../../source/wxapp/info.rst:923
+#: ../../source/wxapp/info.rst:952 ../../source/wxapp/info.rst:1003
+#: ../../source/wxapp/info.rst:1037
+msgid "必填/选填"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:543 ../../source/wxapp/info.rst:562
+#: ../../source/wxapp/info.rst:642 ../../source/wxapp/info.rst:701
+#: ../../source/wxapp/info.rst:923 ../../source/wxapp/info.rst:952
+#: ../../source/wxapp/info.rst:1003 ../../source/wxapp/info.rst:1037
+msgid "类型"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:545 ../../source/wxapp/info.rst:565
+#: ../../source/wxapp/info.rst:703 ../../source/wxapp/info.rst:1006
+#: ../../source/wxapp/info.rst:1008
+msgid "string"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:545
+msgid "名称（昵称）"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:562 ../../source/wxapp/info.rst:642
+#: ../../source/wxapp/info.rst:701 ../../source/wxapp/info.rst:881
+#: ../../source/wxapp/info.rst:923 ../../source/wxapp/info.rst:952
+#: ../../source/wxapp/info.rst:1003 ../../source/wxapp/info.rst:1037
+msgid "参数名"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:562
+msgid "描述"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:564
+msgid "hit_condition"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:564
+msgid "bool"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:564
+msgid "是否命中关键字策略。若命中，可以选填关键字材料"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:565
+msgid "命中关键字的说明描述（给用户看的）"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:619
+msgid "5 修改头像"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:625
+msgid ""
+"URL：https://api.weixin.qq.com/cgi-"
+"bin/account/modifyheadimage?access_token=TOKEN"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:644
+msgid "head_img_media_id"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:644 ../../source/wxapp/info.rst:928
+msgid "media_id"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:644
+msgid "头像素材 media_id"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:645
+msgid "x1"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:645 ../../source/wxapp/info.rst:646
+#: ../../source/wxapp/info.rst:647 ../../source/wxapp/info.rst:648
+msgid "float"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:645
+msgid "裁剪框左上角 x 坐标（取值范围：[0, 1]）"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:646
+msgid "y1"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:646
+msgid "裁剪框左上角 y 坐标（取值范围：[0, 1]）"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:647
+msgid "x2"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:647
+msgid "裁剪框右下角 x 坐标（取值范围：[0, 1]）"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:648
+msgid "y2"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:648
+msgid "裁剪框右下角 y 坐标（取值范围：[0, 1]）"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:660
+msgid "图片格式只支持：BMP、JPEG、JPG、GIF、PNG，大小不超过 2M"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:662
+msgid "注：实际头像始终为正方形"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:664
+msgid "示例示意图："
+msgstr ""
+
+#: ../../source/wxapp/info.rst:666
+msgid "头像示意图"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:673 ../../source/wxapp/info.rst:720
+msgid "40097"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:673 ../../source/wxapp/info.rst:720
+msgid "参数错误"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:674
+msgid "41006"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:674
+msgid "media_id 不能为空"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:675
+msgid "40007"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:675
+msgid "非法的 media_id"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:676
+msgid "46001"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:676
+msgid "media_id 不存在"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:677
+msgid "40009"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:677
+msgid "图片尺寸太大"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:678
+msgid "53202"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:678
+msgid "本月头像修改次数已用完"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:682
+msgid "6 修改功能介绍"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:688
+msgid ""
+"URL：https://api.weixin.qq.com/cgi-"
+"bin/account/modifysignature?access_token=TOKEN"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:703
+msgid "signature"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:703
+msgid "功能介绍（简介）"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:721
+msgid "53200"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:721
+msgid "本月功能介绍修改次数已用完"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:722
+msgid "53201"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:722
+msgid "功能介绍内容命中黑名单关键字"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:726
+msgid "7 换绑小程序管理员接口"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:728
+msgid "流程"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:730
+msgid "步骤一：从第三方平台页面发起，并跳转至微信公众平台指定换绑页面。"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:731
+msgid "步骤二：小程序原管理员扫码，并填写原管理员身份证信息确认。"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:732
+msgid "步骤三：填写新管理员信息(姓名、身份证、手机号)，使用新管理员的微信确认。"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:733
+msgid "步骤四：点击提交后跳转至第三方平台页面，第三方平台回调对应 api 完成换绑流程。"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:736
+msgid "流程及接口说明"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:739
+msgid "7.1 从第三方平台跳转至微信公众平台授权注册页面"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:741
+msgid "从第三方平台跳转到微信公众平台授权页，需携带的参数如下："
+msgstr ""
+
+#: ../../source/wxapp/info.rst:761
+msgid "跳转到微信公众平台授权页面链接举例:"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:763
+#, python-format
+msgid ""
+"https://mp.weixin.qq.com/wxopen/componentrebindadmin?appid=wx28f759479ea1e090&component_appid=wx666666666666123&redirect_uri=https%3a%2f%2f"
+" www.qq.com%2fauth%2fcallback%3ffrom%3dmp"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:767
+msgid "7.2 小程序新旧管理员填写信息，扫码确认提交后跳转回第三方平台"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:769
+msgid "点击页面提交按钮。 跳转回第三方平台，会在上述 ``redirect_uri`` 后拼接 ``taskid=\\*`` 跳转回第三方平台举例："
+msgstr ""
+
+#: ../../source/wxapp/info.rst:772
+msgid "https://www.qq.com/auth/callback?taskid=b25519093b1e97239eff9d2bfc07e08e"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:775
+msgid "7.3 跳转至第三方平台，第三方平台调用快速注册 API 完成管理员换绑。"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:779
+msgid ""
+"请求方式: POST(请使用 https 协议) https://api.weixin.qq.com/cgi- "
+"bin/account/componentrebindadmin?access_token=TOKEN"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:782
+msgid "请求示例:"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:790
+msgid "参数说明:"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:795
+msgid "taskid"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:795
+msgid "换绑管理员任务序列号(公众平台最终点击提交回跳到第三方平台时携带)"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:798
+msgid "返回说明:"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:807
+msgid "参数说明 参数 说明 errcode 错误码 errmsg 错误信息"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:809 ../../source/wxapp/info.rst:812
+msgid "错误码说明"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:812
+msgid "错误码"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:814
+msgid "85060"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:814
+msgid "无效的 taskid"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:815
+msgid "85027"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:815
+msgid "身份证绑定管理员名额达到上限"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:816
+msgid "85061"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:816
+msgid "手机号绑定管理员名额达到上限"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:817
+msgid "85026"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:817
+msgid "微信号绑定管理员名额达到上限"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:818
+msgid "85063"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:818
+msgid "身份证黑名单"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:819
+msgid "85062"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:819
+msgid "手机号黑名单"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:823
+msgid "8 类目相关接口"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:825
+msgid ""
+"注：该章节接口需要使用 1.3 环节获取到的新创建小程序 ``appid`` 及 ``authorization_code`` 换取 "
+"``authorizer_refresh_token`` 进而得到 ``authorizer_access_token。``"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:830
+msgid "8.1 获取账号可以设置的所有类目"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:834
+msgid ""
+"GET 数据 URL：https://api.weixin.qq.com/cgi-"
+"bin/wxopen/getallcategories?access_token=TOKEN"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:837 ../../source/wxapp/info.rst:931
+msgid "返回参数（JSON 格式）："
+msgstr ""
+
+#: ../../source/wxapp/info.rst:883
+msgid "id"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:883
+msgid "类目 ID"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:884
+msgid "Name"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:884
+msgid "类目名称"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:885
+msgid "Level"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:885
+msgid "类目层级"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:886
+msgid "Father"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:886
+msgid "类目父级 ID"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:887
+msgid "Children"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:887
+msgid "子级类目 ID"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:888
+msgid "Sensitive_type"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:888
+msgid "是否为敏感类目（1 为敏感类目，需要提供相应资质审核；0 为非敏感类目，无需审核）"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:889
+msgid "Qualify.exter_list.inner_list.name"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:889
+msgid "Sensitive_type 为 1 的类目需要提供的资质文件名称"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:890
+msgid "Qualify.exter_list.inner_list.url"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:890
+msgid "资质文件示例"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:894
+msgid "8.2 添加类目"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:898
+msgid ""
+"POST(请使用 https 协议) URL：https://api.weixin.qq.com/cgi-"
+"bin/wxopen/addcategory?access_token=TOKEN"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:925 ../../source/wxapp/info.rst:954
+#: ../../source/wxapp/info.rst:1005 ../../source/wxapp/info.rst:1039
+msgid "first"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:925 ../../source/wxapp/info.rst:926
+#: ../../source/wxapp/info.rst:954 ../../source/wxapp/info.rst:955
+#: ../../source/wxapp/info.rst:1005 ../../source/wxapp/info.rst:1007
+#: ../../source/wxapp/info.rst:1009 ../../source/wxapp/info.rst:1011
+#: ../../source/wxapp/info.rst:1012 ../../source/wxapp/info.rst:1013
+#: ../../source/wxapp/info.rst:1039 ../../source/wxapp/info.rst:1040
+msgid "Unsigned int"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:925 ../../source/wxapp/info.rst:954
+#: ../../source/wxapp/info.rst:1005 ../../source/wxapp/info.rst:1039
+msgid "一级类目 ID"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:926 ../../source/wxapp/info.rst:955
+#: ../../source/wxapp/info.rst:1007 ../../source/wxapp/info.rst:1040
+msgid "Second"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:926 ../../source/wxapp/info.rst:955
+#: ../../source/wxapp/info.rst:1007 ../../source/wxapp/info.rst:1040
+msgid "二级类目 ID"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:927 ../../source/wxapp/info.rst:1041
+msgid "Key"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:927 ../../source/wxapp/info.rst:1010
+#: ../../source/wxapp/info.rst:1041 ../../source/wxapp/info.rst:1042
+msgid "String"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:927 ../../source/wxapp/info.rst:1041
+msgid "资质名称"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:928 ../../source/wxapp/info.rst:1042
+msgid "Value"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:928 ../../source/wxapp/info.rst:1042
+msgid "资质图片"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:941
+msgid "8.3 删除类目"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:947
+msgid ""
+"URL：https://api.weixin.qq.com/cgi-"
+"bin/wxopen/deletecategory?access_token=TOKEN"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:958 ../../source/wxapp/info.rst:978
+#: ../../source/wxapp/info.rst:1045
+msgid "返回（JSON 格式）："
+msgstr ""
+
+#: ../../source/wxapp/info.rst:968
+msgid "8.4 获取账号已经设置的所有类目"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:974
+msgid ""
+"URL：https://api.weixin.qq.com/cgi-"
+"bin/wxopen/getcategory?access_token=TOKEN"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:1006
+msgid "First_name"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:1006
+msgid "一级类目名称"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:1008
+msgid "Second_name"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:1008
+msgid "二级类目名称"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:1009
+msgid "Audit_status"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:1009
+msgid "审核状态（1 审核中 2 审核不通过 3 审核通过）"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:1010
+msgid "audit_reason"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:1010
+msgid "审核不通过原因"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:1011
+msgid "Limit"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:1011
+msgid "一个更改周期内可以设置类目的次数"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:1012
+msgid "Quota"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:1012
+msgid "本更改周期内还可以设置类目的次数"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:1013
+msgid "Category_limit"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:1013
+msgid "最多可以设置的类目数量"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:1017
+msgid "8.5 修改类目"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:1021
+msgid ""
+"POST(请使用 https 协议) URL：https://api.weixin.qq.com/cgi-"
+"bin/wxopen/modifycategory?access_token=TOKEN"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:1059
+msgid "53300"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:1059
+msgid "超出每月次数限制"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:1060
+msgid "53301"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:1060
+msgid "超出可配置类目总数限制"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:1061
+msgid "53302"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:1061
+msgid "当前账号主体类型不允许设置此种类目"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:1062
+msgid "53303"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:1062
+msgid "提交的参数不合法"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:1063
+msgid "53304"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:1063
+msgid "与已有类目重复"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:1064
+msgid "53305"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:1064
+msgid "包含未通过 IPC 校验的类目"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:1065
+msgid "53306"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:1065
+msgid "修改类目只允许修改类目资质，不允许修改类目 ID"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:1066
+msgid "53307"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:1066
+msgid "只有审核失败的类目允许修改"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:1067
+msgid "53308"
+msgstr ""
+
+#: ../../source/wxapp/info.rst:1067
+msgid "审核中的类目不允许删除"
+msgstr ""
+

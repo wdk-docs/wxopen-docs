@@ -1,0 +1,313 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, nosy
+# This file is distributed under the same license as the wxopen-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: wxopen-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-11 22:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/wxapp/open.rst:2
+msgid "开放平台绑定"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:4
+msgid "第三方平台在获得此权限后，可以代替已授权的公众号/小程序创建开放平台帐号或进行绑定/解绑操作。"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:6
+msgid ""
+"绑定在同一个开放平台帐号下的公众号及小程序，用户\\ ``unionid``\\ 一致。开发者可调用\\ "
+"`获取用户基本信息(wx.getUserInfo) "
+"<https://mp.weixin.qq.com/debug/wxadoc/dev/api/open.html#wxgetuserinfoobject>`__\\"
+" 接口获取用户\\ ``unionid``\\ 。"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:8
+msgid "具体包括以下接口："
+msgstr ""
+
+#: ../../source/wxapp/open.rst:10
+msgid "创建开放平台帐号并绑定公众号/小程序"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:11
+msgid "将公众号/小程序绑定到已有开放平台帐号下"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:12
+msgid "将公众号/小程序从开放平台帐号下解绑"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:13
+msgid "获取公众号/小程序所绑定的开放平台帐号"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:17
+msgid "一个公众号/小程序帐号只可以绑定在一个开放平台帐号下。"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:18
+msgid "授权第三方平台注册的开放平台帐号只可用于获取用户unionid实现用户身份打通，支持 绑定 同主体 的公众号及小程序，不可独立登录。"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:19
+msgid "第三方平台不可操作（包括绑定/解绑） 通过open.weixin.qq.com线上流程注册的开放平台帐号。"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:20
+msgid "小程序只可将此权限集授权给一个第三方平台，即授权互斥。"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:23
+msgid "1. 创建并绑定"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:25
+msgid "该API用于创建一个开放平台帐号，并将一个尚未绑定开放平台帐号的公众号或小程序绑定至该开放平台帐号上。新创建的开放平台帐号的主体信息将设置为与之绑定的公众号或小程序的主体。"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:28 ../../source/wxapp/open.rst:91
+#: ../../source/wxapp/open.rst:164 ../../source/wxapp/open.rst:237
+msgid "请求方式"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:30
+msgid ""
+"``POST`` **https**://api.weixin.qq.com/cgi-"
+"bin/open/create?access_token=xxxx"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:34 ../../source/wxapp/open.rst:99
+#: ../../source/wxapp/open.rst:172 ../../source/wxapp/open.rst:245
+msgid "请求数据"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:42
+msgid "参数说明"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:45 ../../source/wxapp/open.rst:64
+#: ../../source/wxapp/open.rst:112 ../../source/wxapp/open.rst:133
+#: ../../source/wxapp/open.rst:187 ../../source/wxapp/open.rst:208
+#: ../../source/wxapp/open.rst:259 ../../source/wxapp/open.rst:280
+msgid "参数"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:45 ../../source/wxapp/open.rst:64
+#: ../../source/wxapp/open.rst:75 ../../source/wxapp/open.rst:112
+#: ../../source/wxapp/open.rst:133 ../../source/wxapp/open.rst:145
+#: ../../source/wxapp/open.rst:187 ../../source/wxapp/open.rst:208
+#: ../../source/wxapp/open.rst:220 ../../source/wxapp/open.rst:259
+#: ../../source/wxapp/open.rst:280 ../../source/wxapp/open.rst:293
+msgid "说明"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:47 ../../source/wxapp/open.rst:114
+#: ../../source/wxapp/open.rst:189 ../../source/wxapp/open.rst:261
+msgid "appid"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:47
+msgid "授权公众号或小程序的 appid"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:51 ../../source/wxapp/open.rst:121
+#: ../../source/wxapp/open.rst:196 ../../source/wxapp/open.rst:267
+msgid "返回结果"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:61 ../../source/wxapp/open.rst:130
+#: ../../source/wxapp/open.rst:205 ../../source/wxapp/open.rst:277
+msgid "结果参数说明"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:66
+msgid "open \\_appid"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:66
+msgid "所创建的开放平台帐号 的appid"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:67 ../../source/wxapp/open.rst:135
+#: ../../source/wxapp/open.rst:210 ../../source/wxapp/open.rst:282
+msgid "errcode"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:67 ../../source/wxapp/open.rst:72
+#: ../../source/wxapp/open.rst:75 ../../source/wxapp/open.rst:135
+#: ../../source/wxapp/open.rst:142 ../../source/wxapp/open.rst:145
+#: ../../source/wxapp/open.rst:210 ../../source/wxapp/open.rst:217
+#: ../../source/wxapp/open.rst:220 ../../source/wxapp/open.rst:282
+#: ../../source/wxapp/open.rst:290 ../../source/wxapp/open.rst:293
+msgid "错误码"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:68 ../../source/wxapp/open.rst:136
+#: ../../source/wxapp/open.rst:211 ../../source/wxapp/open.rst:283
+msgid "errmsg"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:68 ../../source/wxapp/open.rst:136
+#: ../../source/wxapp/open.rst:211 ../../source/wxapp/open.rst:283
+msgid "错误信息"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:77 ../../source/wxapp/open.rst:147
+#: ../../source/wxapp/open.rst:222 ../../source/wxapp/open.rst:295
+msgid "0"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:77 ../../source/wxapp/open.rst:147
+#: ../../source/wxapp/open.rst:222 ../../source/wxapp/open.rst:295
+msgid "ok"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:78 ../../source/wxapp/open.rst:148
+#: ../../source/wxapp/open.rst:223 ../../source/wxapp/open.rst:296
+msgid "-1"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:78
+msgid "system error ， 系统错误"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:79 ../../source/wxapp/open.rst:149
+#: ../../source/wxapp/open.rst:224 ../../source/wxapp/open.rst:297
+msgid "40013"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:79
+msgid "invalid appid ， appid 无效。"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:80 ../../source/wxapp/open.rst:150
+msgid "89000"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:80
+msgid "account has bound open ，该公众号 / 小程序 已经绑定了开放平台帐号"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:84
+msgid "2. 绑定"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:86
+msgid "该API用于将一个尚未绑定开放平台帐号的公众号或小程序绑定至指定开放平台帐号上。二者须主体相同。"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:93
+msgid "``POST`` **https**://api.weixin.qq.com/cgi-bin/open/bind?access_token=xxxx"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:109 ../../source/wxapp/open.rst:184
+#: ../../source/wxapp/open.rst:256
+msgid "请求参数"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:114 ../../source/wxapp/open.rst:189
+#: ../../source/wxapp/open.rst:261
+msgid "授权公众号或小程序的appid"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:115 ../../source/wxapp/open.rst:190
+#: ../../source/wxapp/open.rst:284
+msgid "open_appid"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:115 ../../source/wxapp/open.rst:190
+msgid "开放平台帐号appid"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:148 ../../source/wxapp/open.rst:223
+#: ../../source/wxapp/open.rst:296
+msgid "system error，系统错误"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:149 ../../source/wxapp/open.rst:224
+msgid "invalid appid，appid或open_appid无效。"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:150
+msgid "account has bound open，该公众号/小程序已经绑定了开放平台帐号"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:151 ../../source/wxapp/open.rst:225
+msgid "89001"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:151 ../../source/wxapp/open.rst:225
+msgid "not same contractor，Authorizer与开放平台帐号主体不相同"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:152 ../../source/wxapp/open.rst:226
+msgid "89003"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:152 ../../source/wxapp/open.rst:226
+msgid "该开放平台帐号并非通过api创建，不允许操作"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:153
+msgid "89004"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:153
+msgid "该开放平台帐号所绑定的公众号/小程序已达上限（100个）"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:157
+msgid "3.解绑"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:159
+msgid "该API用于将一个公众号或小程序与指定开放平台帐号解绑。开发者须确认所指定帐号与当前该公众号或小程序所绑定的开放平台帐号一致。"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:166
+msgid ""
+"``POST`` **https**://api.weixin.qq.com/cgi-"
+"bin/open/unbind?access_token=xxxx"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:230
+msgid "4. 获取绑定平台"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:232
+msgid "该API用于获取公众号或小程序所绑定的开放平台帐号。"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:239
+msgid "``POST`` **https**://api.weixin.qq.com/cgi-bin/open/get?access_token=xxxx"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:284
+msgid "公众号或小程序所绑定的开放平台帐号的appid"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:297
+msgid "invalid appid，appid无效。"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:298
+msgid "89002"
+msgstr ""
+
+#: ../../source/wxapp/open.rst:298
+msgid "open not exists，该公众号/小程序未绑定微信开放平台帐号。"
+msgstr ""
+

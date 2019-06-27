@@ -1,0 +1,324 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>1. 上传代码 &mdash; wxopen-docs 1.0.0 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="2. 获取体验二维码" href="get_qrcode.html" />
+    <link rel="prev" title="☀️ 代码管理" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../contents.html" class="icon icon-home"> wxopen-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">小程序管理</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../introduce.html">开发简介</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../fast-regeister.html">快速创建小程序接口</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../domain.html">修改服务器地址</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../info.html">小程序信息设置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tester.html">成员管理</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sec-check.html">内容安全接口</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">☀️ 代码管理</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">1. 上传代码</a></li>
+<li class="toctree-l3"><a class="reference internal" href="get_qrcode.html">2. 获取体验二维码</a></li>
+<li class="toctree-l3"><a class="reference internal" href="get_category.html">3. 获取已设置类目</a></li>
+<li class="toctree-l3"><a class="reference internal" href="get_page.html">4. 获取页面配置</a></li>
+<li class="toctree-l3"><a class="reference internal" href="submit_audit.html">5. 提交审核</a></li>
+<li class="toctree-l3"><a class="reference internal" href="async.html">6. 通知审核结果</a></li>
+<li class="toctree-l3"><a class="reference internal" href="get_auditstatus.html">7. 查询某个版本审核状态</a></li>
+<li class="toctree-l3"><a class="reference internal" href="get_latest_auditstatus.html">8. 查询最新版审核状态</a></li>
+<li class="toctree-l3"><a class="reference internal" href="release.html">9. 发布小程序</a></li>
+<li class="toctree-l3"><a class="reference internal" href="change_visitstatus.html">10. 修改线上代码可见状态</a></li>
+<li class="toctree-l3"><a class="reference internal" href="revertcoderelease.html">11. 版本回退</a></li>
+<li class="toctree-l3"><a class="reference internal" href="getweappsupportversion.html">12. 查询最低基础库版本及版本用户比</a></li>
+<li class="toctree-l3"><a class="reference internal" href="setweappsupportversion.html">13. 设置最低基础库版本</a></li>
+<li class="toctree-l3"><a class="reference internal" href="qrcode.html">14. 设置小程序“扫普通链接二维码打开小程序”能力</a></li>
+<li class="toctree-l3"><a class="reference internal" href="undocodeaudit.html">15. 审核撤回</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../qrcode.html">设置小程序“扫普通链接二维码打开小程序”能力</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../session.html">微信登录</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../temp.html">小程序模板消息设置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unionid.html">支付后获取用户 Unionid 接口</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../open.html">开放平台绑定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../plugin.html">小程序插件管理权限集</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../status.html">基础信息设置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../widget.html">搜索 widget 接入指南</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../link.html">小程序管理权限集</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../mobile/index.html">移动应用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../website/index.html">网站应用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pubno/index.html">公众号</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../open/index.html">第三方平台</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../code/index.html">错误码</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../download/index.html">资源下载</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary.html">术语</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../contents.html">wxopen-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../contents.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">小程序管理</a> &raquo;</li>
+        
+          <li><a href="index.html">☀️ 代码管理</a> &raquo;</li>
+        
+      <li>1. 上传代码</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/wxapp/CodeMgr/commit.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>1. 上传代码<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<p>请求方式: POST（请使用https协议）</p>
+<p><a class="reference external" href="https://api.weixin.qq.com/wxa/commit?access_token=TOKEN">https://api.weixin.qq.com/wxa/commit?access_token=TOKEN</a>
+POST数据示例:</p>
+<p>{
+“template_id”:0,
+“ext_json”:”JSON_STRING”, //<em>ext_json需为string类型，请参考下面的格式</em>
+“user_version”:”V1.0”,
+“user_desc”:”test”,
+}
+参数说明:</p>
+<p>参数      说明
+access_token    请使用第三方平台获取到的该小程序授权的authorizer_access_token
+template_id     代码库中的代码模版ID
+ext_json        第三方自定义的配置
+user_version    代码版本号，开发者可自定义（长度不要超过64个字符）
+user_desc       代码描述，开发者可自定义
+ext_json需为string类型，格式示例如下 ：</p>
+<dl>
+<dt>{</dt><dd><p>extAppid:”“,
+ext:{</p>
+<blockquote>
+<div><p>“attr1”:”value1”,
+“attr2”:”value2”,</p>
+</div></blockquote>
+<p>},
+extPages:{</p>
+<blockquote>
+<div><p>“index”:{
+},
+“search/index”:{
+},</p>
+</div></blockquote>
+<p>},
+pages:[“index”,”search/index”],
+“window”:{
+},
+“networkTimeout”:{
+},
+“tabBar”:{
+},</p>
+</dd>
+</dl>
+<p>}
+（1）为了便于第三方平台使用同一个小程序模版为不同的小程序提供服务，第三方可以将自定义信息放置在ext_json中，在模版小程序中，可以使用接口获取自定义信息，从而区分不同的小程序。详见：小程序模版开发</p>
+<p>（2）ext_json中的参数可选，参数详见 <a class="reference external" href="https://mp.weixin.qq.com/debug/wxadoc/dev/framework/config.html">https://mp.weixin.qq.com/debug/wxadoc/dev/framework/config.html</a></p>
+<p>（3）如果代码中已经有配置，则配置的合并规则为：除了pages和tabBar.list直接覆盖原配置，其他都为插入或同级覆盖。</p>
+<p>（4）ext_json中暂时不支持配置plugins。</p>
+<p>（5）ext_json中有限支持pages，支持配置模版页面的子集（ext_json中不可新增页面）。</p>
+<p>（6）ext_json中有限支持subPackages，支持配置模版分包及其页面的子集（ext_json中配置的分包必须已声明于模版中，且不可新增分包页面）。</p>
+<p>特殊字段说明：</p>
+<p>参数      说明
+ext     自定义字段仅允许在这里定义，可在小程序中调用
+extPages        页面配置
+extAppid        授权方Appid，可填入商户AppID，以区分不同商户
+sitemap 用于配置小程序及其页面是否允许被微信索引
+返回说明（正常时返回的json示例）：</p>
+<p>{
+“errcode”:0,
+“errmsg”:”ok”,
+}
+错误码说明：</p>
+<p>返回码     说明
+-1      系统繁忙
+85013   无效的自定义配置
+85014   无效的模版编号
+85043   模版错误
+85044   代码包超过大小限制
+85045   ext_json有不存在的路径
+85046   tabBar中缺少path
+85047   pages字段为空
+85048   ext_json解析失败
+80082   没有权限使用该插件
+80067   找不到使用的插件
+80066   非法的插件版本</p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="get_qrcode.html" class="btn btn-neutral float-right" title="2. 获取体验二维码" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="☀️ 代码管理" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, nosy
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

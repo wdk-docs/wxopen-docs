@@ -1,0 +1,217 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, nosy
+# This file is distributed under the same license as the wxopen-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: wxopen-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-11 22:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/download/index.rst:2
+msgid "资源下载"
+msgstr ""
+
+#: ../../source/download/index.rst:5
+msgid "iOS资源下载"
+msgstr ""
+
+#: ../../source/download/index.rst:7
+msgid "​ ### 开发工具包（SDK）"
+msgstr ""
+
+#: ../../source/download/index.rst:9
+msgid "使用微信分享、登录、收藏、支付等功能需要的库以及文件。通过CocoaPods集成（详情查看接入流程\\ `接入流程 <https://open.weixin.qq.com/cgi-bin/showdocument?action=dir_list&t=resource/res_list&verify=1&id=1417694084&token=&lang=zh_CN>`__\\ ）或点击下载以下开发工具包："
+msgstr ""
+
+#: ../../source/download/index.rst:11
+msgid "iOS开发工具包\\ `iOS开发工具包 <https://res.wx.qq.com/op_res/dZ5aYcaO5QRVPNvVrZNUqgUPVyRYCwV41TdwFrQa3ckR4uV_9immy_YJN886Z0LR>`__\\ （1.8.2版本，包含支付功能）。"
+msgstr ""
+
+#: ../../source/download/index.rst:13
+msgid "iOS开发工具包\\ `iOS开发工具包 <https://res.wx.qq.com/op_res/oFcxbhD3PhOQ9sivBE8OU8sOxrsZR7jkdpHz_B2Uoq_8nVVf7bEHKBZsIvL_YKmI>`__\\ （1.8.2版本，不包含支付功能）。"
+msgstr ""
+
+#: ../../source/download/index.rst:15
+msgid "使用微信语音识别接口、语音合成接口。点击下载\\ `语音SDK+Demo+开发文档 <https://res.wx.qq.com/open/zh_CN/htmledition/res/dev/download/sdk/WXVoice_iOS_3.0.2.zip>`__"
+msgstr ""
+
+#: ../../source/download/index.rst:17
+msgid "使用微信图像识别接口。点击下载\\ `图像SDK+Demo+开发文档 <https://res.wx.qq.com/open/zh_CN/htmledition/res/dev/download/sdk/WXImg_iOS_2.0.2.zip>`__"
+msgstr ""
+
+#: ../../source/download/index.rst:19
+msgid "使用微信卡券功能接口。点击下载\\ `卡券SDK+开发文档 <https://res.wx.qq.com/open/zh_CN/htmledition/res/dev/download/sdk/WXTicket_iOS.zip>`__"
+msgstr ""
+
+#: ../../source/download/index.rst:22
+#: ../../source/download/index.rst:75
+#: ../../source/download/index.rst:108
+msgid "范例代码"
+msgstr ""
+
+#: ../../source/download/index.rst:24
+msgid "包含了一个完整的范例工程，该范例的使用可以参阅iOS平台上手指南。点击下载 `范例代码 <https://res.wx.qq.com/op_res/xZSl4RKvQPs3J-YzgOY9Pv-_dbfxeGA36hPwllV1KpR5qwKRNo4Q5T8MKHxjhyIE>`__"
+msgstr ""
+
+#: ../../source/download/index.rst:28
+msgid "Android资源下载"
+msgstr ""
+
+#: ../../source/download/index.rst:31
+#: ../../source/download/index.rst:101
+msgid "开发工具包（SDK）"
+msgstr ""
+
+#: ../../source/download/index.rst:33
+msgid "使用微信分享、登录、收藏、支付等功能需要的库以及文件"
+msgstr ""
+
+#: ../../source/download/index.rst:35
+msgid "Android Studio环境下：已改用gradle形式，发布到\\ `jcenter <https://bintray.com/wechat-sdk-team/maven>`__\\ ，请开发者使用gradle来编译、更新微信SDK。"
+msgstr ""
+
+#: ../../source/download/index.rst:38
+msgid "在build.gradle文件中，添加如下依赖即可："
+msgstr ""
+
+#: ../../source/download/index.rst:48
+msgid "或"
+msgstr ""
+
+#: ../../source/download/index.rst:58
+msgid "（其中，前者包含统计功能）"
+msgstr ""
+
+#: ../../source/download/index.rst:60
+msgid "点击下载 Android开发工具包 `Android开发工具包 <https://bintray.com/wechat-sdk-team/maven>`__"
+msgstr ""
+
+#: ../../source/download/index.rst:63
+msgid "使用微信语音识别接口、语音合成接口。点击下载 `语音SDK+Demo+开发文档 <https://res.wx.qq.com/open/zh_CN/htmledition/res/dev/download/sdk/WXVoice_Android_3.0.2.zip>`__"
+msgstr ""
+
+#: ../../source/download/index.rst:66
+msgid "使用微信图像识别接口。点击下载 `图像SDK+Demo+开发文档 <https://res.wx.qq.com/open/zh_CN/htmledition/res/dev/download/sdk/WXImg_Android_2.0.2.zip>`__"
+msgstr ""
+
+#: ../../source/download/index.rst:69
+msgid "使用微信卡券功能接口。点击下载 `卡券SDK+开发文档 <https://res.wx.qq.com/open/zh_CN/htmledition/res/dev/download/sdk/WXTicket_Android.zip>`__"
+msgstr ""
+
+#: ../../source/download/index.rst:77
+msgid "包含了一个完整的范例工程。该范例的使用可以参阅Android平台上手指南：HelloWeixin@Android。\\ `点击下载 <https://res.wx.qq.com/open/zh_CN/htmledition/res/dev/download/sdk/WeChatSDK_sample_Android_5.0.2.rar>`__"
+msgstr ""
+
+#: ../../source/download/index.rst:80
+msgid "签名生成工具"
+msgstr ""
+
+#: ../../source/download/index.rst:82
+msgid "用于获取安装到手机的第三方应用签名的apk包。点击下载 `签名生成工具 <https://res.wx.qq.com/open/zh_CN/htmledition/res/dev/download/sdk/Gen_Signature_Android2.apk>`__"
+msgstr ""
+
+#: ../../source/download/index.rst:85
+msgid "使用微信语音识别接口、语音合成接口。点击下载 语音SDK+Demo+开发文档 使用微信图像识别接口。点击下载 图像SDK+Demo+开发文档 使用微信卡券功能接口。点击下载 卡券SDK+开发文档"
+msgstr ""
+
+#: ../../source/download/index.rst:89
+msgid "范例代码 包含了一个完整的范例工程。该范例的使用可以参阅Android平台上手指南：HelloWeixin@Android。点击下载"
+msgstr ""
+
+#: ../../source/download/index.rst:92
+msgid "签名生成工具 用于获取安装到手机的第三方应用签名的apk包。点击下载 签名生成工具"
+msgstr ""
+
+#: ../../source/download/index.rst:96
+msgid "WP8资源下载"
+msgstr ""
+
+#: ../../source/download/index.rst:103
+msgid "开发第三方应用所需要的库以及文件。\\ `点击下载 <https://open.weixin.qq.com/zh_CN/htmledition/res/dev/download/sdk/WinPhone_SDK.zip>`__"
+msgstr ""
+
+#: ../../source/download/index.rst:110
+msgid "包含了一个完整的范例工程。该范例的使用可以参阅WP8平台上手指南：HelloWeixin@WP8。\\ `点击下载 <https://open.weixin.qq.com/zh_CN/htmledition/res/dev/download/sdk/WeChatSDK_sample_WP8.zip>`__"
+msgstr ""
+
+#: ../../source/download/index.rst:113
+msgid "设计资源下载"
+msgstr ""
+
+#: ../../source/download/index.rst:115
+msgid "为了让开发者在使用微信开放平台的接口功能时，能够保持一致的用户体验，建议开发者使用标准设计资源来进行功能实现。"
+msgstr ""
+
+#: ../../source/download/index.rst:117
+msgid "微信提供了以下几种标准的Logo、Icon、功能按钮标识，开发者可下载后使用。 下载方式：鼠标移到所需的图片上，点击右键选择“图片另存为…”，保存即可。"
+msgstr ""
+
+#: ../../source/download/index.rst:121
+msgid "微信Logo"
+msgstr ""
+
+#: ../../source/download/index.rst:123
+msgid "64 \\* 64 48 \\* 48 32 \\* 32 16 \\* 16"
+msgstr ""
+
+#: ../../source/download/index.rst:126
+msgid "微信Icon"
+msgstr ""
+
+#: ../../source/download/index.rst:128
+msgid "64 \\* 64 48 \\* 48 32 \\* 32 24 \\* 24"
+msgstr ""
+
+#: ../../source/download/index.rst:131
+msgid "微信Button"
+msgstr ""
+
+#: ../../source/download/index.rst:133
+msgid "在实现微信登录功能时，请使用微信的标准图标："
+msgstr ""
+
+#: ../../source/download/index.rst:135
+msgid "48 \\* 48 32 \\* 32 24 \\* 24"
+msgstr ""
+
+#: ../../source/download/index.rst:138
+msgid "微信公众号登录授权页入口的统一按钮样式"
+msgstr ""
+
+#: ../../source/download/index.rst:140
+msgid "在开发者通过公众号服务为公众号解决垂直行业需求时，若需从自身网站跳转至公众号授权页，请使用下述统一按钮样式和效果，保证统一体验："
+msgstr ""
+
+#: ../../source/download/index.rst:142
+msgid "250 \\* 50 178 \\* 32 24 \\* 24"
+msgstr ""
+
+#: ../../source/download/index.rst:145
+msgid "微信分享"
+msgstr ""
+
+#: ../../source/download/index.rst:147
+msgid "分享到微信朋友会话时，请使用微信的标准图标："
+msgstr ""
+
+#: ../../source/download/index.rst:149
+msgid "分享到微信朋友圈时，请使用朋友圈的标准图标："
+msgstr ""
+
+#: ../../source/download/index.rst:152
+msgid "微信收藏"
+msgstr ""
+
+#: ../../source/download/index.rst:154
+msgid "在实现微信收藏功能时，请使用微信收藏的标准图标："
+msgstr ""
+

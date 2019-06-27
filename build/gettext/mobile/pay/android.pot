@@ -1,0 +1,30 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, nosy
+# This file is distributed under the same license as the wxopen-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: wxopen-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-11 22:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/mobile/pay/android.rst:2
+msgid "Android开发手册"
+msgstr ""
+
+#: ../../source/mobile/pay/android.rst:4
+msgid "在管理中心为移动应用申请微信支付成功后，请下载微信APP支付Android开发文档及资源包，启动开发，内容包括："
+msgstr ""
+
+#: ../../source/mobile/pay/android.rst:6
+msgid "Android端接口文档 SDK for Android Sample for Android 服务端demo 退款及对账开发指南、退款及对账demo 微信APP支付Android开发文档"
+msgstr ""
+

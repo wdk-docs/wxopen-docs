@@ -1,0 +1,79 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, nosy
+# This file is distributed under the same license as the wxopen-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: wxopen-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-11 22:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/wxapp/CodeMgr/getweappsupportversion.rst:2
+msgid "12. 查询最低基础库版本及版本用户比"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/getweappsupportversion.rst:5
+msgid "请求方式: POST（请使用https协议）"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/getweappsupportversion.rst:7
+msgid "https://api.weixin.qq.com/cgi-bin/wxopen/getweappsupportversion?access_token=TOKEN 无需携带的参数"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/getweappsupportversion.rst:10
+msgid "返回说明"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/getweappsupportversion.rst:30
+msgid "{"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/getweappsupportversion.rst:13
+msgid "\"errcode\": 0, \"errmsg\": \"ok\", \"now_version\": \"1.0.0\", \"uv_info\": {"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/getweappsupportversion.rst:28
+msgid "\"items\": [{"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/getweappsupportversion.rst:18
+msgid "\"percentage\": 0, \"version\": \"1.0.0\""
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/getweappsupportversion.rst:20
+#: ../../source/wxapp/CodeMgr/getweappsupportversion.rst:24
+msgid "}, {"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/getweappsupportversion.rst:22
+msgid "\"percentage\": 0, \"version\": \"1.0.1\""
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/getweappsupportversion.rst:26
+msgid "\"percentage\": 0, \"version\": \"1.1.0\""
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/getweappsupportversion.rst:30
+msgid "]"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/getweappsupportversion.rst:31
+msgid "}?"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/getweappsupportversion.rst:32
+msgid "} 参数说明:"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/getweappsupportversion.rst:35
+msgid "参数      说明 errcode 错误码 errmsg  错误信息 now_version     当前版本 uv_info 受影响用户占比，item参数里面为一系列数组，每个数组带有参数percentage（受影响比例）以及version（版本号）"
+msgstr ""
+

@@ -1,0 +1,62 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, nosy
+# This file is distributed under the same license as the wxopen-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: wxopen-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-11 22:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/wxapp/CodeMgr/get_page.rst:2
+msgid "4. 获取页面配置"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/get_page.rst:5
+msgid "请求方式: get（请使用https协议）"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/get_page.rst:7
+msgid "https://api.weixin.qq.com/wxa/get_page?access_token=TOKEN 参数说明"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/get_page.rst:10
+msgid "参数      说明 access_token    请使用第三方平台获取到的该小程序授权的authorizer_access_token 返回说明（正常时返回的json示例）："
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/get_page.rst:21
+msgid "{"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/get_page.rst:16
+msgid "\"errcode\":0, \"errmsg\":\"ok\", \"page_list\":["
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/get_page.rst:19
+msgid "\"index\", \"page\\/list\", \"page\\/detail\""
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/get_page.rst:22
+msgid "]"
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/get_page.rst:23
+msgid "} 返回参数说明："
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/get_page.rst:26
+msgid "参数      说明 page_list       page_list 页面配置列表 错误码说明："
+msgstr ""
+
+#: ../../source/wxapp/CodeMgr/get_page.rst:30
+msgid "返回码     说明 -1      系统繁忙 86000   不是由第三方代小程序进行调用 86001   不存在第三方的已经提交的代码"
+msgstr ""
+

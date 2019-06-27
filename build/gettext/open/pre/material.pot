@@ -1,0 +1,130 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, nosy
+# This file is distributed under the same license as the wxopen-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: wxopen-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-11 22:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/open/pre/material.rst:2
+msgid "第三方平台的申请资料说明"
+msgstr ""
+
+#: ../../source/open/pre/material.rst:4
+msgid "开发者在申请创建公众号第三方平台时，需要填写很多开发参数。现针对这些开发参数做如下说明："
+msgstr ""
+
+#: ../../source/open/pre/material.rst:7
+msgid "授权流程相关"
+msgstr ""
+
+#: ../../source/open/pre/material.rst:10
+msgid "授权发起页域名"
+msgstr ""
+
+#: ../../source/open/pre/material.rst:12
+msgid "指公众号在登录授权给第三方平台方时的授权回调域名，在公众号进行登录授权流程中，必须从本域名内网页跳转到登录授权页，才可完成登录授权。授权成功后会回调授权时提供的 URI，公众平台会检查 URI，必须保证 URI 所属域名与服务申请时提供的授权域名保持一致。请注意，域名不需带有\\ ``http://`` 等协议内容，也不能在域名末尾附加详细目录，严格按照类似 www.qq.com 的写法。"
+msgstr ""
+
+#: ../../source/open/pre/material.rst:19
+msgid "发起授权页的体验 URL"
+msgstr ""
+
+#: ../../source/open/pre/material.rst:21
+msgid "用于审核人员前往授权页体验，确认流程可用性。在提交全网发布时，务必保证该 URL 可直接体验。全网发布之前，该项可先填为发起页域名"
+msgstr ""
+
+#: ../../source/open/pre/material.rst:25
+msgid "授权测试公众号列表"
+msgstr ""
+
+#: ../../source/open/pre/material.rst:27
+msgid "在全网发布之前，仅该列表内公众号才可进行授权，以便测试。请填写公众号的原始 ID（可在公众平台网站的公众号设置页找到），最多 10 个，以英文“;”隔开。"
+msgstr ""
+
+#: ../../source/open/pre/material.rst:31
+msgid "授权事件接收 URL"
+msgstr ""
+
+#: ../../source/open/pre/material.rst:33
+msgid "用于接收取消授权通知、授权成功通知、授权更新通知，也用于接收 ticket，ticket 是验证平台方的重要凭据，服务方在获取 component_access_token 时需要提供最新推送的 ticket 以供验证身份合法性。此 ticket 作为验证服务方的重要凭据，请妥善保存。"
+msgstr ""
+
+#: ../../source/open/pre/material.rst:39
+msgid "授权后代替公众号实现业务"
+msgstr ""
+
+#: ../../source/open/pre/material.rst:42
+msgid "公众号消息校验 Token"
+msgstr ""
+
+#: ../../source/open/pre/material.rst:44
+msgid "开发者在代替公众号接收到消息时，用此 Token 来校验消息。用法与普通公众号 token 一致"
+msgstr ""
+
+#: ../../source/open/pre/material.rst:48
+msgid "公众号消息加解密 Key"
+msgstr ""
+
+#: ../../source/open/pre/material.rst:50
+msgid "在代替公众号收发消息过程中使用。必须是长度为 43 位的字符串，只能是字母和数字。用法与普通公众号 symmetric_key 一致"
+msgstr ""
+
+#: ../../source/open/pre/material.rst:54
+msgid "公众号消息与事件接收 URL"
+msgstr ""
+
+#: ../../source/open/pre/material.rst:56
+msgid "该 URL 用于接收已授权公众号的消息和事件，消息内容、消息格式、签名方式、加密方式与普通公众号接收的一致，唯一区别在于签名 token 和加密 symmetric_key 使用的是服务方申请时所填写的信息。由于消息具体内容不会变更，故根据消息内容里的 ToUserName，服务方是可以区分出具体消息所属的公众号。请注意："
+msgstr ""
+
+#: ../../source/open/pre/material.rst:62
+msgid "考虑到服务需要接收大量的授权公众号的消息，为了便于做业务分流和业务隔离，必须提供如下形式的 url：www.abc.com/aaa/\\ :math:`APPID`/bbb/cgi，其中:math:`APPID`\\ 在实际推送时会替换成所属的已授权公众号的 appid。"
+msgstr ""
+
+#: ../../source/open/pre/material.rst:65
+msgid "第三方平台只需获得某个业务模块的授权（而不需要获得客服与菜单权限的授权），然后在收到该业务模块事件推送后，如果该事件是允许进行 5 秒内被动回复消息给粉丝的，那么第三方就可以被动回复（业务模块的哪些事件推送允许被动回复用户，哪些不允许，需咨询具体业务模块），点击查看被动回复接口文档"
+msgstr ""
+
+#: ../../source/open/pre/material.rst:68
+msgid "如果第三方希望实现实时获知公众号有新粉丝关注，只需要收到关注事件后回复 success 即可，不必另行回复，免得公众号出现多个第三方同时进行粉丝关注后的自动回复。"
+msgstr ""
+
+#: ../../source/open/pre/material.rst:72
+msgid "网页开发域名：网页开发域名最多可以填写 3 个，每个以英文\\ ``;``\\ 符号隔开。每个网页开发域名会产生 2 个效果（请注意，勿域名不需带有\\ ``http://``\\ 等协议内容，也不能在域名末尾附加详细目录）："
+msgstr ""
+
+#: ../../source/open/pre/material.rst:76
+msgid "在该域名和符合要求的下级域名内，可以代替旗下授权后公众号发起网页授权。下级域名必须是\\ :math:`APPID`.wx.abc.com 的形式（\\ :math:`APPID`\\ 为公众号的 AppID 的替换符，建议第三方用这种方式，若需可做域名映射），如果不按这种形式来做，旗下公众号违规将可能导致整个网站被封。"
+msgstr ""
+
+#: ../../source/open/pre/material.rst:79
+msgid "在该域名（一级域名）内，可以代替旗下授权后公众号调用 JS SDK（需要配合公众号的 AppID）"
+msgstr ""
+
+#: ../../source/open/pre/material.rst:83
+msgid "其他"
+msgstr ""
+
+#: ../../source/open/pre/material.rst:85
+msgid "白名单 IP 地址列表：仅当开发者 IP 地址在该列表中时，才被允许调用相关接口。最多填写 100 个 IP 地址，以英文“;”隔开。后续有出口 IP 变更时一定要先在申请资料里填写并覆盖现网，否则会被拦截。"
+msgstr ""
+
+#: ../../source/open/pre/material.rst:90
+msgid "注：对于申请资料中填写的所有完整有效 url，都需要做一次 echo 校验，以确定该 url 是有效可连通的，这个与普通公众号开发模式下 url 校验方式一致，只是使用的 token 为服务方的 token。"
+msgstr ""
+
+#: ../../source/open/pre/material.rst:94
+msgid "具体校验规则请点击"
+msgstr ""
+

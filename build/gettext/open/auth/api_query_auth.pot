@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, nosy
+# This file is distributed under the same license as the wxopen-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: wxopen-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-11 22:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/open/auth/api_query_auth.rst:2
+msgid "4. 使用授权码换取公众号或小程序的接口调用凭据和授权信息"
+msgstr ""
+
+#: ../../source/open/auth/api_query_auth.rst:4
+msgid "该 API 用于使用授权码换取授权公众号或小程序的授权信息，并换取 authorizer_access_token 和 authorizer_refresh_token。 授权码的获取，需要在用户在第三方平台授权页中完成授权流程后，在回调 URI 中通过 URL 参数提供给第三方平台方。请注意，由于现在公众号或小程序可以自定义选择部分权限授权给第三方平台，因此第三方平台开发者需要通过该接口来获取公众号或小程序具体授权了哪些权限，而不是简单地认为自己声明的权限就是公众号或小程序授权的权限。"
+msgstr ""
+
+#: ../../source/open/auth/api_query_auth.rst:10
+msgid "请求格式"
+msgstr ""
+
+#: ../../source/open/auth/api_query_auth.rst:12
+msgid "``POST`` **https**://api.weixin.qq.com/cgi-bin/component/api_query_auth?component_access_token=xxxx"
+msgstr ""
+
+#: ../../source/open/auth/api_query_auth.rst:15
+msgid "请求数据"
+msgstr ""
+
+#: ../../source/open/auth/api_query_auth.rst:24
+msgid "请求参数说明"
+msgstr ""
+
+#: ../../source/open/auth/api_query_auth.rst:27
+msgid "参数"
+msgstr ""
+
+#: ../../source/open/auth/api_query_auth.rst:27
+msgid "说明"
+msgstr ""
+
+#: ../../source/open/auth/api_query_auth.rst:29
+msgid "component_appid"
+msgstr ""
+
+#: ../../source/open/auth/api_query_auth.rst:29
+msgid "第三方平台 appid"
+msgstr ""
+
+#: ../../source/open/auth/api_query_auth.rst:30
+msgid "authorization_code"
+msgstr ""
+
+#: ../../source/open/auth/api_query_auth.rst:30
+msgid "授权 code,会在授权成功时返回给第三方平台，详见第三方平台授权流程说明"
+msgstr ""
+
+#: ../../source/open/auth/api_query_auth.rst:33
+msgid "返回结果"
+msgstr ""
+
+#: ../../source/open/auth/api_query_auth.rst:63
+msgid "参数说明"
+msgstr ""
+

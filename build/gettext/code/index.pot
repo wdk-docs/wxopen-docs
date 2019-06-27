@@ -1,0 +1,871 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, nosy
+# This file is distributed under the same license as the wxopen-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: wxopen-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-11 22:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/code/index.rst:2
+msgid "错误码"
+msgstr ""
+
+#: ../../source/code/index.rst:5
+msgid "返回码"
+msgstr ""
+
+#: ../../source/code/index.rst:5
+msgid "错误码描述"
+msgstr ""
+
+#: ../../source/code/index.rst:5
+msgid "说明"
+msgstr ""
+
+#: ../../source/code/index.rst:7
+msgid "40001"
+msgstr ""
+
+#: ../../source/code/index.rst:7
+msgid "invalid credential"
+msgstr ""
+
+#: ../../source/code/index.rst:7
+msgid "不合法的调用凭证"
+msgstr ""
+
+#: ../../source/code/index.rst:8
+msgid "40002"
+msgstr ""
+
+#: ../../source/code/index.rst:8
+msgid "invalid grant_type"
+msgstr ""
+
+#: ../../source/code/index.rst:8
+msgid "不合法的grant_type"
+msgstr ""
+
+#: ../../source/code/index.rst:9
+msgid "40003"
+msgstr ""
+
+#: ../../source/code/index.rst:9
+msgid "invalid openid"
+msgstr ""
+
+#: ../../source/code/index.rst:9
+msgid "不合法的OpenID"
+msgstr ""
+
+#: ../../source/code/index.rst:10
+msgid "40004"
+msgstr ""
+
+#: ../../source/code/index.rst:10
+msgid "invalid media type"
+msgstr ""
+
+#: ../../source/code/index.rst:10
+msgid "不合法的媒体文件类型"
+msgstr ""
+
+#: ../../source/code/index.rst:11
+msgid "40007"
+msgstr ""
+
+#: ../../source/code/index.rst:11
+msgid "invalid media_id"
+msgstr ""
+
+#: ../../source/code/index.rst:11
+msgid "不合法的media_id"
+msgstr ""
+
+#: ../../source/code/index.rst:12
+msgid "40008"
+msgstr ""
+
+#: ../../source/code/index.rst:12
+msgid "invalid message type"
+msgstr ""
+
+#: ../../source/code/index.rst:12
+msgid "不合法的message_type"
+msgstr ""
+
+#: ../../source/code/index.rst:13
+msgid "40009"
+msgstr ""
+
+#: ../../source/code/index.rst:13
+msgid "invalid image size"
+msgstr ""
+
+#: ../../source/code/index.rst:13
+msgid "不合法的图片大小"
+msgstr ""
+
+#: ../../source/code/index.rst:14
+msgid "40010"
+msgstr ""
+
+#: ../../source/code/index.rst:14
+msgid "invalid voice size"
+msgstr ""
+
+#: ../../source/code/index.rst:14
+msgid "不合法的语音大小"
+msgstr ""
+
+#: ../../source/code/index.rst:15
+msgid "40011"
+msgstr ""
+
+#: ../../source/code/index.rst:15
+msgid "invalid video size"
+msgstr ""
+
+#: ../../source/code/index.rst:15
+msgid "不合法的视频大小"
+msgstr ""
+
+#: ../../source/code/index.rst:16
+msgid "40012"
+msgstr ""
+
+#: ../../source/code/index.rst:16
+msgid "invalid thumb size"
+msgstr ""
+
+#: ../../source/code/index.rst:16
+msgid "不合法的缩略图大小"
+msgstr ""
+
+#: ../../source/code/index.rst:17
+msgid "40013"
+msgstr ""
+
+#: ../../source/code/index.rst:17
+msgid "invalid appid"
+msgstr ""
+
+#: ../../source/code/index.rst:17
+msgid "不合法的AppID"
+msgstr ""
+
+#: ../../source/code/index.rst:18
+msgid "40014"
+msgstr ""
+
+#: ../../source/code/index.rst:18
+msgid "invalid access_token"
+msgstr ""
+
+#: ../../source/code/index.rst:18
+msgid "不合法的access_token"
+msgstr ""
+
+#: ../../source/code/index.rst:19
+msgid "40015"
+msgstr ""
+
+#: ../../source/code/index.rst:19
+msgid "invalid menu type"
+msgstr ""
+
+#: ../../source/code/index.rst:19
+msgid "不合法的菜单类型"
+msgstr ""
+
+#: ../../source/code/index.rst:20
+msgid "40016"
+msgstr ""
+
+#: ../../source/code/index.rst:20
+msgid "invalid button size"
+msgstr ""
+
+#: ../../source/code/index.rst:20
+msgid "不合法的菜单按钮个数"
+msgstr ""
+
+#: ../../source/code/index.rst:21
+msgid "40017"
+msgstr ""
+
+#: ../../source/code/index.rst:21
+msgid "invalid button type"
+msgstr ""
+
+#: ../../source/code/index.rst:21
+msgid "不合法的按钮类型"
+msgstr ""
+
+#: ../../source/code/index.rst:22
+msgid "40018"
+msgstr ""
+
+#: ../../source/code/index.rst:22
+msgid "invalid button name size"
+msgstr ""
+
+#: ../../source/code/index.rst:22
+msgid "不合法的按钮名称长度"
+msgstr ""
+
+#: ../../source/code/index.rst:23
+msgid "40019"
+msgstr ""
+
+#: ../../source/code/index.rst:23
+msgid "invalid button key size"
+msgstr ""
+
+#: ../../source/code/index.rst:23
+msgid "不合法的按钮KEY长度"
+msgstr ""
+
+#: ../../source/code/index.rst:24
+msgid "40020"
+msgstr ""
+
+#: ../../source/code/index.rst:24
+msgid "invalid button url size"
+msgstr ""
+
+#: ../../source/code/index.rst:24
+#: ../../source/code/index.rst:34
+msgid "不合法的url长度"
+msgstr ""
+
+#: ../../source/code/index.rst:25
+msgid "40023"
+msgstr ""
+
+#: ../../source/code/index.rst:25
+msgid "invalid sub button size"
+msgstr ""
+
+#: ../../source/code/index.rst:25
+msgid "不合法的子菜单按钮个数"
+msgstr ""
+
+#: ../../source/code/index.rst:26
+msgid "40024"
+msgstr ""
+
+#: ../../source/code/index.rst:26
+msgid "invalid sub button type"
+msgstr ""
+
+#: ../../source/code/index.rst:26
+msgid "不合法的子菜单类型"
+msgstr ""
+
+#: ../../source/code/index.rst:27
+msgid "40025"
+msgstr ""
+
+#: ../../source/code/index.rst:27
+msgid "invalid sub button name size"
+msgstr ""
+
+#: ../../source/code/index.rst:27
+msgid "不合法的子菜单按钮名称长度"
+msgstr ""
+
+#: ../../source/code/index.rst:28
+msgid "40026"
+msgstr ""
+
+#: ../../source/code/index.rst:28
+msgid "invalid sub button key size"
+msgstr ""
+
+#: ../../source/code/index.rst:28
+msgid "不合法的子菜单按钮KEY长度"
+msgstr ""
+
+#: ../../source/code/index.rst:29
+msgid "40027"
+msgstr ""
+
+#: ../../source/code/index.rst:29
+msgid "invalid sub button url size"
+msgstr ""
+
+#: ../../source/code/index.rst:29
+msgid "不合法的子菜单按钮url长度"
+msgstr ""
+
+#: ../../source/code/index.rst:30
+msgid "40029"
+msgstr ""
+
+#: ../../source/code/index.rst:30
+msgid "invalid code"
+msgstr ""
+
+#: ../../source/code/index.rst:30
+msgid "不合法或已过期的code"
+msgstr ""
+
+#: ../../source/code/index.rst:31
+msgid "40030"
+msgstr ""
+
+#: ../../source/code/index.rst:31
+msgid "invalid refresh_token"
+msgstr ""
+
+#: ../../source/code/index.rst:31
+msgid "不合法的refresh_token"
+msgstr ""
+
+#: ../../source/code/index.rst:32
+msgid "40036"
+msgstr ""
+
+#: ../../source/code/index.rst:32
+msgid "invalid template_id size"
+msgstr ""
+
+#: ../../source/code/index.rst:32
+msgid "不合法的template_id长度"
+msgstr ""
+
+#: ../../source/code/index.rst:33
+msgid "40037"
+msgstr ""
+
+#: ../../source/code/index.rst:33
+msgid "invalid template_id"
+msgstr ""
+
+#: ../../source/code/index.rst:33
+msgid "不合法的template_id"
+msgstr ""
+
+#: ../../source/code/index.rst:34
+msgid "40039"
+msgstr ""
+
+#: ../../source/code/index.rst:34
+msgid "invalid url size"
+msgstr ""
+
+#: ../../source/code/index.rst:35
+msgid "40048"
+msgstr ""
+
+#: ../../source/code/index.rst:35
+msgid "invalid url domain"
+msgstr ""
+
+#: ../../source/code/index.rst:35
+msgid "不合法的url域名"
+msgstr ""
+
+#: ../../source/code/index.rst:36
+msgid "40054"
+msgstr ""
+
+#: ../../source/code/index.rst:36
+msgid "invalid sub button url domain"
+msgstr ""
+
+#: ../../source/code/index.rst:36
+msgid "不合法的子菜单按钮url域名"
+msgstr ""
+
+#: ../../source/code/index.rst:37
+msgid "40055"
+msgstr ""
+
+#: ../../source/code/index.rst:37
+msgid "invalid button url domain"
+msgstr ""
+
+#: ../../source/code/index.rst:37
+msgid "不合法的菜单按钮url域名"
+msgstr ""
+
+#: ../../source/code/index.rst:38
+msgid "40066"
+msgstr ""
+
+#: ../../source/code/index.rst:38
+msgid "invalid url"
+msgstr ""
+
+#: ../../source/code/index.rst:38
+msgid "不合法的url"
+msgstr ""
+
+#: ../../source/code/index.rst:39
+msgid "41001"
+msgstr ""
+
+#: ../../source/code/index.rst:39
+msgid "access_token missing"
+msgstr ""
+
+#: ../../source/code/index.rst:39
+msgid "缺失access_token参数"
+msgstr ""
+
+#: ../../source/code/index.rst:40
+msgid "41002"
+msgstr ""
+
+#: ../../source/code/index.rst:40
+msgid "appid missing"
+msgstr ""
+
+#: ../../source/code/index.rst:40
+msgid "缺失appid参数"
+msgstr ""
+
+#: ../../source/code/index.rst:41
+msgid "41003"
+msgstr ""
+
+#: ../../source/code/index.rst:41
+msgid "refresh_token missing"
+msgstr ""
+
+#: ../../source/code/index.rst:41
+msgid "缺失refresh_token参数"
+msgstr ""
+
+#: ../../source/code/index.rst:42
+msgid "41004"
+msgstr ""
+
+#: ../../source/code/index.rst:42
+msgid "appsecret missing"
+msgstr ""
+
+#: ../../source/code/index.rst:42
+msgid "缺失secret参数"
+msgstr ""
+
+#: ../../source/code/index.rst:43
+msgid "41005"
+msgstr ""
+
+#: ../../source/code/index.rst:43
+msgid "media data missing"
+msgstr ""
+
+#: ../../source/code/index.rst:43
+msgid "缺失二进制媒体文件"
+msgstr ""
+
+#: ../../source/code/index.rst:44
+msgid "41006"
+msgstr ""
+
+#: ../../source/code/index.rst:44
+msgid "media_id missing"
+msgstr ""
+
+#: ../../source/code/index.rst:44
+msgid "缺失media_id参数"
+msgstr ""
+
+#: ../../source/code/index.rst:45
+msgid "41007"
+msgstr ""
+
+#: ../../source/code/index.rst:45
+msgid "sub_menu data missing"
+msgstr ""
+
+#: ../../source/code/index.rst:45
+msgid "缺失子菜单数据"
+msgstr ""
+
+#: ../../source/code/index.rst:46
+msgid "41008"
+msgstr ""
+
+#: ../../source/code/index.rst:46
+msgid "missing code"
+msgstr ""
+
+#: ../../source/code/index.rst:46
+msgid "缺失code参数"
+msgstr ""
+
+#: ../../source/code/index.rst:47
+msgid "41009"
+msgstr ""
+
+#: ../../source/code/index.rst:47
+msgid "missing openid"
+msgstr ""
+
+#: ../../source/code/index.rst:47
+msgid "缺失openid参数"
+msgstr ""
+
+#: ../../source/code/index.rst:48
+msgid "41010"
+msgstr ""
+
+#: ../../source/code/index.rst:48
+msgid "missing url"
+msgstr ""
+
+#: ../../source/code/index.rst:48
+msgid "缺失url参数"
+msgstr ""
+
+#: ../../source/code/index.rst:49
+msgid "42001"
+msgstr ""
+
+#: ../../source/code/index.rst:49
+msgid "access_token expired"
+msgstr ""
+
+#: ../../source/code/index.rst:49
+msgid "access_token超时"
+msgstr ""
+
+#: ../../source/code/index.rst:50
+msgid "42002"
+msgstr ""
+
+#: ../../source/code/index.rst:50
+msgid "refresh_token expired"
+msgstr ""
+
+#: ../../source/code/index.rst:50
+msgid "refresh_token超时"
+msgstr ""
+
+#: ../../source/code/index.rst:51
+msgid "42003"
+msgstr ""
+
+#: ../../source/code/index.rst:51
+msgid "code expired"
+msgstr ""
+
+#: ../../source/code/index.rst:51
+msgid "code超时"
+msgstr ""
+
+#: ../../source/code/index.rst:52
+msgid "43001"
+msgstr ""
+
+#: ../../source/code/index.rst:52
+msgid "require GET method"
+msgstr ""
+
+#: ../../source/code/index.rst:52
+msgid "需要使用GET方法请求"
+msgstr ""
+
+#: ../../source/code/index.rst:53
+msgid "43002"
+msgstr ""
+
+#: ../../source/code/index.rst:53
+msgid "require POST method"
+msgstr ""
+
+#: ../../source/code/index.rst:53
+msgid "需要使用POST方法请求"
+msgstr ""
+
+#: ../../source/code/index.rst:54
+msgid "43003"
+msgstr ""
+
+#: ../../source/code/index.rst:54
+msgid "require https"
+msgstr ""
+
+#: ../../source/code/index.rst:54
+msgid "需要使用HTTPS"
+msgstr ""
+
+#: ../../source/code/index.rst:55
+msgid "43004"
+msgstr ""
+
+#: ../../source/code/index.rst:55
+msgid "require subscribe"
+msgstr ""
+
+#: ../../source/code/index.rst:55
+msgid "需要订阅关系"
+msgstr ""
+
+#: ../../source/code/index.rst:56
+msgid "44001"
+msgstr ""
+
+#: ../../source/code/index.rst:56
+msgid "empty media data"
+msgstr ""
+
+#: ../../source/code/index.rst:56
+msgid "空白的二进制数据"
+msgstr ""
+
+#: ../../source/code/index.rst:57
+msgid "44002"
+msgstr ""
+
+#: ../../source/code/index.rst:57
+msgid "empty post data"
+msgstr ""
+
+#: ../../source/code/index.rst:57
+msgid "空白的POST数据"
+msgstr ""
+
+#: ../../source/code/index.rst:58
+msgid "44003"
+msgstr ""
+
+#: ../../source/code/index.rst:58
+msgid "empty news data"
+msgstr ""
+
+#: ../../source/code/index.rst:58
+msgid "空白的news数据"
+msgstr ""
+
+#: ../../source/code/index.rst:59
+msgid "44004"
+msgstr ""
+
+#: ../../source/code/index.rst:59
+msgid "empty content"
+msgstr ""
+
+#: ../../source/code/index.rst:59
+msgid "空白的内容"
+msgstr ""
+
+#: ../../source/code/index.rst:60
+msgid "44005"
+msgstr ""
+
+#: ../../source/code/index.rst:60
+msgid "empty list size"
+msgstr ""
+
+#: ../../source/code/index.rst:60
+msgid "空白的列表"
+msgstr ""
+
+#: ../../source/code/index.rst:61
+msgid "45001"
+msgstr ""
+
+#: ../../source/code/index.rst:61
+msgid "media size out of limit"
+msgstr ""
+
+#: ../../source/code/index.rst:61
+msgid "二进制文件超过限制"
+msgstr ""
+
+#: ../../source/code/index.rst:62
+msgid "45002"
+msgstr ""
+
+#: ../../source/code/index.rst:62
+msgid "content size out of limit"
+msgstr ""
+
+#: ../../source/code/index.rst:62
+msgid "content参数超过限制"
+msgstr ""
+
+#: ../../source/code/index.rst:63
+msgid "45003"
+msgstr ""
+
+#: ../../source/code/index.rst:63
+msgid "title size out of limit"
+msgstr ""
+
+#: ../../source/code/index.rst:63
+msgid "title参数超过限制"
+msgstr ""
+
+#: ../../source/code/index.rst:64
+msgid "45004"
+msgstr ""
+
+#: ../../source/code/index.rst:64
+msgid "description size out of limit"
+msgstr ""
+
+#: ../../source/code/index.rst:64
+msgid "description参数超过限制"
+msgstr ""
+
+#: ../../source/code/index.rst:65
+msgid "45005"
+msgstr ""
+
+#: ../../source/code/index.rst:65
+msgid "url size out of limit"
+msgstr ""
+
+#: ../../source/code/index.rst:65
+msgid "url参数长度超过限制"
+msgstr ""
+
+#: ../../source/code/index.rst:66
+msgid "45006"
+msgstr ""
+
+#: ../../source/code/index.rst:66
+msgid "picurl size out of limit"
+msgstr ""
+
+#: ../../source/code/index.rst:66
+msgid "picurl参数超过限制"
+msgstr ""
+
+#: ../../source/code/index.rst:67
+msgid "45007"
+msgstr ""
+
+#: ../../source/code/index.rst:67
+msgid "playtime out of limit"
+msgstr ""
+
+#: ../../source/code/index.rst:67
+msgid "播放时间超过限制（语音为60s最大）"
+msgstr ""
+
+#: ../../source/code/index.rst:68
+msgid "45008"
+msgstr ""
+
+#: ../../source/code/index.rst:68
+msgid "article size out of limit"
+msgstr ""
+
+#: ../../source/code/index.rst:68
+msgid "article参数超过限制"
+msgstr ""
+
+#: ../../source/code/index.rst:69
+msgid "45009"
+msgstr ""
+
+#: ../../source/code/index.rst:69
+msgid "api freq out of limit"
+msgstr ""
+
+#: ../../source/code/index.rst:69
+msgid "接口调动频率超过限制"
+msgstr ""
+
+#: ../../source/code/index.rst:70
+msgid "45010"
+msgstr ""
+
+#: ../../source/code/index.rst:70
+msgid "create menu limit"
+msgstr ""
+
+#: ../../source/code/index.rst:70
+msgid "建立菜单被限制"
+msgstr ""
+
+#: ../../source/code/index.rst:71
+msgid "45011"
+msgstr ""
+
+#: ../../source/code/index.rst:71
+msgid "api limit"
+msgstr ""
+
+#: ../../source/code/index.rst:71
+msgid "频率限制"
+msgstr ""
+
+#: ../../source/code/index.rst:72
+msgid "45012"
+msgstr ""
+
+#: ../../source/code/index.rst:72
+msgid "template size out of limit"
+msgstr ""
+
+#: ../../source/code/index.rst:72
+msgid "模板大小超过限制"
+msgstr ""
+
+#: ../../source/code/index.rst:73
+msgid "45016"
+msgstr ""
+
+#: ../../source/code/index.rst:73
+msgid "can’t modify sys group"
+msgstr ""
+
+#: ../../source/code/index.rst:73
+msgid "不能修改默认组"
+msgstr ""
+
+#: ../../source/code/index.rst:74
+msgid "45017"
+msgstr ""
+
+#: ../../source/code/index.rst:74
+msgid "can’t set group name too long sys group"
+msgstr ""
+
+#: ../../source/code/index.rst:74
+msgid "修改组名过长"
+msgstr ""
+
+#: ../../source/code/index.rst:75
+msgid "45018"
+msgstr ""
+
+#: ../../source/code/index.rst:75
+msgid "too many group now, no need to add new"
+msgstr ""
+
+#: ../../source/code/index.rst:75
+msgid "组数量过多"
+msgstr ""
+
+#: ../../source/code/index.rst:76
+msgid "50001"
+msgstr ""
+
+#: ../../source/code/index.rst:76
+msgid "api unauthorized"
+msgstr ""
+
+#: ../../source/code/index.rst:76
+msgid "接口未授权"
+msgstr ""
+

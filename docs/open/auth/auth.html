@@ -37,8 +37,8 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
-    <link rel="next" title="推送 component_verify_ticket 协议" href="component_verify_ticket.html" />
-    <link rel="prev" title="授权流程技术说明" href="index.html" /> 
+    <link rel="next" title="1. 推送 component_verify_ticket 协议" href="component_verify_ticket.html" />
+    <link rel="prev" title="授权流程" href="index.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -83,29 +83,32 @@
             
             
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../index.html">概述</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../wxapp/index.html">小程序管理</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../mobile/index.html">移动应用</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../website/index.html">网站应用</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../pubno/index.html">公众号</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">第三方平台</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../overview.html">第三方平台概述</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="index.html">授权流程技术说明</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">授权流程</a><ul class="current">
 <li class="toctree-l3 current"><a class="current reference internal" href="#">授权流程技术说明</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id2">步骤</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id2">获取预授权码</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id3">进入授权页</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id6">确认登录</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id7">授权后回调</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#api">调用 API</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="component_verify_ticket.html">推送 component_verify_ticket 协议</a></li>
-<li class="toctree-l3"><a class="reference internal" href="component_access_token.html">2、获取第三方平台 component_access_token</a></li>
-<li class="toctree-l3"><a class="reference internal" href="api_create_preauthcode.html">3、获取预授权码 pre_auth_code</a></li>
-<li class="toctree-l3"><a class="reference internal" href="api_query_auth.html">4、使用授权码换取公众号或小程序的接口调用凭据和授权信息</a></li>
-<li class="toctree-l3"><a class="reference internal" href="api_authorizer_token.html">5、获取（刷新）授权公众号或小程序的接口调用凭据（令牌）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="api_get_authorizer_info.html">6、获取授权方的帐号基本信息</a></li>
-<li class="toctree-l3"><a class="reference internal" href="api_get_authorizer_option.html">7、获取授权方的选项设置信息</a></li>
-<li class="toctree-l3"><a class="reference internal" href="api_set_authorizer_option.html">8、设置授权方的选项信息</a></li>
-<li class="toctree-l3"><a class="reference internal" href="callback.html">9、推送授权相关通知</a></li>
+<li class="toctree-l3"><a class="reference internal" href="component_verify_ticket.html">1. 推送 component_verify_ticket 协议</a></li>
+<li class="toctree-l3"><a class="reference internal" href="component_access_token.html">2. 获取第三方平台 component_access_token</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_create_preauthcode.html">3. 获取预授权码 pre_auth_code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_query_auth.html">4. 使用授权码换取公众号或小程序的接口调用凭据和授权信息</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_authorizer_token.html">5. 获取（刷新）授权公众号或小程序的接口调用凭据（令牌）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_get_authorizer_info.html">6. 获取授权方的帐号基本信息</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_get_authorizer_option.html">7. 获取授权方的选项设置信息</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_set_authorizer_option.html">8. 设置授权方的选项信息</a></li>
+<li class="toctree-l3"><a class="reference internal" href="callback.html">9. 推送授权相关通知</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../mini/index.html">代小程序实现业务-开发简介</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../mp/index.html">代公众号实现业务</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pre/index.html">开发前必读</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../wire.html">消息加解密说明</a></li>
@@ -161,7 +164,7 @@
         
           <li><a href="../index.html">第三方平台</a> &raquo;</li>
         
-          <li><a href="index.html">授权流程技术说明</a> &raquo;</li>
+          <li><a href="index.html">授权流程</a> &raquo;</li>
         
       <li>授权流程技术说明</li>
     
@@ -183,54 +186,203 @@
            <div itemprop="articleBody">
             
   <div class="section" id="id1">
-<h1>授权流程技术说明<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<h1><a class="reference external" href="https://open.weixin.qq.com/cgi-bin/showdocument?action=dir_list&amp;t=resource/res_list&amp;verify=1&amp;id=open1453779503&amp;token=&amp;lang=zh_CN">授权流程技术说明</a><a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
 <p>小程序或者公众号授权给第三方平台的技术实现流程比较简单，以公众号为例，如下图所示：</p>
-<p>下面对其进行详细介绍：</p>
+<img alt="https://res.wx.qq.com/op_res/g360EANvw_kVk3WCt-rRVP5UNFVJ2pYjH6gQCmxVL58lWhow97U8wYXpB4gw-I-d" src="https://res.wx.qq.com/op_res/g360EANvw_kVk3WCt-rRVP5UNFVJ2pYjH6gQCmxVL58lWhow97U8wYXpB4gw-I-d" />
+<p>下面对其进行详细介绍, 步骤如下：</p>
 <div class="section" id="id2">
-<h2>步骤<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<h2>获取预授权码<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<blockquote>
+<div><p>第三方平台方获取预授权码(pre_auth_code),预授权码是第三方平台方实现授权托管的必备信息，可以通过本文第3部分获取。</p>
+</div></blockquote>
+</div>
 <div class="section" id="id3">
-<h3>1. 第三方平台方获取预授权码<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h3>
-<p>pre_auth_code</p>
-<p>预授权码是第三方平台方实现授权托管的必备信息，可以通过本文</p>
-</div>
+<h2>进入授权页<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<blockquote>
+<div><p>引入用户进入授权页,第三方平台方可以在自己的网站中放置“微信公众号授权”或者“小程序授权”的入口，
+或生成授权链接放置在移动网页中，引导公众号和小程序管理员进入授权页。</p>
+</div></blockquote>
 <div class="section" id="id4">
-<h3>2. 引入用户进入授权页<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h3>
-<p>第三方平台方可以在自己的网站中放置“微信公众号授权”或者“小程序授权”的入口，或生成授权链接放置在移动网页中，引导公众号和小程序管理员进入授权页。</p>
-<div class="section" id="id5">
-<h4>方式一：授权注册页面扫码授权<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h4>
-<p>授权页网址为：</p>
-<p><a class="reference external" href="https://mp.weixin.qq.com/cgi-bin/componentloginpage?component_appid=xxxx&amp;pre_auth_code=xxxxx&amp;redirect_uri=xxxx&amp;auth_type=xxx">https://mp.weixin.qq.com/cgi-bin/componentloginpage?component_appid=xxxx&amp;pre_auth_code=xxxxx&amp;redirect_uri=xxxx&amp;auth_type=xxx</a>。</p>
+<h3>方式一：授权注册页面扫码授权<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h3>
+<p>授权页网址为:</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span>https://mp.weixin.qq.com/cgi-bin/componentloginpage?component_appid=xxxx&amp;pre_auth_code=xxxxx
+&amp;redirect_uri=xxxx&amp;auth_type=xxx。
+</pre></div>
 </div>
-<div class="section" id="id6">
-<h4>方式二：点击移动端链接快速授权<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h4>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 12%" />
+<col style="width: 67%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>参数</p></th>
+<th class="head"><p>是否必填</p></th>
+<th class="head"><p>参数说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>component_appid</p></td>
+<td><p>是</p></td>
+<td><p>第三方平台方appid</p></td>
+</tr>
+<tr class="row-odd"><td><p>pre_auth_code</p></td>
+<td><p>是</p></td>
+<td><p>预授权码</p></td>
+</tr>
+<tr class="row-even"><td><p>redirect_uri</p></td>
+<td><p>是</p></td>
+<td><p>回调URI</p></td>
+</tr>
+<tr class="row-odd"><td><p>auth_type</p></td>
+<td><p>否</p></td>
+<td><p>要授权的帐号类型，</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td><p>1则商户扫码后，手机端仅展示公众号.</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td><p>2表示仅展示小程序，</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td><p>3表示公众号和小程序都展示。如果为未制定，</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td><p>则默认小程序和公众号都展示。</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td><p>第三方平台开发者可以使用本字段来控制授权的帐号类型。</p></td>
+</tr>
+<tr class="row-odd"><td><p>biz_appid</p></td>
+<td><p>否</p></td>
+<td><p>指定授权唯一的小程序或公众号</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id5">
+<h3>方式二：点击移动端链接快速授权<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h3>
 <p>第三方平台方可以生成授权链接，将链接通过移动端直接发给授权管理员，管理员确认后即授权成功。</p>
 <p><img alt="image0" src="https://mmbiz.qpic.cn/mmbiz_png/p98FjXy8LaefsIibIfcsPZ3yCEJlaaxWEHyYBSKYH4mBfMhK9nFFTWfGzjBvhSboibz81uM25eiawj0MOuO1k84jw/0?wx_fmt=png" /></p>
-<p>授权链接为：</p>
-<p><a class="reference external" href="https://mp.weixin.qq.com/safe/bindcomponent?action=bindcomponent&amp;auth_type=3&amp;no_scan=1&amp;component_appid=xxxx&amp;pre_auth_code=xxxxx&amp;redirect_uri=xxxx&amp;auth_type=xxx&amp;biz_appid=xxxx#wechat_redirect">https://mp.weixin.qq.com/safe/bindcomponent?action=bindcomponent&amp;auth_type=3&amp;no_scan=1&amp;component_appid=xxxx&amp;pre_auth_code=xxxxx&amp;redirect_uri=xxxx&amp;auth_type=xxx&amp;biz_appid=xxxx#wechat_redirect</a></p>
-<p>注：auth_type、biz_appid 两个字段互斥。</p>
+<p>授权链接为:</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span>https://mp.weixin.qq.com/safe/bindcomponent?
+action=bindcomponent&amp;auth_type=3&amp;no_scan=1&amp;component_appid=xxxx&amp;
+pre_auth_code=xxxxx&amp;redirect_uri=xxxx&amp;auth_type=xxx&amp;biz_appid=xxxx#wechat_redirect
+</pre></div>
 </div>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 12%" />
+<col style="width: 67%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>参数</p></th>
+<th class="head"><p>是否必填</p></th>
+<th class="head"><p>参数说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>component_appid</p></td>
+<td><p>是</p></td>
+<td><p>第三方平台方appid</p></td>
+</tr>
+<tr class="row-odd"><td><p>pre_auth_code</p></td>
+<td><p>是</p></td>
+<td><p>预授权码</p></td>
+</tr>
+<tr class="row-even"><td><p>redirect_uri</p></td>
+<td><p>是</p></td>
+<td><p>回调URI</p></td>
+</tr>
+<tr class="row-odd"><td><p>auth_type</p></td>
+<td><p>是</p></td>
+<td><p>要授权的帐号类型：</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td><p>1则商户点击链接后，手机端仅展示公众号.</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td><p>2表示仅展示小程序，</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td><p>3表示公众号和小程序都展示。</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td><p>如果为未指定，则默认小程序和公众号都展示。</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td><p>第三方平台开发者可以使用本字段来控制授权的帐号类型。</p></td>
+</tr>
+<tr class="row-odd"><td><p>biz_appid</p></td>
+<td><p>否</p></td>
+<td><p>指定授权唯一的小程序或公众号</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition attention">
+<p class="admonition-title">注意</p>
+<p>auth_type. biz_appid 两个字段互斥。</p>
+</div>
+</div>
+</div>
+<div class="section" id="id6">
+<h2>确认登录<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h2>
+<p>用户确认并同意登录授权给第三方平台方,
+用户进入第三方平台授权页后，需要确认并同意将自己的公众号或小程序授权给第三方平台方，完成授权流程。</p>
 </div>
 <div class="section" id="id7">
-<h3>3. 用户确认并同意登录授权给第三方平台方<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h3>
-<p>用户进入第三方平台授权页后，需要确认并同意将自己的公众号或小程序授权给第三方平台方，完成授权流程。</p>
-</div>
-<div class="section" id="uri-authorization-code">
-<h3>4. 授权后回调 URI，得到授权码（authorization_code）和过期时间<a class="headerlink" href="#uri-authorization-code" title="永久链接至标题">¶</a></h3>
-<p>授权流程完成后，授权页会自动跳转进入回调 URI，并在 URL
-参数中返回授权码和过期时间(redirect_url?auth_code=xxx&amp;expires_in=600)</p>
+<h2>授权后回调<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h2>
+<p>授权后回调 URI，得到授权码（authorization_code）和过期时间,
+授权流程完成后，授权页会自动跳转进入回调 URI，并在 URL 参数中返回授权码和过期时间(redirect_url?auth_code=xxx&amp;expires_in=600)</p>
 </div>
 <div class="section" id="api">
-<h3>5. 利用授权码调用公众号或小程序的相关 API<a class="headerlink" href="#api" title="永久链接至标题">¶</a></h3>
-<p>在得到授权码后，第三方平台方可以使用授权码换取授权公众号或小程序的接口调用凭据（authorizer_access_token，也简称为令牌），再通过该接口调用凭据，按照公众号开发者文档或小程序开发文档的说明，去调用公众号或小程序相关
-API。 （能调用哪些
-API，取决于用户将哪些权限集授权给了第三方平台方，也取决于公众号或小程序自身拥有哪些接口权限），使用
-JS SDK 等能力。具体请见【公众号第三方平台的接口说明】</p>
-<p>下面对各 API 和机制进行介绍（特别注意，所有 API 调用需要验证调用者 IP
-地址。只有在第三方平台申请时填写的白名单 IP 地址列表内的 IP
-地址，才能合法调用，其他一律拒绝）：</p>
-<p>接下来：代替公众号或小程序调用接口
-取在完成授权后，第三方平台可通过公众号或小程序的接口调用凭据（authorizer_access_token）来代替它调用接口，具体请见“代公众号实现业务”和“代小程序实现业务”文件夹中的内容</p>
-</div>
+<h2>调用 API<a class="headerlink" href="#api" title="永久链接至标题">¶</a></h2>
+<p>利用授权码调用公众号或小程序的相关 API,
+在得到授权码后，第三方平台方可以使用授权码换取授权公众号或小程序的接口调用凭据（authorizer_access_token，也简称为令牌），
+再通过该接口调用凭据，按照公众号开发者文档或小程序开发文档的说明，去调用公众号或小程序相关 API。
+（能调用哪些 API，取决于用户将哪些权限集授权给了第三方平台方，也取决于公众号或小程序自身拥有哪些接口权限），
+使用 JS SDK 等能力。具体请见【公众号第三方平台的接口说明】</p>
+<p>下面对各 API 和机制进行介绍（特别注意，所有 API 调用需要验证调用者 IP 地址。
+只有在第三方平台申请时填写的白名单 IP 地址列表内的 IP 地址，才能合法调用，其他一律拒绝）：</p>
+<dl class="simple">
+<dt>… 1. 推送component_verify_ticket</dt><dd><p>出于安全考虑，在第三方平台创建审核通过后，微信服务器 每隔10分钟会向第三方的消息接收地址推送一次component_verify_ticket，
+用于获取第三方平台接口调用凭据。</p>
+</dd>
+<dt>… 2. 获取第三方平台component_access_token</dt><dd><p>第三方平台通过自己的component_appid（即在微信开放平台管理中心的第三方平台详情页中的AppID和AppSecret）和
+component_appsecret，以及component_verify_ticket（每10分钟推送一次的安全ticket）来获取自己的接口调用凭据（component_access_token）</p>
+</dd>
+<dt>… 3. 获取预授权码pre_auth_code</dt><dd><p>第三方平台通过自己的接口调用凭据（component_access_token）来获取用于授权流程准备的预授权码（pre_auth_code）</p>
+</dd>
+<dt>… 4. 使用授权码换取公众号或小程序的接口调用凭据和授权信息</dt><dd><p>通过授权码和自己的接口调用凭据（component_access_token），
+换取公众号或小程序的接口调用凭据（authorizer_access_token和用于前者快过期时用来刷新它的authorizer_refresh_token）
+和授权信息（授权了哪些权限等信息）</p>
+</dd>
+<dt>… 5. 获取（刷新）授权公众号或小程序的接口调用凭据</dt><dd><p>通过authorizer_refresh_token来刷新公众号或小程序的接口调用凭据</p>
+</dd>
+<dt>… 6. 获取授权公众号或小程序基本信息</dt><dd><p>在需要的情况下，第三方平台可以获取公众号或小程序的帐号基本信息，包括帐号名. 帐号类型等</p>
+</dd>
+<dt>… 7. 获取授权方的选项设置信息</dt><dd><p>在需要的情况下，第三方平台可以获取公众号或小程序的选项设置，包括地理位置上报设置. 语音识别开关设置. 微信多客服功能开关设置</p>
+</dd>
+<dt>… 8. 设置授权方的选项信息</dt><dd><p>在需要的情况下，第三方平台可以修改上述公众号或小程序的选项设置，
+包括地理位置上报设置. 语音识别开关设置. 微信多客服功能开关设置</p>
+</dd>
+<dt>… 9. 推送授权相关通知</dt><dd><p>当公众号或小程序对第三方进行授权. 取消授权. 更新授权时，将通过事件推送告诉开发者</p>
+</dd>
+<dt>… 接下来：代替公众号或小程序调用接口</dt><dd><p>取在完成授权后，第三方平台可通过公众号或小程序的接口调用凭据（authorizer_access_token）来代替它调用接口，
+具体请见“代公众号实现业务”和“代小程序实现业务”文件夹中的内容</p>
+</dd>
+</dl>
 </div>
 </div>
 
@@ -242,10 +394,10 @@ JS SDK 等能力。具体请见【公众号第三方平台的接口说明】</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="component_verify_ticket.html" class="btn btn-neutral float-right" title="推送 component_verify_ticket 协议" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="component_verify_ticket.html" class="btn btn-neutral float-right" title="1. 推送 component_verify_ticket 协议" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="index.html" class="btn btn-neutral float-left" title="授权流程技术说明" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="index.html" class="btn btn-neutral float-left" title="授权流程" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

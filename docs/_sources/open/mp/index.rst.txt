@@ -13,3 +13,4 @@
    regapp
    sdk
    weapp
+   msg

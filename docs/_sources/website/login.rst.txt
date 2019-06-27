@@ -1,13 +1,15 @@
-网站应用微信登录开发指南
+:wxopen:`网站应用微信登录开发指南`
 ====================================================================
 
-
-网站应用微信登录开发指南
 准备工作
+----------------------------
+
 网站应用微信登录是基于OAuth2.0协议标准构建的微信OAuth2.0授权登录系统。
 在进行微信OAuth2.在进行微信OAuth2.0授权登录接入之前，在微信开放平台注册开发者帐号，并拥有一个已审核通过的网站应用，并获得相应的AppID和AppSecret，申请微信登录且通过审核后，可开始接入流程。
 
 授权流程说明
+----------------------------
+
 微信OAuth2.0授权登录让微信用户使用微信身份安全登录第三方应用或网站，在微信用户授权登录已接入微信OAuth2.0的第三方应用后，第三方可以获取到用户的接口调用凭证（access_token），通过access_token可以进行微信开放平台授权关系接口调用，从而可实现获取微信用户基本开放信息和帮助用户实现基础开放功能等。
 微信OAuth2.0授权登录目前支持authorization_code模式，适用于拥有server端的应用授权。该模式整体流程为：
 
@@ -20,6 +22,7 @@
 
 
 第一步：请求CODE
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 第三方使用网站应用授权登录前请注意已获取相应网页授权作用域（scope=snsapi_login），则可以通过在PC端打开以下链接：
 https://open.weixin.qq.com/connect/qrconnect?appid=APPID&redirect_uri=REDIRECT_URI&response_type=code&scope=SCOPE&state=STATE#wechat_redirect
@@ -76,9 +79,11 @@ appid	是	应用唯一标识，在微信开放平台提交应用审核通过后�
 scope	是	应用授权作用域，拥有多个作用域用逗号（,）分隔，网页应用目前仅填写snsapi_login即可
 redirect_uri	是	重定向地址，需要进行UrlEncode
 state	否	用于保持请求和回调的状态，授权请求后原样带回给第三方。该参数可用于防止csrf攻击（跨站请求伪造攻击），建议第三方带上该参数，可设置为简单的随机数加session进行校验
-style	否	提供"black"、"white"可选，默认为黑色文字描述。详见文档底部FAQ
+style	否	提供"black". "white"可选，默认为黑色文字描述。详见文档底部FAQ
 href	否	自定义样式链接，第三方可根据实际需求覆盖默认样式。详见文档底部FAQ
+
 第二步：通过code获取access_token
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 通过code获取access_token
 
@@ -157,12 +162,14 @@ scope	用户授权的作用域，使用逗号（,）分隔
 {"errcode":40030,"errmsg":"invalid refresh_token"}
 注意：
 
-1、Appsecret 是应用接口使用密钥，泄漏后将可能导致应用数据泄漏、应用的用户数据泄漏等高风险后果；存储在客户端，极有可能被恶意窃取（如反编译获取Appsecret）；
-2、access_token 为用户授权第三方应用发起接口调用的凭证（相当于用户登录态），存储在客户端，可能出现恶意获取access_token 后导致的用户数据泄漏、用户微信相关接口功能被恶意发起等行为；
-3、refresh_token 为用户授权第三方应用的长效凭证，仅用于刷新access_token，但泄漏后相当于access_token 泄漏，风险同上。
+1. Appsecret 是应用接口使用密钥，泄漏后将可能导致应用数据泄漏. 应用的用户数据泄漏等高风险后果；存储在客户端，极有可能被恶意窃取（如反编译获取Appsecret）；
+2. access_token 为用户授权第三方应用发起接口调用的凭证（相当于用户登录态），存储在客户端，可能出现恶意获取access_token 后导致的用户数据泄漏. 用户微信相关接口功能被恶意发起等行为；
+3. refresh_token 为用户授权第三方应用的长效凭证，仅用于刷新access_token，但泄漏后相当于access_token 泄漏，风险同上。
 
-建议将secret、用户数据（如access_token）放在App云端服务器，由云端中转接口调用请求。
+建议将secret. 用户数据（如access_token）放在App云端服务器，由云端中转接口调用请求。
+
 第三步：通过access_token调用接口
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 获取access_token后，进行接口调用，有以下前提：
 
@@ -171,7 +178,7 @@ scope	用户授权的作用域，使用逗号（,）分隔
 对于接口作用域（scope），能调用的接口有以下：
 
 授权作用域（scope）	接口	接口说明
-snsapi_base	/sns/oauth2/access_token	通过code换取access_token、refresh_token和已授权scope
+snsapi_base	/sns/oauth2/access_token	通过code换取access_token. refresh_token和已授权scope
 snsapi_base	/sns/oauth2/refresh_token	刷新或续期access_token使用
 snsapi_base	/sns/auth	检查access_token有效性
 snsapi_userinfo	/sns/userinfo	获取用户个人信息

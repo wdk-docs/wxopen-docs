@@ -1,0 +1,228 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, nosy
+# This file is distributed under the same license as the wxopen-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: wxopen-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-11 22:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/wxapp/temp-lib.rst:2
+msgid "小程序代码模版库管理"
+msgstr ""
+
+#: ../../source/wxapp/temp-lib.rst:4
+msgid "​ 第三方平台可以通过接口，可便捷管理模版库，添加或删除小程序代码模版。"
+msgstr ""
+
+#: ../../source/wxapp/temp-lib.rst:7
+msgid "1. 获取草稿"
+msgstr ""
+
+#: ../../source/wxapp/temp-lib.rst:9
+msgid "获取草稿箱内的所有临时代码草稿"
+msgstr ""
+
+#: ../../source/wxapp/temp-lib.rst:12 ../../source/wxapp/temp-lib.rst:79
+#: ../../source/wxapp/temp-lib.rst:152 ../../source/wxapp/temp-lib.rst:211
+msgid "请求方式"
+msgstr ""
+
+#: ../../source/wxapp/temp-lib.rst:14
+msgid ""
+"``GET`` "
+"**https**://api.weixin.qq.com/wxa/gettemplatedraftlist?access_token=TOKEN"
+msgstr ""
+
+#: ../../source/wxapp/temp-lib.rst:18 ../../source/wxapp/temp-lib.rst:87
+#: ../../source/wxapp/temp-lib.rst:169 ../../source/wxapp/temp-lib.rst:230
+msgid "请求参数"
+msgstr ""
+
+#: ../../source/wxapp/temp-lib.rst:21 ../../source/wxapp/temp-lib.rst:53
+#: ../../source/wxapp/temp-lib.rst:90 ../../source/wxapp/temp-lib.rst:124
+#: ../../source/wxapp/temp-lib.rst:172 ../../source/wxapp/temp-lib.rst:233
+msgid "参数"
+msgstr ""
+
+#: ../../source/wxapp/temp-lib.rst:21 ../../source/wxapp/temp-lib.rst:53
+#: ../../source/wxapp/temp-lib.rst:65 ../../source/wxapp/temp-lib.rst:90
+#: ../../source/wxapp/temp-lib.rst:124 ../../source/wxapp/temp-lib.rst:138
+#: ../../source/wxapp/temp-lib.rst:172 ../../source/wxapp/temp-lib.rst:196
+#: ../../source/wxapp/temp-lib.rst:233 ../../source/wxapp/temp-lib.rst:257
+msgid "说明"
+msgstr ""
+
+#: ../../source/wxapp/temp-lib.rst:23 ../../source/wxapp/temp-lib.rst:92
+#: ../../source/wxapp/temp-lib.rst:174 ../../source/wxapp/temp-lib.rst:235
+msgid "access_token"
+msgstr ""
+
+#: ../../source/wxapp/temp-lib.rst:23
+msgid "请使用第三方平台自己的 component_access_token"
+msgstr ""
+
+#: ../../source/wxapp/temp-lib.rst:27 ../../source/wxapp/temp-lib.rst:98
+#: ../../source/wxapp/temp-lib.rst:181 ../../source/wxapp/temp-lib.rst:242
+msgid "返回结果"
+msgstr ""
+
+#: ../../source/wxapp/temp-lib.rst:50 ../../source/wxapp/temp-lib.rst:121
+msgid "参数说明"
+msgstr ""
+
+#: ../../source/wxapp/temp-lib.rst:55 ../../source/wxapp/temp-lib.rst:126
+msgid "create_time"
+msgstr ""
+
+#: ../../source/wxapp/temp-lib.rst:55
+msgid "说开发者上传草稿时间"
+msgstr ""
+
+#: ../../source/wxapp/temp-lib.rst:56 ../../source/wxapp/temp-lib.rst:127
+msgid "user_version"
+msgstr ""
+
+#: ../../source/wxapp/temp-lib.rst:56 ../../source/wxapp/temp-lib.rst:127
+msgid "模版版本号，开发者自定义字段"
+msgstr ""
+
+#: ../../source/wxapp/temp-lib.rst:57 ../../source/wxapp/temp-lib.rst:128
+msgid "user_desc"
+msgstr ""
+
+#: ../../source/wxapp/temp-lib.rst:57 ../../source/wxapp/temp-lib.rst:128
+msgid "模版描述 开发者自定义字段"
+msgstr ""
+
+#: ../../source/wxapp/temp-lib.rst:58 ../../source/wxapp/temp-lib.rst:175
+msgid "draft_id"
+msgstr ""
+
+#: ../../source/wxapp/temp-lib.rst:58
+msgid "草稿 id"
+msgstr ""
+
+#: ../../source/wxapp/temp-lib.rst:62 ../../source/wxapp/temp-lib.rst:135
+#: ../../source/wxapp/temp-lib.rst:193 ../../source/wxapp/temp-lib.rst:254
+msgid "错误码"
+msgstr ""
+
+#: ../../source/wxapp/temp-lib.rst:65 ../../source/wxapp/temp-lib.rst:138
+#: ../../source/wxapp/temp-lib.rst:196 ../../source/wxapp/temp-lib.rst:257
+msgid "返回码"
+msgstr ""
+
+#: ../../source/wxapp/temp-lib.rst:67 ../../source/wxapp/temp-lib.rst:140
+#: ../../source/wxapp/temp-lib.rst:198 ../../source/wxapp/temp-lib.rst:259
+msgid "-1"
+msgstr ""
+
+#: ../../source/wxapp/temp-lib.rst:67 ../../source/wxapp/temp-lib.rst:140
+#: ../../source/wxapp/temp-lib.rst:198 ../../source/wxapp/temp-lib.rst:259
+msgid "系统繁忙"
+msgstr ""
+
+#: ../../source/wxapp/temp-lib.rst:68 ../../source/wxapp/temp-lib.rst:141
+#: ../../source/wxapp/temp-lib.rst:199 ../../source/wxapp/temp-lib.rst:260
+msgid "85064"
+msgstr ""
+
+#: ../../source/wxapp/temp-lib.rst:68 ../../source/wxapp/temp-lib.rst:141
+msgid "找不到模版"
+msgstr ""
+
+#: ../../source/wxapp/temp-lib.rst:72
+msgid "2. 获取模板"
+msgstr ""
+
+#: ../../source/wxapp/temp-lib.rst:74
+msgid "获取代码模版库中的所有小程序代码模版"
+msgstr ""
+
+#: ../../source/wxapp/temp-lib.rst:81
+msgid ""
+"``GET`` "
+"**https**://api.weixin.qq.com/wxa/gettemplatelist?access_token=TOKEN"
+msgstr ""
+
+#: ../../source/wxapp/temp-lib.rst:92 ../../source/wxapp/temp-lib.rst:174
+#: ../../source/wxapp/temp-lib.rst:235
+msgid "请使用第三方平台 自己 的 component_access_token"
+msgstr ""
+
+#: ../../source/wxapp/temp-lib.rst:126
+msgid "被添加为模版的时间"
+msgstr ""
+
+#: ../../source/wxapp/temp-lib.rst:129 ../../source/wxapp/temp-lib.rst:236
+msgid "template_id"
+msgstr ""
+
+#: ../../source/wxapp/temp-lib.rst:129
+msgid "模版 id"
+msgstr ""
+
+#: ../../source/wxapp/temp-lib.rst:145
+msgid "3. 草稿选为模板"
+msgstr ""
+
+#: ../../source/wxapp/temp-lib.rst:147
+msgid "将草稿箱的草稿选为小程序代码模版"
+msgstr ""
+
+#: ../../source/wxapp/temp-lib.rst:154
+msgid ""
+"``POST`` "
+"**https**://api.weixin.qq.com/wxa/addtotemplate?access_token=TOKEN"
+msgstr ""
+
+#: ../../source/wxapp/temp-lib.rst:158 ../../source/wxapp/temp-lib.rst:219
+msgid "请求数据"
+msgstr ""
+
+#: ../../source/wxapp/temp-lib.rst:175
+msgid "草稿 ID，本字段可通过“ 获取草稿箱内的所有临时代码草稿 ”接口获得"
+msgstr ""
+
+#: ../../source/wxapp/temp-lib.rst:199 ../../source/wxapp/temp-lib.rst:260
+msgid "找不到草稿"
+msgstr ""
+
+#: ../../source/wxapp/temp-lib.rst:200
+msgid "85065"
+msgstr ""
+
+#: ../../source/wxapp/temp-lib.rst:200
+msgid "模版库已满"
+msgstr ""
+
+#: ../../source/wxapp/temp-lib.rst:204
+msgid "4. 删除模板"
+msgstr ""
+
+#: ../../source/wxapp/temp-lib.rst:206
+msgid "删除指定小程序代码模版"
+msgstr ""
+
+#: ../../source/wxapp/temp-lib.rst:213
+msgid ""
+"``POST`` "
+"**https**://api.weixin.qq.com/wxa/deletetemplate?access_token=TOKEN"
+msgstr ""
+
+#: ../../source/wxapp/temp-lib.rst:236
+msgid "要删除的模版 ID"
+msgstr ""
+

@@ -1,0 +1,434 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Changelog &mdash; wxopen-docs 1.0.0 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../../_static/translations.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../../../genindex.html" />
+    <link rel="search" title="搜索" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../contents.html" class="icon icon-home"> wxopen-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../wxapp/index.html">小程序管理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../mobile/index.html">移动应用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../website/index.html">网站应用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../pubno/index.html">公众号</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../open/index.html">第三方平台</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../code/index.html">错误码</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../download/index.html">资源下载</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../glossary.html">术语</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../contents.html">wxopen-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../contents.html">Docs</a> &raquo;</li>
+        
+      <li>Changelog</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/_ext/httpdomain/doc/changelog.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="changelog">
+<h1>Changelog<a class="headerlink" href="#changelog" title="永久链接至标题">¶</a></h1>
+<div class="section" id="version-1-7-0">
+<h2>Version 1.7.0<a class="headerlink" href="#version-1-7-0" title="永久链接至标题">¶</a></h2>
+<p>Released on July 1, 2018.</p>
+<ul class="simple">
+<li><p>Implemented <code class="docutils literal notranslate"><span class="pre">:autoquickref:</span></code> option that use available informations to
+build a <code class="docutils literal notranslate"><span class="pre">quickref</span></code>. [<a href="#id1"><span class="problematic" id="id2">:pull:`9`</span></a> by Alexandre Bonnetain]</p></li>
+<li><p>Improved <a class="reference internal" href="index.html#sphinxcontrib.autohttp.tornado" title="sphinxcontrib.autohttp.tornado"><code class="xref js js-mod docutils literal notranslate"><span class="pre">sphinxcontrib.autohttp.tornado</span></code></a> compatibility with Tornado
+4.5 and newer. <cite>Tornado 4.5 &lt;http://www.tornadoweb.org/en/stable/releases/v4.5.0.html&gt;</cite>
+introduced the <code class="docutils literal notranslate"><span class="pre">Rule</span></code> class and made <code class="docutils literal notranslate"><span class="pre">URLSpec</span></code> a subclass of it, so certain
+rule attributes required updating. [<a href="#id3"><span class="problematic" id="id4">:issue:`7`</span></a>, <a href="#id5"><span class="problematic" id="id6">:pull:`11`</span></a> by Robert Zeigler]</p></li>
+</ul>
+</div>
+<div class="section" id="version-1-6-1">
+<h2>Version 1.6.1<a class="headerlink" href="#version-1-6-1" title="永久链接至标题">¶</a></h2>
+<p>Released on March 3, 2018.</p>
+<ul class="simple">
+<li><p>Remove references to the <code class="docutils literal notranslate"><span class="pre">sphinx.util.compat</span></code> module which was deprecated
+in Sphinx 1.6 and removed in 1.7.  [<a href="#id7"><span class="problematic" id="id8">:issue:`5`</span></a>, <a href="#id9"><span class="problematic" id="id10">:pull:`4`</span></a> by Jeremy Cline]</p></li>
+<li><p>Made <a class="reference internal" href="index.html#sphinxcontrib.autohttp.tornado" title="sphinxcontrib.autohttp.tornado"><code class="xref js js-mod docutils literal notranslate"><span class="pre">sphinxcontrib.autohttp.tornado</span></code></a> compatible with Tornado 4.5 and
+newer.  <cite>Tornado 4.5 &lt;http://www.tornadoweb.org/en/stable/releases/v4.5.0.html&gt;</cite>
+removed the <code class="docutils literal notranslate"><span class="pre">handlers</span></code> attribute from <code class="docutils literal notranslate"><span class="pre">tornado.web.Application</span></code>.
+[<a href="#id11"><span class="problematic" id="id12">:pull:`3`</span></a> by Dave Shawley]</p></li>
+</ul>
+</div>
+<div class="section" id="version-1-6-0">
+<h2>Version 1.6.0<a class="headerlink" href="#version-1-6-0" title="永久链接至标题">¶</a></h2>
+<p>Released on January 13, 2018.</p>
+<ul class="simple">
+<li><p>Minimum compatible version of Sphinx became changed to 1.5.</p></li>
+<li><p>Fixed a bug that prevented building <code class="xref js js-mod docutils literal notranslate"><span class="pre">sphinxcontrib.autohttp</span></code>
+from building properly with Sphinx 1.6 or higher.
+[<a href="#id13"><span class="problematic" id="id14">:oldissue:`182`</span></a>, <a href="#id15"><span class="problematic" id="id16">:oldpull:`152`</span></a> by Dave Shawley]</p></li>
+<li><p>Use HTTPS for <code class="docutils literal notranslate"><span class="pre">:rfc:</span></code> generated links. [<a href="#id17"><span class="problematic" id="id18">:oldpull:`144`</span></a> by Devin Sevilla]</p></li>
+<li><p>Added <code class="docutils literal notranslate"><span class="pre">groupby</span></code> option to <a class="reference internal" href="index.html#directive-autoflask" title="autoflask directive"><code class="xref rst rst-dir docutils literal notranslate"><span class="pre">autoflask</span></code></a> directive.  It makes
+paths be grouped by their view functions.  [<a href="#id19"><span class="problematic" id="id20">:oldpull:`147`</span></a> by Jiangge Zhang]</p></li>
+<li><p>Fixed a bug that <a class="reference internal" href="index.html#directive-autoflask" title="autoflask directive"><code class="xref rst rst-dir docutils literal notranslate"><span class="pre">autoflask</span></code></a> directive had excluded nonsignificant
+routes with <a class="reference external" href="https://tools.ietf.org/html/rfc7231#section-4.3.2">HEAD</a>/<a class="reference external" href="https://tools.ietf.org/html/rfc7231#section-4.3.7">OPTIONS</a>.  [<a href="#id21"><span class="problematic" id="id22">:oldissue:`165`</span></a>]</p></li>
+</ul>
+</div>
+<div class="section" id="version-1-5-0">
+<h2>Version 1.5.0<a class="headerlink" href="#version-1-5-0" title="永久链接至标题">¶</a></h2>
+<p>Released on May 30, 2016.</p>
+<ul class="simple">
+<li><p>Added <a class="reference internal" href="index.html#sphinxcontrib.autohttp.flaskqref" title="sphinxcontrib.autohttp.flaskqref"><code class="xref js js-mod docutils literal notranslate"><span class="pre">sphinxcontrib.autohttp.flaskqref</span></code></a> for generating quick reference
+table.  [<a href="#id23"><span class="problematic" id="id24">:oldpull:`80`</span></a>, <a href="#id25"><span class="problematic" id="id26">:oldpull:`100`</span></a> by Harry Raaymakers]</p></li>
+<li><p><a class="reference internal" href="index.html#directive-autoflask" title="autoflask directive"><code class="xref rst rst-dir docutils literal notranslate"><span class="pre">autoflask</span></code></a> now supports <code class="docutils literal notranslate"><span class="pre">:modules:</span></code> and <code class="docutils literal notranslate"><span class="pre">:undoc-modules:</span></code>
+arguments, used to filter documented flask endpoints by view module
+[<a href="#id27"><span class="problematic" id="id28">:oldpull:`102`</span></a> by Ivelin Slavov]</p></li>
+<li><p>Added <code class="docutils literal notranslate"><span class="pre">:order:</span></code> option to <a class="reference internal" href="index.html#directive-autoflask" title="autoflask directive"><code class="xref rst rst-dir docutils literal notranslate"><span class="pre">autoflask</span></code></a> directive.
+[<a href="#id29"><span class="problematic" id="id30">:oldpull:`103`</span></a> by Justin Gruca]</p></li>
+<li><p>HTTP message headers become to link the recent RFCs (<span class="target" id="index-0"></span><a class="rfc reference external" href="https://tools.ietf.org/html/rfc7230.html"><strong>RFC 7230</strong></a>, <span class="target" id="index-1"></span><a class="rfc reference external" href="https://tools.ietf.org/html/rfc7231.html"><strong>RFC 7231</strong></a>,
+<span class="target" id="index-2"></span><a class="rfc reference external" href="https://tools.ietf.org/html/rfc7232.html"><strong>RFC 7232</strong></a>, <span class="target" id="index-3"></span><a class="rfc reference external" href="https://tools.ietf.org/html/rfc7233.html"><strong>RFC 7233</strong></a>, <span class="target" id="index-4"></span><a class="rfc reference external" href="https://tools.ietf.org/html/rfc7234.html"><strong>RFC 7234</strong></a>, <span class="target" id="index-5"></span><a class="rfc reference external" href="https://tools.ietf.org/html/rfc7235.html"><strong>RFC 7235</strong></a>, <span class="target" id="index-6"></span><a class="rfc reference external" href="https://tools.ietf.org/html/rfc7236.html"><strong>RFC 7236</strong></a>, <span class="target" id="index-7"></span><a class="rfc reference external" href="https://tools.ietf.org/html/rfc7237.html"><strong>RFC 7237</strong></a>,
+that are separated to multiple RFCs from the old one) instead of <span class="target" id="index-8"></span><a class="rfc reference external" href="https://tools.ietf.org/html/rfc2615.html"><strong>RFC 2615</strong></a>
+which is replaced by them in 2014.
+[<a href="#id31"><span class="problematic" id="id32">:oldpull:`105`</span></a>, <a href="#id33"><span class="problematic" id="id34">:oldpull:`106`</span></a> by Alex C. (iscandr)]</p></li>
+<li><p>Support <code class="docutils literal notranslate"><span class="pre">resolve_any_xref</span></code> method introduced since Sphinx 1.3
+[<a href="#id35"><span class="problematic" id="id36">:oldpull:`108`</span></a> by Takayuki Shimizukawa]</p></li>
+<li><p>It no more warns non-standard message headers without <code class="docutils literal notranslate"><span class="pre">X-</span></code> prefix
+according as the deprecation of the practice of prefixing the names of
+unstandardized parameters with <code class="docutils literal notranslate"><span class="pre">X-</span></code> in all IETF protocols since June 2012
+by <span class="target" id="index-9"></span><a class="rfc reference external" href="https://tools.ietf.org/html/rfc6648.html"><strong>RFC 6648</strong></a>.  [<a href="#id37"><span class="problematic" id="id38">:oldpull:`114`</span></a> by Dolan Murvihill]</p></li>
+<li><p>Fixed performance bottleneck in doctree lookup by adding a cache for it.
+[<a href="#id39"><span class="problematic" id="id40">:oldpull:`115`</span></a> by Kai Lautaportti]</p></li>
+<li><p>Added <a class="reference external" href="http://www.ietf.org/rfc/rfc7725.txt">451 Unavailable For Legal Reasons</a> to <a class="reference internal" href="index.html#role-http:statuscode" title="http:statuscode role"><code class="xref rst rst-role docutils literal notranslate"><span class="pre">http:statuscode</span></code></a>.
+[<a href="#id41"><span class="problematic" id="id42">:oldpull:`117`</span></a> by Xavier Oliver]</p></li>
+</ul>
+</div>
+<div class="section" id="version-1-4-0">
+<h2>Version 1.4.0<a class="headerlink" href="#version-1-4-0" title="永久链接至标题">¶</a></h2>
+<p>Released on August 13, 2015.</p>
+<ul class="simple">
+<li><p>Added <a class="reference external" href="http://tools.ietf.org/html/rfc6585#section-4">429 Too Many Requests</a> as a valid
+<a class="reference internal" href="index.html#role-http:statuscode" title="http:statuscode role"><code class="xref rst rst-role docutils literal notranslate"><span class="pre">http:statuscode</span></code></a>.  [<a href="#id43"><span class="problematic" id="id44">:oldpull:`81`</span></a> by DDBReloaded]</p></li>
+<li><p>Became to not resolve references if they can’t be resolved.
+[<a href="#id45"><span class="problematic" id="id46">:oldpull:`87`</span></a> by Ken Robbins]</p></li>
+<li><p>Became to preserve endpoint ordering when <code class="docutils literal notranslate"><span class="pre">:endpoints:</span></code> option is given.
+[<a href="#id47"><span class="problematic" id="id48">:oldpull:`88`</span></a> by Dan Callaghan]</p></li>
+<li><p>Added status codes for WebDAV.  [<a href="#id49"><span class="problematic" id="id50">:oldpull:`92`</span></a> by Ewen Cheslack-Postava]</p></li>
+<li><p>Added <a class="reference external" href="http://www.w3.org/TR/cors/">CORS</a> headers.  [<a href="#id51"><span class="problematic" id="id52">:oldpull:`96`</span></a> by Tomi Pieviläinen]</p></li>
+<li><p>Now <a class="reference internal" href="../test/index.html#sphinxcontrib.autohttp.flask" title="sphinxcontrib.autohttp.flask"><code class="xref js js-mod docutils literal notranslate"><span class="pre">sphinxcontrib.autohttp.flask</span></code></a> supports multiple paths for
+endpoints using same HTTP method.  [<a href="#id53"><span class="problematic" id="id54">:oldpull:`97`</span></a> by Christian Felder]</p></li>
+</ul>
+</div>
+<div class="section" id="version-1-3-0">
+<h2>Version 1.3.0<a class="headerlink" href="#version-1-3-0" title="永久链接至标题">¶</a></h2>
+<p>Released on July 31, 2014.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">jsonparameter</span></code>/<code class="docutils literal notranslate"><span class="pre">jsonparam</span></code>/<code class="docutils literal notranslate"><span class="pre">json</span></code> became deprecated and split
+into <code class="docutils literal notranslate"><span class="pre">reqjsonobj</span></code>/<code class="docutils literal notranslate"><span class="pre">reqjson</span></code>/<code class="docutils literal notranslate"><span class="pre">&lt;jsonobj</span></code>/<code class="docutils literal notranslate"><span class="pre">&lt;json</span></code> and
+<code class="docutils literal notranslate"><span class="pre">reqjsonarr</span></code>/<code class="docutils literal notranslate"><span class="pre">&lt;jsonarr</span></code>.
+[<a href="#id55"><span class="problematic" id="id56">:oldissue:`55`</span></a>, <a href="#id57"><span class="problematic" id="id58">:oldpull:`72`</span></a> by Alexander Shorin]</p></li>
+<li><p>Support synopsis (short description in HTTP index),
+deprecation and noindex options for resources.
+[<a href="#id59"><span class="problematic" id="id60">:oldissue:`55`</span></a>, <a href="#id61"><span class="problematic" id="id62">:oldpull:`72`</span></a> by Alexander Shorin]</p></li>
+<li><p>Stabilize order of index items.
+[<a href="#id63"><span class="problematic" id="id64">:oldissue:`55`</span></a>, <a href="#id65"><span class="problematic" id="id66">:oldpull:`72`</span></a> by Alexander Shorin]</p></li>
+<li><p>Added <a class="reference internal" href="index.html#directive-http:any" title="http:any directive"><code class="xref rst rst-dir docutils literal notranslate"><span class="pre">http:any</span></code></a> directive and <a class="reference internal" href="index.html#role-http:any" title="http:any role"><code class="xref rst rst-role docutils literal notranslate"><span class="pre">http:any</span></code></a>
+role for <code class="docutils literal notranslate"><span class="pre">ANY</span></code> method.  [<a href="#id67"><span class="problematic" id="id68">:oldissue:`55`</span></a>, <a href="#id69"><span class="problematic" id="id70">:oldpull:`72`</span></a> by Alexander Shorin]</p></li>
+<li><p>Added <a class="reference internal" href="index.html#directive-http:copy" title="http:copy directive"><code class="xref rst rst-dir docutils literal notranslate"><span class="pre">http:copy</span></code></a> directive and <a class="reference internal" href="index.html#role-http:copy" title="http:copy role"><code class="xref rst rst-role docutils literal notranslate"><span class="pre">http:copy</span></code></a>
+role for <code class="docutils literal notranslate"><span class="pre">COPY</span></code> method.  [<a href="#id71"><span class="problematic" id="id72">:oldissue:`55`</span></a>, <a href="#id73"><span class="problematic" id="id74">:oldpull:`72`</span></a> by Alexander Shorin]</p></li>
+<li><p>Added <a class="reference internal" href="index.html#role-http:header" title="http:header role"><code class="xref rst rst-role docutils literal notranslate"><span class="pre">http:header</span></code></a> role that also creates reference to the
+related specification.  [<a href="#id75"><span class="problematic" id="id76">:oldissue:`55`</span></a>, <a href="#id77"><span class="problematic" id="id78">:oldpull:`72`</span></a> by Alexander Shorin]</p></li>
+<li><p><a class="reference internal" href="index.html#role-http:statuscode" title="http:statuscode role"><code class="xref rst rst-role docutils literal notranslate"><span class="pre">http:statuscode</span></code></a> role became to provide references to
+specification sections.  [<a href="#id79"><span class="problematic" id="id80">:oldissue:`55`</span></a>, <a href="#id81"><span class="problematic" id="id82">:oldpull:`72`</span></a> by Alexander Shorin]</p></li>
+<li><p>Fixed Python 3 incompatibility of <code class="xref js js-mod docutils literal notranslate"><span class="pre">autohttp.tornado</span></code>.
+[<a href="#id83"><span class="problematic" id="id84">:oldpull:`61`</span></a> by Dave Shawley]</p></li>
+</ul>
+</div>
+<div class="section" id="version-1-2-1">
+<h2>Version 1.2.1<a class="headerlink" href="#version-1-2-1" title="永久链接至标题">¶</a></h2>
+<p>Released on March 31, 2014.</p>
+<ul class="simple">
+<li><p>Fixed broken Python 2.6 compatibility.  [<a href="#id85"><span class="problematic" id="id86">:oldpull:`41`</span></a> by Kien Pham]</p></li>
+<li><p>Added missing link to <a class="reference external" href="http://pythonhosted.org/six/">six</a> dependency.</p></li>
+</ul>
+</div>
+<div class="section" id="version-1-2-0">
+<h2>Version 1.2.0<a class="headerlink" href="#version-1-2-0" title="永久链接至标题">¶</a></h2>
+<p>Released on October 19, 2013.</p>
+<ul class="simple">
+<li><p>Python 3 support!  [<a href="#id87"><span class="problematic" id="id88">:oldpull:`34`</span></a> by murchik, <a href="#id89"><span class="problematic" id="id90">:oldpull:`39`</span></a> Donald Stufft]</p></li>
+<li><p>Added support for Tornado webapps. (<a class="reference internal" href="index.html#sphinxcontrib.autohttp.tornado" title="sphinxcontrib.autohttp.tornado"><code class="xref js js-mod docutils literal notranslate"><span class="pre">sphinxcontrib.autohttp.tornado</span></code></a>)
+[<a href="#id91"><span class="problematic" id="id92">:oldpull:`38`</span></a> by Rodrigo Machado]</p></li>
+</ul>
+</div>
+<div class="section" id="version-1-1-9">
+<h2>Version 1.1.9<a class="headerlink" href="#version-1-1-9" title="永久链接至标题">¶</a></h2>
+<p>Released on August 8, 2013.</p>
+<ul class="simple">
+<li><p>Now <a class="reference external" href="http://bottlepy.org/">Bottle</a> apps can be loaded by <code class="xref js js-mod docutils literal notranslate"><span class="pre">autohttp</span></code>.
+See <a class="reference internal" href="index.html#sphinxcontrib.autohttp.bottle" title="sphinxcontrib.autohttp.bottle"><code class="xref js js-mod docutils literal notranslate"><span class="pre">sphinxcontrib.autohttp.bottle</span></code></a> module.
+[<a class="reference external" href="https://github.com/jalaziz/sphinxcontrib-httpdomain">patch</a> by Jameel Al-Aziz]</p></li>
+<li><p>Added <code class="docutils literal notranslate"><span class="pre">:reqheader:</span></code> and <code class="docutils literal notranslate"><span class="pre">:resheader:</span></code> option flags.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">:jsonparameter:</span></code> can be typed.  [<a href="#id93"><span class="problematic" id="id94">:oldpull:`31`</span></a> by Chuck Harmston]</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">:queryparameter:</span></code> can be typed.  [<a href="#id95"><span class="problematic" id="id96">:oldpull:`37`</span></a> by Viktor Haag]</p></li>
+<li><p><a class="reference internal" href="index.html#directive-autoflask" title="autoflask directive"><code class="xref rst rst-dir docutils literal notranslate"><span class="pre">autoflask</span></code></a> and <a class="reference internal" href="index.html#directive-autobottle" title="autobottle directive"><code class="xref rst rst-dir docutils literal notranslate"><span class="pre">autobottle</span></code></a> directives now allow
+empty <code class="docutils literal notranslate"><span class="pre">:endpoints:</span></code>, <code class="docutils literal notranslate"><span class="pre">:undoc-endpoints:</span></code>, and <code class="docutils literal notranslate"><span class="pre">:blueprints:</span></code>
+arguments.  [<a href="#id97"><span class="problematic" id="id98">:oldpull:`33`</span></a> by Michael Twomey]</p></li>
+</ul>
+</div>
+<div class="section" id="version-1-1-8">
+<h2>Version 1.1.8<a class="headerlink" href="#version-1-1-8" title="永久链接至标题">¶</a></h2>
+<p>Released on April 10, 2013.</p>
+<ul class="simple">
+<li><p>Added better support for docstrings in <code class="xref js js-class docutils literal notranslate"><span class="pre">flask.views.MethodView()</span></code>.
+[<a href="#id99"><span class="problematic" id="id100">:oldpull:`26`</span></a> by Simon Metson]</p></li>
+<li><p>Added <code class="docutils literal notranslate"><span class="pre">:jsonparameter:</span></code> along side <code class="docutils literal notranslate"><span class="pre">:form:</span></code> and <code class="docutils literal notranslate"><span class="pre">:query:</span></code> flag options.
+[<a href="#id101"><span class="problematic" id="id102">:oldpull:`25`</span></a> by Adam Lowry]</p></li>
+<li><p>Fixed issue with undefined <code class="docutils literal notranslate"><span class="pre">Value</span></code> and <code class="docutils literal notranslate"><span class="pre">umethod</span></code> variables.
+[<a href="#id103"><span class="problematic" id="id104">:oldpull:`23`</span></a> by Sebastian Kalinowski and <a href="#id105"><span class="problematic" id="id106">:oldpull:`24`</span></a> by Viktor Haag]</p></li>
+<li><p>Now <code class="docutils literal notranslate"><span class="pre">http</span></code> Pygments lexer can Handle continuous header lines well.</p></li>
+<li><p>Added <code class="docutils literal notranslate"><span class="pre">:undoc-blueprints:</span></code> flag option to <a class="reference internal" href="index.html#directive-autoflask" title="autoflask directive"><code class="xref rst rst-dir docutils literal notranslate"><span class="pre">autoflask</span></code></a> directive.
+[<a href="#id107"><span class="problematic" id="id108">:oldpull:`21`</span></a> by Roman Podolyaka]</p></li>
+<li><p>Fixed <a href="#id109"><span class="problematic" id="id110">:oldissue:`29`</span></a>, a bug that <a class="reference internal" href="index.html#directive-autoflask" title="autoflask directive"><code class="xref rst rst-dir docutils literal notranslate"><span class="pre">autoflask</span></code></a> directive raised
+<a href="#id111"><span class="problematic" id="id112">:exc:`UnicodeDecodeError`</span></a> when it contains non-ASCII characters.
+[<a href="#id113"><span class="problematic" id="id114">:oldissue:`29`</span></a> and <a href="#id115"><span class="problematic" id="id116">:oldpull:`18`</span></a> by Eunchong Yu]</p></li>
+<li><p>Added <code class="docutils literal notranslate"><span class="pre">:endpoints:</span></code> flag option to <a class="reference internal" href="index.html#directive-autoflask" title="autoflask directive"><code class="xref rst rst-dir docutils literal notranslate"><span class="pre">autoflask</span></code></a> directive.
+[<a href="#id117"><span class="problematic" id="id118">:oldpull:`17`</span></a> by Eunchong Yu]</p></li>
+</ul>
+</div>
+<div class="section" id="version-1-1-7">
+<h2>Version 1.1.7<a class="headerlink" href="#version-1-1-7" title="永久链接至标题">¶</a></h2>
+<p>Released on March 28, 2012.</p>
+<ul class="simple">
+<li><p>Added <a class="reference external" href="https://tools.ietf.org/html/rfc5789#section-2">PATCH</a> method support.  See <a class="reference internal" href="index.html#role-http:patch" title="http:patch role"><code class="xref rst rst-role docutils literal notranslate"><span class="pre">http:patch</span></code></a> role
+and <a class="reference internal" href="index.html#directive-http:patch" title="http:patch directive"><code class="xref rst rst-dir docutils literal notranslate"><span class="pre">http:patch</span></code></a> directive.
+[<a href="#id119"><span class="problematic" id="id120">:oldpull:`9`</span></a> and <a href="#id121"><span class="problematic" id="id122">:oldpull:`10`</span></a> by Jeffrey Finkelstein]</p></li>
+<li><p>The HTTP routing table can be grouped based on prefix by specifying
+<code class="xref js js-data docutils literal notranslate"><span class="pre">http_index_ignore_prefixes</span></code> config in list of common prefixes to
+ignore.  [<a href="#id123"><span class="problematic" id="id124">:oldpull:`7`</span></a> and <a href="#id125"><span class="problematic" id="id126">:oldpull:`8`</span></a> by Andrey Popp]</p></li>
+<li><p>The order of HTTP routing table now provides sorting by path as key.
+Previously it was sorted by HTTP method and then by path, which is
+non-intuitive.  [<a href="#id127"><span class="problematic" id="id128">:oldpull:`7`</span></a> and <a href="#id129"><span class="problematic" id="id130">:oldpull:`8`</span></a> by Andrey Popp]</p></li>
+</ul>
+</div>
+<div class="section" id="version-1-1-6">
+<h2>Version 1.1.6<a class="headerlink" href="#version-1-1-6" title="永久链接至标题">¶</a></h2>
+<p>Released on December 16, 2011.</p>
+<ul class="simple">
+<li><p>Added <code class="docutils literal notranslate"><span class="pre">http</span></code> custom lexer for Pygments so that HTTP sessions can be
+highlighted in <code class="xref rst rst-dir docutils literal notranslate"><span class="pre">code-block</span></code> or <code class="xref rst rst-dir docutils literal notranslate"><span class="pre">sourcecode</span></code> directives.</p></li>
+</ul>
+</div>
+<div class="section" id="version-1-1-5">
+<h2>Version 1.1.5<a class="headerlink" href="#version-1-1-5" title="永久链接至标题">¶</a></h2>
+<p>Released on July 6, 2011.</p>
+<ul class="simple">
+<li><p>Flask 0.6–0.7 compatibility.  Flask renamed
+<code class="xref js js-attr docutils literal notranslate"><span class="pre">static_path</span></code> attribute to
+<code class="xref js js-attr docutils literal notranslate"><span class="pre">static_url_path</span></code>, so <a class="reference internal" href="index.html#directive-autoflask" title="autoflask directive"><code class="xref rst rst-dir docutils literal notranslate"><span class="pre">autoflask</span></code></a> also reflect
+the change.
+[<a href="#id131"><span class="problematic" id="id132">:oldpull:`1`</span></a> by Jeffrey Finkelstein]</p></li>
+</ul>
+</div>
+<div class="section" id="version-1-1-4">
+<h2>Version 1.1.4<a class="headerlink" href="#version-1-1-4" title="永久链接至标题">¶</a></h2>
+<p>Released on June 8, 2011.</p>
+<ul class="simple">
+<li><p>CPython compatibility</p></li>
+<li><p>PyPy compatibility</p></li>
+</ul>
+</div>
+<div class="section" id="version-1-1-3">
+<h2>Version 1.1.3<a class="headerlink" href="#version-1-1-3" title="永久链接至标题">¶</a></h2>
+<p>Released on June 8, 2011.</p>
+<ul class="simple">
+<li><p>PyPy compatibility</p></li>
+</ul>
+</div>
+<div class="section" id="version-1-1-2">
+<h2>Version 1.1.2<a class="headerlink" href="#version-1-1-2" title="永久链接至标题">¶</a></h2>
+<p>Released on June 4, 2011.</p>
+<ul class="simple">
+<li><p>Added <code class="docutils literal notranslate"><span class="pre">:include-empty-docstring:</span></code> flag option.</p></li>
+</ul>
+</div>
+<div class="section" id="version-1-1-1">
+<h2>Version 1.1.1<a class="headerlink" href="#version-1-1-1" title="永久链接至标题">¶</a></h2>
+<p>Released on June 4, 2011.</p>
+<ul class="simple">
+<li><p>Fixed a backward incompatibility bug.</p></li>
+</ul>
+</div>
+<div class="section" id="version-1-1">
+<h2>Version 1.1<a class="headerlink" href="#version-1-1" title="永久链接至标题">¶</a></h2>
+<p>Released on June 4, 2011.</p>
+<ul class="simple">
+<li><p>Added <a class="reference internal" href="index.html#directive-autoflask" title="autoflask directive"><code class="xref rst rst-dir docutils literal notranslate"><span class="pre">autoflask</span></code></a> directive.</p></li>
+</ul>
+</div>
+<div class="section" id="version-1-0">
+<h2>Version 1.0<a class="headerlink" href="#version-1-0" title="永久链接至标题">¶</a></h2>
+<p>Released on June 2, 2011.  The first release.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, nosy
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

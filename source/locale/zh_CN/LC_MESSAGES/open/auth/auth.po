@@ -1,0 +1,304 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, nosy
+# This file is distributed under the same license as the wxopen-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: wxopen-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-11 22:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/open/auth/auth.rst:2
+msgid ":wxopen:`授权流程技术说明 <open1453779503>`"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:4
+msgid "小程序或者公众号授权给第三方平台的技术实现流程比较简单，以公众号为例，如下图所示："
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:8
+msgid "下面对其进行详细介绍, 步骤如下："
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:11
+msgid "获取预授权码"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:13
+msgid "第三方平台方获取预授权码(pre_auth_code),预授权码是第三方平台方实现授权托管的必备信息，可以通过本文第3部分获取。"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:16
+msgid "进入授权页"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:18
+msgid ""
+"引入用户进入授权页,第三方平台方可以在自己的网站中放置“微信公众号授权”或者“小程序授权”的入口， "
+"或生成授权链接放置在移动网页中，引导公众号和小程序管理员进入授权页。"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:22
+msgid "方式一：授权注册页面扫码授权"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:24
+msgid "授权页网址为::"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:30 ../../source/open/auth/auth.rst:67
+msgid "参数"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:30 ../../source/open/auth/auth.rst:67
+msgid "是否必填"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:30 ../../source/open/auth/auth.rst:67
+msgid "参数说明"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:32 ../../source/open/auth/auth.rst:69
+msgid "component_appid"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:32 ../../source/open/auth/auth.rst:34
+#: ../../source/open/auth/auth.rst:36 ../../source/open/auth/auth.rst:69
+#: ../../source/open/auth/auth.rst:71 ../../source/open/auth/auth.rst:73
+#: ../../source/open/auth/auth.rst:75
+msgid "是"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:32 ../../source/open/auth/auth.rst:69
+msgid "第三方平台方appid"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:34 ../../source/open/auth/auth.rst:71
+msgid "pre_auth_code"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:34 ../../source/open/auth/auth.rst:71
+msgid "预授权码"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:36 ../../source/open/auth/auth.rst:73
+msgid "redirect_uri"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:36 ../../source/open/auth/auth.rst:73
+msgid "回调URI"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:38 ../../source/open/auth/auth.rst:75
+msgid "auth_type"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:38 ../../source/open/auth/auth.rst:50
+#: ../../source/open/auth/auth.rst:87
+msgid "否"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:38
+msgid "要授权的帐号类型，"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:40
+msgid "1则商户扫码后，手机端仅展示公众号."
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:42 ../../source/open/auth/auth.rst:79
+msgid "2表示仅展示小程序，"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:44
+msgid "3表示公众号和小程序都展示。如果为未制定，"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:46
+msgid "则默认小程序和公众号都展示。"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:48 ../../source/open/auth/auth.rst:85
+msgid "第三方平台开发者可以使用本字段来控制授权的帐号类型。"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:50 ../../source/open/auth/auth.rst:87
+msgid "biz_appid"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:50 ../../source/open/auth/auth.rst:87
+msgid "指定授权唯一的小程序或公众号"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:54
+msgid "方式二：点击移动端链接快速授权"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:56
+msgid "第三方平台方可以生成授权链接，将链接通过移动端直接发给授权管理员，管理员确认后即授权成功。"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:58
+msgid "|image0|"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:60
+msgid "授权链接为::"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:75
+msgid "要授权的帐号类型："
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:77
+msgid "1则商户点击链接后，手机端仅展示公众号."
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:81
+msgid "3表示公众号和小程序都展示。"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:83
+msgid "如果为未指定，则默认小程序和公众号都展示。"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:90
+msgid "auth_type. biz_appid 两个字段互斥。"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:93
+msgid "确认登录"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:95
+msgid "用户确认并同意登录授权给第三方平台方, 用户进入第三方平台授权页后，需要确认并同意将自己的公众号或小程序授权给第三方平台方，完成授权流程。"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:99
+msgid "授权后回调"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:101
+msgid ""
+"授权后回调 URI，得到授权码（authorization_code）和过期时间, 授权流程完成后，授权页会自动跳转进入回调 URI，并在 URL"
+" 参数中返回授权码和过期时间(redirect_url?auth_code=xxx&expires_in=600)"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:105
+msgid "调用 API"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:107
+msgid ""
+"利用授权码调用公众号或小程序的相关 API, "
+"在得到授权码后，第三方平台方可以使用授权码换取授权公众号或小程序的接口调用凭据（authorizer_access_token，也简称为令牌）， "
+"再通过该接口调用凭据，按照公众号开发者文档或小程序开发文档的说明，去调用公众号或小程序相关 API。 （能调用哪些 "
+"API，取决于用户将哪些权限集授权给了第三方平台方，也取决于公众号或小程序自身拥有哪些接口权限）， 使用 JS SDK "
+"等能力。具体请见【公众号第三方平台的接口说明】"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:113
+msgid ""
+"下面对各 API 和机制进行介绍（特别注意，所有 API 调用需要验证调用者 IP 地址。 只有在第三方平台申请时填写的白名单 IP 地址列表内的"
+" IP 地址，才能合法调用，其他一律拒绝）："
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:118
+msgid "... 1. 推送component_verify_ticket"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:117
+msgid ""
+"出于安全考虑，在第三方平台创建审核通过后，微信服务器 每隔10分钟会向第三方的消息接收地址推送一次component_verify_ticket，"
+" 用于获取第三方平台接口调用凭据。"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:122
+msgid "... 2. 获取第三方平台component_access_token"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:121
+msgid ""
+"第三方平台通过自己的component_appid（即在微信开放平台管理中心的第三方平台详情页中的AppID和AppSecret）和 "
+"component_appsecret，以及component_verify_ticket（每10分钟推送一次的安全ticket）来获取自己的接口调用凭据（component_access_token）"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:125
+msgid "... 3. 获取预授权码pre_auth_code"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:125
+msgid "第三方平台通过自己的接口调用凭据（component_access_token）来获取用于授权流程准备的预授权码（pre_auth_code）"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:130
+msgid "... 4. 使用授权码换取公众号或小程序的接口调用凭据和授权信息"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:128
+msgid ""
+"通过授权码和自己的接口调用凭据（component_access_token）， "
+"换取公众号或小程序的接口调用凭据（authorizer_access_token和用于前者快过期时用来刷新它的authorizer_refresh_token）"
+" 和授权信息（授权了哪些权限等信息）"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:133
+msgid "... 5. 获取（刷新）授权公众号或小程序的接口调用凭据"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:133
+msgid "通过authorizer_refresh_token来刷新公众号或小程序的接口调用凭据"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:136
+msgid "... 6. 获取授权公众号或小程序基本信息"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:136
+msgid "在需要的情况下，第三方平台可以获取公众号或小程序的帐号基本信息，包括帐号名. 帐号类型等"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:139
+msgid "... 7. 获取授权方的选项设置信息"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:139
+msgid "在需要的情况下，第三方平台可以获取公众号或小程序的选项设置，包括地理位置上报设置. 语音识别开关设置. 微信多客服功能开关设置"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:143
+msgid "... 8. 设置授权方的选项信息"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:142
+msgid "在需要的情况下，第三方平台可以修改上述公众号或小程序的选项设置， 包括地理位置上报设置. 语音识别开关设置. 微信多客服功能开关设置"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:146
+msgid "... 9. 推送授权相关通知"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:146
+msgid "当公众号或小程序对第三方进行授权. 取消授权. 更新授权时，将通过事件推送告诉开发者"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:150
+msgid "... 接下来：代替公众号或小程序调用接口"
+msgstr ""
+
+#: ../../source/open/auth/auth.rst:149
+msgid ""
+"取在完成授权后，第三方平台可通过公众号或小程序的接口调用凭据（authorizer_access_token）来代替它调用接口， "
+"具体请见“代公众号实现业务”和“代小程序实现业务”文件夹中的内容"
+msgstr ""
+

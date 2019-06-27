@@ -1,0 +1,404 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, nosy
+# This file is distributed under the same license as the wxopen-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: wxopen-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-11 22:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/mobile/guide/android.rst:2
+msgid ":wxopen:`Android接入指南 <1417751808>`"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:4
+msgid "注1：微信SDK改成通过Gradle的方式发布到jcenter，包名做了相应修改，从原来的com.tencent.mm.sdk修改为com.tencent.mm.opensdk，需要开发者修改对应的import语句。"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:6
+msgid ""
+"注2：本文为微信Android终端开发工具的新手使用教程，只涉及教授SDK的使用方法，默认读者已经熟悉IDE的基本使用方法（Android "
+"Studio（推荐） 或 Eclipse），以及具有一定的编程知识基础等。"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:9
+msgid "1.申请你的AppID"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:11
+msgid "请到 开发者应用登记页面 进行登记，登记并选择移动应用进行设置后，将该应用提交审核，只有审核通过的应用才能进行开发。"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:14
+msgid "2.下载SDK及API文档"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:16
+#: ../../source/mobile/guide/android.rst:37
+#: ../../source/mobile/guide/android.rst:197
+msgid "Android Studio环境下："
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:18
+msgid "在build.gradle文件中，添加如下依赖即可："
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:20
+#: ../../source/mobile/guide/android.rst:25
+msgid "dependencies {"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:21
+msgid "compile 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:22
+msgid "} 或"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:26
+msgid "compile 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:27
+msgid "} （其中，前者包含统计功能）"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:30
+#: ../../source/mobile/guide/android.rst:41
+msgid "Eclipse环境下："
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:32
+msgid "请前往“资源下载页 ”下载最新SDK包。"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:35
+msgid "3.搭建开发环境"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:39
+msgid "在Android Studio中新建你的工程，并保证网络设置可以成功从jcenter下载微信SDK即可。"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:43
+msgid "[1] 在Eclipse中建立你的工程。"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:45
+msgid ""
+"[2] "
+"在工程中新建一个libs目录，将开发工具包中libs目录下的libammsdk.jar复制到该目录中（如下图所示，建立了一个名为SDK_Sample"
+" 的工程，并把jar包复制到libs目录下）。"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:49
+msgid ""
+"[3] 右键单击工程，选择Build Path中的Configure Build Path...，选中Libraries这个tab，并通过Add "
+"Jars...导入工程libs目录下的libammsdk.jar文件。（如下图所示）。"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:53
+msgid "在你需要使用微信终端API的文件中导入相应的类。"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:55
+msgid "import com.tencent.mm.opensdk.openapi.WXTextObject;"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:58
+msgid "4.在代码中使用开发工具包"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:60
+msgid "[1] AndroidManifest.xml 设置"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:62
+msgid "添加必要的权限支持（其中网络权限如果没有使用扫码登录功能非必要；后三个权限，如果没有使用mta，也非必要，即使有使用mta，去掉也不影响功能）："
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:64
+msgid "<uses-permission android:name=\"android.permission.INTERNET\" />"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:66
+msgid ""
+"<!-- for mta statistics, not necessary--> <uses-permission "
+"android:name=\"android.permission.ACCESS_WIFI_STATE\"/> <uses-permission "
+"android:name=\"android.permission.READ_PHONE_STATE\"/> <uses-permission "
+"android:name=\"android.permission.ACCESS_NETWORK_STATE\"/> [2] 注册到微信"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:72
+msgid "要使你的程序启动后微信终端能响应你的程序，必须在代码中向微信终端注册你的id。（如下图所示，可以在程序入口Activity的onCreate回调函数处，或其他合适的地方将你的应用id注册到微信。注册函数示例如下图所示。"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:74
+msgid ""
+"// APP_ID 替换为你的应用从官方网站申请到的合法appID private static final String APP_ID = "
+"\"wx88888888\";"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:77
+msgid "// IWXAPI 是第三方app和微信通信的openApi接口 private IWXAPI api;"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:95
+msgid "private regToWx() {"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:81
+msgid ""
+"// 通过WXAPIFactory工厂，获取IWXAPI的实例 api = WXAPIFactory.createWXAPI(this, "
+"APP_ID, true);"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:84
+msgid "// 将应用的appId注册到微信 api.registerApp(APP_ID);"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:87
+msgid "//建议动态监听微信启动广播进行注册到微信"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:93
+msgid "registerReceiver(new BroadcastReceiver() {"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:89
+msgid "@Override public void onReceive(Context context, Intent intent) {"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:92
+msgid "// 将该app注册到微信"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:93
+msgid "api.registerApp(Constants.APP_ID);"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:94
+#: ../../source/mobile/guide/android.rst:186
+#: ../../source/mobile/guide/android.rst:190
+#: ../../source/mobile/guide/android.rst:202
+msgid "}"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:95
+msgid "}, new IntentFilter(ConstantsAPI.ACTION_REFRESH_WXAPP));"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:97
+msgid "} [3] 发送请求或响应到微信"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:100
+msgid "现在，你的程序要发送请求或发送响应到微信终端，可以通过IWXAPI的 sendReq 和 sendResp 两个方法来实现。"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:102
+msgid "boolean sendReq(BaseReq req);"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:104
+msgid "sendReq是第三方app主动发送消息给微信，发送完成之后会切回到第三方app界面。"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:106
+msgid "boolean sendResp(BaseResp resp);"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:108
+msgid "sendResp是微信向第三方app请求数据，第三方app回应数据之后会切回到微信界面。"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:110
+msgid "sendReq的实现示例，如下图所示："
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:112
+msgid ""
+"//初始化一个 WXTextObject 对象，填写分享的文本内容 WXTextObject textObj = new "
+"WXTextObject(); textObj.text = text;"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:116
+msgid ""
+"//用 WXTextObject 对象初始化一个 WXMediaMessage 对象 WXMediaMessage msg = new "
+"WXMediaMessage(); msg.mediaObject = textObj; msg.description = text;"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:121
+msgid ""
+"SendMessageToWX.Req req = new SendMessageToWX.Req(); req.transaction = "
+"String.valueOf(System.currentTimeMillis());  //transaction字段用与唯一标示一个请求 "
+"req.message = msg; req.scene = mTargetScene;"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:126
+msgid ""
+"//调用api接口，发送数据到微信 api.sendReq(req); "
+"需要注意的是，SendMessageToWX.Req的scene成员，如果scene填WXSceneSession，那么消息会发送至微信的会话内。如果scene填WXSceneTimeline（微信4.2以上支持，com.tencent.mm.opensdk.constants.Build.java里面定义了各个功能支持的版本号，如果需要检查微信版本支持API的情况，"
+" 可调用IWXAPI的getWXAppSupportAPI方法,比如，要判断微信是否支持分享到朋友圈功能，可以如下所示进行判断："
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:130
+msgid "if (api.getWXAppSupportAPI() >= Build.TIMELINE_SUPPORTED_SDK_INT) {"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:131
+msgid "//do share"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:132
+msgid "} 那么消息会发送至朋友圈。scene默认值为WXSceneSession。"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:135
+msgid "sendResp的实现与SendReq类似，如下图所示："
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:137
+msgid ""
+"// 初始化一个 WXTextObject 对象 WXTextObject textObj = new WXTextObject(); "
+"textObj.text = text;"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:141
+msgid ""
+"// 用 WXTextObject 对象初始化一个 WXMediaMessage 对象 WXMediaMessage msg = new "
+"WXMediaMessage(textObj); msg.description = text;"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:145
+msgid ""
+"// 构造一个Resp GetMessageFromWX.Resp resp = new GetMessageFromWX.Resp(); // "
+"将req的transaction设置到resp对象中，其中bundle为微信传递过来的Intent所带的内容，通过getExtras()方法获取 "
+"resp.transaction = new GetMessageFromWX.Req(bundle).transaction; "
+"resp.message = msg;"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:151
+msgid ""
+"//调用api接口，发送数据到微信 api. sendResp (resp) ; "
+"具体要发送的内容由第三方app开发者定义，具体可参考微信开发工具包中的SDK Sample Demo源码。"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:155
+msgid "[4] 接收微信的请求及返回值"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:157
+msgid "如果你的程序需要接收微信发送的请求，或者接收发送到微信请求的响应结果，需要下面3步操作："
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:159
+msgid "在你的包名相应目录下新建一个wxapi目录，并在该wxapi目录下新增一个WXEntryActivity类，该类继承自Activity（例如应用程序的包名为net.sourceforge.simcpux，则新添加的类如下图所示）"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:163
+msgid "并在manifest文件里面加上exported属性，设置为true，例如："
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:170
+msgid "<activity"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:166
+msgid ""
+"android:name=\".wxapi.WXEntryActivity\" "
+"android:label=\"@string/app_name\" "
+"android:theme=\"@android:style/Theme.Translucent.NoTitleBar\" "
+"android:exported=\"true\" "
+"android:taskAffinity=\"net.sourceforge.simcpux\" "
+"android:launchMode=\"singleTask\">"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:172
+msgid ""
+"</activity> b. b. "
+"实现IWXAPIEventHandler接口，微信发送的请求将回调到onReq方法，发送到微信请求的响应结果将回调到onResp方法（注意做好版本兼容逻辑，如果WXEntryActivity实现为透明Activity，最好在onReq和onResp处理完成后finish掉当前界面，避免收到不支持的事件的时候，透明Activity无法关闭）"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:175
+msgid "在WXEntryActivity中将接收到的intent及实现了IWXAPIEventHandler接口的对象传递给IWXAPI接口的handleIntent方法，示例如下图："
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:177
+msgid ""
+"api.handleIntent(getIntent(), this); "
+"当微信发送请求到你的应用，将通过IWXAPIEventHandler接口的onReq方法进行回调，类似的，应用请求微信的响应结果将通过onResp回调。"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:180
+msgid "注意事项"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:182
+msgid "[1]如果需要混淆代码，为了保证sdk的正常使用，需要在proguard.cfg加上下面两行配置："
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:184
+msgid "-keep class com.tencent.mm.opensdk.** {"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:185
+#: ../../source/mobile/guide/android.rst:189
+#: ../../source/mobile/guide/android.rst:193
+msgid "*;"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:188
+msgid "-keep class com.tencent.wxop.** {"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:192
+msgid "-keep class com.tencent.mm.sdk.** {"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:194
+msgid "} [2]如果需要运行SDK Sample工程，需要通过指定的debug.keystore来进行签名："
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:201
+msgid "signingConfigs {"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:200
+msgid "debug {"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:201
+msgid "storeFile file(\"../debug.keystore\")"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:203
+msgid "} Eclipse环境下："
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:206
+msgid "请查阅文档《如何运行SDK Demo工程 》"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:208
+msgid ""
+"至此，你已经能使用微信Android开发工具包的API内容了。如果想更详细了解每个API函数的用法，请查阅 Android 平台参考手册 "
+"或自行下载阅读微信SDK Sample Demo源码。"
+msgstr ""
+
+#: ../../source/mobile/guide/android.rst:210
+msgid "前往下载微信SDK示例代码"
+msgstr ""
+
